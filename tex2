@@ -1,0 +1,107 @@
+if my data is given in the json data file what i want is 
+
+I need you to act as a senior front‑end developer and an expert UI/UX designer who has built award‑winning, highly interactive websites. Your task is to build a complete, production‑ready static website for a fantasy world I’ve created called Kretos. The website must be fully responsive, visually stunning, and implemented entirely with HTML, CSS, vanilla JavaScript, and JSON—no frameworks or libraries other than Swiper.js (which you will include for all sliders). The code must follow a strict modular architecture: separate files for each page’s HTML, page‑specific CSS, and page‑specific JS, plus shared global files for common styles, utilities, and dynamic components like the navigation bar. All assets (images, sounds, etc.) must be organized in an assets folder with appropriate subfolders. You must create a realistic, rich data.json file that serves as the single source of truth for all dynamic content—heroes, monsters, geography, factions, class systems, creators, etc.—and the entire site must be driven by that JSON so that the content is fully dynamic, not hard‑coded.
+
+Architecture & Shared Components
+The website will have four HTML pages: index.html (home), heroes.html, monsters.html, and novel.html (the novel page will be static for now; you can leave it with placeholder content but make sure it shares the same navbar and theme). Every page must share a common responsive navigation bar that is dynamically injected via a JavaScript function. That means no duplicate navbar code in any HTML file. Instead, create a components.js or a global script that loads the navbar HTML into a container (e.g., <div id="navbar-container"></div>) on every page. The navbar must include links to the four pages and a toggle for light/dark mode. The light/dark theme should be persistent across page reloads (using localStorage) and follow this color scheme:
+
+Light mode: Cyan Blue (#06b6d4) and White (#ffffff) as primary, with Divine Yellow (#fbbf24) as accent.
+
+Dark mode: Black (#000000) as background, Demonic Red (#991b1b) as primary accent, and Olive Green (#4d7c0f) as secondary accent.
+
+All global styles (typography, layout containers, navbar styling, footer, utility classes) must be in css/styles.css. Page‑specific styles must go into separate files like css/home.css, css/heroes.css, etc., and be loaded only on the respective pages. Similarly, global JavaScript functions (theme toggling, modal helpers, Swiper initialization helpers, data loading) go into js/main.js, while page‑specific logic goes into js/home.js, js/heroes.js, etc. You must also use Swiper.js for all carousel sections; each Swiper instance on the homepage must have a distinct style and a unique animation (e.g., coverflow, cards, creative fade) to make every section feel special.
+
+Data & JSON
+Create a comprehensive data.json file that includes arrays for heroes, monsters, geography, factions, classSystems, and creators. Each hero and monster object must contain all fields needed for the modals described below, including:
+
+Basic info: id, name, nickname, shortDescription, fullDescription, rank, level, rating (out of 10), titles (array), stats (object with keys like strength, agility, etc., each 0–100).
+
+Appearance, attire, bodytype, weapons, lore, relationships, mount, speciality—each as nested objects or arrays to allow the detailed modal layout.
+
+Image URLs for five variants: normal, real, 90, full, half. You can use placeholder images (e.g., from Unsplash or local asset paths) but ensure the structure is present.
+
+For monsters, include similar fields with appropriate creature‑oriented details.
+For geography, factions, and classSystems, provide enough sample entries (4–6 each) to populate the Swiper sections, each with a name, description, image, rating, etc.
+For creators, include at least three people with name, role, bio, fun Q&A (three questions per creator), life motto, favorite hero, favorite monster, and a short reason why.
+
+Homepage (index.html)
+The homepage must be built entirely from the JSON data. After the navbar, the layout is as follows:
+
+Hero Slider – A Swiper that displays 7 random heroes from the data on each page load (refresh randomizes the set). Each slide contains:
+
+Background image from the hero’s herobg field.
+
+Left side: a “hero PNG” image (from the hero’s heroPng field) that wobbles gently with CSS animation.
+
+Right side: the hero’s stats displayed as animated progress bars (values come from the stats object).
+
+Center: hero name, a short description, and a “see more” button that opens a hero modal (same modal component described below).
+The modal should show the hero’s summary data (the same as the detailed hero modal but with fewer fields? Actually, the specification says the “hero modal” on the homepage is a summary modal that contains image tabs, stats bars, etc., and a “learn more” button that redirects to the full hero page. So implement that modal accordingly.
+
+Legendary Heroes Section – A non‑Swiper section that randomly picks 5 heroes from the JSON and displays them as asymmetrical, game‑like cards. Each card must show the hero’s iconImage, rating, short description, nickname, and a “Learn More” button that redirects to heroes.html with the corresponding hero’s data in‑depth (you can pass the hero id via URL parameter or store in localStorage). The cards should have unique, angular shapes using clip-path or similar.
+
+Geography & Kingdoms / Factions & Alliances / Class System – Three separate Swiper sliders, each with completely different CSS styling and swipe animations. They should pull data from the respective arrays in JSON. Each slide should display a name, image, and short description. Make the sliders visually distinct (e.g., one with hexagonal cards, one with 3D flip, one with rounded glassmorphism).
+
+Monsters & Creatures – Another Swiper with monster cards that have a unique, asymmetrical “monster card” shape. Each card shows iconImage, rating, short description, nickname, and a “Learn More” button that redirects to monsters.html.
+
+Meet the Creators – A grid of creators. Each card shows an icon (or avatar), name, and role. Clicking on a card opens a custom modal that displays the creator’s detailed bio, the three questions with answers (each question/answer in a distinct container), their life motto, and their favorite hero/monster with a brief explanation. The modal should be designed to feel personal and engaging.
+
+All modals (hero summary, monster summary, creator details) must be built as reusable components. The hero and monster summary modals should follow the same layout: a two‑column structure on larger screens (stacking on mobile). The left column contains the image with tabs for the five variants (normal, real, 90, full, half). Clicking a tab changes the displayed image. Additionally, these modals must support swiping between heroes or monsters—meaning if you open a hero modal, you can swipe left/right to view other heroes without closing the modal, and the currently selected image tab (e.g., “90”) should persist as you swipe to the next hero (so the next hero’s “90” image is shown). The right column shows: name, description, rank & level; rating out of 10 (as a star display or numeric); nickname; titles; and stats as animated progress bars. At the bottom of the modal, a “Learn More” button redirects to the respective full page (heroes.html or monsters.html) with the appropriate context to show the full details.
+
+Heroes Page (heroes.html)
+This page is dedicated to exploring all heroes. It must have:
+
+A search bar that allows searching by hero name or by a “secret code.” The secret code format is secretcode<id> (e.g., for a hero with id 1, the code is secretcode1). If a user enters a valid code, it should display the corresponding hero’s modal directly.
+
+Below the search bar, a grid of hero cards (square images) showing only the hero’s iconImage, name, and rating. Clicking any card opens the full hero modal—which is much more detailed than the summary modal on the homepage. The full modal must retain the same left‑column image tabs and swipe‑between‑heroes functionality, but the right column must now contain all detailed information: Name, titles, nicknames, short description, appearance (sub‑sections for race, face, etc.), attire (upper, lower, etc.), bodytype (upper, lower), weapons (name, type, aura, skills in separate containers), lore, relationships, mount, speciality, and images. You can present this information in a scrollable, well‑organized layout using nested containers.
+
+Monsters Page (monsters.html)
+Exactly the same structure as the heroes page, but for monsters. The search works with names or secret codes (secretcode<id>). The modal displays the full monster details following the same comprehensive layout (appearance, attire, bodytype, weapons, lore, etc.).
+
+Novel Page (novel.html)
+For now, this page can be static. It must include the same dynamic navbar and theme toggle. The content can be a placeholder with a title “The Chronicles of Kretos” and a message that the novel is in progress, styled to match the site’s theme.
+
+Implementation Details
+
+Use fetch to load data.json on every page and store it in a global variable or use a state pattern.
+
+All Swiper instances must be initialized after the DOM is ready and after data is loaded.
+
+Ensure smooth animations for progress bars when modals open or when swiping between items.
+
+The homepage hero slider must re‑randomize the 7 heroes on every page refresh (use Math.random and pick unique items).
+
+For the “Legendary Heroes” section, randomize the 5 heroes on each load as well.
+
+Write clean, well‑commented code. Provide all files in a clear directory structure, e.g.:
+
+text
+project/
+  index.html
+  heroes.html
+  monsters.html
+  novel.html
+  css/
+    styles.css
+    home.css
+    heroes.css
+    monsters.css
+    novel.css
+  js/
+    main.js
+    components.js   (navbar injection)
+    home.js
+    heroes.js
+    monsters.js
+    novel.js
+  assets/
+    images/
+    sounds/
+  data.json
+Ensure the navigation bar is injected using JavaScript so that any update to the navbar only needs to be made in one place.
+
+The website must be fully functional in modern browsers, with no console errors, and all interactive features must work seamlessly.
+
+Your output should contain the complete code for every file listed above, with thorough explanations if necessary. Do not skip any part—treat this as a professional delivery that you would hand over to a client. Make the design immersive, playful, and true to a fantasy world, with subtle animations, smooth transitions, and a consistent visual language that reflects the magic of Kretos.
+
+If you are ready then say you are ready and give me a folder structure and also suggest me which we should make one at a time without making any mistakes.
