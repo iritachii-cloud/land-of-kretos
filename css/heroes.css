@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Heroes Page Styles
+   ========================================================================== */
+
+.heroes-page {
+  min-height: 100vh;
+  background: var(--color-bg-primary);
+  padding: var(--space-2xl) 0;
+}
+
+.heroes-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.heroes-header h1 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--color-accent-cyan), var(--color-accent-gold));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  margin-bottom: var(--space-md);
+}
+
+/* Search Bar */
+.search-container {
+  max-width: 500px;
+  margin: var(--space-xl) auto 0;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border-light);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  transition: all var(--transition-base);
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: var(--color-accent-cyan);
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+}
+
+.search-container i {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+/* Heroes Grid */
+.heroes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+}
+
+.hero-card {
+  background: var(--color-card-bg);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  cursor: pointer;
+  box-shadow: var(--color-card-shadow);
+  position: relative;
+  transform-origin: center;
+}
+
+.hero-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.hero-card:hover img {
+  transform: scale(1.05);
+}
+
+.hero-card h3 {
+  margin: var(--space-md) var(--space-md) var(--space-sm);
+  font-size: 1.3rem;
+}
+
+.rating-stars {
+  margin: 0 var(--space-md) var(--space-md);
+  color: var(--color-accent-gold);
+  font-size: 1rem;
+}
+
+/* Modal Enhancements (Hero specific) */
+.modal-left .image-tabs {
+  margin-top: var(--space-md);
+}
+
+.modal-right .weapon-list,
+.modal-right .skill-list {
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  margin: var(--space-sm) 0;
+}
+
+.modal-right .weapon-list h4,
+.modal-right .skill-list h4 {
+  margin-bottom: var(--space-xs);
+  color: var(--color-accent-cyan);
+}
+
+.modal-right .weapon-list ul,
+.modal-right .skill-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-right .weapon-list li,
+.modal-right .skill-list li {
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.modal-right .weapon-list li:last-child,
+.modal-right .skill-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .heroes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-md);
+  }
+  .hero-card h3 {
+    font-size: 1rem;
+  }
+}

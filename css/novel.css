@@ -1,0 +1,26 @@
+.novel-page {
+    min-height: 80vh;
+    background: var(--bg-primary);
+}
+.novel-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+    color: white;
+}
+.novel-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.novel-content {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow);
+}
+.placeholder-chapter p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
