@@ -2,12 +2,10 @@
    Homepage Specific Styles
    ========================================================================== */
 
-/* ----- Hero Slider Section ----- */
+/* ----- Hero Slider ----- */
 .hero-slider-section {
-  position: relative;
   margin-top: 2rem;
 }
-
 .heroSwiper {
   width: 100%;
   height: auto;
@@ -15,7 +13,6 @@
   overflow: hidden;
   box-shadow: var(--color-card-shadow);
 }
-
 .hero-slide {
   position: relative;
   background-size: cover;
@@ -27,7 +24,6 @@
   padding: var(--space-2xl);
   gap: var(--space-2xl);
 }
-
 .hero-slide::before {
   content: '';
   position: absolute;
@@ -38,7 +34,6 @@
   background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
   z-index: 1;
 }
-
 .slide-content {
   position: relative;
   z-index: 2;
@@ -50,41 +45,30 @@
   border: 1px solid rgba(255,255,255,0.2);
   animation: fadeInUp 0.8s ease;
 }
-
 .slide-content h2 {
   font-size: 2.5rem;
   margin-bottom: var(--space-sm);
   color: white;
   text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
-
 .slide-content p {
   color: rgba(255,255,255,0.9);
   margin-bottom: var(--space-md);
 }
-
 .slide-stats {
   margin: var(--space-lg) 0;
 }
-
-.stat-item {
-  margin-bottom: var(--space-sm);
-}
-
 .stat-item span {
   color: white;
   width: 100px;
   display: inline-block;
 }
-
 .stat-bar {
   background: rgba(255,255,255,0.2);
 }
-
 .stat-fill {
   background: linear-gradient(90deg, var(--color-accent-cyan), var(--color-accent-gold));
 }
-
 .hero-png {
   position: relative;
   z-index: 2;
@@ -93,18 +77,14 @@
   filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
   animation: float 4s infinite ease-in-out;
 }
-
 .hero-png img {
   max-width: 250px;
   width: 100%;
   transition: transform 0.3s ease;
 }
-
 .hero-png img:hover {
   transform: scale(1.05);
 }
-
-/* Swiper Navigation Customization */
 .heroSwiper .swiper-button-next,
 .heroSwiper .swiper-button-prev {
   background: rgba(0,0,0,0.5);
@@ -115,17 +95,14 @@
   color: white;
   transition: all 0.3s;
 }
-
 .heroSwiper .swiper-button-next:hover,
 .heroSwiper .swiper-button-prev:hover {
   background: var(--color-accent-cyan);
 }
-
 .heroSwiper .swiper-pagination-bullet {
   background: white;
   opacity: 0.5;
 }
-
 .heroSwiper .swiper-pagination-bullet-active {
   background: var(--color-accent-gold);
   opacity: 1;
@@ -138,7 +115,6 @@
   position: relative;
   overflow: hidden;
 }
-
 .legendary-section::before {
   content: '';
   position: absolute;
@@ -151,7 +127,6 @@
   border-radius: 50%;
   z-index: 0;
 }
-
 .legendary-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -159,7 +134,6 @@
   position: relative;
   z-index: 1;
 }
-
 .legendary-card {
   background: var(--color-card-bg);
   border-radius: var(--radius-xl);
@@ -169,12 +143,10 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 90% 100%, 0% 100%);
   box-shadow: var(--color-card-shadow);
 }
-
 .legendary-card:hover {
   transform: translateY(-10px) rotate(1deg);
   box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.2);
 }
-
 .card-image {
   height: 250px;
   background-size: cover;
@@ -182,25 +154,20 @@
   position: relative;
   transition: transform 0.5s;
 }
-
 .legendary-card:hover .card-image {
   transform: scale(1.05);
 }
-
 .card-content {
   padding: var(--space-lg);
 }
-
 .card-content h3 {
   margin-bottom: var(--space-xs);
 }
-
 .rating {
   color: var(--color-accent-gold);
   font-weight: bold;
   margin: var(--space-sm) 0;
 }
-
 .learn-more {
   margin-top: var(--space-md);
   background: transparent;
@@ -208,7 +175,6 @@
   color: var(--color-accent-cyan);
   padding: 0.5rem 1rem;
 }
-
 .learn-more:hover {
   background: var(--color-accent-cyan);
   color: white;
@@ -218,7 +184,6 @@
 .swiper-section {
   padding: var(--space-3xl) 0;
 }
-
 /* Style 1: Hexagonal Cards */
 .kingdomSwiper .swiper-slide {
   background: var(--color-card-bg);
@@ -230,23 +195,19 @@
   text-align: center;
   padding: var(--space-xl);
 }
-
 .kingdomSwiper .swiper-slide:hover {
   transform: scale(1.05);
   background: var(--color-accent-cyan);
   color: white;
 }
-
 .kingdomSwiper .swiper-slide h3 {
   margin-bottom: var(--space-sm);
 }
-
 /* Style 2: 3D Flip Cards */
 .factionSwiper .swiper-slide {
   background: transparent;
   perspective: 1000px;
 }
-
 .factionSwiper .swiper-slide .card-content {
   background: var(--color-card-bg);
   border-radius: var(--radius-lg);
@@ -256,11 +217,9 @@
   transform-style: preserve-3d;
   box-shadow: var(--color-card-shadow);
 }
-
 .factionSwiper .swiper-slide:hover .card-content {
   transform: rotateY(10deg) rotateX(5deg);
 }
-
 /* Style 3: Glassmorphism */
 .classSwiper .swiper-slide {
   background: rgba(255, 255, 255, 0.1);
@@ -271,12 +230,10 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all var(--transition-base);
 }
-
 [data-theme="dark"] .classSwiper .swiper-slide {
   background: rgba(0, 0, 0, 0.3);
   border-color: rgba(255, 255, 255, 0.1);
 }
-
 .classSwiper .swiper-slide:hover {
   background: var(--color-accent-cyan);
   color: white;
@@ -292,17 +249,14 @@
   box-shadow: var(--color-card-shadow);
   position: relative;
 }
-
 .monsterSwiper .swiper-slide:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
-
 .monsterSwiper .card-content {
   padding: var(--space-lg);
   text-align: center;
 }
-
 .monsterSwiper .btn {
   margin-top: var(--space-md);
   background: var(--color-accent-cyan);
@@ -314,13 +268,11 @@
   background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
   padding: var(--space-4xl) 0;
 }
-
 .creators-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-xl);
 }
-
 .creator-card {
   background: var(--color-card-bg);
   border-radius: var(--radius-xl);
@@ -331,13 +283,11 @@
   box-shadow: var(--color-card-shadow);
   border: 1px solid var(--color-border-light);
 }
-
 .creator-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   border-color: var(--color-accent-cyan);
 }
-
 .creator-avatar {
   width: 120px;
   height: 120px;
@@ -351,20 +301,17 @@
   color: white;
   transition: transform var(--transition-base);
 }
-
 .creator-card:hover .creator-avatar {
   transform: scale(1.05);
 }
-
 .creator-card h3 {
   margin-bottom: var(--space-xs);
 }
-
 .creator-card p {
   color: var(--color-text-muted);
 }
 
-/* ----- Responsive Adjustments ----- */
+/* Responsive */
 @media (max-width: 768px) {
   .hero-slide {
     flex-direction: column;
