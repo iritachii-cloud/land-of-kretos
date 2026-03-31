@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsters - Kretos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <nav id="navbar-container"></nav>
+
+    <main class="monsters-main">
+        <section class="monsters-search-section">
+            <div class="search-container">
+                <input type="text" id="monstersSearch" placeholder="Search monsters by name or secret code (secretcode1)...">
+                <div class="search-hint">💡 Premium users: Use secret codes like 'secretcode1' for Malphas</div>
+            </div>
+        </section>
+        <section class="monsters-grid-section">
+            <div class="monsters-grid" id="monstersGrid"></div>
+        </section>
+    </main>
+
+    <div id="monsterDetailModal" class="modal monster-detail-modal">
+        <div class="modal-content large-modal">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="monsterDetailModalBody"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/monsters-page.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

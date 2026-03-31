@@ -1,0 +1,652 @@
+{
+  "heroes": [
+    {
+      "id": 1,
+      "name": "VVitch X‑abar",
+      "titles": [
+        "The Demon King",
+        "Fallen Prince of the Abyss",
+        "Lord of Corrupted Glory",
+        "The Inverted Hunter"
+      ],
+      "rank": "SS-Rank",
+      "level": 295,
+      "nicknames": [
+        "Xabar",
+        "The Violet Tyrant",
+        "He Who Walks in Silence"
+      ],
+      "shortDescription": "A terrifying inversion of the holy hunter—a being who traded celestial light for abyssal dominion, his presence a monument to corrupted glory. Once a sworn brother to the hunter Alucard, X‑abar now rules as Demon King, wielding the Soul Reaver and commanding the hellhound Malphas.",
+      "fullDescription": "In the celestial order, X‑abar was once a holy hunter, brother-in-arms to Alucard, the famed vampire hunter. They were inseparable, sworn to protect the realm from darkness. But during a cataclysmic battle against a primordial demon, X‑abar was betrayed—not by Alucard, but by the very heavens that deemed him expendable. Left to die in the void between worlds, he was found by the Abyss itself, which offered him power in exchange for his celestial light. He accepted, his skin turning violet, his eyes igniting with molten amber. Now he rules a demonic kingdom, believing that only through absolute darkness can the world be truly remade. He awaits the day when Alucard will come to face him—not as enemies, but as two halves of a shattered whole.",
+      "appearance": {
+        "race": "Corrupted Celestial / Demon",
+        "faceShape": "Sharp, aristocratic, with high prominent brow and strong jawline",
+        "nose": "Straight, refined",
+        "hairStyle": "Long, curling, utterly untamed, spilling over shoulders and down back",
+        "hairColor": "Pure white",
+        "eyeColor": "Molten amber, burning like dying stars",
+        "facialStructure": "High brow, angular jawline, timeless quality carved by fall from grace",
+        "skinTone": "Pale ethereal violet with internal luminescence, smooth porcelain texture",
+        "distinguishingFeatures": "Vertical scar from brow to cheekbone (left side), skin fused with obsidian armor in places, jagged magenta crystal pulsing in sternum"
+      },
+      "colorPalette": {
+        "primary": [
+          "Violet",
+          "Obsidian Black"
+        ],
+        "secondary": [
+          "Magenta",
+          "Tarnished Silver"
+        ],
+        "accent": [
+          "Amber",
+          "Charcoal"
+        ]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Obsidian cuirass fused to skin, open at sternum revealing magenta soul-stone; tattered deep violet cloak with frayed, smoking edges",
+          "arms": "Heavy articulated gauntlets of blackened steel, asymmetrical: left sleek for parrying, right monstrously thick merging with greatsword hilt; knuckles tipped with jagged claws dripping magenta mist",
+          "shoulders": "Twisted skeletal shoulder pauldrons forged from slain celestial's bones, crowned with curved horn-like spikes framing head like dark halo",
+          "neck": "High collar of tattered cloak",
+          "waist": "Broad leather belt etched with infernal runes, from which hang layered scale-like tassets"
+        },
+        "lower": {
+          "hips": "Layered scale tassets, dark charcoal, edges lined with magenta glow",
+          "legs": "Fitted midnight-black trousers",
+          "feet": "Heavy knee-high boots of obsidian leather, soles reinforced with spurs of dark iron that crack ground with each step"
+        },
+        "headwear": "None (hair and horns serve as crown)",
+        "accessories": [
+          "Twisted skeletal pauldrons with horn spikes",
+          "Belt with infernal runes",
+          "Soul-stone at sternum"
+        ],
+        "distinctFeatures": "Armor fused to skin; soul-stone pulsing with heartbeat; perpetual cold aura"
+      },
+      "armorType": "Heavy",
+      "bodyType": {
+        "upper": {
+          "chest": "Thick, powerful, dense corded muscle",
+          "arms": "Heavy sinewy, built for cleaving legions",
+          "shoulders": "Broad, warlord-like",
+          "neck": "Strong, columnar",
+          "waist": "Narrow relative to shoulders"
+        },
+        "lower": {
+          "hips": "Athletic, tapering",
+          "legs": "Powerful, sheathed in fitted trousers and heavy boots",
+          "feet": "Large, heavy-booted"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Soul Reaver",
+          "type": "Greatsword",
+          "look": "Nearly as tall as its master, blade forged from volcanic glass shards and compressed void energy, surface chaotic swirl of deep purple and obsidian black. A jagged fissure along the fuller glows with pulsating magenta light, as if the blade is a living wound in reality. Crossguard of interlocking skeletal demon fingers fused together in mockery of prayer, each fingertip tipped with a tiny weeping eye that leaks shadows. Hilt wrapped in tanned hide of a fallen angel, grip warm to the touch. When drawn, emits low harmonic hum that resonates in bones, air shimmers with heat haze.",
+          "aura": "Magenta and violet, with trailing shadows and heat distortion",
+          "colorPalette": [
+            "Obsidian Black",
+            "Deep Purple",
+            "Magenta"
+          ],
+          "skills": {
+            "passive": [
+              {
+                "name": "Soul Drain",
+                "description": "Each strike absorbs a portion of the target's life force, healing the wielder for 5% of damage dealt. Against holy or light-aligned enemies, healing increased to 10%."
+              },
+              {
+                "name": "Void Resonance",
+                "description": "The blade's harmonic hum reduces enemy magic resistance within 10 meters by 15%."
+              }
+            ],
+            "active": [
+              {
+                "name": "Abyssal Cleave",
+                "description": "Sweeping attack that releases a wave of void energy in a 15-meter cone, dealing 200% physical damage and applying a slow for 3 seconds. Cooldown: 8 seconds."
+              },
+              {
+                "name": "Reality Rend",
+                "description": "Thrust that tears a small rift at target location, dealing 150% physical damage and pulling enemies inward. Creates a 5-meter zone of instability for 5 seconds, dealing 50% damage per second. Cooldown: 12 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Cataclysm",
+                "description": "X‑abar channels the full power of the Soul Reaver, causing it to emit a deafening harmonic shriek. After 1.5 seconds, he unleashes a massive explosion of magenta void energy in a 25-meter radius, dealing 500% physical damage and stunning all enemies for 2 seconds. Cooldown: 90 seconds. Passive: Upon activation, absorbs all nearby enemy souls (up to 5) to reduce cooldown by 10 seconds per soul."
+              }
+            ],
+            "special": [
+              {
+                "name": "Soul Harvest",
+                "description": "When an enemy dies within 10 meters, X‑abar absorbs their lingering essence, increasing his physical attack by 5% for 10 seconds. Stacks up to 5 times."
+              }
+            ]
+          }
+        }
+      ],
+      "stats": {
+        "power": 9,
+        "strength": 10,
+        "offense": 9,
+        "defense": 8,
+        "stamina": 9,
+        "physicalAtk": 9,
+        "magicalAtk": 7,
+        "physDef": 8,
+        "magDef": 6,
+        "speed": 7,
+        "mana": 6,
+        "intelligence": 8,
+        "ratings": {
+          "overall": 9.5,
+          "notes": "Overwhelming physical prowess with demonic enhancements."
+        }
+      },
+      "skills": [
+        {
+          "name": "Abyssal Dominion",
+          "type": "Passive",
+          "description": "20% increased damage against holy-aligned enemies and reduces light damage by 15%."
+        },
+        {
+          "name": "Dark Pact",
+          "type": "Active",
+          "description": "Sacrifice 10% of current health to empower next attack for 50% bonus damage and bleed."
+        },
+        {
+          "name": "Infernal Charge",
+          "type": "Active",
+          "description": "Dash forward 12 meters, leaving a trail of burning shadow that deals 80% damage per second for 4 seconds."
+        },
+        {
+          "name": "Silent Finality",
+          "type": "Special",
+          "description": "When below 30% health, aura expands, slowing enemies by 40% and reducing vision. Triggers once every 120 seconds."
+        }
+      ],
+      "lore": "In the celestial order, X‑abar was once a holy hunter, brother-in-arms to Alucard...",
+      "relationships": [
+        {
+          "withHeroId": "Alucard",
+          "type": "Former brother, now bitter rival",
+          "description": "Once sworn brothers, now destined to clash."
+        },
+        {
+          "withHeroId": "Seraphine",
+          "type": "Nemesis",
+          "description": "The angel who hunts him, representing the light he rejected."
+        }
+      ],
+      "mount": [
+        {
+          "name": "Malphas",
+          "type": "Hellhound",
+          "description": "Massive beast three times X‑abar's size, hide patchwork of charcoal grey and smoldering ember, obsidian spikes along spine, mane of black smoke, four amber eyes and a third lidless orb on brow that sees souls. Wings of pure shadow veined with magenta lightning.",
+          "abilities": [
+            "Soul Sight – can detect hidden enemies and see through illusions.",
+            "Shadow Flight – can fly at high speeds, leaving twilight in its wake.",
+            "Molten Breath – exhales choking ash and ember that deals fire damage and blinds."
+          ]
+        }
+      ],
+      "pet": [],
+      "factionId": 2,
+      "kingdomId": 2,
+      "classId": 1,
+      "specialty": "Melee juggernaut with high sustain, area control, and anti-holy capabilities.",
+      "images": {
+        "iconImage": "assets/images/heroes/vvitch_X‑abar/icon.png",
+        "normalImage": "assets/images/heroes/vvitch_X‑abar/normal.png",
+        "realImage": "assets/images/heroes/vvitch_X‑abar/real.png",
+        "90sImage": "assets/images/heroes/vvitch_X‑abar/90s.png",
+        "fullBodyImage": "assets/images/heroes/vvitch_X‑abar/full.png",
+        "halfImage": "assets/images/heroes/vvitch_X‑abar/half.png",
+        "heropng": "assets/images/heroes/vvitch_X‑abar/hero.png",
+        "herobg": "assets/images/heroes/vvitch_X‑abar/bg.png",
+        "gallery": [
+          "assets/images/heroes/vvitch_X‑abar/1.png",
+          "assets/images/heroes/vvitch_X‑abar/2.png",
+          "assets/images/heroes/vvitch_X‑abar/3.png",
+          "assets/images/heroes/vvitch_X‑abar/4.png",
+          "assets/images/heroes/vvitch_X‑abar/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "Selvina E‑korth",
+      "titles": [
+        "The Dark‑Core Artillerist",
+        "Fractured Echo of Innocence",
+        "Cyber‑Ghoul Vengeance",
+        "The Neon Annihilator"
+      ],
+      "rank": "S‑Rank",
+      "level": 280,
+      "nicknames": [
+        "Selvina",
+        "The Neon Ghost",
+        "Crimson Crosshair"
+      ],
+      "shortDescription": "A shattered girl rebuilt as a living weapon—half human, half machine, her body a fusion of porcelain flesh and glowing circuitry. Armed with twin‑linked laser cannons fused to her back and accompanied by her cyborg cat Nyx, she hunts the organization that stole her sister and her humanity, leaving only ash and static in her wake.",
+      "fullDescription": "She stands as a fractured echo of innocence, a girl who was once whole but was dismantled and rebuilt in the image of cold, unfeeling technology. Her age is difficult to place—perhaps late teens, perhaps early twenties—for the cybernetic grafts that adorn her body have frozen her in a state of perpetual, ghostly youth. Her facial structure retains a soft, heart‑shaped elegance, a delicate jawline and a small, straight nose that speak of the humanity she lost. But where Layla’s face is open and bright, Selvina’s is a mask of serene, simmering fury. Her skin is unnaturally smooth, almost translucent in its perfection, a porcelain canvas that glows with the faint, sterile luminescence of a clean room. There are no pores, no blemishes—only the eerie, flawless surface of a body curated by machines.\n\nHer eyes are the most haunting testament to her transformation. The left is a deep, sapphire blue—the only relic of the sister she once was, a human eye that still holds a glimmer of sorrow. The right has been replaced by a cybernetic implant: a spherical, crimson lens that rotates and focuses with an audible whir, its iris a crosshair that constantly tracks, analyzes, and calculates trajectories. The two eyes never quite align, giving her gaze a perpetually fractured, unsettling quality. Framing this face is a cascade of hair that defies nature—two immense, silken ponytails that erupt from the crown of her head and spill down past her waist, dyed in a vivid, electric neon green. The strands are thick and glossy, swaying with a life of their own, and they glow faintly in the dim light, a beacon of chaos against the muted greys of her attire.\n\nBeneath this striking visage, her physique is a masterwork of bio‑mechanical refinement. She possesses the classic hourglass silhouette demanded by her design: a narrow, wasp‑thin waist that gives way to voluptuous, full hips and thick, powerful thighs; her bust is full and prominent, a D‑cup that strains against the minimal fabric of her garments. Yet her body is not merely organic—it has been augmented, reinforced with sleek, carbon‑fiber musculature that ripples beneath her skin when she moves. Her arms are lean but dense, her hands dexterous and steady, perfect for operating the titanic weapons fused to her frame. There is an androgynous, alien elegance to her proportions, as if she were sculpted by an artist who worshiped both the human form and the cold precision of machinery.\n\nHer attire is a deliberate contradiction: functional yet exposed, armored yet vulnerable. Across her upper body, she wears a torn black tactical vest, its fabric shredded at the edges, revealing the glowing pink circuitry that has been grafted directly into her skin. The vest is cropped, ending just below her bust, leaving her midriff entirely bare—a canvas of smooth, flawless skin interrupted only by a vertical seam of neon‑blue light that runs from her sternum to her navel, a power conduit that pulses with her heartbeat. Her shoulders are framed by a glowing pink armature, a lattice of thin, humming energy that arcs from her back and hovers just above her skin, crackling with suppressed power. A pair of destroyed goggles dangle around her neck, their lenses shattered, a relic of the scientist who once tried to control her. On her lower half, she wears a ripped, asymmetrical skirt of black ballistic fabric, its hem jagged and singed, exposing the full length of her thick, powerful thighs. She wears no leg armor, trusting instead to the speed and agility that her cybernetic implants grant her. Her feet are clad in heavy, reinforced combat boots, their soles glowing with the same neon‑blue energy that traces her spine.\n\nThe weapons that define her are not merely carried—they are fused to her very being. The Annihilator is a pair of twin‑linked, futuristic laser cannons, each one twice her size, that float just behind her shoulders, connected to her back by thick, retractable cables of woven light and dark matter. Their barrels are a dazzling, chaotic swirl of neon pink and neon blue, their surfaces etched with both high‑tech circuitry and arcane runes—a fusion of science and sorcery that should not exist. When powered, they hum with a deep, resonant bass, and their muzzles glow with an intense, white‑hot core, ready to unleash beams that bend gravity and unravel entropy. Selvina controls them with subtle shifts of her shoulders and fingers, her movements fluid and predatory, as if the cannons are extensions of her own will.\n\nAccompanying her everywhere is her only companion, a creature that mirrors her own dual nature. Nyx is a cyborg cat, half organic, half machine, a small bundle of white and orange fur with one sapphire blue eye and one cybernetic red orb that matches her own. Its body is sleek and agile, but its left flank is plated in polished chrome, and a small, retractable laser cannon is mounted on its back, humming softly as it trots beside her. Nyx moves with an unnerving silence, its mechanical eye swiveling independently, ever watchful. It is the last remnant of Selvina’s childhood, a gift from her sister Layla before the organization took them apart. Now it serves as both sentinel and the only warmth in a life defined by cold, mechanical vengeance.\n\nThe aura that surrounds Selvina E‑korth is one of static charge and ozone, of neon light bleeding into shadow. She moves with the fluid grace of a predator, her twin ponytails swaying, her mismatched eyes scanning for the sister she lost and the organization that stole her humanity. She is a weapon of vengeance given form, a ghost in the machine, and she will not stop until every trace of the scientists who made her is reduced to ash and static.",
+      "appearance": {
+        "race": "Augmented Human / Cyber‑Ghoul",
+        "faceShape": "Soft, heart‑shaped elegance with a delicate jawline",
+        "nose": "Small, straight",
+        "hairStyle": "Two immense, silken ponytails erupting from the crown, spilling past waist",
+        "hairColor": "Electric neon green, faintly luminescent",
+        "eyeColor": "Left: deep sapphire blue; Right: cybernetic crimson lens with crosshair iris",
+        "facialStructure": "Delicate jawline, small straight nose, perpetually ghostly youth",
+        "skinTone": "Porcelain white, unnaturally smooth and translucent, sterile luminescence",
+        "distinguishingFeatures": "Mismatched eyes (blue left, cybernetic red right); vertical neon‑blue power conduit from sternum to navel; glowing pink circuitry visible through torn vest; twin neon green ponytails"
+      },
+      "colorPalette": {
+        "primary": [
+          "Neon Green",
+          "Neon Pink"
+        ],
+        "secondary": [
+          "Black",
+          "Sapphire Blue"
+        ],
+        "accent": [
+          "Crimson",
+          "Chrome"
+        ]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Torn black tactical vest, cropped just below bust, shredded edges revealing glowing pink circuitry grafted into skin; midriff bare with neon‑blue vertical power conduit from sternum to navel",
+          "arms": "Lean but dense, unarmored; hands dexterous and steady",
+          "shoulders": "Glowing pink armature – a lattice of thin, humming energy arcing from back, hovering above skin",
+          "neck": "Destroyed goggles dangling by cord, lenses shattered",
+          "waist": "Narrow, wasp‑thin waist with neon‑blue conduit tracing down"
+        },
+        "lower": {
+          "hips": "Voluptuous, full hips",
+          "legs": "Thick, powerful thighs, fully exposed by asymmetrical skirt; no leg armor",
+          "feet": "Heavy reinforced combat boots with neon‑blue glowing soles"
+        },
+        "headwear": "None (destroyed goggles worn around neck)",
+        "accessories": [
+          "Glowing pink shoulder armature",
+          "Shattered goggles",
+          "Neon‑blue power conduit (integrated into body)"
+        ],
+        "distinctFeatures": "Ripped asymmetrical black ballistic skirt with jagged, singed hem; exposed midriff with pulsing light seam; cybernetic eye tracks independently"
+      },
+      "armorType": "Light",
+      "bodyType": {
+        "upper": {
+          "chest": "Full D‑cup bust, strains against minimal fabric; carbon‑fiber musculature beneath porcelain skin",
+          "arms": "Lean, dense, dexterous",
+          "shoulders": "Framed by floating pink energy armature",
+          "neck": "Slender, unarmored",
+          "waist": "Extremely narrow, wasp‑thin"
+        },
+        "lower": {
+          "hips": "Voluptuous, full, curving",
+          "legs": "Thick, powerful thighs; toned calves",
+          "feet": "Average size, clad in heavy combat boots"
+        }
+      },
+      "weapons": [
+        {
+          "name": "The Annihilator",
+          "type": "Twin‑Linked Laser Cannons",
+          "look": "A pair of futuristic laser cannons, each twice the size of Selvina, floating just behind her shoulders. Connected to her back by thick, retractable cables of woven light and dark matter. Barrels are a dazzling, chaotic swirl of neon pink and neon blue, surfaces etched with both high‑tech circuitry and arcane runes – a fusion of science and sorcery. When powered, muzzles glow with an intense white‑hot core, humming with deep, resonant bass.",
+          "aura": "Neon pink and neon blue light bleeding into shadow, static charge and ozone",
+          "colorPalette": [
+            "Neon Pink",
+            "Neon Blue",
+            "White"
+          ],
+          "skills": {
+            "passive": [
+              {
+                "name": "Entropy Unraveling",
+                "description": "Laser beams bend gravity around impact, reducing enemy armor by 10% for 4 seconds. Stacks up to 3 times."
+              },
+              {
+                "name": "Cybernetic Sync",
+                "description": "Selvina's cybernetic eye grants 15% increased critical hit chance against targets she has tracked for more than 2 seconds."
+              }
+            ],
+            "active": [
+              {
+                "name": "Obliteration Beam",
+                "description": "Fires a concentrated laser beam in a line 20 meters long, dealing 180% magical damage to all enemies in its path. Enemies hit have their movement speed reduced by 30% for 2 seconds. Cooldown: 6 seconds."
+              },
+              {
+                "name": "Gravity Collapse",
+                "description": "The Annihilator bends gravity at a target location within 15 meters, creating a 6-meter vortex that pulls enemies inward and deals 120% magical damage over 3 seconds. Cooldown: 10 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Neon Cataclysm",
+                "description": "Selvina overloads both cannons, causing them to spin wildly and unleash a 10-second barrage of homing energy bolts in a 30-meter radius around her. Each bolt deals 50% magical damage. At the end of the barrage, the cannons fire a final twin beam that deals 300% magical damage to all enemies in a cone. Cooldown: 100 seconds. Passive: While channeling, Selvina gains 40% damage reduction and cannot be interrupted."
+              }
+            ],
+            "special": [
+              {
+                "name": "Ghost in the Machine",
+                "description": "Upon taking lethal damage, Selvina's cybernetic implants eject her consciousness into a phantom state for 3 seconds, during which she is invisible, invulnerable, and can move freely. After 3 seconds, she reappears at the phantom's location with 20% health. Triggers once every 180 seconds."
+              }
+            ]
+          }
+        }
+      ],
+      "stats": {
+        "power": 8,
+        "strength": 6,
+        "offense": 10,
+        "defense": 5,
+        "stamina": 7,
+        "physicalAtk": 5,
+        "magicalAtk": 10,
+        "physDef": 4,
+        "magDef": 7,
+        "speed": 9,
+        "mana": 8,
+        "intelligence": 7,
+        "ratings": {
+          "overall": 9.0,
+          "notes": "Exceptional ranged magical damage and mobility, but fragile in close combat."
+        }
+      },
+      "skills": [
+        {
+          "name": "Static Overload",
+          "type": "Passive",
+          "description": "Enemies within 8 meters of Selvina take 5% of their max health as magical damage per second from ambient static discharge."
+        },
+        {
+          "name": "Crimson Lock",
+          "type": "Active",
+          "description": "Selvina's cybernetic eye marks a single enemy within 25 meters for 5 seconds. Marked enemies take 20% increased damage from her abilities and are revealed even through stealth. Cooldown: 12 seconds."
+        },
+        {
+          "name": "Neon Dash",
+          "type": "Active",
+          "description": "Selvina blinks 10 meters in any direction, leaving a trail of neon energy that deals 80% magical damage to enemies she passes through. Cooldown: 8 seconds. Stores 2 charges."
+        },
+        {
+          "name": "Sister's Echo",
+          "type": "Special",
+          "description": "When Selvina falls below 15% health, Nyx emits a protective pulse, granting her a shield equal to 30% of her max health for 5 seconds and cleansing all debuffs. Triggers once every 90 seconds."
+        }
+      ],
+      "lore": "Once a normal girl with a beloved sister named Layla, Selvina was taken by a shadowy organization that sought to create the perfect living weapon. They dismantled her body and rebuilt it with cybernetic grafts, freezing her in ghostly youth and replacing her right eye with a targeting lens. Her neon green ponytails and glowing pink circuitry are signatures of their cruel artistry. She escaped during a lab accident, destroying her creators but losing her sister in the chaos. Now she wanders a world that fears her, accompanied only by Nyx—her childhood pet, also half‑converted into a cyborg. She searches for Layla, hoping to either save her or grant her the mercy of a quick death, and she will annihilate anyone who stands between her and the organization's remnants.",
+      "relationships": [
+        {
+          "withHeroId": "Layla",
+          "type": "Lost sister, object of desperate search",
+          "description": "Selvina's only remaining family. She does not know if Layla is alive or transformed like herself, but she will tear apart the world to find her."
+        },
+        {
+          "withHeroId": "The Organization",
+          "type": "Sworn enemy",
+          "description": "The nameless cabal of scientists and mages who abducted and modified her. She has killed most of them, but hunts the survivors with relentless fury."
+        }
+      ],
+      "mount": [],
+      "pet": [
+        {
+          "name": "Nyx",
+          "type": "Cyborg Cat",
+          "description": "A small bundle of white and orange fur with one sapphire blue eye and one cybernetic red orb matching Selvina's. Left flank plated in polished chrome, with a small retractable laser cannon mounted on its back. Moves with unnerving silence, its mechanical eye swiveling independently. The last remnant of Selvina's childhood, a gift from Layla before the organization took them apart. Serves as sentinel and the only warmth in her life."
+        }
+      ],
+      "factionId": 3,
+      "kingdomId": 1,
+      "classId": 2,
+      "specialty": "Mobile ranged artillerist with high burst magical damage, area control, and a unique second‑chance passive. Excels at kiting and punishing grouped enemies, but extremely vulnerable when caught in melee.",
+      "images": {
+        "iconImage": "assets/images/heroes/selvina_E‑korth/icon.png",
+        "normalImage": "assets/images/heroes/selvina_E‑korth/normal.png",
+        "realImage": "assets/images/heroes/selvina_E‑korth/real.png",
+        "90sImage": "assets/images/heroes/selvina_E‑korth/90s.png",
+        "fullBodyImage": "assets/images/heroes/selvina_E‑korth/full.png",
+        "halfImage": "assets/images/heroes/selvina_E‑korth/half.png",
+        "heropng": "assets/images/heroes/selvina_E‑korth/hero.png",
+        "herobg": "assets/images/heroes/selvina_E‑korth/bg.png",
+        "gallery": [
+          "assets/images/heroes/selvina_E‑korth/1.png",
+          "assets/images/heroes/selvina_E‑korth/2.png",
+          "assets/images/heroes/selvina_E‑korth/3.png",
+          "assets/images/heroes/selvina_E‑korth/4.png",
+          "assets/images/heroes/selvina_E‑korth/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Roisin Pelvet",
+      "titles": [
+        "The Eclipse Abyss Huntress",
+        "Fallen Guardian of the Moonlight Kingdom",
+        "Abyssal Sentinel",
+        "She Who Stalks the Twilight Roots"
+      ],
+      "rank": "SS-Rank",
+      "level": 290,
+      "nicknames": [
+        "Roisin",
+        "The Twilight Watcher",
+        "Keikronza's Lady"
+      ],
+      "shortDescription": "A fallen elven guardian who traded the silver halls of the Moonlight Kingdom for the shadow‑drenched roots of the world. Cast out by those she swore to protect, she now stalks the Abyssal Forest with her Moonfang Bow, a weapon that fires bolts of solidified darkness, and her ethereal moth companion Keikronza. She defends the borders from demons, a silent sentinel whose name has been struck from history but whose arrows still fly true.",
+      "fullDescription": "She moves like a whisper through the perpetual twilight of her domain—a guardian who has traded the silver halls of the Moonlight Kingdom for the tangled, shadow‑drenched roots of the world. Roisin Pelvet appears as an elf of ageless beauty, her features carved with the sharp, elegant geometry of her people: a high, refined jawline that tapers into a delicate chin, a slender nose that speaks of noble lineage, and cheekbones that catch the faintest light like polished ivory. Yet there is a weight to her expression that belies her years, a quiet sorrow etched into the corners of her mouth and the set of her brow. Her skin is the pale, luminous white of moonlight on snow, smooth and flawless, yet it holds a faint, cool undertone—the mark of one who has spent centuries beneath a moonless sky. Where Miya’s skin was porcelain warmed by starlight, Roisin’s is the colour of untouched frost, a canvas upon which the darkness itself seems to write its secrets.\n\nHer eyes are perhaps the most haunting testament to her fall. The sclera is pure, absolute black—a void that seems to swallow light—while the irises are a stark, ghostly white, ethereal and dreamlike. At their center, the pupils blaze with a fierce, crimson red, a burning ember that flares when her emotions rise. These are the eyes of one who has looked into the abyss and allowed it to look back, yet they hold not malice but a fierce, protective love for the realm she now guards from the shadows. Framing this unforgettable gaze is a cascade of hair that falls past her waist in a shimmering river of silver, streaked with veins of pure, obsidian black—a visual echo of the moonlight she once wielded and the darkness she now commands. Her ears, long and elegantly pointed, peek through the silken strands, their tips slightly darker, as if kissed by shadow.\n\nHer physique is a testament to the lithe, athletic grace of her people, built for speed and precision rather than brute force. She possesses the classic hourglass silhouette: a slender waist that gives way to full, rounded hips and thick, powerful thighs—the legs of a huntress who has spent decades stalking prey through the tangled undergrowth of the Abyssal Forest. Her bust is full and prominent, a D‑cup that is both celebrated and strategically armored, and her core is taut and toned, visible beneath the cropped leather of her attire. There is a feral elegance to her movements, a coiled readiness that suggests she can spring from stillness to lethal motion in the span of a heartbeat.\n\nHer attire is a fusion of the regal and the rugged, designed for both protection and silent movement. Across her upper body, she wears a cropped, form‑fitting leather jerkin of deep, blood‑red maroon, its surface etched with subtle, swirling patterns that evoke the flow of dark water. The jerkin leaves her midriff exposed, revealing the smooth, pale skin of her stomach and the faint, silvery scar that runs from her ribs to her hip—a reminder of the betrayal that cast her out. Over this, she drapes a hooded cape of the same deep maroon, its fabric thick enough to deflect glancing blows yet light enough to billow like smoke when she moves. The cape’s interior is lined with a pale, ash‑grey silk, and its edges are embroidered with intricate silver patterns: not the sunbursts and crescent moons of the Moonlight Kingdom, but snarling demon masks, coiled serpents, and angular, predatory runes that mark her as a hunter of the things that lurk beyond the light. Her hands are bare, her fingers long and elegant, tipped with nails that have been sharpened to points—tools for drawing a bowstring or slashing a throat with equal ease.\n\nBelow her waist, she wears a rugged, layered skirt of dark, supple leather, its hem jagged and uneven, cut to allow maximum freedom of movement. The skirt is short, revealing the full length of her powerful thighs, which are encased in thigh‑high boots of the same deep maroon leather. The boots are reinforced with silver buckles and dark iron greaves that protect her shins and knees, yet they are worn soft and pliable, allowing her to move without a whisper. From her belt hang a quiver of arrows fletched with black feathers and a small, leather‑bound tome of abyssal lore—her only companions besides the moth that flutters beside her.\n\nThe Moonfang Bow is a weapon of ancient, forbidden craft. Its limbs are curved into a graceful, sweeping arc, carved from a single piece of petrified wood harvested from a tree that grew in the lightless depths of the Underrealm. The wood is a deep, charcoal grey, shot through with veins of maroon that pulse with a faint, inner light. Along its surface, intricate demonic patterns have been etched: twisting vines, snarling maws, and runes that writhe when touched. The bow does not use a conventional string; instead, a strand of pure, solidified shadow stretches between its tips, humming with a low, discordant note. When drawn, the bow does not fire arrows of wood or steel. Instead, it absorbs the ambient light—and the hope—of its surroundings, condensing it into bolts of solidified darkness that split into twin, dagger‑like projectiles mid‑flight, striking from impossible angles. To wield it is to feel the weight of the abyss pressing against one’s soul, yet Roisin carries it with the ease of an extension of her own arm.\n\nBeside her, always, flutters her sole companion. Keikronza is a small, ethereal moth, its wings a translucent, smoky crimson, veined with threads of silver that glow with a soft, guiding light. The moth is no mere insect; it is a fragment of the moonlight that was stripped from Roisin when she was banished, given form and purpose. In the perpetual gloom of the Abyssal Forest, Keikronza’s glow is the only light that pierces the canopy, a beacon that guides her through the tangled paths and warns her of demonic presences. The moth lands often on her shoulder, its antennae brushing her cheek, and its wings pulse with a rhythm that matches her heartbeat, a silent bond that transcends words.\n\nThe aura that surrounds Roisin Pelvet is one of tragic nobility and quiet, unyielding resolve. She is a fallen queen who never surrendered her crown, a guardian who was cast out by those she swore to protect and yet still watches over them from the shadows. She walks the twilight paths of the Abyssal Forest not as a monster, but as a sentinel, her bow drawn against the demons that would breach the Moonlight Kingdom’s borders, her heart a wound that will not heal. She is the Eclipse Abyss Huntress, and though her name has been struck from the records of her people, her arrows still fly true against the enemies she once faced as a sister-in-arms. And somewhere, in the silver halls above, Miya trains with her bow, unaware that the teacher who guided her first shot now stalks the darkness below, keeping the nightmares at bay.",
+      "appearance": {
+        "race": "Elf / Abyssal‑touched",
+        "faceShape": "Sharp, elegant geometry: high refined jawline tapering to delicate chin",
+        "nose": "Slender, noble lineage",
+        "hairStyle": "Cascade falling past waist, shimmering river",
+        "hairColor": "Silver streaked with obsidian black",
+        "eyeColor": "Sclera pure black, iris ghostly white, pupil fierce crimson red",
+        "facialStructure": "High cheekbones like polished ivory, brow set with quiet sorrow",
+        "skinTone": "Pale luminous white of moonlight on snow, faint cool undertone, untouched frost",
+        "distinguishingFeatures": "Void‑black sclera with white iris and crimson pupil; long pointed ears with darker tips; silvery scar from ribs to hip; nails sharpened to points"
+      },
+      "colorPalette": {
+        "primary": [
+          "Deep Maroon",
+          "Charcoal Grey"
+        ],
+        "secondary": [
+          "Silver",
+          "Pale White"
+        ],
+        "accent": [
+          "Crimson",
+          "Obsidian Black"
+        ]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Cropped, form‑fitting leather jerkin of deep blood‑red maroon, etched with swirling dark water patterns; leaves midriff bare revealing silvery scar",
+          "arms": "Bare, long elegant fingers with sharpened nails",
+          "shoulders": "Hooded cape of deep maroon, thick enough to deflect blows, interior lined with pale ash‑grey silk, embroidered with snarling demon masks and predatory runes",
+          "neck": "Uncovered, pale",
+          "waist": "Slender waist, belt holding quiver and leather‑bound tome"
+        },
+        "lower": {
+          "hips": "Full, rounded hips",
+          "legs": "Thick, powerful thighs exposed by short skirt; thigh‑high maroon leather boots with silver buckles and dark iron greaves",
+          "feet": "Boots worn soft and pliable for silence"
+        },
+        "headwear": "None (hood of cape can be raised)",
+        "accessories": [
+          "Quiver of black‑feathered arrows",
+          "Leather‑bound tome of abyssal lore",
+          "Silver buckles on boots",
+          "Hooded cape with silver embroidery"
+        ],
+        "distinctFeatures": "Jagged hem layered skirt; thigh‑high boots; cape lined with ash‑grey silk; sharpened fingernails"
+      },
+      "armorType": "Medium",
+      "bodyType": {
+        "upper": {
+          "chest": "Full D‑cup, taut and toned core, visible beneath cropped jerkin",
+          "arms": "Lean, athletic, long fingers",
+          "shoulders": "Slender, draped by cape",
+          "neck": "Elegant, columnar",
+          "waist": "Slender, wasp‑thin"
+        },
+        "lower": {
+          "hips": "Full, rounded, hourglass curve",
+          "legs": "Thick, powerful thighs, built for stalking and sprinting",
+          "feet": "Average, encased in soft yet reinforced boots"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Moonfang Bow",
+          "type": "Shadow Longbow",
+          "look": "Graceful sweeping arc carved from a single piece of petrified charcoal‑grey wood harvested from a lightless Underrealm tree, shot through with pulsing maroon veins. Intricate demonic patterns etched along its surface: twisting vines, snarling maws, and writhing runes. No conventional string—instead a strand of pure solidified shadow stretches between tips, humming a low discordant note. When drawn, absorbs ambient light and condenses it into bolts of solidified darkness that split into twin dagger‑like projectiles mid‑flight.",
+          "aura": "Smoky crimson and shadow, with faint silver glow from the moth companion",
+          "colorPalette": [
+            "Charcoal Grey",
+            "Maroon",
+            "Shadow Black"
+          ],
+          "skills": {
+            "passive": [
+              {
+                "name": "Abyssal Absorption",
+                "description": "Moonfang Bow drains ambient light in a 10‑meter radius, reducing enemy accuracy by 10% and stealth detection by 20% while inside."
+              },
+              {
+                "name": "Twin Sunder",
+                "description": "Each shot has a 25% chance to split into two projectiles that strike from different angles, dealing 60% damage each."
+              }
+            ],
+            "active": [
+              {
+                "name": "Shadow Bolt",
+                "description": "Fire a condensed bolt of darkness that travels in a straight line, piercing through all enemies and dealing 160% physical damage. Cooldown: 4 seconds."
+              },
+              {
+                "name": "Eclipse Step",
+                "description": "Roisin vanishes into shadow and reappears 12 meters away, leaving behind a decoy that explodes for 100% physical damage after 1 second. Cooldown: 9 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Abyssal Rain",
+                "description": "Roisin fires a volley of 20 shadow arrows into the sky over 2 seconds, which rain down in a 20‑meter radius over 4 seconds. Each arrow deals 60% physical damage. Enemies hit have their vision reduced to a 5‑meter radius for 3 seconds. Cooldown: 90 seconds. Passive: While channeling, Roisin is rooted but gains 50% damage reduction."
+              }
+            ],
+            "special": [
+              {
+                "name": "Moonlight Echo",
+                "description": "When Roisin lands three consecutive shots on the same enemy, a ghostly crescent moon mark appears. The next ability used on that enemy consumes the mark to deal 30% bonus true damage."
+              }
+            ]
+          }
+        }
+      ],
+      "stats": {
+        "power": 7,
+        "strength": 6,
+        "offense": 10,
+        "defense": 6,
+        "stamina": 8,
+        "physicalAtk": 9,
+        "magicalAtk": 5,
+        "physDef": 6,
+        "magDef": 8,
+        "speed": 9,
+        "mana": 7,
+        "intelligence": 8,
+        "ratings": {
+          "overall": 9.2,
+          "notes": "Exceptional ranged physical damage, mobility, and vision control; moderate durability."
+        }
+      },
+      "skills": [
+        {
+          "name": "Twilight Hunter",
+          "type": "Passive",
+          "description": "Roisin gains 15% increased movement speed and 20% increased critical strike chance while standing in shadows or under a moonless sky."
+        },
+        {
+          "name": "Keikronza's Guidance",
+          "type": "Active",
+          "description": "Release Keikronza to scout a 30‑meter cone, revealing all enemies and traps for 5 seconds. The moth then returns, granting Roisin 10% lifesteal for 5 seconds. Cooldown: 15 seconds."
+        },
+        {
+          "name": "Serrated Snare",
+          "type": "Active",
+          "description": "Place a shadow trap on the ground (max 3). When triggered, it roots the enemy for 1.5 seconds and deals 80% physical damage. Traps last 60 seconds. Cooldown: 8 seconds per charge."
+        },
+        {
+          "name": "Fallen Queen's Resolve",
+          "type": "Special",
+          "description": "When Roisin is below 40% health, her abyssal runes flare, granting 30% damage reduction and causing her basic attacks to slow enemies by 25% for 2 seconds. Lasts until she exits combat."
+        }
+      ],
+      "lore": "Once a revered guardian of the Moonlight Kingdom, Roisin was the mentor who taught the young huntress Miya her first shot. During a demonic incursion, Roisin made a pact with abyssal forces to save her kingdom—a pact that corrupted her eyes and bound her to the shadows. The kingdom's council, fearing her transformation, exiled her rather than thank her. Stripped of her name and titles, she retreated to the Abyssal Forest, a twisted realm of eternal twilight beneath the kingdom's roots. There, she carved the Moonfang Bow from a petrified Underrealm tree and found a fragment of her lost moonlight reborn as the moth Keikronza. She now patrols the forest's borders, silently slaughtering demons that would otherwise rise to threaten the kingdom that cast her out. She has not seen Miya in decades, but she watches from afar, ensuring her former student never faces the nightmares that lurk below.",
+      "relationships": [
+        {
+          "withHeroId": "Miya",
+          "type": "Former mentor, secret guardian",
+          "description": "Roisin taught Miya archery as a child. Though exiled, she watches over Miya from the shadows, eliminating threats before they can reach the surface."
+        },
+        {
+          "withHeroId": "Moonlight Kingdom Council",
+          "type": "Bitter exile",
+          "description": "The council that stripped her name and banished her for the very sacrifice that saved them. She bears no active malice, but neither will she forgive."
+        }
+      ],
+      "mount": [],
+      "pet": [
+        {
+          "name": "Keikronza",
+          "type": "Ethereal Moth",
+          "description": "A small, ethereal moth with translucent smoky crimson wings veined with threads of silver that glow with a soft, guiding light. A fragment of the moonlight that was stripped from Roisin upon her banishment, given form and purpose. In the perpetual gloom of the Abyssal Forest, its glow pierces the canopy, guiding Roisin through tangled paths and warning of demonic presences. It lands often on her shoulder, antennae brushing her cheek, wings pulsing in rhythm with her heartbeat—a silent bond beyond words."
+        }
+      ],
+      "factionId": 4,
+      "kingdomId": 3,
+      "classId": 3,
+      "specialty": "Stealth archer with vision control, traps, and high single‑target burst damage. Excels at kiting, ambushing, and controlling engagement range. Vulnerable to heavy crowd control and gap‑closing melee assassins.",
+      "images": {
+        "iconImage": "assets/images/heroes/roisin_Pelvet/icon.png",
+        "normalImage": "assets/images/heroes/roisin_Pelvet/normal.png",
+        "realImage": "assets/images/heroes/roisin_Pelvet/real.png",
+        "90sImage": "assets/images/heroes/roisin_Pelvet/90s.png",
+        "fullBodyImage": "assets/images/heroes/roisin_Pelvet/full.png",
+        "halfImage": "assets/images/heroes/roisin_Pelvet/half.png",
+        "heropng": "assets/images/heroes/roisin_Pelvet/hero.png",
+        "herobg": "assets/images/heroes/roisin_Pelvet/bg.png",
+        "gallery": [
+          "assets/images/heroes/roisin_Pelvet/1.png",
+          "assets/images/heroes/roisin_Pelvet/2.png",
+          "assets/images/heroes/roisin_Pelvet/3.png",
+          "assets/images/heroes/roisin_Pelvet/4.png",
+          "assets/images/heroes/roisin_Pelvet/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Kretos - World of Fractured Magic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body data-theme="light">
+    <nav id="navbar-container"></nav>
+
+    <main class="home-main">
+        <!-- Hero Slider -->
+        <section class="hero-section">
+            <div class="hero-swiper swiper">
+                <div class="swiper-wrapper" id="heroSlider"></div>
+                <div class="swiper-pagination hero-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Legendary Heroes Grid -->
+        <section class="legendary-heroes section fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Legendary Heroes</h2>
+                    <p>Discover the legends of Kretos</p>
+                </div>
+                <div class="heroes-grid" id="legendaryHeroesGrid"></div>
+            </div>
+        </section>
+
+        <!-- Kingdoms Swiper -->
+        <section class="kingdoms-section section fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Geography & Kingdoms</h2>
+                    <p>Explore the fractured realms</p>
+                </div>
+                <div class="kingdoms-swiper swiper">
+                    <div class="swiper-wrapper" id="kingdomsSwiper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Factions Swiper -->
+        <section class="factions-section section fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Factions & Alliances</h2>
+                    <p>Choose your allegiance</p>
+                </div>
+                <div class="factions-swiper swiper">
+                    <div class="swiper-wrapper" id="factionsSwiper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Classes Swiper -->
+        <section class="classes-section section fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Class System</h2>
+                    <p>Master your destiny</p>
+                </div>
+                <div class="classes-swiper swiper">
+                    <div class="swiper-wrapper" id="classesSwiper"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Monsters Grid -->
+        <section class="monsters-section section fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Monsters & Creatures</h2>
+                    <p>Face the terrors that roam Kretos</p>
+                </div>
+                <div class="monsters-grid" id="homeMonstersGrid"></div>
+            </div>
+        </section>
+
+        <!-- Creators Grid -->
+        <section class="creators-section section fade-up">
+            <div class="container">
+                <div class="section-header">
+                    <h2>👨‍🎨 Meet the Creators</h2>
+                    <p>The brilliant minds behind Kretos</p>
+                </div>
+                <div class="creators-grid" id="creatorsGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="heroModal" class="modal">
+        <div class="modal-content large-modal">
+            <span class="close">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    <div id="monsterModal" class="modal">
+        <div class="modal-content large-modal">
+            <span class="close">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+    <div id="creatorModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

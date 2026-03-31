@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes - Kretos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <nav id="navbar-container"></nav>
+
+    <main class="heroes-main">
+        <section class="heroes-search-section">
+            <div class="search-container">
+                <input type="text" id="heroesSearch" placeholder="Search heroes by name or secret code (secretcode1)...">
+                <div class="search-hint">Premium users: Use secret codes like 'secretcode1' for VVitch X-abar</div>
+            </div>
+        </section>
+        <section class="heroes-grid-section">
+            <div class="heroes-grid" id="heroesGrid"></div>
+        </section>
+    </main>
+
+    <div id="heroDetailModal" class="modal hero-detail-modal">
+        <div class="modal-content large-modal">
+            <span class="close">&times;</span>
+            <div class="modal-body" id="heroDetailModalBody"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/heroes-page.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

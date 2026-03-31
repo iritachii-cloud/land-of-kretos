@@ -1,0 +1,230 @@
+{
+  "monsters": [
+    {
+      "id": 1,
+      "name": "Malphas",
+      "type": "Hellhound",
+      "rank": "F-Rank",
+      "level": 10,
+      "foundIn": [
+        "Nyxara",
+        "Abyssal Plains"
+      ],
+      "nicknames": [
+        "The Soul Seer",
+        "Shadow Wing"
+      ],
+      "shortDescription": "A massive hellhound bound to the Demon King X‑abar, with four amber eyes and a third lidless orb that sees souls.",
+      "fullDescription": "Malphas was born from the first shadow cast by the Abyss. Bound to X‑abar by a pact older than memory, he serves as both steed and guardian. His third eye never closes, always watching for threats to his master.",
+      "appearance": {
+        "race": "Demonic Beast",
+        "faceShape": "Canine, massive",
+        "hairColor": "Smoke black",
+        "eyeColor": "Four amber eyes, third eye molten gold",
+        "skinTone": "Charcoal grey with smoldering ember patches",
+        "distinguishingFeatures": "Third eye on brow, obsidian spikes, wings of pure shadow"
+      },
+      "colorPalette": {
+        "primary": [
+          "Charcoal Grey",
+          "Smoldering Ember"
+        ],
+        "secondary": [
+          "Black",
+          "Magenta"
+        ],
+        "accent": [
+          "Gold"
+        ]
+      },
+      "attire": {
+        "upper": null,
+        "lower": null,
+        "headwear": null,
+        "accessories": [],
+        "distinctFeatures": "Runic brands on flanks"
+      },
+      "bodyType": {
+        "upper": {
+          "chest": "Massive, muscular"
+        },
+        "lower": {
+          "legs": "Muscular, clawed"
+        }
+      },
+      "stats": {
+        "power": 8,
+        "strength": 9,
+        "offense": 8,
+        "defense": 7,
+        "stamina": 8,
+        "physicalAtk": 8,
+        "magicalAtk": 6,
+        "physDef": 7,
+        "magDef": 5,
+        "speed": 7,
+        "mana": 4,
+        "intelligence": 5,
+        "ratings": {
+          "overall": 7.8,
+          "notes": "Powerful physical attacker."
+        }
+      },
+      "skills": [
+        {
+          "name": "Soul Sight",
+          "type": "Passive",
+          "description": "Can see invisible and hidden enemies."
+        },
+        {
+          "name": "Shadow Flight",
+          "type": "Active",
+          "description": "Gains increased speed and evasion."
+        },
+        {
+          "name": "Molten Breath",
+          "type": "Active",
+          "description": "Cone of fire and blinding ash."
+        },
+        {
+          "name": "Abyssal Howl",
+          "type": "Ultimate",
+          "description": "Stuns and reveals all enemies."
+        }
+      ],
+      "lore": "Malphas was born from the first shadow cast by the Abyss. Bound to X‑abar by a pact older than memory...",
+      "relationships": [
+        {
+          "withHeroId": 1,
+          "type": "Bonded to VVitch X‑abar"
+        }
+      ],
+      "images": {
+        "iconImage": "assets/images/monsters/malphas/icon.png",
+        "normalImage": "assets/images/monsters/malphas/normal.png",
+        "realImage": "assets/images/monsters/malphas/real.png",
+        "90sImage": "assets/images/monsters/malphas/90s.png",
+        "fullBodyImage": "assets/images/monsters/malphas/full.png",
+        "halfImage": "assets/images/monsters/malphas/half.png",
+        "monsterpng": "assets/images/monsters/malphas/hero.png",
+        "monsterbg": "assets/images/monsters/malphas/bg.png",
+        "gallery": [
+          "assets/images/monsters/malphas/1.png",
+          "assets/images/monsters/malphas/2.png",
+          "assets/images/monsters/malphas/3.png",
+          "assets/images/monsters/malphas/4.png",
+          "assets/images/monsters/malphas/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "Malakar",
+      "type": "Abyssal Dragon",
+      "rank": "Boss",
+      "foundIn": [
+        "Abyssal Rifts",
+        "Nyxara"
+      ],
+      "nicknames": [
+        "World-Eater",
+        "Scale of the Void"
+      ],
+      "shortDescription": "A primordial dragon corrupted by abyssal energy; its breath unravels reality.",
+      "fullDescription": "Born from the Sundering, Abyssal Dragons are the oldest and most powerful of the corrupted beasts. They are said to be fragments of the primordial chaos itself, bound into draconic form. Their roar can shatter mountains, and their gaze brings madness.",
+      "appearance": {
+        "race": "Corrupted Dragon",
+        "faceShape": "Reptilian, massive",
+        "eyeColor": "Void black with magenta pupils",
+        "skinTone": "Obsidian with purple veins",
+        "distinguishingFeatures": "Six wings, tail maw"
+      },
+      "colorPalette": {
+        "primary": [
+          "Obsidian Black",
+          "Void Purple"
+        ],
+        "secondary": [
+          "Magenta"
+        ],
+        "accent": [
+          "Silver"
+        ]
+      },
+      "attire": null,
+      "bodyType": {
+        "upper": {
+          "chest": "Barrel-like",
+          "shoulders": "Wing joints"
+        },
+        "lower": {
+          "legs": "Four powerful legs"
+        }
+      },
+      "stats": {
+        "power": 10,
+        "strength": 10,
+        "offense": 9,
+        "defense": 9,
+        "stamina": 10,
+        "physicalAtk": 9,
+        "magicalAtk": 9,
+        "physDef": 9,
+        "magDef": 8,
+        "speed": 6,
+        "mana": 9,
+        "intelligence": 7,
+        "ratings": {
+          "overall": 9.5,
+          "notes": "Cataclysmic threat."
+        }
+      },
+      "skills": [
+        {
+          "name": "Void Breath",
+          "type": "Active",
+          "description": "Cone of disintegration."
+        },
+        {
+          "name": "Gravity Well",
+          "type": "Active",
+          "description": "Pulls enemies into a vortex."
+        },
+        {
+          "name": "Reality Rend",
+          "type": "Ultimate",
+          "description": "Tears a rift in space, dealing massive damage and summoning void spawn."
+        }
+      ],
+      "lore": "Born from the Sundering, Abyssal Dragons are the oldest and most powerful of the corrupted beasts...",
+      "relationships": [],
+      "images": {
+        "iconImage": "assets/images/monsters/malakar/icon.png",
+        "normalImage": "assets/images/monsters/malakar/normal.png",
+        "realImage": "assets/images/monsters/malakar/real.png",
+        "90sImage": "assets/images/monsters/malakar/90s.png",
+        "fullBodyImage": "assets/images/monsters/malakar/full.png",
+        "halfImage": "assets/images/monsters/malakar/half.png",
+        "monsterpng": "assets/images/monsters/malakar/hero.png",
+        "monsterbg": "assets/images/monsters/malakar/bg.png",
+        "gallery": [
+          "assets/images/monsters/malakar/1.png",
+          "assets/images/monsters/malakar/2.png",
+          "assets/images/monsters/malakar/3.png",
+          "assets/images/monsters/malakar/4.png",
+          "assets/images/monsters/malakar/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    }
+  ]
+}

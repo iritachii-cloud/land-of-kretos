@@ -1,0 +1,238 @@
+{
+    "world": {
+        "name": "Kretos",
+        "description": "A fractured world born from the remnants of a cosmic war between primordial forces. Magic, technology, and divine will coexist in uneasy balance.",
+        "cosmology": {
+            "primordialForces": [
+                "Order",
+                "Chaos"
+            ],
+            "sundering": "Millennia ago, a catastrophic imbalance nearly destroyed Kretos. The Primordial Deity of Life and Death intervened, sealing the rifts."
+        },
+        "kingdoms": [
+            {
+                "id": 1,
+                "name": "Aethelgard",
+                "region": "Celestial West",
+                "description": "Mountainous, forested, steeped in divine magic. Home to angels, elves, and holy orders.",
+                "image": "assets/images/kingdoms/aethelgard.jpg",
+                "races": [
+                    "Angels",
+                    "Elves",
+                    "Dragon-blooded",
+                    "Dwarves"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Nyxara",
+                "region": "Shadow East",
+                "description": "Land of eternal twilight, haunted forests, subterranean labyrinths. Strongholds of vampires, necromancers, shadow creatures.",
+                "image": "assets/images/kingdoms/nyxara.jpg",
+                "races": [
+                    "Vampires",
+                    "Revenants",
+                    "Necromancers",
+                    "Shadow Elves",
+                    "Monsters"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Flamma",
+                "region": "Southern Firelands",
+                "description": "Volcanic islands, deserts, sun-scorched plains. Birthplace of fire spirits, phoenixes, sun-worshipping empires.",
+                "image": "assets/images/kingdoms/flamma.jpg",
+                "races": [
+                    "Fire Giants",
+                    "Sun-touched Humans",
+                    "Phoenix-kin",
+                    "Salamanders"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Glaciar",
+                "region": "Frozen North",
+                "description": "Endless tundra, ice-capped peaks, frozen sea of Niflheim. Realm of frost giants, ice wraiths, eternal winter.",
+                "image": "assets/images/kingdoms/glaciar.jpg",
+                "races": [
+                    "Frost Giants",
+                    "Yeti",
+                    "Ice Elves",
+                    "Northern Humans"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Mekhanika",
+                "region": "Central Industrial Belt",
+                "description": "Sprawling urban landscape where magic meets technology. Steam, cybernetics, alchemy define this region.",
+                "image": "assets/images/kingdoms/mekhanika.jpg",
+                "races": [
+                    "Humans",
+                    "Cyborgs",
+                    "AIs",
+                    "Golems",
+                    "Steampunk Inventors"
+                ]
+            },
+            {
+                "id": 6,
+                "name": "The Wild Zones",
+                "region": "Unaligned",
+                "description": "Vast untamed lands—jungles, deserts, ancient forests—where dinosaurs roam, beasts dwell, hermits train.",
+                "image": "assets/images/kingdoms/wildzones.jpg",
+                "races": [
+                    "Various"
+                ]
+            }
+        ],
+        "factions": [
+            {
+                "id": 1,
+                "name": "Celestial Order",
+                "alignment": "Lawful Good",
+                "description": "Preserve order, enforce divine law, protect against chaos.",
+                "image": "assets/images/factions/celestial.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Shadow Accord",
+                "alignment": "Chaotic Evil",
+                "description": "Embrace chaos, freedom, power of darkness.",
+                "image": "assets/images/factions/shadow.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Forge Pact",
+                "alignment": "Neutral",
+                "description": "Advance technology, invention, transhumanism.",
+                "image": "assets/images/factions/forge.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Natural Balance",
+                "alignment": "Neutral Good",
+                "description": "Preserve nature, elements, old ways.",
+                "image": "assets/images/factions/nature.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Underworld Syndicates",
+                "alignment": "Chaotic Neutral",
+                "description": "Control crime, information, illicit trade.",
+                "image": "assets/images/factions/syndicate.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Unaffiliated",
+                "alignment": "True Neutral",
+                "description": "Act independently; often caught between factions.",
+                "image": "assets/images/factions/unaffiliated.jpg"
+            }
+        ],
+        "classes": [
+            {
+                "id": 1,
+                "name": "Warrior",
+                "type": "Physical",
+                "description": "Masters of melee combat, high strength and defense.",
+                "image": "assets/images/classes/warrior.jpg"
+            },
+            {
+                "id": 2,
+                "name": "Mage",
+                "type": "Magical",
+                "description": "Wielders of arcane and elemental forces.",
+                "image": "assets/images/classes/mage.jpg"
+            },
+            {
+                "id": 3,
+                "name": "Rogue",
+                "type": "Agility",
+                "description": "Stealthy assassins, rangers, spies.",
+                "image": "assets/images/classes/rogue.jpg"
+            },
+            {
+                "id": 4,
+                "name": "Divine",
+                "type": "Support/Magic",
+                "description": "Holy warriors, clerics, inquisitors.",
+                "image": "assets/images/classes/divine.jpg"
+            },
+            {
+                "id": 5,
+                "name": "Technomancer",
+                "type": "Hybrid",
+                "description": "Masters of technology, cybernetics, engineering.",
+                "image": "assets/images/classes/technomancer.jpg"
+            },
+            {
+                "id": 6,
+                "name": "Primal",
+                "type": "Hybrid",
+                "description": "Beastmasters, elementalists, giants.",
+                "image": "assets/images/classes/primal.jpg"
+            },
+            {
+                "id": 7,
+                "name": "Support/Wildcard",
+                "type": "Support",
+                "description": "Bards, healers, tacticians, gamblers.",
+                "image": "assets/images/classes/support.jpg"
+            }
+        ],
+        "monsterHierarchy": [
+            {
+                "level": 1,
+                "name": "Minor Creatures",
+                "examples": [
+                    "Imps",
+                    "Goblins",
+                    "Lesser Undead",
+                    "Mechanical Spiders"
+                ]
+            },
+            {
+                "level": 2,
+                "name": "Common Threats",
+                "examples": [
+                    "Hellhounds",
+                    "Vampire Spawn",
+                    "Stone Golems",
+                    "Frost Wraiths"
+                ]
+            },
+            {
+                "level": 3,
+                "name": "Elite Monsters",
+                "examples": [
+                    "Oni",
+                    "Necromancer Lords",
+                    "Fire Elementals",
+                    "Cyber-Beasts"
+                ]
+            },
+            {
+                "level": 4,
+                "name": "Bosses",
+                "examples": [
+                    "Abyssal Dragons",
+                    "Primordial Elementals",
+                    "Titan Constructs",
+                    "Elder Vampires"
+                ]
+            },
+            {
+                "level": 5,
+                "name": "Cataclysmic Threats",
+                "examples": [
+                    "Sundering Echoes",
+                    "Primordial Chaos Spawn",
+                    "World-Eaters"
+                ]
+            }
+        ]
+    }
+}

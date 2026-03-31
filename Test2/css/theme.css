@@ -1,0 +1,821 @@
+/* ==========================================================================
+   THEME.CSS - Dynamic Theme Switching & Visual Enhancements
+   Version: 2.0.0
+   Description: Handles smooth theme transitions, theme-specific gradients,
+                scrollbar theming, selection colors, and advanced visual effects
+   ========================================================================== */
+
+/* ==========================================================================
+   1. GLOBAL THEME TRANSITIONS
+   ========================================================================== */
+
+/* Smooth transition for all theme-affected properties */
+body,
+body *,
+body *::before,
+body *::after {
+    transition: 
+        background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        background 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        fill 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        stroke 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        text-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.2s ease;
+}
+
+/* Disable transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    body,
+    body *,
+    body *::before,
+    body *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* ==========================================================================
+   2. LIGHT THEME (CELESTIAL) - CUSTOM PROPERTIES OVERRIDE
+   ========================================================================== */
+
+/* These are already defined in main.css, but we add theme-specific enhancements */
+[data-theme="light"] {
+    /* Background gradients */
+    --gradient-hero: radial-gradient(circle at 10% 20%, rgba(51, 101, 138, 0.15), rgba(134, 187, 216, 0.05));
+    --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 249, 250, 0.95));
+    --gradient-button: linear-gradient(135deg, #33658A, #2F4858);
+    --gradient-button-hover: linear-gradient(135deg, #2F4858, #1E3342);
+    --gradient-accent: linear-gradient(135deg, #F26419, #F6AE2D);
+    --gradient-border: linear-gradient(90deg, #86BBD8, #F6AE2D);
+    
+    /* Glow effects */
+    --glow-primary: 0 0 20px rgba(51, 101, 138, 0.4);
+    --glow-accent: 0 0 20px rgba(242, 100, 25, 0.4);
+    --glow-card: 0 8px 32px rgba(51, 101, 138, 0.1);
+    
+    /* Selection color */
+    --selection-bg: #33658A;
+    --selection-text: #FFFFFF;
+    
+    /* Scrollbar colors */
+    --scrollbar-track: #E9ECEF;
+    --scrollbar-thumb: #86BBD8;
+    --scrollbar-thumb-hover: #33658A;
+    
+    /* Overlay */
+    --overlay-light: rgba(255, 255, 255, 0.8);
+    --overlay-dark: rgba(0, 0, 0, 0.5);
+}
+
+/* ==========================================================================
+   3. DARK THEME (INFERNAL) - CUSTOM PROPERTIES OVERRIDE
+   ========================================================================== */
+
+[data-theme="dark"] {
+    /* Background gradients */
+    --gradient-hero: radial-gradient(circle at 10% 20%, rgba(170, 68, 101, 0.25), rgba(60, 82, 51, 0.1));
+    --gradient-card: linear-gradient(135deg, rgba(28, 11, 25, 0.95), rgba(42, 17, 32, 0.98));
+    --gradient-button: linear-gradient(135deg, #AA4465, #A30015);
+    --gradient-button-hover: linear-gradient(135deg, #A30015, #3E0000);
+    --gradient-accent: linear-gradient(135deg, #3C5233, #514213);
+    --gradient-border: linear-gradient(90deg, #AA4465, #514213);
+    
+    /* Glow effects */
+    --glow-primary: 0 0 20px rgba(170, 68, 101, 0.5);
+    --glow-accent: 0 0 20px rgba(60, 82, 51, 0.5);
+    --glow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
+    
+    /* Selection color */
+    --selection-bg: #AA4465;
+    --selection-text: #FFFFFF;
+    
+    /* Scrollbar colors */
+    --scrollbar-track: #1C0B19;
+    --scrollbar-thumb: #AA4465;
+    --scrollbar-thumb-hover: #A30015;
+    
+    /* Overlay */
+    --overlay-light: rgba(20, 8, 14, 0.8);
+    --overlay-dark: rgba(0, 0, 0, 0.7);
+}
+
+/* ==========================================================================
+   4. THEME-SPECIFIC BACKGROUNDS
+   ========================================================================== */
+
+/* Light theme body background */
+[data-theme="light"] body {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8FCFF 50%, #E3F2FD 100%);
+    background-attachment: fixed;
+}
+
+/* Dark theme body background */
+[data-theme="dark"] body {
+    background: linear-gradient(135deg, #14080E 0%, #1C0B19 50%, #0A0408 100%);
+    background-attachment: fixed;
+}
+
+/* Animated gradient background that shifts slowly */
+body {
+    background-size: 200% 200%;
+    animation: backgroundShift 15s ease infinite;
+}
+
+@keyframes backgroundShift {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* ==========================================================================
+   5. SCROLLBAR THEMING
+   ========================================================================== */
+
+/* Custom scrollbar for light theme */
+[data-theme="light"] ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: var(--radius-full);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: var(--radius-full);
+    border: 2px solid var(--scrollbar-track);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* Custom scrollbar for dark theme */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+    border-radius: var(--radius-full);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: var(--radius-full);
+    border: 2px solid var(--scrollbar-track);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* ==========================================================================
+   6. TEXT SELECTION COLORS
+   ========================================================================== */
+
+::selection {
+    background: var(--selection-bg);
+    color: var(--selection-text);
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: var(--selection-bg);
+    color: var(--selection-text);
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   7. THEME-SPECIFIC BORDER & SHADOW EFFECTS
+   ========================================================================== */
+
+/* Gradient border animation */
+.gradient-border {
+    position: relative;
+    border-radius: inherit;
+}
+
+.gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: var(--gradient-border);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.gradient-border:hover::before {
+    opacity: 1;
+}
+
+/* Glowing card effect */
+.card-glow {
+    transition: all var(--transition-base);
+}
+
+[data-theme="light"] .card-glow:hover {
+    box-shadow: var(--glow-card), var(--shadow-lg);
+}
+
+[data-theme="dark"] .card-glow:hover {
+    box-shadow: var(--glow-card), var(--shadow-lg);
+}
+
+/* ==========================================================================
+   8. THEME-SPECIFIC BUTTON EFFECTS
+   ========================================================================== */
+
+.btn-primary {
+    background: var(--gradient-button);
+    transition: all var(--transition-base);
+}
+
+.btn-primary:hover {
+    background: var(--gradient-button-hover);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-accent {
+    background: var(--gradient-accent);
+    color: white;
+}
+
+/* ==========================================================================
+   9. THEME-SPECIFIC FORM ELEMENTS
+   ========================================================================== */
+
+input, textarea, select {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-light);
+    color: var(--text-primary);
+    transition: all var(--transition-base);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-400);
+    box-shadow: 0 0 0 3px rgba(51, 101, 138, 0.2);
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+    box-shadow: 0 0 0 3px rgba(170, 68, 101, 0.3);
+}
+
+/* ==========================================================================
+   10. THEME-SPECIFIC MODAL OVERLAYS
+   ========================================================================== */
+
+.modal {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+}
+
+[data-theme="light"] .modal {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .modal {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+/* ==========================================================================
+   11. THEME-SPECIFIC LINK EFFECTS
+   ========================================================================== */
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-400);
+    transition: color var(--transition-fast);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-border);
+    transition: width var(--transition-base);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+[data-theme="dark"] a {
+    color: var(--primary-100);
+}
+
+[data-theme="dark"] a:hover {
+    color: var(--primary-200);
+}
+
+/* ==========================================================================
+   12. THEME-SPECIFIC CODE BLOCKS
+   ========================================================================== */
+
+code, pre {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-radius: var(--radius-sm);
+    padding: 0.2em 0.4em;
+    font-family: var(--font-mono);
+}
+
+pre {
+    padding: var(--spacing-4);
+    overflow-x: auto;
+}
+
+[data-theme="dark"] code,
+[data-theme="dark"] pre {
+    background: #2A1120;
+    border-left: 3px solid var(--primary-400);
+}
+
+/* ==========================================================================
+   13. THEME-SPECIFIC TABLE STYLES
+   ========================================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+th, td {
+    padding: var(--spacing-3) var(--spacing-4);
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+}
+
+th {
+    background: var(--bg-tertiary);
+    font-weight: var(--font-weight-semibold);
+}
+
+tr:hover {
+    background: rgba(51, 101, 138, 0.05);
+}
+
+[data-theme="dark"] tr:hover {
+    background: rgba(170, 68, 101, 0.1);
+}
+
+/* ==========================================================================
+   14. THEME-SPECIFIC LOADING STATES
+   ========================================================================== */
+
+.loading-spinner {
+    border: 3px solid var(--border-light);
+    border-top-color: var(--primary-400);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+[data-theme="dark"] .loading-spinner {
+    border-top-color: var(--primary-100);
+}
+
+/* ==========================================================================
+   15. THEME-SPECIFIC TOOLTIPS
+   ========================================================================== */
+
+.tooltip {
+    background: var(--bg-overlay);
+    backdrop-filter: blur(8px);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-2) var(--spacing-3);
+    font-size: var(--text-sm);
+    box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .tooltip {
+    background: rgba(20, 8, 14, 0.95);
+}
+
+/* ==========================================================================
+   16. THEME-SPECIFIC ALERTS & NOTIFICATIONS
+   ========================================================================== */
+
+.alert {
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+    border-left: 4px solid;
+    background: var(--bg-secondary);
+}
+
+.alert-info {
+    border-left-color: var(--primary-400);
+    background: rgba(51, 101, 138, 0.1);
+}
+
+.alert-success {
+    border-left-color: #10B981;
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.alert-warning {
+    border-left-color: #F59E0B;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+.alert-danger {
+    border-left-color: #EF4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+[data-theme="dark"] .alert-info {
+    background: rgba(170, 68, 101, 0.15);
+}
+
+/* ==========================================================================
+   17. THEME-SPECIFIC PROGRESS BARS
+   ========================================================================== */
+
+.progress-bar {
+    background: var(--bg-tertiary);
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--accent-300), var(--accent-100));
+    border-radius: var(--radius-full);
+    transition: width 1.2s cubic-bezier(0.22, 0.97, 0.36, 1.02);
+    position: relative;
+}
+
+/* Shimmer effect on progress fill */
+.progress-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shimmerProgress 2s infinite;
+}
+
+/* ==========================================================================
+   18. THEME-SPECIFIC PAGINATION
+   ========================================================================== */
+
+.pagination {
+    display: flex;
+    gap: var(--spacing-2);
+    justify-content: center;
+}
+
+.page-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+.page-link:hover,
+.page-link.active {
+    background: var(--primary-400);
+    color: white;
+}
+
+[data-theme="dark"] .page-link:hover,
+[data-theme="dark"] .page-link.active {
+    background: var(--primary-100);
+}
+
+/* ==========================================================================
+   19. THEME-SPECIFIC BADGES & TAGS
+   ========================================================================== */
+
+.tag {
+    display: inline-block;
+    padding: var(--spacing-1) var(--spacing-3);
+    background: var(--bg-tertiary);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-secondary);
+}
+
+.tag-primary {
+    background: var(--primary-400);
+    color: white;
+}
+
+.tag-accent {
+    background: var(--accent-300);
+    color: white;
+}
+
+/* ==========================================================================
+   20. THEME-SPECIFIC DROPDOWNS
+   ========================================================================== */
+
+.dropdown-menu {
+    background: var(--bg-glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--border-light);
+}
+
+[data-theme="light"] .dropdown-menu {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background: rgba(20, 8, 14, 0.95);
+}
+
+.dropdown-menu a {
+    color: var(--text-primary);
+}
+
+.dropdown-menu a:hover {
+    background: var(--primary-400);
+    color: white;
+}
+
+/* ==========================================================================
+   21. THEME-SPECIFIC ACCORDION
+   ========================================================================== */
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-light);
+}
+
+.accordion-header {
+    padding: var(--spacing-4);
+    cursor: pointer;
+    font-weight: var(--font-weight-semibold);
+    transition: background var(--transition-fast);
+}
+
+.accordion-header:hover {
+    background: rgba(51, 101, 138, 0.05);
+}
+
+[data-theme="dark"] .accordion-header:hover {
+    background: rgba(170, 68, 101, 0.1);
+}
+
+.accordion-content {
+    padding: var(--spacing-4);
+    display: none;
+}
+
+.accordion-content.active {
+    display: block;
+}
+
+/* ==========================================================================
+   22. THEME-SPECIFIC CARD HOVER EFFECTS
+   ========================================================================== */
+
+.card-hover {
+    transition: all var(--transition-base);
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+}
+
+[data-theme="light"] .card-hover:hover {
+    box-shadow: var(--shadow-xl), 0 0 0 1px var(--primary-100);
+}
+
+[data-theme="dark"] .card-hover:hover {
+    box-shadow: var(--shadow-xl), 0 0 0 1px var(--primary-200);
+}
+
+/* ==========================================================================
+   23. THEME-SPECIFIC FLOATING ACTION BUTTON
+   ========================================================================== */
+
+.fab {
+    position: fixed;
+    bottom: var(--spacing-6);
+    right: var(--spacing-6);
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-full);
+    background: var(--gradient-button);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-base);
+    cursor: pointer;
+    z-index: var(--z-fixed);
+}
+
+.fab:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-xl);
+}
+
+/* ==========================================================================
+   24. THEME-SPECIFIC SKELETON LOADERS
+   ========================================================================== */
+
+.skeleton {
+    background: linear-gradient(90deg, var(--bg-tertiary) 25%, var(--bg-secondary) 50%, var(--bg-tertiary) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+[data-theme="dark"] .skeleton {
+    background: linear-gradient(90deg, #2A1120 25%, #1C0B19 50%, #2A1120 75%);
+    background-size: 200% 100%;
+}
+
+/* ==========================================================================
+   25. THEME-SPECIFIC VIDEO/EMBED OVERLAYS
+   ========================================================================== */
+
+.video-overlay {
+    background: var(--overlay-dark);
+}
+
+/* ==========================================================================
+   26. THEME-SPECIFIC QUOTE BLOCKS
+   ========================================================================== */
+
+blockquote {
+    border-left: 4px solid var(--primary-400);
+    padding: var(--spacing-4) var(--spacing-6);
+    margin: var(--spacing-6) 0;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-style: italic;
+}
+
+[data-theme="dark"] blockquote {
+    border-left-color: var(--primary-100);
+}
+
+/* ==========================================================================
+   27. THEME-SPECIFIC HR (HORIZONTAL RULE)
+   ========================================================================== */
+
+hr {
+    border: none;
+    height: 2px;
+    background: var(--gradient-border);
+    margin: var(--spacing-8) 0;
+}
+
+/* ==========================================================================
+   28. THEME-SPECIFIC ERROR MESSAGES
+   ========================================================================== */
+
+.error-message {
+    color: #EF4444;
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-1);
+}
+
+/* ==========================================================================
+   29. THEME-SPECIFIC SUCCESS MESSAGES
+   ========================================================================== */
+
+.success-message {
+    color: #10B981;
+    font-size: var(--text-sm);
+    margin-top: var(--spacing-1);
+}
+
+/* ==========================================================================
+   30. THEME-SPECIFIC ANIMATIONS FOR PAGE TRANSITIONS
+   ========================================================================== */
+
+.page-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.4s, transform 0.4s;
+}
+
+.page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* ==========================================================================
+   31. THEME-SPECIFIC TOGGLE SWITCH
+   ========================================================================== */
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-tertiary);
+    transition: var(--transition-base);
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary-400);
+    transition: var(--transition-base);
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+[data-theme="dark"] .slider:before {
+    background-color: var(--primary-100);
+}
+
+[data-theme="dark"] .progress-fill {
+    background: linear-gradient(90deg, var(--primary-100), var(--accent-200));
+}
+
+/* ==========================================================================
+   32. THEME-SPECIFIC RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    [data-theme="light"] body {
+        background: linear-gradient(135deg, #FFFFFF, #E3F2FD);
+    }
+    
+    [data-theme="dark"] body {
+        background: linear-gradient(135deg, #14080E, #1C0B19);
+    }
+}
+
+/* ==========================================================================
+   33. PRINT THEME OVERRIDES
+   ========================================================================== */
+
+@media print {
+    [data-theme="light"],
+    [data-theme="dark"] {
+        --bg-primary: white;
+        --bg-secondary: white;
+        --text-primary: black;
+        --text-secondary: #333;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* ==========================================================================
+   END OF THEME.CSS
+   ========================================================================== */

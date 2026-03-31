@@ -1,0 +1,482 @@
+{
+  "world": {
+    "name": "Kretos",
+    "description": "A fractured world born from the remnants of a cosmic war between primordial forces. Magic, technology, and divine will coexist in uneasy balance.",
+    "cosmology": {
+      "primordialForces": ["Order", "Chaos"],
+      "sundering": "Millennia ago, a catastrophic imbalance nearly destroyed Kretos. The Primordial Deity of Life and Death intervened, sealing the rifts."
+    },
+    "kingdoms": [
+      {
+        "id": 1,
+        "name": "Aethelgard",
+        "region": "Celestial West",
+        "description": "Mountainous, forested, steeped in divine magic. Home to angels, elves, and holy orders.",
+        "image": "assets/images/kingdoms/aethelgard.jpg",
+        "races": ["Angels", "Elves", "Dragon-blooded", "Dwarves"]
+      },
+      {
+        "id": 2,
+        "name": "Nyxara",
+        "region": "Shadow East",
+        "description": "Land of eternal twilight, haunted forests, subterranean labyrinths. Strongholds of vampires, necromancers, shadow creatures.",
+        "image": "assets/images/kingdoms/nyxara.jpg",
+        "races": ["Vampires", "Revenants", "Necromancers", "Shadow Elves", "Monsters"]
+      },
+      {
+        "id": 3,
+        "name": "Flamma",
+        "region": "Southern Firelands",
+        "description": "Volcanic islands, deserts, sun-scorched plains. Birthplace of fire spirits, phoenixes, sun-worshipping empires.",
+        "image": "assets/images/kingdoms/flamma.jpg",
+        "races": ["Fire Giants", "Sun-touched Humans", "Phoenix-kin", "Salamanders"]
+      },
+      {
+        "id": 4,
+        "name": "Glaciar",
+        "region": "Frozen North",
+        "description": "Endless tundra, ice-capped peaks, frozen sea of Niflheim. Realm of frost giants, ice wraiths, eternal winter.",
+        "image": "assets/images/kingdoms/glaciar.jpg",
+        "races": ["Frost Giants", "Yeti", "Ice Elves", "Northern Humans"]
+      },
+      {
+        "id": 5,
+        "name": "Mekhanika",
+        "region": "Central Industrial Belt",
+        "description": "Sprawling urban landscape where magic meets technology. Steam, cybernetics, alchemy define this region.",
+        "image": "assets/images/kingdoms/mekhanika.jpg",
+        "races": ["Humans", "Cyborgs", "AIs", "Golems", "Steampunk Inventors"]
+      },
+      {
+        "id": 6,
+        "name": "The Wild Zones",
+        "region": "Unaligned",
+        "description": "Vast untamed lands—jungles, deserts, ancient forests—where dinosaurs roam, beasts dwell, hermits train.",
+        "image": "assets/images/kingdoms/wildzones.jpg",
+        "races": ["Various"]
+      }
+    ],
+    "factions": [
+      {
+        "id": 1,
+        "name": "Celestial Order",
+        "alignment": "Lawful Good",
+        "description": "Preserve order, enforce divine law, protect against chaos.",
+        "image": "assets/images/factions/celestial.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Shadow Accord",
+        "alignment": "Chaotic Evil",
+        "description": "Embrace chaos, freedom, power of darkness.",
+        "image": "assets/images/factions/shadow.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Forge Pact",
+        "alignment": "Neutral",
+        "description": "Advance technology, invention, transhumanism.",
+        "image": "assets/images/factions/forge.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Natural Balance",
+        "alignment": "Neutral Good",
+        "description": "Preserve nature, elements, old ways.",
+        "image": "assets/images/factions/nature.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Underworld Syndicates",
+        "alignment": "Chaotic Neutral",
+        "description": "Control crime, information, illicit trade.",
+        "image": "assets/images/factions/syndicate.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Unaffiliated",
+        "alignment": "True Neutral",
+        "description": "Act independently; often caught between factions.",
+        "image": "assets/images/factions/unaffiliated.jpg"
+      }
+    ],
+    "classes": [
+      {
+        "id": 1,
+        "name": "Warrior",
+        "type": "Physical",
+        "description": "Masters of melee combat, high strength and defense.",
+        "image": "assets/images/classes/warrior.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Mage",
+        "type": "Magical",
+        "description": "Wielders of arcane and elemental forces.",
+        "image": "assets/images/classes/mage.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Rogue",
+        "type": "Agility",
+        "description": "Stealthy assassins, rangers, spies.",
+        "image": "assets/images/classes/rogue.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Divine",
+        "type": "Support/Magic",
+        "description": "Holy warriors, clerics, inquisitors.",
+        "image": "assets/images/classes/divine.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Technomancer",
+        "type": "Hybrid",
+        "description": "Masters of technology, cybernetics, engineering.",
+        "image": "assets/images/classes/technomancer.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Primal",
+        "type": "Hybrid",
+        "description": "Beastmasters, elementalists, giants.",
+        "image": "assets/images/classes/primal.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Support/Wildcard",
+        "type": "Support",
+        "description": "Bards, healers, tacticians, gamblers.",
+        "image": "assets/images/classes/support.jpg"
+      }
+    ],
+    "monsterHierarchy": [
+      {
+        "level": 1,
+        "name": "Minor Creatures",
+        "examples": ["Imps", "Goblins", "Lesser Undead", "Mechanical Spiders"]
+      },
+      {
+        "level": 2,
+        "name": "Common Threats",
+        "examples": ["Hellhounds", "Vampire Spawn", "Stone Golems", "Frost Wraiths"]
+      },
+      {
+        "level": 3,
+        "name": "Elite Monsters",
+        "examples": ["Oni", "Necromancer Lords", "Fire Elementals", "Cyber-Beasts"]
+      },
+      {
+        "level": 4,
+        "name": "Bosses",
+        "examples": ["Abyssal Dragons", "Primordial Elementals", "Titan Constructs", "Elder Vampires"]
+      },
+      {
+        "level": 5,
+        "name": "Cataclysmic Threats",
+        "examples": ["Sundering Echoes", "Primordial Chaos Spawn", "World-Eaters"]
+      }
+    ]
+  },
+  "heroes": [
+    {
+      "id": 1,
+      "name": "VVitch X‑abar",
+      "titles": ["The Demon King", "Fallen Prince of the Abyss", "Lord of Corrupted Glory", "The Inverted Hunter"],
+      "rank": "SS-Rank",
+      "level": 295,
+      "nicknames": ["Xabar", "The Violet Tyrant", "He Who Walks in Silence"],
+      "shortDescription": "A terrifying inversion of the holy hunter—a being who traded celestial light for abyssal dominion, his presence a monument to corrupted glory. Once a sworn brother to the hunter Alucard, X‑abar now rules as Demon King, wielding the Soul Reaver and commanding the hellhound Malphas.",
+      "fullDescription": "In the celestial order, X‑abar was once a holy hunter, brother-in-arms to Alucard, the famed vampire hunter. They were inseparable, sworn to protect the realm from darkness. But during a cataclysmic battle against a primordial demon, X‑abar was betrayed—not by Alucard, but by the very heavens that deemed him expendable. Left to die in the void between worlds, he was found by the Abyss itself, which offered him power in exchange for his celestial light. He accepted, his skin turning violet, his eyes igniting with molten amber. Now he rules a demonic kingdom, believing that only through absolute darkness can the world be truly remade. He awaits the day when Alucard will come to face him—not as enemies, but as two halves of a shattered whole.",
+      "appearance": {
+        "race": "Corrupted Celestial / Demon",
+        "faceShape": "Sharp, aristocratic, with high prominent brow and strong jawline",
+        "nose": "Straight, refined",
+        "hairStyle": "Long, curling, utterly untamed, spilling over shoulders and down back",
+        "hairColor": "Pure white",
+        "eyeColor": "Molten amber, burning like dying stars",
+        "facialStructure": "High brow, angular jawline, timeless quality carved by fall from grace",
+        "skinTone": "Pale ethereal violet with internal luminescence, smooth porcelain texture",
+        "distinguishingFeatures": "Vertical scar from brow to cheekbone (left side), skin fused with obsidian armor in places, jagged magenta crystal pulsing in sternum"
+      },
+      "colorPalette": {
+        "primary": ["Violet", "Obsidian Black"],
+        "secondary": ["Magenta", "Tarnished Silver"],
+        "accent": ["Amber", "Charcoal"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Obsidian cuirass fused to skin, open at sternum revealing magenta soul-stone; tattered deep violet cloak with frayed, smoking edges",
+          "arms": "Heavy articulated gauntlets of blackened steel, asymmetrical: left sleek for parrying, right monstrously thick merging with greatsword hilt; knuckles tipped with jagged claws dripping magenta mist",
+          "shoulders": "Twisted skeletal shoulder pauldrons forged from slain celestial's bones, crowned with curved horn-like spikes framing head like dark halo",
+          "neck": "High collar of tattered cloak",
+          "waist": "Broad leather belt etched with infernal runes, from which hang layered scale-like tassets"
+        },
+        "lower": {
+          "hips": "Layered scale tassets, dark charcoal, edges lined with magenta glow",
+          "legs": "Fitted midnight-black trousers",
+          "feet": "Heavy knee-high boots of obsidian leather, soles reinforced with spurs of dark iron that crack ground with each step"
+        },
+        "headwear": "None (hair and horns serve as crown)",
+        "accessories": ["Twisted skeletal pauldrons with horn spikes", "Belt with infernal runes", "Soul-stone at sternum"],
+        "distinctFeatures": "Armor fused to skin; soul-stone pulsing with heartbeat; perpetual cold aura"
+      },
+      "armorType": "Heavy",
+      "bodyType": {
+        "upper": {
+          "chest": "Thick, powerful, dense corded muscle",
+          "arms": "Heavy sinewy, built for cleaving legions",
+          "shoulders": "Broad, warlord-like",
+          "neck": "Strong, columnar",
+          "waist": "Narrow relative to shoulders"
+        },
+        "lower": {
+          "hips": "Athletic, tapering",
+          "legs": "Powerful, sheathed in fitted trousers and heavy boots",
+          "feet": "Large, heavy-booted"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Soul Reaver",
+          "type": "Greatsword",
+          "look": "Nearly as tall as its master, blade forged from volcanic glass shards and compressed void energy, surface chaotic swirl of deep purple and obsidian black. A jagged fissure along the fuller glows with pulsating magenta light, as if the blade is a living wound in reality. Crossguard of interlocking skeletal demon fingers fused together in mockery of prayer, each fingertip tipped with a tiny weeping eye that leaks shadows. Hilt wrapped in tanned hide of a fallen angel, grip warm to the touch. When drawn, emits low harmonic hum that resonates in bones, air shimmers with heat haze.",
+          "aura": "Magenta and violet, with trailing shadows and heat distortion",
+          "colorPalette": ["Obsidian Black", "Deep Purple", "Magenta"],
+          "skills": {
+            "passive": [
+              { "name": "Soul Drain", "description": "Each strike absorbs a portion of the target's life force, healing the wielder for 5% of damage dealt. Against holy or light-aligned enemies, healing increased to 10%." },
+              { "name": "Void Resonance", "description": "The blade's harmonic hum reduces enemy magic resistance within 10 meters by 15%." }
+            ],
+            "active": [
+              { "name": "Abyssal Cleave", "description": "Sweeping attack that releases a wave of void energy in a 15-meter cone, dealing 200% physical damage and applying a slow for 3 seconds. Cooldown: 8 seconds." },
+              { "name": "Reality Rend", "description": "Thrust that tears a small rift at target location, dealing 150% physical damage and pulling enemies inward. Creates a 5-meter zone of instability for 5 seconds, dealing 50% damage per second. Cooldown: 12 seconds." }
+            ],
+            "ultimate": [
+              { "name": "Cataclysm", "description": "X‑abar channels the full power of the Soul Reaver, causing it to emit a deafening harmonic shriek. After 1.5 seconds, he unleashes a massive explosion of magenta void energy in a 25-meter radius, dealing 500% physical damage and stunning all enemies for 2 seconds. Cooldown: 90 seconds. Passive: Upon activation, absorbs all nearby enemy souls (up to 5) to reduce cooldown by 10 seconds per soul." }
+            ],
+            "special": [
+              { "name": "Soul Harvest", "description": "When an enemy dies within 10 meters, X‑abar absorbs their lingering essence, increasing his physical attack by 5% for 10 seconds. Stacks up to 5 times." }
+            ]
+          }
+        }
+      ],
+      "stats": {
+        "power": 9,
+        "strength": 10,
+        "offense": 9,
+        "defense": 8,
+        "stamina": 9,
+        "physicalAtk": 9,
+        "magicalAtk": 7,
+        "physDef": 8,
+        "magDef": 6,
+        "speed": 7,
+        "mana": 6,
+        "intelligence": 8,
+        "ratings": { "overall": 9.5, "notes": "Overwhelming physical prowess with demonic enhancements." }
+      },
+      "skills": [
+        { "name": "Abyssal Dominion", "type": "Passive", "description": "20% increased damage against holy-aligned enemies and reduces light damage by 15%." },
+        { "name": "Dark Pact", "type": "Active", "description": "Sacrifice 10% of current health to empower next attack for 50% bonus damage and bleed." },
+        { "name": "Infernal Charge", "type": "Active", "description": "Dash forward 12 meters, leaving a trail of burning shadow that deals 80% damage per second for 4 seconds." },
+        { "name": "Silent Finality", "type": "Special", "description": "When below 30% health, aura expands, slowing enemies by 40% and reducing vision. Triggers once every 120 seconds." }
+      ],
+      "lore": "In the celestial order, X‑abar was once a holy hunter, brother-in-arms to Alucard...",
+      "relationships": [
+        { "withHeroId": "Alucard", "type": "Former brother, now bitter rival", "description": "Once sworn brothers, now destined to clash." },
+        { "withHeroId": "Seraphine", "type": "Nemesis", "description": "The angel who hunts him, representing the light he rejected." }
+      ],
+      "mount": [
+        {
+          "name": "Malphas",
+          "type": "Hellhound",
+          "description": "Massive beast three times X‑abar's size, hide patchwork of charcoal grey and smoldering ember, obsidian spikes along spine, mane of black smoke, four amber eyes and a third lidless orb on brow that sees souls. Wings of pure shadow veined with magenta lightning.",
+          "abilities": ["Soul Sight – can detect hidden enemies and see through illusions.", "Shadow Flight – can fly at high speeds, leaving twilight in its wake.", "Molten Breath – exhales choking ash and ember that deals fire damage and blinds."]
+        }
+      ],
+      "pet": [],
+      "factionId": 2,
+      "kingdomId": 2,
+      "classId": 1,
+      "specialty": "Melee juggernaut with high sustain, area control, and anti-holy capabilities.",
+      "images": {
+        "iconImage": "assets/images/heroes/vvitch_X‑abar/icon.png",
+        "normalImage": "assets/images/heroes/vvitch_X‑abar/normal.png",
+        "realImage": "assets/images/heroes/vvitch_X‑abar/real.png",
+        "90sImage": "assets/images/heroes/vvitch_X‑abar/90s.png",
+        "fullBodyImage": "assets/images/heroes/vvitch_X‑abar/full.png",
+        "halfImage": "assets/images/heroes/vvitch_X‑abar/half.png",
+        "heropng": "assets/images/heroes/vvitch_X‑abar/hero.png",
+        "herobg": "assets/images/heroes/vvitch_X‑abar/bg.png",
+        "gallery": [
+          "assets/images/heroes/vvitch_X‑abar/1.png",
+          "assets/images/heroes/vvitch_X‑abar/2.png",
+          "assets/images/heroes/vvitch_X‑abar/3.png",
+          "assets/images/heroes/vvitch_X‑abar/4.png",
+          "assets/images/heroes/vvitch_X‑abar/5.png"
+        ]
+      },
+      "sound": { "theme": "", "dialogue": {}, "sfx": "" }
+    }
+  ],
+  "monsters": [
+    {
+      "id": 1,
+      "name": "Malphas",
+      "type": "Hellhound",
+      "rank": "F-Rank",
+      "level": 10,
+      "foundIn": ["Nyxara", "Abyssal Plains"],
+      "nicknames": ["The Soul Seer", "Shadow Wing"],
+      "shortDescription": "A massive hellhound bound to the Demon King X‑abar, with four amber eyes and a third lidless orb that sees souls.",
+      "fullDescription": "Malphas was born from the first shadow cast by the Abyss. Bound to X‑abar by a pact older than memory, he serves as both steed and guardian. His third eye never closes, always watching for threats to his master.",
+      "appearance": {
+        "race": "Demonic Beast",
+        "faceShape": "Canine, massive",
+        "hairColor": "Smoke black",
+        "eyeColor": "Four amber eyes, third eye molten gold",
+        "skinTone": "Charcoal grey with smoldering ember patches",
+        "distinguishingFeatures": "Third eye on brow, obsidian spikes, wings of pure shadow"
+      },
+      "colorPalette": { "primary": ["Charcoal Grey", "Smoldering Ember"], "secondary": ["Black", "Magenta"], "accent": ["Gold"] },
+      "attire": { "upper": null, "lower": null, "headwear": null, "accessories": [], "distinctFeatures": "Runic brands on flanks" },
+      "bodyType": { "upper": { "chest": "Massive, muscular" }, "lower": { "legs": "Muscular, clawed" } },
+      "stats": {
+        "power": 8, "strength": 9, "offense": 8, "defense": 7, "stamina": 8,
+        "physicalAtk": 8, "magicalAtk": 6, "physDef": 7, "magDef": 5,
+        "speed": 7, "mana": 4, "intelligence": 5,
+        "ratings": { "overall": 7.8, "notes": "Powerful physical attacker." }
+      },
+      "skills": [
+        { "name": "Soul Sight", "type": "Passive", "description": "Can see invisible and hidden enemies." },
+        { "name": "Shadow Flight", "type": "Active", "description": "Gains increased speed and evasion." },
+        { "name": "Molten Breath", "type": "Active", "description": "Cone of fire and blinding ash." },
+        { "name": "Abyssal Howl", "type": "Ultimate", "description": "Stuns and reveals all enemies." }
+      ],
+      "lore": "Malphas was born from the first shadow cast by the Abyss. Bound to X‑abar by a pact older than memory...",
+      "relationships": [{ "withHeroId": 1, "type": "Bonded to VVitch X‑abar" }],
+      "images": {
+        "iconImage": "assets/images/monsters/malphas/icon.png",
+        "normalImage": "assets/images/monsters/malphas/normal.png",
+        "realImage": "assets/images/monsters/malphas/real.png",
+        "90sImage": "assets/images/monsters/malphas/90s.png",
+        "fullBodyImage": "assets/images/monsters/malphas/full.png",
+        "halfImage": "assets/images/monsters/malphas/half.png",
+        "monsterpng": "assets/images/monsters/malphas/hero.png",
+        "monsterbg": "assets/images/monsters/malphas/bg.png",
+        "gallery": [
+          "assets/images/monsters/malphas/1.png",
+          "assets/images/monsters/malphas/2.png",
+          "assets/images/monsters/malphas/3.png",
+          "assets/images/monsters/malphas/4.png",
+          "assets/images/monsters/malphas/5.png"
+        ]
+      },
+      "sound": { "theme": "", "dialogue": {}, "sfx": "" }
+    },
+    {
+      "id": 2,
+      "name": "Abyssal Dragon",
+      "type": "Dragon",
+      "rank": "SSS-Rank(Boss)",
+      "level": 300,
+      "foundIn": ["Abyssal Rifts", "Nyxara"],
+      "nicknames": ["World-Eater", "Scale of the Void"],
+      "shortDescription": "A primordial dragon corrupted by abyssal energy; its breath unravels reality.",
+      "fullDescription": "Born from the Sundering, Abyssal Dragons are the oldest and most powerful of the corrupted beasts. They are said to be fragments of the primordial chaos itself, bound into draconic form. Their roar can shatter mountains, and their gaze brings madness.",
+      "appearance": {
+        "race": "Corrupted Dragon",
+        "faceShape": "Reptilian, massive",
+        "eyeColor": "Void black with magenta pupils",
+        "skinTone": "Obsidian with purple veins",
+        "distinguishingFeatures": "Six wings, tail maw"
+      },
+      "colorPalette": { "primary": ["Obsidian Black", "Void Purple"], "secondary": ["Magenta"], "accent": ["Silver"] },
+      "attire": null,
+      "bodyType": { "upper": { "chest": "Barrel-like", "shoulders": "Wing joints" }, "lower": { "legs": "Four powerful legs" } },
+      "stats": {
+        "power": 10, "strength": 10, "offense": 9, "defense": 9, "stamina": 10,
+        "physicalAtk": 9, "magicalAtk": 9, "physDef": 9, "magDef": 8,
+        "speed": 6, "mana": 9, "intelligence": 7,
+        "ratings": { "overall": 9.5, "notes": "Cataclysmic threat." }
+      },
+      "skills": [
+        { "name": "Void Breath", "type": "Active", "description": "Cone of disintegration." },
+        { "name": "Gravity Well", "type": "Active", "description": "Pulls enemies into a vortex." },
+        { "name": "Reality Rend", "type": "Ultimate", "description": "Tears a rift in space, dealing massive damage and summoning void spawn." }
+      ],
+      "lore": "Born from the Sundering, Abyssal Dragons are the oldest and most powerful of the corrupted beasts...",
+      "relationships": [],
+      "images": {
+        "iconImage": "assets/images/monsters/malakar/icon.png",
+        "normalImage": "assets/images/monsters/malakar/normal.png",
+        "realImage": "assets/images/monsters/malakar/real.png",
+        "90sImage": "assets/images/monsters/malakar/90s.png",
+        "fullBodyImage": "assets/images/monsters/malakar/full.png",
+        "halfImage": "assets/images/monsters/malakar/half.png",
+        "monsterpng": "assets/images/monsters/malakar/hero.png",
+        "monsterbg": "assets/images/monsters/malakar/bg.png",
+        "gallery": [
+          "assets/images/monsters/malakar/1.png",
+          "assets/images/monsters/malakar/2.png",
+          "assets/images/monsters/malakar/3.png",
+          "assets/images/monsters/malakar/4.png",
+          "assets/images/monsters/malakar/5.png"
+        ]
+      },
+      "sound": { "theme": "", "dialogue": {}, "sfx": "" }
+    }
+  ],
+  "creators": [
+    {
+      "id": 1,
+      "name": "Aria Stone",
+      "role": "Lead Worldbuilder & Writer",
+      "avatar": "assets/images/creators/_aria.jpg",
+      "bio": "Aria has been crafting fantasy worlds since she could hold a pencil. She dreamed Kretos into existence, weaving its history, cosmology, and the delicate balance between Order and Chaos.",
+      "qa": [
+        { "question": "What inspired the Sundering?", "answer": "I wanted a world where magic itself was fractured—a scar left by a war between fundamental forces. It made every conflict feel cosmic." },
+        { "question": "What's your favorite hidden detail in Kretos?", "answer": "The fact that the stars in the sky are actually the eyes of sleeping primordial beings. When they wake, the world changes." },
+        { "question": "If you could visit any kingdom, which would it be?", "answer": "Mekhanika! I'm a sucker for steampunk and the idea of combining magic with clockwork." }
+      ],
+      "motto": "Build worlds that breathe.",
+      "favHero": "VVitch X‑abar",
+      "favMonster": "Malphas",
+      "reason": "X‑abar's fall from grace is tragic and epic; Malphas is the perfect shadow companion."
+    },
+    {
+      "id": 2,
+      "name": "Marcus Vane",
+      "role": "Art Director & Concept Artist",
+      "avatar": "assets/images/creators/_marcus.jpg",
+      "bio": "Marcus brings Kretos to life through vivid illustrations and character designs. His dark, ethereal style captures the essence of the world's dual nature.",
+      "qa": [
+        { "question": "What was the most challenging design?", "answer": "The Abyssal Dragon. I had to balance terror with beauty—it had to feel like a nightmare you'd still want to look at." },
+        { "question": "Which hero was most fun to illustrate?", "answer": "VVitch X‑abar. The contrast between his celestial origins and demonic transformation gave me endless possibilities." },
+        { "question": "What's your favorite art tool?", "answer": "Digital painting with a textured brush that mimics old parchment. It adds history to every stroke." }
+      ],
+      "motto": "Let shadows tell the story.",
+      "favHero": "VVitch X‑abar",
+      "favMonster": "Abyssal Dragon",
+      "reason": "X‑abar's design is the perfect fusion of light and darkness; the dragon is a masterpiece of scale and dread."
+    },
+    {
+      "id": 3,
+      "name": "Luna Kai",
+      "role": "Lore Keeper & Narrative Designer",
+      "avatar": "assets/images/creators/_luna.jpg",
+      "bio": "Luna ensures every quest, faction, and character has a deep, interconnected story. She writes the legends that players will uncover.",
+      "qa": [
+        { "question": "What's the most ancient secret in Kretos?", "answer": "That the Primordial Deity of Life and Death is actually a dual entity, and the 'seal' of the Sundering was a sacrifice, not a victory." },
+        { "question": "Which faction is morally gray?", "answer": "The Forge Pact. Their pursuit of progress often leads to ethical dilemmas—they're not evil, just dangerously ambitious." },
+        { "question": "What advice do you give to aspiring writers?", "answer": "Write your world as if it's a character. Let it change, let it have flaws, and let its history influence everything." }
+      ],
+      "motto": "Every story is a thread in the tapestry.",
+      "favHero": "VVitch X‑abar",
+      "favMonster": "Malphas",
+      "reason": "X‑abar's journey from light to darkness is the core tragedy of Kretos; Malphas is his eternal shadow, loyal and fierce."
+    }
+  ]
+}
