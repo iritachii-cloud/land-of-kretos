@@ -130,6 +130,13 @@
                 "alignment": "True Neutral",
                 "description": "Act independently; often caught between factions.",
                 "image": "assets/images/factions/unaffiliated.jpg"
+            },
+            {
+                "id": 7,
+                "name": "NEW World",
+                "alignment": "Comming Soon",
+                "description": "Something is cooking...",
+                "image": "assets/images/dunnyimage.png"
             }
         ],
         "classes": [
