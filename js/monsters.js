@@ -846,6 +846,7 @@ class monstersPage {
     }
 
     closemonsterModal() {
+        document.body.classList.remove('modal-open');   // ✅ FIX: remove scroll lock
         if (this.fullscreenModal) {
             this.fullscreenModal.style.display = 'none';
             this.isModalOpen = false;
