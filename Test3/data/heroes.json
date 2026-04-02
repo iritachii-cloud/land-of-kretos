@@ -9,7 +9,7 @@
         "Lord of Corrupted Glory",
         "The Inverted Hunter"
       ],
-      "rank": "SS-Rank",
+      "rank": "SSS-Rank",
       "level": 295,
       "nicknames": [
         "Xabar",
@@ -31,16 +31,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Violet",
-          "Obsidian Black"
+          "#8A2BE2",
+          "#0B0B0B"
         ],
         "secondary": [
-          "Magenta",
-          "Tarnished Silver"
+          "#FF00FF",
+          "#8A8D8F"
         ],
         "accent": [
-          "Amber",
-          "Charcoal"
+          "#FFBF00",
+          "#36454F"
         ]
       },
       "attire": {
@@ -250,16 +250,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Neon Green",
-          "Neon Pink"
+          "#39FF14",
+          "#FF6EC7"
         ],
         "secondary": [
-          "Black",
-          "Sapphire Blue"
+          "#000000",
+          "#0F52BA"
         ],
         "accent": [
-          "Crimson",
-          "Chrome"
+          "#DC143C",
+          "#DBE2E9"
         ]
       },
       "attire": {
@@ -464,16 +464,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Deep Maroon",
-          "Charcoal Grey"
+          "#800000",
+          "#36454F"
         ],
         "secondary": [
-          "Silver",
-          "Pale White"
+          "#C0C0C0",
+          "#F9F9F9"
         ],
         "accent": [
-          "Crimson",
-          "Obsidian Black"
+          "#DC143C",
+          "#0B0B0B"
         ]
       },
       "attire": {

@@ -2,39 +2,41 @@
   "monsters": [
     {
       "id": 1,
-      "name": "Malphas",
-      "type": "Hellhound",
-      "rank": "F-Rank",
-      "level": 10,
+      "name": "Ursus Glacialis",
+      "type": "Frost Beast",
+      "rank": "SSS-Rank",
+      "level": 352,
       "foundIn": [
-        "Nyxara",
-        "Abyssal Plains"
+        "Glaciar",
+        "Frozen Sea of Niflheim"
       ],
       "nicknames": [
-        "The Soul Seer",
-        "Shadow Wing"
+        "The Frozen Emperor",
+        "Blue Doom Bear",
+        "Everfrost Roar"
       ],
-      "shortDescription": "A massive hellhound bound to the Demon King X‑abar, with four amber eyes and a third lidless orb that sees souls.",
-      "fullDescription": "Malphas was born from the first shadow cast by the Abyss. Bound to X‑abar by a pact older than memory, he serves as both steed and guardian. His third eye never closes, always watching for threats to his master.",
+      "shortDescription": "A colossal icy blue bear wreathed in demonic blue flames that freeze and burn simultaneously. Its mere presence drops the temperature to lethal extremes.",
+      "fullDescription": "Ursus Glacialis is a primordial frost titan said to have been born from the first blizzard that swept across Glaciar. Its fur is woven from eternal ice, and its paws blaze with a hellish blue flame that defies nature—freezing what it touches before immolating it. Territorial and fiercely aggressive, it answers only to the most primal forces of winter. When it unleashes its war cry, the very sky cracks with frost, and its defenses become nigh impenetrable.",
       "appearance": {
-        "race": "Demonic Beast",
-        "faceShape": "Canine, massive",
-        "hairColor": "Smoke black",
-        "eyeColor": "Four amber eyes, third eye molten gold",
-        "skinTone": "Charcoal grey with smoldering ember patches",
-        "distinguishingFeatures": "Third eye on brow, obsidian spikes, wings of pure shadow"
+        "race": "Frost Beast",
+        "faceShape": "Ursine, massive, with a short snout and jagged ice fangs",
+        "hairColor": "Icy blue-white",
+        "eyeColor": "Glacial white with slitted pupils of azure flame",
+        "skinTone": "Pale blue hide beneath the fur",
+        "distinguishingFeatures": "Demonic blue fire aura around paws and maw; icicles protrude from shoulders; eyes glow with frozen malice"
       },
       "colorPalette": {
         "primary": [
-          "Charcoal Grey",
-          "Smoldering Ember"
+          "Icy Blue",
+          "Arctic White"
         ],
         "secondary": [
-          "Black",
-          "Magenta"
+          "Deep Sapphire",
+          "Frost Grey"
         ],
         "accent": [
-          "Gold"
+          "Azure Flame",
+          "Cobalt"
         ]
       },
       "attire": {
@@ -42,84 +44,91 @@
         "lower": null,
         "headwear": null,
         "accessories": [],
-        "distinctFeatures": "Runic brands on flanks"
+        "distinctFeatures": "Natural ice armor plating on back and forelimbs; runic frost markings along spine"
       },
       "bodyType": {
         "upper": {
-          "chest": "Massive, muscular"
+          "chest": "Massively muscular, covered in thick frost fur"
         },
         "lower": {
-          "legs": "Muscular, clawed"
+          "legs": "Tree-trunk limbs ending in clawed paws wreathed in blue flame"
         }
       },
       "stats": {
-        "power": 8,
-        "strength": 9,
-        "offense": 8,
-        "defense": 7,
-        "stamina": 8,
-        "physicalAtk": 8,
-        "magicalAtk": 6,
-        "physDef": 7,
-        "magDef": 5,
-        "speed": 7,
-        "mana": 4,
-        "intelligence": 5,
+        "power": 10,
+        "strength": 10,
+        "offense": 9,
+        "defense": 10,
+        "stamina": 10,
+        "physicalAtk": 10,
+        "magicalAtk": 9,
+        "physDef": 10,
+        "magDef": 9,
+        "speed": 6,
+        "mana": 8,
+        "intelligence": 7,
         "ratings": {
-          "overall": 7.8,
-          "notes": "Powerful physical attacker."
+          "overall": 9.3,
+          "notes": "A cataclysmic threat with overwhelming physical power and unmatched defense; slow but devastating."
         }
       },
       "skills": [
         {
-          "name": "Soul Sight",
+          "name": "Absolute Zero Aura",
           "type": "Passive",
-          "description": "Can see invisible and hidden enemies."
+          "description": "Surrounding area freezes over; enemies within range suffer reduced speed and take frost damage over time."
         },
         {
-          "name": "Shadow Flight",
+          "name": "Demonic Frostfire Claw",
           "type": "Active",
-          "description": "Gains increased speed and evasion."
+          "description": "Swipes with paws engulfed in blue flame; deals hybrid frost and fire damage, causing both slow and burn."
         },
         {
-          "name": "Molten Breath",
+          "name": "Glacial War Cry",
           "type": "Active",
-          "description": "Cone of fire and blinding ash."
+          "description": "Unleashes a deafening roar that boosts own defense by 50% and inflicts fear on all nearby enemies."
         },
         {
-          "name": "Abyssal Howl",
+          "name": "Eternal Winter's Wrath",
           "type": "Ultimate",
-          "description": "Stuns and reveals all enemies."
+          "description": "Summons a blizzard of blue fire and ice shards, dealing massive area damage and freezing all targets for 5 seconds."
         }
       ],
-      "lore": "Malphas was born from the first shadow cast by the Abyss. Bound to X‑abar by a pact older than memory...",
+      "lore": "Legends say Ursus Glacialis was the first guardian of the Frozen Sea, placed there by ancient primordials to keep the rift between worlds sealed. Over millennia, the demonic energies seeping from Nyxara corrupted its icy core, birthing the blue flames that now define its fury. It answers to no king or faction, only the raw call of winter. Those who seek to tame or slay it often never return, their bodies found frozen mid‑charge, wearing expressions of sheer terror.",
       "relationships": [
         {
-          "withHeroId": 1,
-          "type": "Bonded to VVitch X‑abar"
+          "withHeroId": null,
+          "type": "Nemesis of Fire Giants of Flamma"
+        },
+        {
+          "withHeroId": null,
+          "type": "Unaligned – Protector of Niflheim"
         }
       ],
       "images": {
-        "iconImage": "assets/images/monsters/malphas/icon.png",
-        "normalImage": "assets/images/monsters/malphas/normal.png",
-        "realImage": "assets/images/monsters/malphas/real.png",
-        "90sImage": "assets/images/monsters/malphas/90s.png",
-        "fullBodyImage": "assets/images/monsters/malphas/full.png",
-        "halfImage": "assets/images/monsters/malphas/half.png",
-        "monsterpng": "assets/images/monsters/malphas/hero.png",
-        "monsterbg": "assets/images/monsters/malphas/bg.png",
+        "iconImage": "assets/images/monsters/ursus_glacialis/icon.png",
+        "normalImage": "assets/images/monsters/ursus_glacialis/normal.png",
+        "realImage": "assets/images/monsters/ursus_glacialis/real.png",
+        "90sImage": "assets/images/monsters/ursus_glacialis/90s.png",
+        "fullBodyImage": "assets/images/monsters/ursus_glacialis/full.png",
+        "halfImage": "assets/images/monsters/ursus_glacialis/half.png",
+        "monsterpng": "assets/images/monsters/ursus_glacialis/hero.png",
+        "monsterbg": "assets/images/monsters/ursus_glacialis/bg.png",
         "gallery": [
-          "assets/images/monsters/malphas/1.png",
-          "assets/images/monsters/malphas/2.png",
-          "assets/images/monsters/malphas/3.png",
-          "assets/images/monsters/malphas/4.png",
-          "assets/images/monsters/malphas/5.png"
+          "assets/images/monsters/ursus_glacialis/1.png",
+          "assets/images/monsters/ursus_glacialis/2.png",
+          "assets/images/monsters/ursus_glacialis/3.png",
+          "assets/images/monsters/ursus_glacialis/4.png",
+          "assets/images/monsters/ursus_glacialis/5.png"
         ]
       },
       "sound": {
-        "theme": "",
-        "dialogue": {},
-        "sfx": ""
+        "theme": "assets/sounds/monsters/ursus_glacialis/theme.mp3",
+        "dialogue": {
+          "roar": "assets/sounds/monsters/ursus_glacialis/roar.wav",
+          "idle_growl": "assets/sounds/monsters/ursus_glacialis/growl.wav"
+        },
+        "sfx": "assets/sounds/monsters/ursus_glacialis/sfx/"
       }
     },
     {
@@ -225,6 +234,407 @@
         "theme": "",
         "dialogue": {},
         "sfx": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Fu-Kong",
+      "type": "Fire Beast",
+      "rank": "S-Rank",
+      "level": 92,
+      "foundIn": [
+        "Flamma",
+        "The Wild Zones"
+      ],
+      "nicknames": [
+        "The Burning Sentinel",
+        "Spear of Emberwood",
+        "Verdant Flame"
+      ],
+      "shortDescription": "A massive gorilla wreathed in green‑yellow flames, wielding a living fire spear bestowed by nature itself. Guardian of the primordial flame that burns without consuming.",
+      "fullDescription": "Fu-Kong was once a simple mountain gorilla until it discovered a dying ember within the heart of an ancient tree in Flamma. That ember—a gift from the primordial spirit of fire—merged with the beast, igniting its fur with verdant flames that burn only enemies. The tree’s last act was to shape itself into a spear, forever bound to Fu-Kong’s grasp. Now the creature patrols the volcanic jungles, challenging any who would exploit nature’s fire for destruction. Its flames flicker between emerald and gold, a symbol of life and purification.",
+      "appearance": {
+        "race": "Fire Beast",
+        "faceShape": "Gorilla, broad and muscular with a pronounced brow ridge",
+        "hairColor": "Jet black fur with streaks of green‑yellow flame",
+        "eyeColor": "Fiery gold with slit pupils",
+        "skinTone": "Dark grey skin beneath the fur",
+        "distinguishingFeatures": "Fur constantly ablaze with green‑yellow fire that does not burn itself; a living spear of smoldering wood always carried; chest bears a glowing ember mark"
+      },
+      "colorPalette": {
+        "primary": [
+          "Black Fur",
+          "Verdant Flame"
+        ],
+        "secondary": [
+          "Ember Gold",
+          "Charred Wood"
+        ],
+        "accent": [
+          "Amber",
+          "Ash Grey"
+        ]
+      },
+      "attire": {
+        "upper": null,
+        "lower": null,
+        "headwear": null,
+        "accessories": [],
+        "distinctFeatures": "Woven vine bracelets on wrists that glow with embers; the spear itself is part of its being"
+      },
+      "bodyType": {
+        "upper": {
+          "chest": "Barrel‑chested, heavily muscled"
+        },
+        "lower": {
+          "legs": "Thick, powerful, knuckle‑walking adapted"
+        }
+      },
+      "stats": {
+        "power": 8,
+        "strength": 9,
+        "offense": 8,
+        "defense": 7,
+        "stamina": 8,
+        "physicalAtk": 9,
+        "magicalAtk": 7,
+        "physDef": 7,
+        "magDef": 6,
+        "speed": 6,
+        "mana": 6,
+        "intelligence": 5,
+        "ratings": {
+          "overall": 7.4,
+          "notes": "Devastating physical fighter with unique fire attacks. Spear extends reach beyond typical beast."
+        }
+      },
+      "skills": [
+        {
+          "name": "Emberwood Spear",
+          "type": "Weapon",
+          "description": "A living spear that extends and ignites with green‑yellow flames. Attacks have bonus fire damage and can impale enemies."
+        },
+        {
+          "name": "Verdant Blaze",
+          "type": "Active",
+          "description": "Sweeps the spear in a wide arc, leaving a trail of flames that heal nearby allies and burn foes."
+        },
+        {
+          "name": "Primal Fury",
+          "type": "Active",
+          "description": "Beats chest and roars, increasing attack speed and strength for a short duration."
+        },
+        {
+          "name": "Nature’s Gift",
+          "type": "Ultimate",
+          "description": "Plants the spear into the ground, summoning a ring of green‑gold fire that grants allies fire resistance and deals heavy area damage to enemies."
+        }
+      ],
+      "lore": "The volcano jungles of Flamma are said to hold a sacred fire—one that does not consume but renews. Fu‑Kong was the first creature to prove worthy of this flame. It now serves as an impartial guardian, attacking poachers, reckless mages, and anyone who seeks to steal the ember. Those who approach with pure intentions may find the gorilla merely watching from a distance. But threats are met with a roar that shakes the trees and a spear that burns with the fury of a wildfire.",
+      "relationships": [
+        {
+          "withHeroId": null,
+          "type": "Guardian of Flamma's Sacred Grove"
+        },
+        {
+          "withHeroId": null,
+          "type": "Respected by the Natural Balance Faction"
+        }
+      ],
+      "images": {
+        "iconImage": "assets/images/monsters/fu_kong/icon.png",
+        "normalImage": "assets/images/monsters/fu_kong/normal.png",
+        "realImage": "assets/images/monsters/fu_kong/real.png",
+        "90sImage": "assets/images/monsters/fu_kong/90s.png",
+        "fullBodyImage": "assets/images/monsters/fu_kong/full.png",
+        "halfImage": "assets/images/monsters/fu_kong/half.png",
+        "monsterpng": "assets/images/monsters/fu_kong/hero.png",
+        "monsterbg": "assets/images/monsters/fu_kong/bg.png",
+        "gallery": [
+          "assets/images/monsters/fu_kong/1.png",
+          "assets/images/monsters/fu_kong/2.png",
+          "assets/images/monsters/fu_kong/3.png",
+          "assets/images/monsters/fu_kong/4.png",
+          "assets/images/monsters/fu_kong/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sounds/monsters/fu_kong/theme.mp3",
+        "dialogue": {
+          "roar": "assets/sounds/monsters/fu_kong/roar.wav",
+          "spear_ignite": "assets/sounds/monsters/fu_kong/spear.wav"
+        },
+        "sfx": "assets/sounds/monsters/fu_kong/sfx/"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Karkein",
+      "type": "Divine Phoenix",
+      "rank": "SSS-Rank",
+      "level": 298,
+      "foundIn": [
+        "Flamma",
+        "Molten Caldera of Pyrrhos"
+      ],
+      "nicknames": [
+        "The Azure Pyre",
+        "Lava-Winged Seraph",
+        "Flame of Rebirth"
+      ],
+      "shortDescription": "A colossal phoenix wreathed in sapphire flames, her body clad in shifting molten lava armor. Divine light radiates from her core, and her cry echoes like a celestial chorus.",
+      "fullDescription": "Karkein is no mere phoenix—she is a fragment of the primordial flame that forged Kretos. Unlike common firebirds, her flames burn an eerie, brilliant blue, hot enough to melt stone into living armor that flows across her form like liquid glass. Divine aura surrounds her, warding off corruption and healing the land where she perches. She rarely reveals her human aspect, preferring the sky as a colossal winged inferno. Legends say she was born from the first volcano's eruption and has died and been reborn 1,000 times, each rebirth adding a layer of molten armor to her form.",
+      "appearance": {
+        "race": "Divine Phoenix",
+        "faceShape": "Avian, regal, with a sharp golden beak and crest of blue fire",
+        "hairColor": "N/A (feathers are molten blue-white)",
+        "eyeColor": "Pure white with azure pupils that glow like stars",
+        "skinTone": "Feathers of deep cobalt fading to white tips",
+        "distinguishingFeatures": "Lava armor that flows like a second skin; trailing tail feathers made of solidified magma; divine halo of blue flame above her head"
+      },
+      "colorPalette": {
+        "primary": [
+          "Azure Flame",
+          "Magma Orange-Red"
+        ],
+        "secondary": [
+          "Crystalline Blue",
+          "Obsidian Black"
+        ],
+        "accent": [
+          "Divine Gold",
+          "Pure White"
+        ]
+      },
+      "attire": {
+        "upper": null,
+        "lower": null,
+        "headwear": null,
+        "accessories": [],
+        "distinctFeatures": "Lava armor plates on chest, wing joints, and crown; runes of rebirth glow on her breast"
+      },
+      "bodyType": {
+        "upper": {
+          "chest": "Broad, covered in molten plates"
+        },
+        "lower": {
+          "legs": "Powerful talons encased in cooled lava"
+        }
+      },
+      "stats": {
+        "power": 10,
+        "strength": 8,
+        "offense": 10,
+        "defense": 9,
+        "stamina": 9,
+        "physicalAtk": 7,
+        "magicalAtk": 10,
+        "physDef": 8,
+        "magDef": 10,
+        "speed": 9,
+        "mana": 10,
+        "intelligence": 9,
+        "ratings": {
+          "overall": 9.2,
+          "notes": "Overwhelming magical offense and divine defense. Her flames bypass most resistances."
+        }
+      },
+      "skills": [
+        {
+          "name": "Sapphire Immolation",
+          "type": "Passive",
+          "description": "All attacks deal blue fire damage. Enemies hit are marked with 'Divine Burn' – healing reduced by 50% for 10 seconds."
+        },
+        {
+          "name": "Molten Armor Burst",
+          "type": "Active",
+          "description": "Explodes outward with lava shrapnel, dealing fire and physical damage while granting self a shield of molten rock."
+        },
+        {
+          "name": "Celestial Rebirth",
+          "type": "Active",
+          "description": "Heals herself and all allies within range. If Karkein would die, she instead revives with 50% HP once per battle."
+        },
+        {
+          "name": "Ashen Cataclysm",
+          "type": "Ultimate",
+          "description": "Summons a meteor storm of blue fire that covers the entire battlefield, leaving divine ash that purifies debuffs from allies and deals massive damage to enemies."
+        }
+      ],
+      "lore": "Karkein is worshipped by the sun‑touched humans of Flamma as a living goddess. She does not serve any faction, but the Natural Balance respects her, and even the Celestial Order acknowledges her divinity. She has witnessed the Sundering that broke Kretos and has chosen to guard the volcanic heart of the world. In her human form, she is said to appear as a tall woman with flowing white hair and eyes like burning stars, but she only adopts that guise to speak with wise heroes or to mourn the fallen. In monster form, she is a terror and a savior—burning armies that threaten nature, yet crying healing fire over the wounded.",
+      "relationships": [
+        {
+          "withHeroId": null,
+          "type": "Worshipped by Sun-touched Humans of Flamma"
+        },
+        {
+          "withHeroId": null,
+          "type": "Allied with Natural Balance Faction"
+        },
+        {
+          "withHeroId": null,
+          "type": "Respected by Celestial Order"
+        }
+      ],
+      "images": {
+        "iconImage": "assets/images/monsters/karkein/icon.png",
+        "normalImage": "assets/images/monsters/karkein/normal.png",
+        "realImage": "assets/images/monsters/karkein/real.png",
+        "90sImage": "assets/images/monsters/karkein/90s.png",
+        "fullBodyImage": "assets/images/monsters/karkein/full.png",
+        "halfImage": "assets/images/monsters/karkein/half.png",
+        "monsterpng": "assets/images/monsters/karkein/hero.png",
+        "monsterbg": "assets/images/monsters/karkein/bg.png",
+        "gallery": [
+          "assets/images/monsters/karkein/1.png",
+          "assets/images/monsters/karkein/2.png",
+          "assets/images/monsters/karkein/3.png",
+          "assets/images/monsters/karkein/4.png",
+          "assets/images/monsters/karkein/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sounds/monsters/karkein/theme.mp3",
+        "dialogue": {
+          "cry": "assets/sounds/monsters/karkein/cry.wav",
+          "rebirth_chant": "assets/sounds/monsters/karkein/rebirth.wav"
+        },
+        "sfx": "assets/sounds/monsters/karkein/sfx/"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Bai Hou",
+      "type": "Divine Tiger",
+      "rank": "SSS-Rank",
+      "level": 320,
+      "foundIn": [
+        "Aethelgard",
+        "The Wild Zones"
+      ],
+      "nicknames": [
+        "The Smoldering Paw",
+        "Whisper of Ash",
+        "Elder of the White Stripes"
+      ],
+      "shortDescription": "A colossal white tiger with jet‑black stripes, wreathed in a smoky white aura. Black flames perpetually curl around his paws, burning without sound. His voluminous fur flows like mist.",
+      "fullDescription": "Bai Hou is no ordinary beast—he is a divine guardian said to have been blessed by the primordial spirit of stillness and smoke. Unlike the aggressive fire creatures of Flamma, Bai Hou’s flames are silent, dark, and patient. He can converse with humans in their tongue, often offering riddles or ancient wisdom to those who earn his trust. His fur is extraordinarily thick and long, giving him the appearance of a living storm cloud striped with shadow. Despite his gentle demeanor, his paws carry a fire that never extinguishes—a mark of his duty to burn corruption without mercy.",
+      "appearance": {
+        "race": "Divine Beast",
+        "faceShape": "Feline, broad and majestic with tufted ears",
+        "hairColor": "White with deep black stripes, extremely voluminous and flowing",
+        "eyeColor": "Smoky silver with slit pupils that glow faintly white",
+        "skinTone": "Pale grey skin beneath the fur",
+        "distinguishingFeatures": "Paws engulfed in silent black flames; smoky white aura that drifts like incense; mane of fur around the neck twice as thick as the rest"
+      },
+      "colorPalette": {
+        "primary": [
+          "Snow White",
+          "Midnight Black"
+        ],
+        "secondary": [
+          "Smoky Grey",
+          "Ash"
+        ],
+        "accent": [
+          "Silver",
+          "Obsidian Flame"
+        ]
+      },
+      "attire": {
+        "upper": null,
+        "lower": null,
+        "headwear": null,
+        "accessories": [],
+        "distinctFeatures": "Natural black flame rings around each paw; a single white whisker that glows under moonlight"
+      },
+      "bodyType": {
+        "upper": {
+          "chest": "Broad and muscular, covered in dense fur"
+        },
+        "lower": {
+          "legs": "Powerful, padded paws wreathed in black fire"
+        }
+      },
+      "stats": {
+        "power": 9,
+        "strength": 9,
+        "offense": 8,
+        "defense": 9,
+        "stamina": 9,
+        "physicalAtk": 9,
+        "magicalAtk": 8,
+        "physDef": 9,
+        "magDef": 10,
+        "speed": 8,
+        "mana": 9,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 9.0,
+          "notes": "Exceptionally balanced with divine intelligence and magic defense. Patient but lethal."
+        }
+      },
+      "skills": [
+        {
+          "name": "Smoky White Aura",
+          "type": "Passive",
+          "description": "Constant aura reduces visibility of enemies within range and grants Bai Hou evasion against ranged attacks."
+        },
+        {
+          "name": "Silent Black Paw",
+          "type": "Active",
+          "description": "A strike with black fire that deals no sound and ignores physical defense. Burns enemy mana over time."
+        },
+        {
+          "name": "Tiger's Wisdom",
+          "type": "Active",
+          "description": "Lets out a low rumble that removes all debuffs from allies and grants them intelligence boost for 20 seconds."
+        },
+        {
+          "name": "Ashen Stillness",
+          "type": "Ultimate",
+          "description": "Summons a domain of smoky silence. All enemies are silenced, slowed, and take periodic dark-fire damage. Bai Hou becomes untargetable for 8 seconds."
+        }
+      ],
+      "lore": "Bai Hou is ancient—some say he witnessed the Sundering from the peaks of Aethelgard. He does not serve any god or king, but the Celestial Order reveres him as a living embodiment of divine patience. He speaks rarely, but when he does, his words carry weight. Travelers who find him in the deep wilds often receive cryptic advice that saves their lives later. His black fire does not hunger for destruction; it hungers for impurity. He once burned an entire corrupted forest in one night, then sat in the ashes, waiting for new growth. That patience is his greatest strength and his deadliest weapon.",
+      "relationships": [
+        {
+          "withHeroId": null,
+          "type": "Revered by Celestial Order"
+        },
+        {
+          "withHeroId": null,
+          "type": "Friend to the Natural Balance Faction"
+        },
+        {
+          "withHeroId": null,
+          "type": "Teacher of ancient heroes"
+        }
+      ],
+      "images": {
+        "iconImage": "assets/images/monsters/bai_hou/icon.png",
+        "normalImage": "assets/images/monsters/bai_hou/normal.png",
+        "realImage": "assets/images/monsters/bai_hou/real.png",
+        "90sImage": "assets/images/monsters/bai_hou/90s.png",
+        "fullBodyImage": "assets/images/monsters/bai_hou/full.png",
+        "halfImage": "assets/images/monsters/bai_hou/half.png",
+        "monsterpng": "assets/images/monsters/bai_hou/hero.png",
+        "monsterbg": "assets/images/monsters/bai_hou/bg.png",
+        "gallery": [
+          "assets/images/monsters/bai_hou/1.png",
+          "assets/images/monsters/bai_hou/2.png",
+          "assets/images/monsters/bai_hou/3.png",
+          "assets/images/monsters/bai_hou/4.png",
+          "assets/images/monsters/bai_hou/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sounds/monsters/bai_hou/theme.mp3",
+        "dialogue": {
+          "rumble": "assets/sounds/monsters/bai_hou/rumble.wav",
+          "whisper": "assets/sounds/monsters/bai_hou/whisper.wav"
+        },
+        "sfx": "assets/sounds/monsters/bai_hou/sfx/"
       }
     }
   ]

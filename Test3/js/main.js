@@ -15,7 +15,7 @@ class KretosApp {
         Navbar.init();
         ThemeManager.init();
         await HomePage.init(this.data);
-        ModalManager.init();
+        KretosModal.init();
         this.setupScrollAnimations();
     }
 
@@ -105,7 +105,7 @@ const HomePage = {
                     <div class="hero-center">
                         <h1 class="hero-name">${hero.name}</h1>
                         <p class="hero-desc">${hero.shortDescription ? hero.shortDescription.substring(0, 120) : 'A legendary hero of Kretos'}...</p>
-                        <button class="see-more-btn" data-hero-id="${hero.id}">👁️ See More</button>
+                        <button class="see-more-btn" data-kretos-hero-id="${hero.id}">👁️ See More</button>
                     </div>
                     <div class="hero-right">
                         <div class="stats-container">
@@ -124,12 +124,10 @@ const HomePage = {
             </div>
         `).join('');
 
-        // Destroy existing hero swiper if exists
         if (kretosApp.swipers.hero) {
             kretosApp.swipers.hero.destroy(true, true);
         }
 
-        // Initialize hero swiper
         setTimeout(() => {
             kretosApp.swipers.hero = new Swiper('.hero-swiper', {
                 slidesPerView: 1,
@@ -141,7 +139,6 @@ const HomePage = {
                 speed: 800
             });
 
-            // Animate progress bars after images load
             document.querySelectorAll('.progress-fill').forEach(bar => {
                 const val = bar.dataset.value;
                 if (val) bar.style.width = (val * 10) + '%';
@@ -160,13 +157,13 @@ const HomePage = {
         }
         
         container.innerHTML = heroes.map(hero => `
-            <div class="asymmetrical-card" data-hero-id="${hero.id}">
+            <div class="asymmetrical-card" data-kretos-hero-id="${hero.id}">
                 <div class="hero-icon" style="background-image: url('${hero.images?.iconImage || 'assets/images/placeholders/hero_icon.png'}')"></div>
                 <div class="rating-badge">${hero.stats?.ratings?.overall || '?'}</div>
                 <div class="hero-card-content">
                     <h3>${hero.name}</h3>
                     <p class="short-desc">${hero.shortDescription ? hero.shortDescription.substring(0, 80) : ''}...</p>
-                    <button class="learn-more-btn" data-hero-id="${hero.id}">Learn More →</button>
+                    <button class="learn-more-btn" data-kretos-hero-id="${hero.id}">Learn More →</button>
                 </div>
             </div>
         `).join('');
@@ -309,13 +306,13 @@ const HomePage = {
         }
         
         container.innerHTML = monsters.map(monster => `
-            <div class="asymmetrical-card" data-monster-id="${monster.id}">
+            <div class="asymmetrical-card" data-kretos-monster-id="${monster.id}">
                 <div class="monster-icon" style="background-image: url('${monster.images?.iconImage || 'assets/images/placeholders/monster_icon.png'}')"></div>
                 <div class="rating-badge">${monster.stats?.ratings?.overall || '?'}</div>
                 <div class="hero-card-content">
                     <h3>${this.escapeHtml(monster.name)}</h3>
                     <p class="short-desc">${monster.shortDescription ? this.escapeHtml(monster.shortDescription.substring(0, 80)) : ''}...</p>
-                    <button class="learn-more-btn" data-monster-id="${monster.id}">Learn More →</button>
+                    <button class="learn-more-btn" data-kretos-monster-id="${monster.id}">Learn More →</button>
                 </div>
             </div>
         `).join('');
@@ -327,17 +324,18 @@ const HomePage = {
         if (!container || !creators) return;
         
         container.innerHTML = creators.map(c => `
-            <div class="creator-card" data-creator-id="${c.id}">
+            <div class="creator-card" data-kretos-creator-id="${c.id}">
                 <img src="${c.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-avatar" alt="${this.escapeHtml(c.name)}">
                 <h3>${this.escapeHtml(c.name)}</h3>
                 <p class="creator-role">${this.escapeHtml(c.role)}</p>
-                <button class="learn-more-btn" data-creator-id="${c.id}">Meet ${this.escapeHtml(c.name.split(' ')[0])}</button>
+                <button class="learn-more-btn" data-kretos-creator-id="${c.id}">Meet ${this.escapeHtml(c.name.split(' ')[0])}</button>
             </div>
         `).join('');
     }
 };
 
-const ModalManager = {
+// ---------- Namespaced Modal Manager (no conflict with heroes page) ----------
+const KretosModal = {
     init() {
         this.setupEventListeners();
     },
@@ -345,30 +343,30 @@ const ModalManager = {
     setupEventListeners() {
         document.addEventListener('click', (e) => {
             // Hero buttons
-            const heroBtn = e.target.closest('[data-hero-id]');
+            const heroBtn = e.target.closest('[data-kretos-hero-id]');
             if (heroBtn) {
                 e.preventDefault();
-                const heroId = parseInt(heroBtn.dataset.heroId);
+                const heroId = parseInt(heroBtn.dataset.kretosHeroId);
                 const hero = kretosApp.data.heroes.find(h => h.id === heroId);
                 if (hero) this.showHeroModal(hero);
                 return;
             }
             
             // Monster buttons
-            const monsterBtn = e.target.closest('[data-monster-id]');
+            const monsterBtn = e.target.closest('[data-kretos-monster-id]');
             if (monsterBtn) {
                 e.preventDefault();
-                const monsterId = parseInt(monsterBtn.dataset.monsterId);
+                const monsterId = parseInt(monsterBtn.dataset.kretosMonsterId);
                 const monster = kretosApp.data.monsters.find(m => m.id === monsterId);
                 if (monster) this.showMonsterModal(monster);
                 return;
             }
             
             // Creator buttons
-            const creatorBtn = e.target.closest('[data-creator-id]');
+            const creatorBtn = e.target.closest('[data-kretos-creator-id]');
             if (creatorBtn) {
                 e.preventDefault();
-                const creatorId = parseInt(creatorBtn.dataset.creatorId);
+                const creatorId = parseInt(creatorBtn.dataset.kretosCreatorId);
                 const creator = kretosApp.data.creators.find(c => c.id === creatorId);
                 if (creator) this.showCreatorModal(creator);
                 return;
@@ -389,7 +387,6 @@ const ModalManager = {
         modalBody.innerHTML = this.renderHeroModal(hero);
         modal.style.display = 'flex';
         
-        // Animate progress bars
         setTimeout(() => {
             modal.querySelectorAll('.progress-fill').forEach(bar => {
                 const val = bar.dataset.value;
@@ -397,7 +394,6 @@ const ModalManager = {
             });
         }, 100);
         
-        // Setup image tabs
         this.setupImageTabs(hero.images);
     },
 
@@ -446,7 +442,8 @@ const ModalManager = {
                     <div class="stats-section">
                         ${statsHtml}
                     </div>
-                    <a href="heroes.html" class="full-details-btn">Full Details →</a>
+                    <!-- DEEP LINK: pass hero id to heroes page -->
+                    <a href="heroes.html?id=${hero.id}" class="full-details-btn">Full Details →</a>
                 </div>
             </div>
         `;
@@ -460,7 +457,6 @@ const ModalManager = {
         modalBody.innerHTML = this.renderMonsterModal(monster);
         modal.style.display = 'flex';
         
-        // Animate progress bars
         setTimeout(() => {
             modal.querySelectorAll('.progress-fill').forEach(bar => {
                 const val = bar.dataset.value;
@@ -468,7 +464,6 @@ const ModalManager = {
             });
         }, 100);
         
-        // Setup image tabs
         this.setupImageTabs(monster.images);
     },
 

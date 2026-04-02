@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Kretos - Legendary Heroes Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/heroes2.css">
+</head>
+<body data-theme="light">
+    <nav id="navbar-container"></nav>
+
+    <main class="heroes-main">
+        <!-- Hero Palette Switcher -->
+        <div class="palette-switcher">
+            <button class="palette-toggle-btn" id="openPaletteBtn">🎨 Change Theme</button>
+            <div class="palette-dropdown" id="paletteDropdown">
+                <h4>Pick a Hero's Palette</h4>
+                <div class="palette-list" id="paletteList"></div>
+            </div>
+        </div>
+
+        <!-- Search & Filter Section -->
+        <section class="filter-section">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="search-wrapper">
+                        <input type="text" id="heroSearchInput" placeholder="Search by name...">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="filter-rank">
+                        <select id="rankFilter">
+                            <option value="all">All Ranks</option>
+                            <option value="SSS-Rank">SSS-Rank</option>
+                            <option value="SS-Rank">SS-Rank</option>
+                            <option value="S-Rank">S-Rank</option>
+                            <option value="A-Rank">A-Rank</option>
+                            <option value="B-Rank">B-Rank</option>
+                            <option value="C-Rank">C-Rank</option>
+                            <option value="D-Rank">D-Rank</option>
+                            <option value="E-Rank">E-Rank</option>
+                            <option value="F-Rank">F-Rank</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Cards Grid -->
+        <section class="heroes-grid-section">
+            <div class="container">
+                <div class="heroes-card-grid" id="heroesCardGrid"></div>
+                <div class="loading-spinner" id="loadingSpinner">Loading heroes...</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Full-screen Hero Modal (dynamic) -->
+    <div id="heroDetailModal" class="hero-modal">
+        <div class="hero-modal-overlay"></div>
+        <div class="hero-modal-container">
+            <button class="modal-close-btn">&times;</button>
+            <div class="modal-swipe-area" id="modalSwipeArea">
+                <!-- Content will be injected dynamically -->
+                <div class="hero-modal-content" id="heroModalContent"></div>
+            </div>
+            <button class="modal-nav prev-hero">‹</button>
+            <button class="modal-nav next-hero">›</button>
+        </div>
+    </div>
+
+    <!-- Full Preview Image Modal (double-click / tap) -->
+    <div id="imagePreviewModal" class="image-preview-modal">
+        <span class="preview-close">&times;</span>
+        <img class="preview-img" id="previewImg" alt="Full preview">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/heroes2.js"></script>
+</body>
+</html>

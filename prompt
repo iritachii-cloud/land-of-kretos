@@ -1,0 +1,43 @@
+I want you to ultra think before writing a single line of code. Think like a principal level senior frontend architect who has designed and engineered award-winning, production-grade, animation-heavy dynamic platforms. Do not rush. Do not generate incomplete snippets. Do not simplify anything. I want no logical mistakes, no structural flaws, no animation conflicts, no duplicated logic, no unstable swiper behavior, and no fragile DOM manipulation. Everything must be modular, scalable, maintainable, and engineered like a real product, not a demo. Every file you create must be at least 1500 lines long, properly structured with separated functions, separated animation controllers, separated utility logic, separated data mappers, and no mixed responsibilities. Each section must have its own unique classes, animations, and behaviors scoped only to this page so nothing conflicts with the homepage. Think deeply before building. Architect first, then implement.
+
+We are now building the Heroes page, not the homepage. This page must follow similar design patterns as the homepage but must not look identical. It must feel like part of the same universe but clearly be its own system. This page must live inside its own separate folder structure. Create a heroes folder containing heroes.html. The CSS must be inside the global css folder as heroes.css. The JavaScript must be inside the js folder as heroes.js. The page must use the same heroes.json file for data and must remain fully dynamic. There must be zero hardcoded hero content. Everything must be generated from heroes.json.
+
+The homepage currently has hero cards that open modals, and inside those modals there is a full details button that redirects to this heroes page. When redirected, the specific hero must open automatically inside the hero modal swiper without errors. The hero ID parameter must be passed safely through the URL. You must implement a strong parameter handling system that prevents undefined states and fallback safely if the hero does not exist.
+
+Now architect the full Heroes page layout. At the top, it must have a dynamic, sticky, responsive navigation bar similar in structure to the homepage but implemented independently with different animation timing and scroll behaviors. It must react to scroll, shrink elegantly, and have animated underline effects on hover. It must not reuse homepage classes directly.
+
+Below the navbar there must be a search and filtering section. This section must allow searching heroes by name dynamically with debounce optimization. It must also allow filtering by rank, from SSS-Rank down to F-Rank. The filtering must combine with search in real time without page reload. The filter UI must have a fantasy aesthetic and animated dropdown transitions.
+
+Below that must be the hero card grid. The grid must be responsive and fluid. Each card must maintain a square ratio but must not look like a plain square. It must have asymmetrical fantasy-styled shapes using clip-path or layered pseudo-elements. The card background must dynamically use a radial gradient derived from the hero’s color palette or rank. Each rank from SSS-Rank to F-Rank must have a unique color theme. The rank must appear as a fantasy-styled floating tag at the top corner of the card with glowing animation. Each card displays only icon image, hero name, rank tag, and rating. Nothing else appears on the card. Everything else appears in the modal.
+
+When a card is clicked, a full body covering hero modal must open. This modal must not use the same swiper implementation as the homepage. It must have its own uniquely styled swiper logic with one slide per view across desktop and mobile. The animation must be more cinematic and interactive. Sliding between heroes must feel powerful and smooth, with momentum and easing curves tuned manually. The swiper must be looped infinitely.
+
+Each hero modal slide must have the hero’s herobg image as its blurred background layer. This background must dynamically load from heroes.json and fall back to assets/images/dunnyimage.png if missing. The background must blur with a glassmorphism overlay and gradient shading for readability.
+
+Inside each hero modal, the layout must start with the hero image section at the top, similar in structural placement to the homepage but redesigned. On the right corner of the image section there must be three tabs labeled Normal, Real, and 90s. Clicking these tabs must switch the hero image inside a contained display area without reloading the modal. Each tab must animate smoothly. Each image must fallback to the placeholder image if not found.
+
+Below the image section must be the hero details section. The hero name must be inside its own decorated container. The rank must display using its specific rank color theme. The level must display with dynamic color coding from 1 to 10000, where higher levels glow differently. The nickname and title must display below the name with stylized typography.
+
+The rating must be displayed using animated star icons with full and half stars supported. No plain numeric rating display is allowed. The rating animation must trigger when the modal becomes active.
+
+Below that must be the stats section. Each stat must animate in when visible. The styling must not reuse homepage stat bars. Create a new visual identity for stats such as segmented arc meters or layered animated fills.
+
+Instead of a full details button, the short description must appear directly inside the modal. After that, create clearly separated sections for Attire, Armor, Body Type, Skills, and Relations. These sections must be visually unique. Armor, Skills, and Relations must have highly creative layout patterns, such as layered panels or interactive expand/collapse animations.
+
+If the hero has a mount or pet, a separate Mount section must appear dynamically. If not, the section must not render at all. No empty containers should exist in DOM.
+
+At the bottom of the modal there must be a Gallery section. This gallery must have its own swiper instance separate from the hero modal swiper. It must use a different animation style. The first slide must always be the herobg image. After that, dynamically include all images present in the image object including realImage, normalImage, 90sImage, fullBodyImage, halfImage, iconImage, and then the gallery array images. The gallery must be looped infinitely and auto slide every 5 seconds. Only one slide per view. It must show a numbering indicator from 1 to total count.
+
+Each image may have different aspect ratios including 1:1, 9:16, 16:9. The container must adapt without cropping the image. Use object-fit containment logic. When double clicked on desktop or single tapped on mobile, a full screen preview modal must open showing the original image in full resolution without distortion. That preview must close smoothly.
+
+All image loading must use safe fallback handling to assets/images/dunnyimage.png if any path fails.
+
+The entire hero modal swiper must be looped and navigable by drag, swipe, arrow keys, and optional navigation buttons.
+
+The entire system must be fully dynamic using heroes.json. There must be zero duplication of hero data. Implement a robust data mapping layer inside heroes.js to extract and normalize image paths, ratings, stats, optional sections, and fallbacks.
+
+Also review the homepage code structure. If any modification is required to ensure smooth redirection and parameter passing, show the previous version and the improved version with full corrected code. Do not partially show code. Show full files when updating.
+
+Every file you generate must be cleanly separated into logical regions with comments. Use modern ES6+ architecture. Avoid global pollution. Use modular patterns. All animations must be smooth and hardware accelerated. Ensure no memory leaks from swiper instances. Clean up event listeners properly.
+
+Ultra think before implementing. Do not generate fast. Architect deeply and then implement perfectly.
