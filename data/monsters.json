@@ -27,16 +27,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Icy Blue",
-          "Arctic White"
+          "#AEE2FF",
+          "#F0F8FF"
         ],
         "secondary": [
-          "Deep Sapphire",
-          "Frost Grey"
+          "#082567",
+          "#B0BBC3"
         ],
         "accent": [
-          "Azure Flame",
-          "Cobalt"
+          "#007FFF",
+          "#0047AB"
         ]
       },
       "attire": {
@@ -156,14 +156,14 @@
       },
       "colorPalette": {
         "primary": [
-          "Obsidian Black",
-          "Void Purple"
+          "#0B0B0B",
+          "#2E004B"
         ],
         "secondary": [
-          "Magenta"
+          "#FF00FF"
         ],
         "accent": [
-          "Silver"
+          "#C0C0C0"
         ]
       },
       "attire": null,
@@ -263,16 +263,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Black Fur",
-          "Verdant Flame"
+          "#0A0A0A",
+          "#00FF41"
         ],
         "secondary": [
-          "Ember Gold",
-          "Charred Wood"
+          "#FFB300",
+          "#2B1B17"
         ],
         "accent": [
-          "Amber",
-          "Ash Grey"
+          "#FFBF00",
+          "#666362"
         ]
       },
       "attire": {
@@ -394,16 +394,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Azure Flame",
-          "Magma Orange-Red"
+          "#007FFF",
+          "#FF4500"
         ],
         "secondary": [
-          "Crystalline Blue",
-          "Obsidian Black"
+          "#5DADE2",
+          "#0B0B0B"
         ],
         "accent": [
-          "Divine Gold",
-          "Pure White"
+          "#FFD700",
+          "#FFFFFF"
         ]
       },
       "attire": {
@@ -529,16 +529,16 @@
       },
       "colorPalette": {
         "primary": [
-          "Snow White",
-          "Midnight Black"
+          "#FFFAFA",
+          "#050505"
         ],
         "secondary": [
-          "Smoky Grey",
-          "Ash"
+          "#708238",
+          "#B2BEB5"
         ],
         "accent": [
-          "Silver",
-          "Obsidian Flame"
+          "#C0C0C0",
+          "#3E0A0A"
         ]
       },
       "attire": {

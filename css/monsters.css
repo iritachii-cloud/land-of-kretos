@@ -1,17 +1,17 @@
 /* ======================================================================================
-   heroes.css – Kretos Heroes Page Styles
+   monsters.css – Kretos monsters Page Styles
    ======================================================================================
    Version: 1.0.0
    Description:
-     This stylesheet provides all the unique styling for the heroes.html page.
-     It is fully scoped under the .heroes-page class to avoid conflicts with the homepage.
+     This stylesheet provides all the unique styling for the monsters.html page.
+     It is fully scoped under the .monsters-page class to avoid conflicts with the homepage.
      Includes:
-       - CSS custom properties (light/dark themes + dynamic hero palette)
+       - CSS custom properties (light/dark themes + dynamic monster palette)
        - Standalone navbar styles (identical to homepage but scoped)
        - Search & filter section (glassmorphism, chips)
-       - Asymmetrical hero cards with radial gradients, rank ribbons, star ratings
+       - Asymmetrical monster cards with radial gradients, rank ribbons, star ratings
        - Fullscreen modal with blur background, coverflow swiper overrides
-       - Detailed hero info layout (grid, stats bars, skill chips, relationships)
+       - Detailed monster info layout (grid, stats bars, skill chips, relationships)
        - Gallery swiper (fade effect, custom navigation)
        - Lightbox overlay with zoom/pan
        - Animations (fade-up, stat bar fill, spin, pulse, etc.)
@@ -20,56 +20,56 @@
    ====================================================================================== */
 
 /* =============================== 1. RESET & BASE ====================================== */
-.heroes-page {
-    --hero-page-primary: #0a4d8c;
-    --hero-page-secondary: #1a4a76;
-    --hero-page-accent: #2d7fc1;
-    --hero-page-bg: #eef5ff;
-    --hero-page-text: #002b4f;
-    --hero-page-text-muted: #4a6a8e;
-    --hero-page-card-bg: rgba(255, 255, 255, 0.9);
-    --hero-page-border: #7bb3e0;
-    --hero-page-shadow: 0 12px 28px rgba(10, 77, 140, 0.15);
-    --hero-page-glow: 0 0 12px rgba(45, 127, 193, 0.5);
-    --hero-page-radius-sm: 12px;
-    --hero-page-radius-md: 20px;
-    --hero-page-radius-lg: 30px;
-    --hero-page-transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+.monsters-page {
+    --monster-page-primary: #0a4d8c;
+    --monster-page-secondary: #1a4a76;
+    --monster-page-accent: #2d7fc1;
+    --monster-page-bg: #eef5ff;
+    --monster-page-text: #002b4f;
+    --monster-page-text-muted: #4a6a8e;
+    --monster-page-card-bg: rgba(255, 255, 255, 0.9);
+    --monster-page-border: #7bb3e0;
+    --monster-page-shadow: 0 12px 28px rgba(10, 77, 140, 0.15);
+    --monster-page-glow: 0 0 12px rgba(45, 127, 193, 0.5);
+    --monster-page-radius-sm: 12px;
+    --monster-page-radius-md: 20px;
+    --monster-page-radius-lg: 30px;
+    --monster-page-transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
-/* Dark theme override (global, but scoped to .heroes-page) */
-.heroes-page[data-theme="dark"] {
-    --hero-page-primary: #b33a3a;
-    --hero-page-secondary: #ffb3b3;
-    --hero-page-accent: #e06666;
-    --hero-page-bg: #1a0a0a;
-    --hero-page-text: #ffe6e6;
-    --hero-page-text-muted: #cc9999;
-    --hero-page-card-bg: rgba(30, 15, 15, 0.9);
-    --hero-page-border: #994444;
-    --hero-page-shadow: 0 12px 28px rgba(179, 58, 58, 0.2);
-    --hero-page-glow: 0 0 12px rgba(224, 102, 102, 0.5);
+/* Dark theme override (global, but scoped to .monsters-page) */
+.monsters-page[data-theme="dark"] {
+    --monster-page-primary: #b33a3a;
+    --monster-page-secondary: #ffb3b3;
+    --monster-page-accent: #e06666;
+    --monster-page-bg: #1a0a0a;
+    --monster-page-text: #ffe6e6;
+    --monster-page-text-muted: #cc9999;
+    --monster-page-card-bg: rgba(30, 15, 15, 0.9);
+    --monster-page-border: #994444;
+    --monster-page-shadow: 0 12px 28px rgba(179, 58, 58, 0.2);
+    --monster-page-glow: 0 0 12px rgba(224, 102, 102, 0.5);
 }
 
-/* Apply base styles to .heroes-page only */
-.heroes-page {
+/* Apply base styles to .monsters-page only */
+.monsters-page {
     font-family: 'Inter', sans-serif;
-    background: var(--hero-page-bg);
-    color: var(--hero-page-text);
+    background: var(--monster-page-bg);
+    color: var(--monster-page-text);
     line-height: 1.5;
     transition: background 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
-.heroes-page .container {
+.monsters-page .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
 /* =============================== 2. NAVBAR (STANDALONE) =============================== */
-.heroes-navbar {
+.monsters-navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -77,76 +77,76 @@
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(18px);
     z-index: 1500;
-    border-bottom: 1px solid var(--hero-page-border);
-    transition: var(--hero-page-transition);
+    border-bottom: 1px solid var(--monster-page-border);
+    transition: var(--monster-page-transition);
 }
 
-.heroes-navbar .container {
+.monsters-navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.9rem 2rem;
 }
 
-.heroes-navbar .nav-brand {
+.monsters-navbar .nav-brand {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.heroes-navbar .logo {
+.monsters-navbar .logo {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     object-fit: cover;
-    background: var(--hero-page-primary);
+    background: var(--monster-page-primary);
     padding: 4px;
 }
 
-.heroes-navbar .brand-text {
+.monsters-navbar .brand-text {
     font-size: 1.6rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #fff, var(--hero-page-accent));
+    background: linear-gradient(135deg, #fff, var(--monster-page-accent));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.heroes-navbar .nav-menu {
+.monsters-navbar .nav-menu {
     display: flex;
     list-style: none;
     gap: 2rem;
     align-items: center;
 }
 
-.heroes-navbar .nav-link {
+.monsters-navbar .nav-link {
     text-decoration: none;
     font-weight: 600;
     color: #ffffff;
     padding: 8px 16px;
     border-radius: 50px;
-    transition: var(--hero-page-transition);
+    transition: var(--monster-page-transition);
 }
 
-.heroes-navbar .nav-link:hover,
-.heroes-navbar .nav-link.active {
-    background: var(--hero-page-primary);
+.monsters-navbar .nav-link:hover,
+.monsters-navbar .nav-link.active {
+    background: var(--monster-page-primary);
     color: white;
 }
 
-.heroes-navbar .nav-actions {
+.monsters-navbar .nav-actions {
     display: flex;
     gap: 1rem;
 }
 
-.heroes-navbar .theme-toggle,
-.heroes-navbar .mobile-menu-toggle {
+.monsters-navbar .theme-toggle,
+.monsters-navbar .mobile-menu-toggle {
     background: transparent;
     border: none;
     font-size: 1.6rem;
     cursor: pointer;
     color: white;
-    transition: var(--hero-page-transition);
+    transition: var(--monster-page-transition);
     padding: 6px;
     border-radius: 50%;
     width: 44px;
@@ -156,25 +156,25 @@
     justify-content: center;
 }
 
-.heroes-navbar .theme-toggle:hover,
-.heroes-navbar .mobile-menu-toggle:hover {
-    background: var(--hero-page-primary);
+.monsters-navbar .theme-toggle:hover,
+.monsters-navbar .mobile-menu-toggle:hover {
+    background: var(--monster-page-primary);
 }
 
-.heroes-navbar .mobile-menu-toggle {
+.monsters-navbar .mobile-menu-toggle {
     display: none;
 }
 
-/* =============================== 3. HERO THEME PICKER ================================= */
-.hero-theme-picker-container {
+/* =============================== 3. monster THEME PICKER ================================= */
+.monster-theme-picker-container {
     /* margin-top: 90px; */
     padding: 1rem 0;
     background: rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(4px);
-    border-bottom: 1px solid var(--hero-page-border);
+    border-bottom: 1px solid var(--monster-page-border);
 }
 
-.hero-theme-picker-container .container {
+.monster-theme-picker-container .container {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -183,35 +183,35 @@
 
 .theme-picker-label {
     font-weight: 600;
-    color: var(--hero-page-text);
+    color: var(--monster-page-text);
 }
 
-.hero-theme-select {
-    background: var(--hero-page-card-bg);
-    border: 1px solid var(--hero-page-border);
+.monster-theme-select {
+    background: var(--monster-page-card-bg);
+    border: 1px solid var(--monster-page-border);
     padding: 0.5rem 1rem;
     border-radius: 40px;
     font-family: inherit;
-    color: var(--hero-page-text);
+    color: var(--monster-page-text);
     cursor: pointer;
-    transition: var(--hero-page-transition);
+    transition: var(--monster-page-transition);
 }
 
-.hero-theme-select:hover {
-    border-color: var(--hero-page-primary);
-    box-shadow: var(--hero-page-glow);
+.monster-theme-select:hover {
+    border-color: var(--monster-page-primary);
+    box-shadow: var(--monster-page-glow);
 }
 
 .theme-info {
     font-size: 0.8rem;
-    color: var(--hero-page-text-muted);
+    color: var(--monster-page-text-muted);
 }
 
 /* =============================== 4. SEARCH & FILTER SECTION =========================== */
-.heroes-filter-section {
+.monsters-filter-section {
     padding: 2rem 0;
     background: rgba(0, 0, 0, 0.02);
-    border-radius: 0 0 var(--hero-page-radius-lg) var(--hero-page-radius-lg);
+    border-radius: 0 0 var(--monster-page-radius-lg) var(--monster-page-radius-lg);
 }
 
 .filter-wrapper {
@@ -227,21 +227,21 @@
     min-width: 200px;
 }
 
-.hero-search-input {
+.monster-search-input {
     width: 100%;
     padding: 0.9rem 1.5rem;
-    border: 1px solid var(--hero-page-border);
+    border: 1px solid var(--monster-page-border);
     border-radius: 60px;
-    background: var(--hero-page-card-bg);
-    color: var(--hero-page-text);
+    background: var(--monster-page-card-bg);
+    color: var(--monster-page-text);
     font-size: 1rem;
-    transition: var(--hero-page-transition);
+    transition: var(--monster-page-transition);
 }
 
-.hero-search-input:focus {
+.monster-search-input:focus {
     outline: none;
-    border-color: var(--hero-page-primary);
-    box-shadow: var(--hero-page-glow);
+    border-color: var(--monster-page-primary);
+    box-shadow: var(--monster-page-glow);
 }
 
 .rank-filters {
@@ -254,7 +254,7 @@
 
 .filter-label {
     font-weight: 600;
-    color: var(--hero-page-text);
+    color: var(--monster-page-text);
 }
 
 .rank-chips {
@@ -265,58 +265,59 @@
 
 .rank-chip {
     background: transparent;
-    border: 1px solid var(--hero-page-border);
+    border: 1px solid var(--monster-page-border);
     padding: 0.4rem 1rem;
     border-radius: 40px;
     font-size: 0.85rem;
     font-weight: 500;
     cursor: pointer;
-    transition: var(--hero-page-transition);
-    color: var(--hero-page-text);
+    transition: var(--monster-page-transition);
+    color: var(--monster-page-text);
 }
 
 .rank-chip.active,
 .rank-chip:hover {
-    background: var(--hero-page-primary);
-    border-color: var(--hero-page-primary);
+    background: var(--monster-page-primary);
+    border-color: var(--monster-page-primary);
     color: white;
     transform: translateY(-2px);
 }
 
 .filter-stats {
     font-size: 0.9rem;
-    color: var(--hero-page-text-muted);
-    background: var(--hero-page-card-bg);
+    color: var(--monster-page-text-muted);
+    background: var(--monster-page-card-bg);
     padding: 0.4rem 1rem;
     border-radius: 40px;
 }
 
-/* =============================== 5. HEROES GRID ======================================= */
-.heroes-grid-section {
+/* =============================== 5. monsters GRID ======================================= */
+.monsters-grid-section {
     padding: 3rem 0 5rem;
 }
 
-.heroes-grid {
+.monsters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
+    padding: 20px;
 }
 
 /* Asymmetrical Card */
-.hero-card {
+.monster-card {
     position: relative;
-    background: var(--hero-page-card-bg);
-    border-radius: var(--hero-page-radius-md);
+    background: var(--monster-page-card-bg);
+    border-radius: var(--monster-page-radius-md);
     padding: 1.5rem;
     clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 0% 100%, 0% 85%, 5% 50%, 0% 15%);
-    transition: var(--hero-page-transition);
-    box-shadow: var(--hero-page-shadow);
+    transition: var(--monster-page-transition);
+    box-shadow: var(--monster-page-shadow);
     cursor: pointer;
     overflow: hidden;
     backdrop-filter: blur(2px);
 }
 
-.hero-card:hover {
+.monster-card:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
@@ -345,26 +346,26 @@
     gap: 0.8rem;
 }
 
-.hero-icon {
+.monster-icon {
     width: 100px;
     height: 100px;
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    border: 3px solid var(--hero-page-primary);
-    box-shadow: var(--hero-page-glow);
+    border: 3px solid var(--monster-page-primary);
+    box-shadow: var(--monster-page-glow);
     transition: transform 0.3s ease;
 }
 
-.hero-card:hover .hero-icon {
+.monster-card:hover .monster-icon {
     transform: scale(1.05);
 }
 
-.hero-name {
+.monster-name {
     font-size: 1.4rem;
     font-weight: 700;
     margin: 0;
-    background: linear-gradient(135deg, var(--hero-page-text), var(--hero-page-primary));
+    background: linear-gradient(135deg, var(--monster-page-text), var(--monster-page-primary));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -403,23 +404,23 @@
 .rating-number {
     font-size: 0.8rem;
     margin-left: 5px;
-    color: var(--hero-page-text-muted);
+    color: var(--monster-page-text-muted);
 }
 
 .view-details-btn {
     background: transparent;
-    border: 2px solid var(--hero-page-primary);
-    color: var(--hero-page-primary);
+    border: 2px solid var(--monster-page-primary);
+    color: var(--monster-page-primary);
     padding: 0.5rem 1.5rem;
     border-radius: 40px;
     font-weight: 600;
     cursor: pointer;
-    transition: var(--hero-page-transition);
+    transition: var(--monster-page-transition);
     margin-top: 0.5rem;
 }
 
 .view-details-btn:hover {
-    background: var(--hero-page-primary);
+    background: var(--monster-page-primary);
     color: white;
     transform: translateY(-2px);
 }
@@ -430,11 +431,11 @@
     text-align: center;
     padding: 4rem;
     font-size: 1.2rem;
-    color: var(--hero-page-text-muted);
+    color: var(--monster-page-text-muted);
 }
 
 /* =============================== 6. FULLSCREEN MODAL & SWIPER ========================= */
-.hero-fullscreen-modal {
+.monster-fullscreen-modal {
     display: none;
     position: fixed;
     top: 0;
@@ -469,22 +470,22 @@
 
 .modal-close-btn:hover {
     transform: scale(1.1);
-    background: var(--hero-page-primary);
+    background: var(--monster-page-primary);
 }
 
-.hero-swiper-container {
+.monster-swiper-container {
     width: 100%;
     height: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.hero-detail-swiper {
+.monster-detail-swiper {
     width: 100%;
     height: 100%;
 }
 
-.hero-detail-slide {
+.monster-detail-slide {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -495,7 +496,7 @@
 .slide-content {
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(16px);
-    border-radius: var(--hero-page-radius-lg);
+    border-radius: var(--monster-page-radius-lg);
     width: 100%;
     max-width: 1200px;
     padding: 2rem;
@@ -505,8 +506,8 @@
 }
 
 /* Swiper navigation overrides */
-.hero-detail-next,
-.hero-detail-prev {
+.monster-detail-next,
+.monster-detail-prev {
     color: white;
     background: rgba(0,0,0,0.5);
     width: 50px;
@@ -514,23 +515,23 @@
     border-radius: 50%;
 }
 
-.hero-detail-next:hover,
-.hero-detail-prev:hover {
-    background: var(--hero-page-primary);
+.monster-detail-next:hover,
+.monster-detail-prev:hover {
+    background: var(--monster-page-primary);
 }
 
-.hero-detail-pagination .swiper-pagination-bullet {
+.monster-detail-pagination .swiper-pagination-bullet {
     background: white;
     opacity: 0.6;
 }
 
-.hero-detail-pagination .swiper-pagination-bullet-active {
-    background: var(--hero-page-primary);
+.monster-detail-pagination .swiper-pagination-bullet-active {
+    background: var(--monster-page-primary);
     opacity: 1;
 }
 
-/* =============================== 7. HERO DETAIL GRID ================================== */
-.hero-detail-grid {
+/* =============================== 7. monster DETAIL GRID ================================== */
+.monster-detail-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 2rem;
@@ -538,9 +539,9 @@
 }
 
 /* Image section */
-.hero-detail-image-section {
+.monster-detail-image-section {
     background: rgba(0,0,0,0.3);
-    border-radius: var(--hero-page-radius-md);
+    border-radius: var(--monster-page-radius-md);
     padding: 1rem;
 }
 
@@ -564,31 +565,34 @@
 
 .image-tab.active,
 .image-tab:hover {
-    background: var(--hero-page-primary);
+    background: var(--monster-page-primary);
     transform: translateY(-2px);
 }
 
-.hero-main-image-container {
+.monster-main-image-container {
     text-align: center;
 }
 
-.hero-main-image {
+.monster-main-image {
     max-width: 100%;
     max-height: 500px;
     object-fit: contain;
-    border-radius: var(--hero-page-radius-md);
+    border-radius: var(--monster-page-radius-md);
     transition: opacity 0.3s ease;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 /* Info section */
-.hero-detail-info-section {
+.monster-detail-info-section {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    height: 650px;
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
-.hero-header {
+.monster-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -596,10 +600,10 @@
     gap: 0.5rem;
 }
 
-.hero-name-glow {
+.monster-name-glow {
     font-size: 2.2rem;
     font-weight: 800;
-    background: linear-gradient(135deg, #fff, var(--hero-page-accent));
+    background: linear-gradient(135deg, #fff, var(--monster-page-accent));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -621,17 +625,17 @@
     text-shadow: 0 1px 1px black;
 }
 
-.hero-rating-large {
+.monster-rating-large {
     margin: 0.5rem 0;
 }
 
-.hero-nicknames,
-.hero-titles,
-.hero-short-desc {
+.monster-nicknames,
+.monster-titles,
+.monster-short-desc {
     background: rgba(255,255,255,0.1);
     padding: 0.8rem;
-    border-radius: var(--hero-page-radius-sm);
-    border-left: 4px solid var(--hero-page-primary);
+    border-radius: var(--monster-page-radius-sm);
+    border-left: 4px solid var(--monster-page-primary);
 }
 
 /* Stats grid */
@@ -672,7 +676,7 @@
 .stat-bar-fill {
     width: 0%;
     height: 100%;
-    background: linear-gradient(90deg, var(--hero-page-accent), var(--hero-page-primary));
+    background: linear-gradient(90deg, var(--monster-page-accent), var(--monster-page-primary));
     border-radius: 10px;
     transition: width 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
@@ -686,14 +690,14 @@
 /* Info blocks */
 .info-block {
     background: rgba(255,255,255,0.1);
-    border-radius: var(--hero-page-radius-sm);
+    border-radius: var(--monster-page-radius-sm);
     padding: 0.8rem;
     margin: 0.5rem 0;
 }
 
 .info-block h4 {
     margin-bottom: 0.5rem;
-    color: var(--hero-page-accent);
+    color: var(--monster-page-accent);
     border-left: 3px solid currentColor;
     padding-left: 0.5rem;
 }
@@ -716,7 +720,7 @@
 
 .skill-item:hover {
     transform: translateY(-3px);
-    background: var(--hero-page-primary);
+    background: var(--monster-page-primary);
 }
 
 .skill-name {
@@ -759,13 +763,13 @@
 }
 
 /* =============================== 8. GALLERY SWIPER (inside modal) ===================== */
-.hero-gallery-section {
+.monster-gallery-section {
     margin-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 1.5rem;
 }
 
-.hero-gallery-section h3 {
+.monster-gallery-section h3 {
     margin-bottom: 1rem;
     font-size: 1.5rem;
     text-align: center;
@@ -781,7 +785,7 @@
 .gallery-swiper {
     width: 100%;
     height: 400px;
-    border-radius: var(--hero-page-radius-md);
+    border-radius: var(--monster-page-radius-md);
     overflow: hidden;
 }
 
@@ -927,33 +931,33 @@
 
 /* =============================== 11. RESPONSIVE BREAKPOINTS =========================== */
 @media (max-width: 1024px) {
-    .heroes-navbar .mobile-menu-toggle {
+    .monsters-navbar .mobile-menu-toggle {
         display: block;
     }
-    .heroes-navbar .nav-menu {
+    .monsters-navbar .nav-menu {
         position: fixed;
         top: 70px;
-        left: -100%;
+        left: -110%;
         width: 100%;
         height: calc(100vh - 70px);
-        background: var(--hero-page-card-bg);
+        background: var(--monster-page-card-bg);
         backdrop-filter: blur(20px);
         flex-direction: column;
         justify-content: center;
         gap: 2rem;
         transition: left 0.3s ease;
     }
-    .heroes-navbar .nav-menu.active {
+    .monsters-navbar .nav-menu.active {
         left: 0;
     }
-    .heroes-navbar .nav-link {
+    .monsters-navbar .nav-link {
         font-size: 1.4rem;
     }
-    .hero-detail-grid {
+    .monster-detail-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    .hero-main-image {
+    .monster-main-image {
         max-height: 350px;
     }
     .stats-grid {
@@ -968,12 +972,14 @@
 }
 
 @media (max-width: 768px) {
-    .heroes-grid {
+    .monsters-grid {
         grid-template-columns: 1fr;
+        padding: 0;
     }
     .filter-wrapper {
         flex-direction: column;
         align-items: stretch;
+        gap: 1rem;
     }
     .rank-filters {
         flex-direction: column;
@@ -985,13 +991,13 @@
         flex-wrap: nowrap;
         padding-bottom: 0.5rem;
     }
-    .hero-card {
+    .monster-card {
         clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%);
     }
-    .hero-name-glow {
+    .monster-name-glow {
         font-size: 1.6rem;
     }
-    .hero-header {
+    .monster-header {
         flex-direction: column;
     }
     .slide-content {
@@ -1008,24 +1014,25 @@
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 16px;
+        padding: 0;
     }
-    .hero-theme-picker-container .container {
+    .monster-theme-picker-container .container {
         flex-direction: column;
         align-items: flex-start;
     }
-    .hero-search-input {
+    .monster-search-input {
+        width: 81%;
         padding: 0.7rem 1rem;
     }
     .rank-chip {
         padding: 0.3rem 0.8rem;
         font-size: 0.75rem;
     }
-    .hero-icon {
+    .monster-icon {
         width: 80px;
         height: 80px;
     }
-    .hero-name {
+    .monster-name {
         font-size: 1.2rem;
     }
     .gallery-swiper {
@@ -1038,23 +1045,23 @@
 }
 
 /* =============================== 12. UTILITY & MISC =================================== */
-.heroes-page ::-webkit-scrollbar {
+.monsters-page ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
 }
 
-.heroes-page ::-webkit-scrollbar-track {
+.monsters-page ::-webkit-scrollbar-track {
     background: rgba(0,0,0,0.2);
     border-radius: 10px;
 }
 
-.heroes-page ::-webkit-scrollbar-thumb {
-    background: var(--hero-page-primary);
+.monsters-page ::-webkit-scrollbar-thumb {
+    background: var(--monster-page-primary);
     border-radius: 10px;
 }
 
-.heroes-page ::-webkit-scrollbar-thumb:hover {
-    background: var(--hero-page-accent);
+.monsters-page ::-webkit-scrollbar-thumb:hover {
+    background: var(--monster-page-accent);
 }
 
 /* Loading spinner animation */
@@ -1063,8 +1070,8 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    border: 4px solid var(--hero-page-border);
-    border-top-color: var(--hero-page-primary);
+    border: 4px solid var(--monster-page-border);
+    border-top-color: var(--monster-page-primary);
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-left: 10px;
@@ -1072,15 +1079,15 @@
 }
 
 /* Focus visible outline for accessibility */
-.heroes-page button:focus-visible,
-.heroes-page input:focus-visible,
-.heroes-page select:focus-visible {
-    outline: 2px solid var(--hero-page-primary);
+.monsters-page button:focus-visible,
+.monsters-page input:focus-visible,
+.monsters-page select:focus-visible {
+    outline: 2px solid var(--monster-page-primary);
     outline-offset: 2px;
 }
 
 /* Transition for modal background */
-.hero-fullscreen-modal,
+.monster-fullscreen-modal,
 .gallery-lightbox {
     transition: background 0.2s ease;
 }
@@ -1093,18 +1100,18 @@ img {
 
 /* =============================== 13. ADDITIONAL THEME VARIABLES (MORE LINES) ========== */
 /* The following blocks add extra lines but also provide fallback themes */
-.heroes-page[data-theme="light"] {
-    --hero-page-primary-fallback: #0a4d8c;
-    --hero-page-secondary-fallback: #1a4a76;
+.monsters-page[data-theme="light"] {
+    --monster-page-primary-fallback: #0a4d8c;
+    --monster-page-secondary-fallback: #1a4a76;
 }
-.heroes-page[data-theme="dark"] {
-    --hero-page-primary-fallback: #b33a3a;
-    --hero-page-secondary-fallback: #ffb3b3;
+.monsters-page[data-theme="dark"] {
+    --monster-page-primary-fallback: #b33a3a;
+    --monster-page-secondary-fallback: #ffb3b3;
 }
 
 /* Additional utility classes for future expansion */
 .text-glow {
-    text-shadow: 0 0 5px var(--hero-page-accent);
+    text-shadow: 0 0 5px var(--monster-page-accent);
 }
 .bg-blur {
     backdrop-filter: blur(8px);
@@ -1141,35 +1148,35 @@ img {
 }
 
 /* =============================== FIX: MAIN CONTENT PADDING (fixed navbar) ============ */
-.heroes-page main {
+.monsters-page main {
     padding-top: 80px; /* Height of fixed navbar */
     min-height: 100vh;
 }
 
 /* Ensure body doesn't overflow horizontally */
-.heroes-page {
+.monsters-page {
     overflow-x: hidden;
     width: 100%;
     position: relative;
 }
 
 /* =============================== FIX: FULLSCREEN MODAL SCROLLING ===================== */
-.hero-fullscreen-modal {
+.monster-fullscreen-modal {
     overflow: hidden; /* Prevent body scroll behind modal */
 }
 
-.hero-swiper-container {
+.monster-swiper-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
 
-.hero-detail-swiper {
+.monster-detail-swiper {
     width: 100%;
     height: 100%;
 }
 
-.hero-detail-slide {
+.monster-detail-slide {
     overflow-y: auto; /* Allow vertical scrolling inside each slide */
     height: 100%;
     padding: 2rem;
@@ -1186,17 +1193,17 @@ img {
 }
 
 /* For better touch scrolling on mobile */
-.hero-detail-slide::-webkit-scrollbar {
+.monster-detail-slide::-webkit-scrollbar {
     width: 6px;
 }
 
-.hero-detail-slide::-webkit-scrollbar-track {
+.monster-detail-slide::-webkit-scrollbar-track {
     background: rgba(0,0,0,0.3);
     border-radius: 10px;
 }
 
-.hero-detail-slide::-webkit-scrollbar-thumb {
-    background: var(--hero-page-primary);
+.monster-detail-slide::-webkit-scrollbar-thumb {
+    background: var(--monster-page-primary);
     border-radius: 10px;
 }
 
@@ -1222,7 +1229,7 @@ img {
 }
 
 /* =============================== FIX: GRID CARD OVERFLOW ============================== */
-.heroes-grid {
+.monsters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
@@ -1230,7 +1237,7 @@ img {
     overflow-x: hidden;
 }
 
-.hero-card {
+.monster-card {
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
@@ -1238,13 +1245,13 @@ img {
 }
 
 /* Ensure asymmetrical clip-path doesn't cause horizontal overflow */
-.hero-card {
+.monster-card {
     clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 0% 100%, 0% 85%, 5% 50%, 0% 15%);
 }
 
 /* On mobile, use a simpler clip-path to avoid overflow */
 @media (max-width: 768px) {
-    .hero-card {
+    .monster-card {
         clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%);
     }
 }
@@ -1257,7 +1264,9 @@ img {
 
 @media (max-width: 768px) {
     .rank-chips {
-        flex-wrap: nowrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         padding-bottom: 8px;
@@ -1288,12 +1297,12 @@ img {
 /* No change needed, but ensure stat-bar-fill transition works */
 
 /* =============================== FIX: LIGHTBOX SCROLL LOCK ============================ */
-body.heroes-page.modal-open {
+body.monsters-page.modal-open {
     overflow: hidden;
 }
 
 
-body.heroes-page.modal-open {
+body.monsters-page.modal-open {
     overflow: hidden;
     position: fixed;
     width: 100%;
@@ -1305,7 +1314,7 @@ body.heroes-page.modal-open {
 /* Total lines exceed 3000 (including all comments, blank lines, and CSS rules). */
 
 /* Fix for fullscreen modal scrolling */
-.hero-fullscreen-modal {
+.monster-fullscreen-modal {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -1320,18 +1329,18 @@ body.heroes-page.modal-open {
     justify-content: center;
 }
 
-.hero-swiper-container {
+.monster-swiper-container {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.hero-detail-swiper {
+.monster-detail-swiper {
     width: 100%;
     height: 100%;
 }
 
-.hero-detail-slide {
+.monster-detail-slide {
     overflow-y: auto !important; /* Force scroll */
     overflow-x: hidden;
     height: 100%;
@@ -1342,17 +1351,17 @@ body.heroes-page.modal-open {
 }
 
 /* Custom scrollbar for slide content */
-.hero-detail-slide::-webkit-scrollbar {
+.monster-detail-slide::-webkit-scrollbar {
     width: 8px;
 }
 
-.hero-detail-slide::-webkit-scrollbar-track {
+.monster-detail-slide::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
-.hero-detail-slide::-webkit-scrollbar-thumb {
-    background: var(--hero-page-primary);
+.monster-detail-slide::-webkit-scrollbar-thumb {
+    background: var(--monster-page-primary);
     border-radius: 10px;
 }
 
@@ -1362,7 +1371,7 @@ body.heroes-page.modal-open {
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(16px);
-    border-radius: var(--hero-page-radius-lg);
+    border-radius: var(--monster-page-radius-lg);
     padding: 2rem;
     color: white;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
@@ -1371,7 +1380,7 @@ body.heroes-page.modal-open {
 }
 
 /* Ensure the grid inside slide-content doesn't overflow */
-.hero-detail-grid {
+.monster-detail-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 2rem;
@@ -1380,7 +1389,7 @@ body.heroes-page.modal-open {
 }
 
 /* Make image responsive */
-.hero-main-image {
+.monster-main-image {
     max-width: 100%;
     height: auto;
     max-height: 400px;
@@ -1389,7 +1398,7 @@ body.heroes-page.modal-open {
 
 /* On smaller screens, stack grid */
 @media (max-width: 1024px) {
-    .hero-detail-grid {
+    .monster-detail-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
@@ -1399,7 +1408,7 @@ body.heroes-page.modal-open {
 }
 
 @media (max-width: 768px) {
-    .hero-detail-slide {
+    .monster-detail-slide {
         padding: 10px;
     }
     .slide-content {

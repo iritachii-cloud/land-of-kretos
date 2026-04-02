@@ -484,7 +484,7 @@ class HeroesPage {
                         <div class="swiper-wrapper" id="galleryWrapper-${hero.id}"></div>
                         <div class="swiper-button-next gallery-next"></div>
                         <div class="swiper-button-prev gallery-prev"></div>
-                        <div class="swiper-pagination gallery-pagination"></div>
+                        <!-- <div class="swiper-pagination gallery-pagination"></div> -->
                     </div>
                 </div>
             </div>
