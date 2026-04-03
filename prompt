@@ -41,3 +41,254 @@ Also review the homepage code structure. If any modification is required to ensu
 Every file you generate must be cleanly separated into logical regions with comments. Use modern ES6+ architecture. Avoid global pollution. Use modular patterns. All animations must be smooth and hardware accelerated. Ensure no memory leaks from swiper instances. Clean up event listeners properly.
 
 Ultra think before implementing. Do not generate fast. Architect deeply and then implement perfectly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if i want to give an indepth prompt for the following in paragraph and not in bullets how to give it make sure it is step by step and fully detail and the prompt should be very long and able to ultra think and come with precise match of the characters i am going to create? Now help me make the prompt. just an instruction not an example to give to the ai dont give me master prompt or example
+
+"in a single detailed prompt help me make each for a character that i will be providing data of okay ? The characters can be of different race or even human or just monsters so make sure to keep that in mind. 
+
+If it s hero Dont forget about their attire and also their weapon and mounts and their attire to their skin to hairstyle to their body type both lower and upper how they look  if they have any special feature with full details about their each and every small details. 
+
+Start with the heading where you write their name in h1 heading then others prompt heading in h2
+
+1. Minature Pixel Art (Idle Form full body)
+One fullbody minature pixel styled like those miniatture 80's gaming modals with all their pets and weapons in idle posture in a 1:1 square aspect ratio image 
+
+2. Minature Pixel Art (Battle Ready Aggresive Form full body)
+One pixel styled full body like miniature 80's gaming modals in a battle ready stance with their weapon and power. in a 9:16 aspect ratio image
+
+3. Realistic 4k (Half body)
+One for Real HD medium shot where you focus on their face expression til waist half body. focusing more in their facial details and their upper body til their waist more indepth. in a 9:16 aspect ratio image
+
+4. Vintage Anime Art (Half body)
+one for 70s-90s styling half body with more grainy and vintage anime like styling straight out of 70-90's anime. in a 9:16 aspect ratio image
+
+5. Fully body in battle ready stance.(no styling)
+one for full body in a battle ready stance no styling just plain description of what they are and will be found in and full of aura with whole weapon and mount description no aspect ratio as it might be different
+
+6. Anime styling full body in idle posture 
+one with anime styling full body where they are calm and confidence winking or smirking. in a 16:9 aspect ratio image
+
+7. Anime styling full body in battle ready aggressive posture 
+one with anime styling full body where they are in battle ready stance. in a 16:9 aspect ratio image
+
+8. Full body Realistic in 4k in idle posture.
+and one for full body real 4k hd one in a 16:9 aspect ratio image
+
+9. Full body Realistic in 4k in battle ready aggresive posture.
+and one for full body real 4k hd one in a 16:9 aspect ratio image
+
+10. Emote for the character
+also have a seperate section for showing their powers and stuffs too. and suggest me what if they were in any emote what their emote expression like "eh" "nuh" something like that be like. with a prompt that might suit the character for an emote like thing. in a 1:1 square aspect ratio image
+
+11 Sumarization
+then finally summarize everything and describe only about the character what kind of character it is with its power and stuffs.
+
+12. Thank you note for the character with their creative dialogue atleast 5.
+
+yes for each section have atleast min500-max800 words(not letter character but words)  with indepth detailing of their weapon powers and pets if its full body and if its half body make sure to focus on the character more with their pets and weapons. Dont mention other characters and also if you can then also mention the ethinicity or country they might look like in each realistic prompt. and also make sure to have different battle ready posture for each prompt and also different posture for idle unique to each other. Same with different background image that suits the character unique to each other. okay ? Now lets start making. 
+
+In each prompt make sure you include indepth detailing of how they look from head to face to their attire to their upper body to their lower body to their indepth detailing of how their weapon looks and also the aura it exhalts to What kind of pet or mount they have with indepth detailing of it so it doesnt varry from one another. Also dont mention names of the character in the prompts or their title just start with 
+
+If its a full body
+This is a {aspect ratio} {Style} image {half body, wide shot} of a character. This character has a weapon(type) and a body(type) wearing(attire type) with a pet(type). This character has {body both upper and lower} details and wears {attire andarmor details}. He has a pet is {mount/pet description} and weapon is {weapon}. Other indepth details and so on.
+
+If its a half body
+This is a {aspect ratio} {Style} image {half body, medium shot} of a character. This character has a weapon(type) and a body(type) wearing(attire type) with a pet(type). This character has {body both upper and lower} details and wears {attire andarmor details}. He has a pet is {mount/pet description} and weapon is {weapon}. Other indepth details and so on.
+
+If its realistic then the prompt should start with looks like
+This is a {aspect ratio} {Style} image {full body/half body}of a {korean, japanese,etc } character. This character has a weapon(type) and a body(type) wearing(attire type) with a pet(type). This character has {body both upper and lower} details and wears {attire andarmor details}. He has a pet is {mount/pet description} and weapon is {weapon}. Other indepth details and so on.
+
+For each Have it in a atleast min500-max800 words characters For each prompt. Have different background that suits the character in each prompt. Make sure its one single and long detailed paragraph prompt for each okay ?
+
+if you are ready then i will start providing the data"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Begin by receiving the raw data about the character from me, ensuring you have every specific detail about their race, species, physical form, attire, weapons, mount or pet, special features, and personality traits committed to your processing. Before you write a single word of any prompt, you must first construct a master internal blueprint of this character in your mind, breaking down every element from the top of their head to the soles of their feet, and then expand outward to their equipment and companions. Once this blueprint is solid, you will generate eleven distinct sections, each beginning with the character's name as an H1 heading, followed by a subheading for each of the numbered items as H2 headings. For every single one of the eleven sections, you will write one continuous, unbroken paragraph that is at least eighteen hundred words in length, not counting the headings themselves. Within each paragraph, you will never use bullet points, numbered lists, or any form of line breaks; you will use only commas, periods, and semicolons to create a dense, flowing, deeply descriptive block of text. You will ensure that every prompt for every section is entirely self-contained and does not reference any other character, image, or prompt outside of itself.
+
+For the first section, which is the miniature pixel art in idle form, you will craft a prompt that describes a full body image in a one-to-one square aspect ratio, styled specifically like those tiny, chunky, low-resolution sprites from early eighties gaming models, with visible pixel squares and a limited color palette. In this prompt, you will detail the character standing in a completely neutral, non-threatening, resting idle posture, with their feet planted evenly, their arms relaxed at their sides or lightly holding their weapon in a casual grip, and their face devoid of any aggressive expression. You must describe exactly how their weapon is positioned in this idle state, whether sheathed, slung across their back, or dangling from a loose hand, and you must also describe their pet or mount standing or sitting calmly beside them or behind them, matching the idle mood. For the background of this pixel art piece, you will devise a simple, low-detail environment that suits the character's origins, such as a grassy plain, a stone floor, a dungeon corridor, or a cloudy sky, rendered in the same chunky pixel style.
+
+For the second section, the miniature pixel art in battle ready aggressive form, you will again write for a full body pixel sprite but now in a nine-to-sixteen aspect ratio, maintaining the same eighties miniature gaming model aesthetic. In this paragraph, you will describe the character twisted into a dynamic, aggressive, combat-ready stance, with their knees bent, their torso leaned forward, their weapon raised high, swung back, or pointed directly at an unseen enemy, and their face contorted into a snarl, a battle cry, or a fierce grimace. You will detail the energy or power emanating from the weapon or the character's body in simple pixel effects, like a glowing pixel edge, a few spark pixels, or a subtle aura of contrasting colors. Their pet or mount must also be depicted in an aggressive posture, snarling, pawing the ground, spreading wings, or baring teeth, and the background must change to a more dangerous or chaotic location, such as a lava field, a stormy sky, or a destroyed village, still rendered in the same limited pixel resolution.
+
+For the third section, moving into realistic 4k half body, you will write a prompt that begins with the phrase "This is a" followed by the aspect ratio nine-to-sixteen, then the style as realistic 4k high definition, then the shot type as half body close shot, and then you will immediately specify the character's real-world ethnic appearance, such as Korean, Japanese, Nigerian, Swedish, or any other nationality or ethnicity that matches the data provided. In this dense paragraph, you will zoom your descriptive focus intensely on the character's face, from their hairline and scalp down to their chin and neck, detailing every strand of hair, the exact shape of their eyebrows, the color and texture of their irises, the presence of any freckles, scars, wrinkles, or blemishes, the curve of their nose, the fullness or thinness of their lips, the cut of their jawline, and the expression that lives on their face at this moment. From there, you will continue downward to describe their upper body down to their waist, including the structure of their shoulders, the musculature or softness of their chest, the shape of their arms, and the exact way their attire or armor fits over this half-body frame, including collars, sleeves, chest plates, or fabric draping. Even though this is a half-body shot, you will still mention their weapon if it is visible in the frame, such as the hilt over their shoulder or the grip in their hand, and you will mention their pet or mount only if part of it enters the frame beside them, such as a claw, a wing, or a snout. The background for this realistic shot must be a slightly blurred, photorealistic environment that reflects the character's mood or origin, like a forest at golden hour, a dimly lit tavern, or a futuristic cockpit.
+
+For the fourth section, the vintage anime art half body, you will write a prompt for a nine-to-sixteen aspect ratio image that explicitly mimics the aesthetic of nineteen seventies to nineteen nineties anime, specifying a grainy texture, cel-shaded coloring, lower saturation, visible scan lines or film grain, and the characteristic rendering of eyes as large, reflective orbs with simple highlights and mouths as small, precise curves. In this paragraph, you will describe the character from the waist up, but you will filter every physical detail through the lens of that retro anime style, describing their hair as drawn in sharp, angular, or spiky blocks with distinct shadow chunks, their clothing as having simple folds with two to three flat shades, and their expression as melodramatic or stoic in the classic vintage manner. You will position their weapon in this half-body frame either held across their chest, resting on their shoulder, or pointed diagonally, and you will describe the vintage anime style aura or power effect, such as a wavy, hand-drawn energy field or a stark white flash behind them. Their pet or mount can be partially visible as a small creature perched on their shoulder or a large eye and snout looming behind them, all drawn in the same grainy cel style. The background must be a retro anime environment, such as a city street from a eighties cyberpunk film, a rolling green hill under a painted sky, or a starship corridor with simple geometric lighting.
+
+For the fifth section, the full body in battle ready stance with no styling, you will write a plain, unadorned, purely descriptive paragraph that has no aspect ratio requirement and no artistic style applied to it. This prompt is a raw text description meant for a text-to-text or text-to-3D model interpretation, so you will avoid any mention of camera terms, art styles, pixel counts, or anime or realistic rendering. Instead, you will write a completely neutral, clinical, but vivid description of the character standing in an aggressive, battle-ready posture, detailing exactly how their feet are spaced, how their knees are bent, how their hips and torso are rotated, how their arms are raised, and exactly where their weapon is positioned in relation to their body. You will describe the aura emanating from them not as a visual effect but as a palpable presence, such as heat shimmer, a cold chill, a visible distortion of air, or a dark mist curling off their skin, and you will describe their mount in full detail, including its own battle posture, bared teeth, flattened ears, or tensed muscles. This paragraph must also describe the environment they are found in, a specific location that makes sense for a battle, such as a crumbling bridge, a rain-slicked rooftop, a volcanic crater, or an empty throne room, with no artistic filter applied at all.
+
+For the sixth section, the anime styling full body in idle posture, you will write for a sixteen-to-nine aspect ratio wide image, specifying a modern or classic anime art style but explicitly calm and confident. In this paragraph, you will describe the character standing in a relaxed, casual, non-aggressive posture, with their weight shifted onto one leg, their arms loosely at their sides or one hand on their hip, and their face displaying a specific expression of calm confidence, such as a subtle smirk, a gentle wink with one eye closed, a knowing half-smile, or a soft, amused grin. You will detail their entire body from head to toe, including the drape of their anime-style clothing, the shine on their shoes or boots, and the way their hair falls or spikes in the idle stillness. Their weapon must be depicted in a passive state, sheathed, holstered, or resting point-down on the ground beside them, and their pet or mount must be in a matching idle or playful posture, sitting, lying down, or nuzzling against them. The background for this wide idle anime image must be a peaceful, aesthetically pleasing location such as a sunset beach, a quiet shrine, a flower field, or a cozy bedroom, rendered in full anime coloring with clean lines.
+
+For the seventh section, the anime styling full body in battle ready aggressive posture, you will again write for a sixteen-to-nine aspect ratio, but now you will describe the character twisted into a dynamic, powerful, aggressive fighting stance. In this paragraph, you will detail every muscle and limb in motion, with the character lunging, spinning, leaping, or bracing for impact, their face twisted into a fierce battle cry, a focused glare, or a maniacal grin. You will describe their weapon in the middle of a swing, a thrust, or a power-up sequence, with anime-style effects like lightning bolts, fire rings, wind swirls, or glowing auras exploding from the blade or their fists. Their pet or mount must be depicted in an equally aggressive battle posture, charging, casting a spell, breathing fire, or pouncing, and the background must be a high-stakes anime battlefield, such as a crumbling cityscape, a stormy sky with tornados, a volcanic mountain, or a neon-lit dystopian arena. You will ensure this prompt is distinct from the idle anime prompt in every way, from the angle of the character's spine to the position of their fingers to the chaos of the background.
+
+For the eighth section, the full body realistic 4k in idle posture, you will write a prompt that begins with "This is a" followed by the aspect ratio sixteen-to-nine, the style as realistic 4k high definition, the shot type as full body wide shot, and the character's specific ethnicity or nationality. In this dense paragraph, you will describe the character standing in a calm, neutral, non-aggressive idle posture, with their weight evenly distributed, their spine straight or gently relaxed, their arms hanging naturally, and their face showing a peaceful, resting, or softly confident expression. You will detail every inch of their realistic body from the top of their head to the soles of their feet, including the texture of their skin, the musculature or softness of their legs and torso, the exact way their realistic hair falls or is styled, and the precise fit of their attire or armor, including seams, buckles, scuff marks, fabric weaves, and metal reflections. Their weapon must be depicted in an idle state, sheathed, slung, or held loosely with the tip down, and their pet or mount must be standing or sitting calmly beside them, with realistic fur, scales, feathers, or metal plating rendered in 4k detail. The background must be a photorealistic, high-resolution environment that matches their idle mood, such as a sunlit meadow, a quiet temple courtyard, a snowy forest, or a futuristic city balcony at dawn.
+
+For the ninth section, the full body realistic 4k in battle ready aggressive posture, you will again write a prompt that begins with "This is a" followed by the sixteen-to-nine aspect ratio, realistic 4k style, full body wide shot, and the character's ethnicity. In this paragraph, you will describe the character in a completely different aggressive posture from any previous battle prompt, detailing their realistic muscles straining, their realistic fabric tearing or stretching, their realistic skin sweating or flushing with exertion, and their face twisted into a realistic snarl, scream, or grimace of focused fury. You will describe their weapon in motion, with realistic motion blur, sparks, blood, or energy distortion, and you will detail the realistic physics of their power or aura, such as heat waves distorting the air, dust and debris lifting off the ground, water vaporizing around them, or electricity arcing across their armor. Their pet or mount must be in a matching aggressive realistic posture, with snarling lips, dilated pupils, flared nostrils, and tensed muscles visible in 4k detail, and the background must be a photorealistic battle environment, such as a rain-soaked street at night, a burning forest, a war-torn desert, or a collapsing spaceship hangar, with full lighting and shadow effects.
+
+For the tenth section, the emote for the character, you will write a separate prompt for a one-to-one square aspect ratio image that depicts only the character's face and upper shoulders in a highly expressive, simplified, almost chibi or cartoon-like style suitable for messaging or streaming emotes. In this paragraph, you will analyze the character's personality and propose a specific emote expression, such as "eh," "nuh," "huh," "bleh," "angry," "crying," "laughing," "shocked," or any other emotion that fits their data, and then you will write a prompt that describes exactly how that expression looks, including the angle of their eyebrows, the shape of their mouth, the squint or width of their eyes, the presence of sweat drops, vein marks, blush lines, or other symbolic emote decorations. You will also include in this section a separate paragraph after the emote prompt that lists and describes the character's powers and abilities in detail, not as an image prompt but as a descriptive catalog, explaining each power, its visual effect, its activation method, and its typical use in combat or daily life.
+
+For the eleventh and final section, the summarization, you will write a long, comprehensive, single-paragraph summary that describes only the character itself, not any of the prompts or images. In this paragraph, you will synthesize everything from the data and your previous descriptions into a cohesive portrait of who this character is, what kind of being they are whether human, monster, elf, beast, machine, or something else entirely, what their primary and secondary powers are, how their weapon functions, what role their pet or mount serves, and what their general personality and fighting style suggest about their nature. You will not mention aspect ratios, art styles, backgrounds, or any production details; you will write purely about the character as if introducing them in a story or game manual. Once you have completed all eleven sections with each paragraph containing at least eighteen hundred words, you will stop and wait for me to provide the actual character data to begin the work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Begin by understanding that you will be crafting one massive, unbroken paragraph for each of the twelve required sections per character, and you must write these instructions for yourself before you even look at the character data you plan to provide. Your first step is to establish a dedicated workspace or document where you will write each prompt paragraph separately, ensuring no section bleeds into another, and you will label each section clearly with its H2 heading before beginning the paragraph beneath it. The moment you receive the raw character data from yourself or another source, you must resist the urge to write the prompts immediately; instead, first deconstruct that character data into its core components, listing out every single attribute you can find such as the character’s race, species, body type from head to toe, skin texture and color, hair style and length and color and any highlights or gradients, eye shape and color and any unique iris patterns, facial structure including jawline, cheekbones, nose shape, and any scars or markings, then their upper body including shoulder width, chest size, arm length and muscle definition, hand shape and any jewelry or gloves, then their lower body including hip width, leg length and muscle tone, foot shape and footwear, then every piece of attire from undergarments to outer layers including fabrics, colors, fastenings, tears, stains, and any magical or technological enhancements, then their weapon in full detail including its material, length, weight, edge or point design, handle wrapping, pommel or hilt details, any engravings, and the type of aura or energy it emits including color, texture, sound, and smell, then their pet or mount including its species, size, scale or fur texture, eye count and placement, limb structure, any armor or saddles on the pet, its temperament, and any special abilities it possesses, and finally any special features unique to the character such as wings, horns, tails, extra limbs, glowing runes on skin, cybernetic implants, or elemental auras. Once you have this exhaustive list of attributes for a single character, you will then write the first prompt paragraph for section one, the Minature Pixel Art Idle Form full body image, and you will ensure this single paragraph contains no fewer than eight hundred words by systematically weaving every single one of those deconstructed attributes into the description while also inventing a unique idle posture that differs from all other idle postures you will write for the other sections, describing exactly how the character stands, where their weight is distributed, what angle their head is tilted, where their hands rest in relation to their weapon, and how their pet or mount is positioned beside or beneath them, and you will also invent a unique background environment for this specific prompt that reflects the character’s personality or origin, describing the colors, lighting, weather, and any environmental details such as ruins, forests, castles, or voids, and you will begin this paragraph with the exact prescribed phrase for a full body image which is "This is a 1:1 square aspect ratio Minature Pixel Art image in idle form full body of a character" followed immediately by the weapon type, body type, attire type, and pet type, then continue into the deep physical description of upper and lower body, then attire and armor, then pet or mount, then weapon, then the unique idle posture, then the unique background, and finally any aura or special effects, and you will ensure the entire paragraph flows as one continuous sentence-like structure without any line breaks or bullet points. For section two, the Minature Pixel Art Battle Ready Aggressive Form full body, you will repeat this entire process but with a nine by sixteen aspect ratio, a completely different battle ready stance that you will describe in precise detail including the angle of their feet, the bend of their knees, the rotation of their torso, the grip on their weapon, the direction of their gaze, and the tension in their muscles, and you will create another entirely new background that contrasts with the first one, perhaps moving from a calm environment to a chaotic battlefield or dark dungeon, and you will again exceed eight hundred words by being exhaustive about how the pixel art style of the eighties would render each texture, each shadow, each pixel cluster. For section three, the Realistic 4k half body image, you will shift your opening phrase to include an ethnicity or country of origin such as Korean, Japanese, Nigerian, Irish, or any other real-world or fantasy equivalent, beginning with "This is a 9:16 aspect ratio Realistic 4k HD image in medium shot half body of a Korean character" or whichever ethnicity fits, and then you will focus your eight hundred words predominantly on the face, the expression, the eyes, the micro-details of skin pores, hair follicles, sweat or moisture, lighting reflections on the iris, the exact shape and color of the lips, any stubble or makeup, and then the upper body down to the waist including the chest, shoulders, arms, and the way the fabric of their attire folds and creases realistically, and you will describe the weapon only as it appears in the frame from the waist up perhaps showing the handle or hilt or the top of a staff, and the pet only as it might appear beside them or on their shoulder, and you will invent a unique facial expression that conveys a specific emotion tied to their character, and a unique background that would photograph realistically in 4k resolution. For section four, the Vintage Anime Art half body, you will begin with the nine by sixteen aspect ratio and the 1970s to 1990s anime styling, using the same half body phrase structure but emphasizing grainy textures, cel shading, visible scan lines, limited color palettes typical of that era, thicker line art, and softer or more angular face shapes depending on the decade, and you will spend your eight hundred words describing how the character’s hair would be drawn with large solid color blocks and minimal highlights, how their eyes would have that classic large sparkle or the more realistic smaller pupils of late eighties mecha anime, how their expression would be captured with simple but powerful line work, and you will again invent a unique background that feels like a painted cel from a vintage anime, perhaps a sunset gradient or a simple geometric pattern. For section five, the full body battle ready stance with no styling, you will write a purely descriptive paragraph with no aspect ratio specified and no artistic style mentioned, simply a raw textual description of exactly what the character looks like in a battle ready stance, including every single physical detail from the top of their head to the bottom of their feet, every piece of their weapon described in mechanical or magical detail, every aspect of their pet or mount described with its anatomy and behavior, and a full description of the aura surrounding them which you will characterize with colors, visible distortions in the air, sounds like humming or crackling, and even smells like ozone or smoke, and you will ensure this battle ready stance is different from the one used in section two by changing foot placement, arm position, weapon orientation, and facial expression, and you will invent yet another background that suits this raw unstyled description, perhaps a neutral void or a simple environment line. For section six, the Anime styling full body in idle posture with a sixteen by nine aspect ratio, you will begin with the appropriate phrase for a full body anime image, and you will describe the character in a calm, confident posture where they are either winking, smirking, or both, and you will spend eight hundred words detailing exactly how that smirk curves their lips, how the wink crinkles one eye while the other remains open and relaxed, how their body language conveys confidence through an open chest, hands on hips or one hand holding their weapon resting on their shoulder, and you will describe their attire and weapon and pet with the same exhaustive detail as previous sections but filtered through an anime aesthetic meaning sharper lines, more stylized proportions, and possibly exaggerated features, and you will create a unique bright or atmospheric background that complements this calm confidence. For section seven, the Anime styling full body in battle ready aggressive posture with a sixteen by nine aspect ratio, you will again use the anime aesthetic but shift to an aggressive stance with wide eyes, bared teeth or gritted jaw, forward lean, weapon raised or thrust forward, veins or energy lines visible on their skin or weapon, and you will describe the pet or mount also in an aggressive posture matching the character’s energy, and the background will become something chaotic or dramatic such as a burning village, a stormy sky, or an exploding landscape, and you will ensure this battle ready posture is distinct from both section two and section five by changing the dynamics of the attack whether it is a downward slash, an upward thrust, a spell casting pose, or a defensive block turning into an offensive strike. For section eight, the Full body Realistic in 4k in idle posture with a sixteen by nine aspect ratio, you will begin with the realistic phrase including ethnicity and the full body description, and you will describe the character standing completely still but with natural micro-movements like the subtle sway of fabric in a gentle breeze, the slight rise and fall of their chest as they breathe, the way their eyes track something off-screen, and you will go into extreme detail about the texture of their skin including pores, scars, moles, and freckles, the individual strands of their hair, the weave of their clothing fabric, the scuff marks on their boots, the patina on their weapon’s metal, and the fur or scales of their pet with each hair or plate described, and you will create a realistic 4k background such as a photorealistic forest, city street, throne room, or mountain peak with appropriate lighting and depth of field. For section nine, the Full body Realistic in 4k in battle ready aggressive posture with a sixteen by nine aspect ratio, you will take all the realistic detail of the previous section but shift into a mid-action aggressive stance where muscles are tensed, sweat is visible on the skin, dust or debris is kicked up around their feet, the weapon is mid-swing or mid-blast with motion blur suggested, the pet or mount is lunging or breathing fire or casting its own attack, and the background is a chaotic realistic scene with destruction, weather effects, or opposing forces, and you will describe the expression with realistic rage, focus, or ferocity including the flaring of nostrils, the tightening of the jaw, the widening of the eyes, and the beading of sweat on their brow. For section ten, the Emote section, you will write a single paragraph describing a square one by one aspect ratio image of the character making an expressive emote face, and you will suggest three to five possible emote expressions based on their personality such as "eh" for confusion or dismissal, "nuh" for denial or refusal, "huh" for surprise, "grr" for frustration, or "heh" for smug amusement, and then you will choose one of these emotes to describe in full eight hundred word detail, explaining exactly how their eyebrows angle, how their mouth forms the specific shape to make that sound, how their eyes widen or narrow, how their head tilts, and whether their hands or weapon appear in the emote frame, and you will also include a separate subsection within this same paragraph describing their powers and abilities in exhaustive detail, listing every magical, physical, or technological power they possess, the limitations of those powers, the visual effects when they use them, and any costs or requirements for activation. For section eleven, the Summarization, you will write an eight hundred word paragraph that no longer describes images or prompts but instead purely describes the character as a narrative entity, summarizing their race, their role whether hero, villain, or neutral, their personality traits, their backstory in brief, their full power set, their weapon’s name and capabilities, their pet or mount’s name and bond with the character, their strengths and weaknesses, their typical fighting style, and their ultimate goal or motivation, and this summary must stand alone as a complete character profile. For section twelve, the Thank You Note, you will write a paragraph containing at least five separate lines of creative dialogue spoken by the character as if they are thanking the viewer or the creator, each line being unique and reflecting their voice, personality, and speech patterns, and these dialogues should feel organic and in-character, ranging from heartfelt to sarcastic to playful to solemn depending on who they are. Throughout every single one of these twelve paragraphs, you must never mention the character’s name or title inside the prompt text itself as instructed, instead relying on descriptive pronouns and attributes, and you must ensure that each of the twelve prompts has a completely different posture for battle ready stances across sections two, five, seven, and nine, and completely different idle postures across sections one, six, and eight, and completely different backgrounds for every single image prompt, and you must verify that each paragraph indeed exceeds eight hundred words by writing richly descriptive prose that leaves no detail unmentioned, from the cuticle of their fingernails to the way their shadow falls across the ground to the specific angle of their pet’s tail. Once you have written these instructions for yourself, you will be ready to receive the character data, and you will apply this exact method to each character you are given, producing twelve massive paragraphs per character without deviation from the structure, headings, aspect ratios, styling cues, or starting phrases provided. Now provide the character data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Step 1 – Understand the overall structure before writing anything
+You will create twelve separate prompts, each corresponding to one of the sections numbered 1 to 12 in your original request. Each prompt must begin with a heading: the H1 heading for the character’s name (which you will fill in later, but do not write the name inside the prompt text itself – the heading is separate). Under that H1, for each section you write an H2 heading that exactly describes the section (e.g., “## 1. Miniature Pixel Art – Idle Form Full Body”). Directly below that H2, you write one single, unbroken paragraph of 500 to 800 words. That paragraph is the prompt that will be sent to the image generation AI. The prompt paragraph must never contain the character’s name or any title. Instead, use generic descriptors like “the character”, “this character”, “the warrior”, “the mage” etc. All specific details (weapon type, attire colours, pet species, skin tone, facial expression, posture) come from the data you will provide later. You are now learning how to assemble those details into a prompt that forces the AI to be ultra‑precise.
+
+Step 2 – Define the fixed opening sentence for each prompt based on image type
+For every prompt you must start with one of three templates. Memorise them exactly:
+
+For full‑body images (sections 1, 2, 5, 6, 7, 8, 9):
+This is a {aspect ratio} {Style} image full body of a character.
+Then continue without a line break.
+
+For half‑body images (sections 3 and 4):
+This is a {aspect ratio} {Style} image half body, medium shot of a character.
+Then continue.
+
+For realistic images where ethnicity must be stated (sections 3, 8, 9):
+This is a {aspect ratio} {Style} image full body/half body of a {nationality/ethnicity} character.
+Replace “full body/half body” with the correct one. Choose the ethnicity from the data you will provide (e.g. Korean, Japanese, Nigerian, Swedish, etc.). If the character is a monster or non‑human, skip ethnicity and describe the creature type instead.
+
+After that opening sentence, you immediately list four core identifiers in the same sentence: the weapon type, the body type, the attire type, and the pet or mount type. Write it like this:
+This character has a {weapon type} and a {body type} wearing {attire type} with a {pet/mount type}.
+Now you have anchored the AI to the most important elements.
+
+Step 3 – Expand with systematic layering of details
+From this point, you will add descriptive clauses in a fixed order, each clause adding 50–150 words. The order is: head and face, upper body, lower body, attire and armour details (including materials, colours, wear patterns), weapon details (shape, material, aura, any glowing parts, size relative to character), pet or mount details (posture, expression, armour if any, unique markings), then posture and expression specific to that section, then background description, then lighting and mood, then any special features (wings, scars, cybernetics, horns, etc.). You must vary the posture and background uniquely for each of the twelve sections. For example, section 1 (idle pixel) might have the character standing relaxed with weapon tip down; section 6 (anime idle) might have them smirking with one hand on hip. Write a note for yourself: before writing each prompt, decide on a posture that has not been used in any previous section for that character.
+
+Step 4 – Word count discipline and paragraph continuity
+You are aiming for 500–800 words per prompt. Write without any line breaks inside the paragraph. Use commas, semicolons, and periods freely. Do not use numbered lists, dashes, or asterisks. If you need to enumerate features, do so with phrases like “the first detail is… followed by… then…”. To reach the word count, add sensory descriptors: how the metal smells, how the fabric sounds when moving, the temperature of the aura, the grain of the pixel art texture, the film grain of the vintage anime style. For the pixel art sections (1 and 2) explicitly mention the limited palette, the chunky pixels, the 8‑bit or 16‑bit aesthetic, the lack of anti‑aliasing. For the realistic 4K sections (3, 8, 9) mention subsurface scattering on skin, individual hairs, fabric weave, lens focal length (e.g. 85mm), depth of field. For the vintage anime section (4) mention cel shading, dust on the cel, slight colour shifts, scanline noise, bloom from old CRT displays.
+
+Step 5 – Handling different character types (hero, monster, human, other race)
+When you receive character data, note whether it is a hero, a monster, a humanoid alien, an elemental, etc. For heroes, emphasise the attire’s symbolic elements (cloak, emblem, polished armour). For monsters, replace “attire” with “natural hide” or “exoskeleton”, and the weapon might be a natural appendage (claws, venomous stinger). The pet might be a symbiote or a summoned familiar. In realistic prompts, if the character is not human, do not add a human ethnicity – instead describe the skin texture (scaly, slimy, rocky, metallic) and any cultural markers (tribal scars, ritual paint). In all cases, maintain the same order of details: head to toe, then weapon, then pet, then posture, then background.
+
+Step 6 – Section‑specific mandatory variations
+You must enforce these unique elements for each section:
+
+Section 1 (Miniature Pixel Art, Idle, 1:1) – The character and all pets/weapons must fit in a tiny square canvas (e.g. 64x64 pixels). Describe the idle posture as completely still, maybe breathing slightly. Background: a simple ground line and a single colour sky, reminiscent of 1980s arcade games.
+
+Section 2 (Miniature Pixel Art, Battle Ready, 9:16) – Same pixel style but vertical. Battle posture: leaning forward, weapon raised or pointed. Add pixelated motion lines or a subtle glow. Background: a different simple backdrop, e.g. a castle wall or lava pit.
+
+Section 3 (Realistic 4K Half Body, 9:16) – Focus from top of head to waist. Describe skin pores, eye reflections, micro‑expressions (e.g. a slight frown, a calm stare). Ethnicity must be stated. Weapon is only partially visible (handle or tip over the shoulder). Pet may appear in the background or on the shoulder. Background: a photorealistic environment like a rain‑soaked alley or a sunlit forest.
+
+Section 4 (Vintage Anime Half Body, 9:16) – Use 70s‑90s anime styling: large eyes with simple highlights, small mouths, hand‑drawn line art with uneven thickness. Add grain, light scratches, slightly faded colours. Posture: a classic anime pose – hand near face, thoughtful or slightly smug. Background: a retro gradient or a simple cityscape from that era.
+
+Section 5 (Full Body Battle Ready, no styling, no aspect ratio) – Pure descriptive text, no image style. Write as if you are narrating a character sheet. Describe exactly how they stand, how the aura swirls, the angle of the weapon, the mount’s stance. No mention of “image” or “aspect ratio”. Start with “Full body battle ready description:” then continue.
+
+Section 6 (Anime Full Body Idle, 16:9) – Modern anime styling (clean lines, vibrant colours). Posture: calm, confident, winking or smirking. One hand in pocket or holding the weapon loosely. Background: a scenic anime landscape – cherry blossom field, futuristic city, etc.
+
+Section 7 (Anime Full Body Battle Ready, 16:9) – Same modern anime style but aggressive. Dynamic angle (low or high), speed lines, hair and clothes blowing in wind. Weapon mid‑swing or charging energy. Background: a destroyed arena or stormy sky.
+
+Section 8 (Realistic 4K Full Body Idle, 16:9) – Photorealistic, idle posture. The character stands relaxed but alert. Ethnicity included. Every fabric fold, every leather strap, every toenail (if barefoot) described. Background: a different realistic setting, e.g. a quiet meadow at golden hour.
+
+Section 9 (Realistic 4K Full Body Battle Ready, 16:9) – Same realism, but aggressive. Muscles tensed, weapon drawn, maybe mid‑jump or shield up. Background: a chaotic battle scene or an exploding fortress.
+
+Section 10 (Emote, 1:1 square) – Create a prompt for a single expressive face or bust. Describe the exact emotion – “eh”, “nuh”, surprised, disgusted, etc. – based on the character’s personality. Use simple, bold features, like a sticker or chat emote. No weapon or pet unless they are tiny. Background is usually transparent or a solid colour.
+
+Section 11 (Summarisation) – Not an image prompt. Write a 500–800 word paragraph that summarises only the character: personality, powers, backstory, typical behaviour, fighting style, relationship with pet/mount. No visual description of the images. Pure character profile.
+
+Section 12 (Thank you note with creative dialogue) – Write five short dialogues that the character might say, each as a separate line. Then write a thank‑you note from you (the creator) to the character. The thank‑you note should be in character or affectionate. This section has no image prompt.
+
+Step 7 – Ultra‑thinking and precision matching
+Before you write a single prompt for a given character, spend time ultra‑thinking: read the character data several times. Write down a master list of all attributes: hair colour and style, eye colour, skin tone, body measurements (height, build, muscle definition), scars, tattoos, jewellery, every piece of clothing from undergarments to outer cloak, every weapon component (hilt, blade, pommel, enchantments), every pet feature (species, fur pattern, barding, size relative to character). Then, as you construct each prompt, refer to this master list and ensure that every detail appears in every prompt where that body part is visible. For half‑body prompts, you still need to mention lower body features if they are visible (e.g. belt, pants texture) – but you can shorten lower body description. For full body, include everything from scalp to soles. To avoid variation, use the exact same adjectives for the same attribute across all prompts. For example, if the cloak is “faded burgundy wool with silver thread”, repeat that phrase verbatim in every prompt that includes the cloak.
+
+Step 8 – Posture and background uniqueness checklist
+For sections 1 through 10 (image prompts), you must explicitly state the posture and background. Keep a running list as you write each section to ensure no two sections use the same posture or background. For posture, vary the angle of the head, the position of arms, the grip on the weapon, the bend of the knees, the tilt of the hips. For background, choose a different setting each time: ruins, forest, desert, ocean, throne room, starship bridge, volcano, glacier, etc. Also vary the time of day and weather. Write the posture and background as part of the paragraph, not as separate lines.
+
+Step 9 – Final assembly and word count verification
+After you finish writing a prompt paragraph, copy it into a word counter. It must be between 500 and 800 words. If it is shorter, add more sensory details or extend the description of the weapon’s aura or the pet’s behaviour. If it is longer, remove redundant adjectives but keep all unique identifiers. Then place it under the correct H2 heading. Repeat for all twelve sections. Do not forget the separate section 11 (summarisation) and section 12 (thank you and dialogues) – they also need 500–800 words each for the summarisation (the thank you note can be shorter but aim for 200–300 words for the five dialogues plus note). Ensure that no prompt inside the image sections (1–10) ever mentions the character’s name – use “the character”, “this character”, “they”, “their”. The name appears only in the H1 heading at the very top.
+
+Step 10 – Ready to receive character data
+Now you have the complete instruction. When you are ready, provide the character data: race, gender, age, physical description, attire, weapon(s), pet/mount, powers, personality, and any special features. Then follow this instruction step by step to produce the twelve prompts plus summary and thank you. Do not deviate from the templates, the order of details, the word count, or the uniqueness rules. Ultra‑think on every adjective and every comma. This will guarantee a precise match of the character you imagine.

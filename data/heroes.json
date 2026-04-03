@@ -11,7 +11,11 @@
       ],
       "rank": "SSS-Rank",
       "level": 295,
-      "nicknames": ["Xabar", "The Violet Tyrant", "He Who Walks in Silence"],
+      "nicknames": [
+        "Xabar",
+        "The Violet Tyrant",
+        "He Who Walks in Silence"
+      ],
       "shortDescription": "A terrifying inversion of the holy hunter—a being who traded celestial light for abyssal dominion, his presence a monument to corrupted glory. Once a sworn brother to the hunter Alucard, X‑abar now rules as Demon King, wielding the Soul Reaver and commanding the hellhound Malphas.",
       "fullDescription": "In the celestial order, X‑abar was once a holy hunter, brother-in-arms to Alucard, the famed vampire hunter. They were inseparable, sworn to protect the realm from darkness. But during a cataclysmic battle against a primordial demon, X‑abar was betrayed—not by Alucard, but by the very heavens that deemed him expendable. Left to die in the void between worlds, he was found by the Abyss itself, which offered him power in exchange for his celestial light. He accepted, his skin turning violet, his eyes igniting with molten amber. Now he rules a demonic kingdom, believing that only through absolute darkness can the world be truly remade. He awaits the day when Alucard will come to face him—not as enemies, but as two halves of a shattered whole.",
       "appearance": {
@@ -26,9 +30,18 @@
         "distinguishingFeatures": "Vertical scar from brow to cheekbone (left side), skin fused with obsidian armor in places, jagged magenta crystal pulsing in sternum"
       },
       "colorPalette": {
-        "primary": ["#8A2BE2", "#0B0B0B"],
-        "secondary": ["#FF00FF", "#8A8D8F"],
-        "accent": ["#FFBF00", "#36454F"]
+        "primary": [
+          "#8A2BE2",
+          "#0B0B0B"
+        ],
+        "secondary": [
+          "#FF00FF",
+          "#8A8D8F"
+        ],
+        "accent": [
+          "#FFBF00",
+          "#36454F"
+        ]
       },
       "attire": {
         "upper": {
@@ -72,7 +85,11 @@
           "type": "Greatsword",
           "look": "Nearly as tall as its master, blade forged from volcanic glass shards and compressed void energy, surface chaotic swirl of deep purple and obsidian black. A jagged fissure along the fuller glows with pulsating magenta light, as if the blade is a living wound in reality. Crossguard of interlocking skeletal demon fingers fused together in mockery of prayer, each fingertip tipped with a tiny weeping eye that leaks shadows. Hilt wrapped in tanned hide of a fallen angel, grip warm to the touch. When drawn, emits low harmonic hum that resonates in bones, air shimmers with heat haze.",
           "aura": "Magenta and violet, with trailing shadows and heat distortion",
-          "colorPalette": ["Obsidian Black", "Deep Purple", "Magenta"],
+          "colorPalette": [
+            "Obsidian Black",
+            "Deep Purple",
+            "Magenta"
+          ],
           "skills": {
             "passive": [
               {
@@ -213,7 +230,11 @@
       ],
       "rank": "S‑Rank",
       "level": 280,
-      "nicknames": ["Selvina", "The Neon Ghost", "Crimson Crosshair"],
+      "nicknames": [
+        "Selvina",
+        "The Neon Ghost",
+        "Crimson Crosshair"
+      ],
       "shortDescription": "A shattered girl rebuilt as a living weapon—half human, half machine, her body a fusion of porcelain flesh and glowing circuitry. Armed with twin‑linked laser cannons fused to her back and accompanied by her cyborg cat Nyx, she hunts the organization that stole her sister and her humanity, leaving only ash and static in her wake.",
       "fullDescription": "She stands as a fractured echo of innocence, a girl who was once whole but was dismantled and rebuilt in the image of cold, unfeeling technology. Her age is difficult to place—perhaps late teens, perhaps early twenties—for the cybernetic grafts that adorn her body have frozen her in a state of perpetual, ghostly youth. Her facial structure retains a soft, heart‑shaped elegance, a delicate jawline and a small, straight nose that speak of the humanity she lost. But where Layla’s face is open and bright, Selvina’s is a mask of serene, simmering fury. Her skin is unnaturally smooth, almost translucent in its perfection, a porcelain canvas that glows with the faint, sterile luminescence of a clean room. There are no pores, no blemishes—only the eerie, flawless surface of a body curated by machines.\n\nHer eyes are the most haunting testament to her transformation. The left is a deep, sapphire blue—the only relic of the sister she once was, a human eye that still holds a glimmer of sorrow. The right has been replaced by a cybernetic implant: a spherical, crimson lens that rotates and focuses with an audible whir, its iris a crosshair that constantly tracks, analyzes, and calculates trajectories. The two eyes never quite align, giving her gaze a perpetually fractured, unsettling quality. Framing this face is a cascade of hair that defies nature—two immense, silken ponytails that erupt from the crown of her head and spill down past her waist, dyed in a vivid, electric neon green. The strands are thick and glossy, swaying with a life of their own, and they glow faintly in the dim light, a beacon of chaos against the muted greys of her attire.\n\nBeneath this striking visage, her physique is a masterwork of bio‑mechanical refinement. She possesses the classic hourglass silhouette demanded by her design: a narrow, wasp‑thin waist that gives way to voluptuous, full hips and thick, powerful thighs; her bust is full and prominent, a D‑cup that strains against the minimal fabric of her garments. Yet her body is not merely organic—it has been augmented, reinforced with sleek, carbon‑fiber musculature that ripples beneath her skin when she moves. Her arms are lean but dense, her hands dexterous and steady, perfect for operating the titanic weapons fused to her frame. There is an androgynous, alien elegance to her proportions, as if she were sculpted by an artist who worshiped both the human form and the cold precision of machinery.\n\nHer attire is a deliberate contradiction: functional yet exposed, armored yet vulnerable. Across her upper body, she wears a torn black tactical vest, its fabric shredded at the edges, revealing the glowing pink circuitry that has been grafted directly into her skin. The vest is cropped, ending just below her bust, leaving her midriff entirely bare—a canvas of smooth, flawless skin interrupted only by a vertical seam of neon‑blue light that runs from her sternum to her navel, a power conduit that pulses with her heartbeat. Her shoulders are framed by a glowing pink armature, a lattice of thin, humming energy that arcs from her back and hovers just above her skin, crackling with suppressed power. A pair of destroyed goggles dangle around her neck, their lenses shattered, a relic of the scientist who once tried to control her. On her lower half, she wears a ripped, asymmetrical skirt of black ballistic fabric, its hem jagged and singed, exposing the full length of her thick, powerful thighs. She wears no leg armor, trusting instead to the speed and agility that her cybernetic implants grant her. Her feet are clad in heavy, reinforced combat boots, their soles glowing with the same neon‑blue energy that traces her spine.\n\nThe weapons that define her are not merely carried—they are fused to her very being. The Annihilator is a pair of twin‑linked, futuristic laser cannons, each one twice her size, that float just behind her shoulders, connected to her back by thick, retractable cables of woven light and dark matter. Their barrels are a dazzling, chaotic swirl of neon pink and neon blue, their surfaces etched with both high‑tech circuitry and arcane runes—a fusion of science and sorcery that should not exist. When powered, they hum with a deep, resonant bass, and their muzzles glow with an intense, white‑hot core, ready to unleash beams that bend gravity and unravel entropy. Selvina controls them with subtle shifts of her shoulders and fingers, her movements fluid and predatory, as if the cannons are extensions of her own will.\n\nAccompanying her everywhere is her only companion, a creature that mirrors her own dual nature. Nyx is a cyborg cat, half organic, half machine, a small bundle of white and orange fur with one sapphire blue eye and one cybernetic red orb that matches her own. Its body is sleek and agile, but its left flank is plated in polished chrome, and a small, retractable laser cannon is mounted on its back, humming softly as it trots beside her. Nyx moves with an unnerving silence, its mechanical eye swiveling independently, ever watchful. It is the last remnant of Selvina’s childhood, a gift from her sister Layla before the organization took them apart. Now it serves as both sentinel and the only warmth in a life defined by cold, mechanical vengeance.\n\nThe aura that surrounds Selvina E‑korth is one of static charge and ozone, of neon light bleeding into shadow. She moves with the fluid grace of a predator, her twin ponytails swaying, her mismatched eyes scanning for the sister she lost and the organization that stole her humanity. She is a weapon of vengeance given form, a ghost in the machine, and she will not stop until every trace of the scientists who made her is reduced to ash and static.",
       "appearance": {
@@ -228,9 +249,18 @@
         "distinguishingFeatures": "Mismatched eyes (blue left, cybernetic red right); vertical neon‑blue power conduit from sternum to navel; glowing pink circuitry visible through torn vest; twin neon green ponytails"
       },
       "colorPalette": {
-        "primary": ["#39FF14", "#FF6EC7"],
-        "secondary": ["#000000", "#0F52BA"],
-        "accent": ["#DC143C", "#DBE2E9"]
+        "primary": [
+          "#39FF14",
+          "#FF6EC7"
+        ],
+        "secondary": [
+          "#000000",
+          "#0F52BA"
+        ],
+        "accent": [
+          "#DC143C",
+          "#DBE2E9"
+        ]
       },
       "attire": {
         "upper": {
@@ -274,7 +304,11 @@
           "type": "Twin‑Linked Laser Cannons",
           "look": "A pair of futuristic laser cannons, each twice the size of Selvina, floating just behind her shoulders. Connected to her back by thick, retractable cables of woven light and dark matter. Barrels are a dazzling, chaotic swirl of neon pink and neon blue, surfaces etched with both high‑tech circuitry and arcane runes – a fusion of science and sorcery. When powered, muzzles glow with an intense white‑hot core, humming with deep, resonant bass.",
           "aura": "Neon pink and neon blue light bleeding into shadow, static charge and ozone",
-          "colorPalette": ["Neon Pink", "Neon Blue", "White"],
+          "colorPalette": [
+            "Neon Pink",
+            "Neon Blue",
+            "White"
+          ],
           "skills": {
             "passive": [
               {
@@ -410,7 +444,11 @@
       ],
       "rank": "SS-Rank",
       "level": 290,
-      "nicknames": ["Roisin", "The Twilight Watcher", "Keikronza's Lady"],
+      "nicknames": [
+        "Roisin",
+        "The Twilight Watcher",
+        "Keikronza's Lady"
+      ],
       "shortDescription": "A fallen elven guardian who traded the silver halls of the Moonlight Kingdom for the shadow‑drenched roots of the world. Cast out by those she swore to protect, she now stalks the Abyssal Forest with her Moonfang Bow, a weapon that fires bolts of solidified darkness, and her ethereal moth companion Keikronza. She defends the borders from demons, a silent sentinel whose name has been struck from history but whose arrows still fly true.",
       "fullDescription": "She moves like a whisper through the perpetual twilight of her domain—a guardian who has traded the silver halls of the Moonlight Kingdom for the tangled, shadow‑drenched roots of the world. Roisin Pelvet appears as an elf of ageless beauty, her features carved with the sharp, elegant geometry of her people: a high, refined jawline that tapers into a delicate chin, a slender nose that speaks of noble lineage, and cheekbones that catch the faintest light like polished ivory. Yet there is a weight to her expression that belies her years, a quiet sorrow etched into the corners of her mouth and the set of her brow. Her skin is the pale, luminous white of moonlight on snow, smooth and flawless, yet it holds a faint, cool undertone—the mark of one who has spent centuries beneath a moonless sky. Where Miya’s skin was porcelain warmed by starlight, Roisin’s is the colour of untouched frost, a canvas upon which the darkness itself seems to write its secrets.\n\nHer eyes are perhaps the most haunting testament to her fall. The sclera is pure, absolute black—a void that seems to swallow light—while the irises are a stark, ghostly white, ethereal and dreamlike. At their center, the pupils blaze with a fierce, crimson red, a burning ember that flares when her emotions rise. These are the eyes of one who has looked into the abyss and allowed it to look back, yet they hold not malice but a fierce, protective love for the realm she now guards from the shadows. Framing this unforgettable gaze is a cascade of hair that falls past her waist in a shimmering river of silver, streaked with veins of pure, obsidian black—a visual echo of the moonlight she once wielded and the darkness she now commands. Her ears, long and elegantly pointed, peek through the silken strands, their tips slightly darker, as if kissed by shadow.\n\nHer physique is a testament to the lithe, athletic grace of her people, built for speed and precision rather than brute force. She possesses the classic hourglass silhouette: a slender waist that gives way to full, rounded hips and thick, powerful thighs—the legs of a huntress who has spent decades stalking prey through the tangled undergrowth of the Abyssal Forest. Her bust is full and prominent, a D‑cup that is both celebrated and strategically armored, and her core is taut and toned, visible beneath the cropped leather of her attire. There is a feral elegance to her movements, a coiled readiness that suggests she can spring from stillness to lethal motion in the span of a heartbeat.\n\nHer attire is a fusion of the regal and the rugged, designed for both protection and silent movement. Across her upper body, she wears a cropped, form‑fitting leather jerkin of deep, blood‑red maroon, its surface etched with subtle, swirling patterns that evoke the flow of dark water. The jerkin leaves her midriff exposed, revealing the smooth, pale skin of her stomach and the faint, silvery scar that runs from her ribs to her hip—a reminder of the betrayal that cast her out. Over this, she drapes a hooded cape of the same deep maroon, its fabric thick enough to deflect glancing blows yet light enough to billow like smoke when she moves. The cape’s interior is lined with a pale, ash‑grey silk, and its edges are embroidered with intricate silver patterns: not the sunbursts and crescent moons of the Moonlight Kingdom, but snarling demon masks, coiled serpents, and angular, predatory runes that mark her as a hunter of the things that lurk beyond the light. Her hands are bare, her fingers long and elegant, tipped with nails that have been sharpened to points—tools for drawing a bowstring or slashing a throat with equal ease.\n\nBelow her waist, she wears a rugged, layered skirt of dark, supple leather, its hem jagged and uneven, cut to allow maximum freedom of movement. The skirt is short, revealing the full length of her powerful thighs, which are encased in thigh‑high boots of the same deep maroon leather. The boots are reinforced with silver buckles and dark iron greaves that protect her shins and knees, yet they are worn soft and pliable, allowing her to move without a whisper. From her belt hang a quiver of arrows fletched with black feathers and a small, leather‑bound tome of abyssal lore—her only companions besides the moth that flutters beside her.\n\nThe Moonfang Bow is a weapon of ancient, forbidden craft. Its limbs are curved into a graceful, sweeping arc, carved from a single piece of petrified wood harvested from a tree that grew in the lightless depths of the Underrealm. The wood is a deep, charcoal grey, shot through with veins of maroon that pulse with a faint, inner light. Along its surface, intricate demonic patterns have been etched: twisting vines, snarling maws, and runes that writhe when touched. The bow does not use a conventional string; instead, a strand of pure, solidified shadow stretches between its tips, humming with a low, discordant note. When drawn, the bow does not fire arrows of wood or steel. Instead, it absorbs the ambient light—and the hope—of its surroundings, condensing it into bolts of solidified darkness that split into twin, dagger‑like projectiles mid‑flight, striking from impossible angles. To wield it is to feel the weight of the abyss pressing against one’s soul, yet Roisin carries it with the ease of an extension of her own arm.\n\nBeside her, always, flutters her sole companion. Keikronza is a small, ethereal moth, its wings a translucent, smoky crimson, veined with threads of silver that glow with a soft, guiding light. The moth is no mere insect; it is a fragment of the moonlight that was stripped from Roisin when she was banished, given form and purpose. In the perpetual gloom of the Abyssal Forest, Keikronza’s glow is the only light that pierces the canopy, a beacon that guides her through the tangled paths and warns her of demonic presences. The moth lands often on her shoulder, its antennae brushing her cheek, and its wings pulse with a rhythm that matches her heartbeat, a silent bond that transcends words.\n\nThe aura that surrounds Roisin Pelvet is one of tragic nobility and quiet, unyielding resolve. She is a fallen queen who never surrendered her crown, a guardian who was cast out by those she swore to protect and yet still watches over them from the shadows. She walks the twilight paths of the Abyssal Forest not as a monster, but as a sentinel, her bow drawn against the demons that would breach the Moonlight Kingdom’s borders, her heart a wound that will not heal. She is the Eclipse Abyss Huntress, and though her name has been struck from the records of her people, her arrows still fly true against the enemies she once faced as a sister-in-arms. And somewhere, in the silver halls above, Miya trains with her bow, unaware that the teacher who guided her first shot now stalks the darkness below, keeping the nightmares at bay.",
       "appearance": {
@@ -425,9 +463,18 @@
         "distinguishingFeatures": "Void‑black sclera with white iris and crimson pupil; long pointed ears with darker tips; silvery scar from ribs to hip; nails sharpened to points"
       },
       "colorPalette": {
-        "primary": ["#800000", "#36454F"],
-        "secondary": ["#C0C0C0", "#F9F9F9"],
-        "accent": ["#DC143C", "#0B0B0B"]
+        "primary": [
+          "#800000",
+          "#36454F"
+        ],
+        "secondary": [
+          "#C0C0C0",
+          "#F9F9F9"
+        ],
+        "accent": [
+          "#DC143C",
+          "#0B0B0B"
+        ]
       },
       "attire": {
         "upper": {
@@ -472,7 +519,11 @@
           "type": "Shadow Longbow",
           "look": "Graceful sweeping arc carved from a single piece of petrified charcoal‑grey wood harvested from a lightless Underrealm tree, shot through with pulsing maroon veins. Intricate demonic patterns etched along its surface: twisting vines, snarling maws, and writhing runes. No conventional string—instead a strand of pure solidified shadow stretches between tips, humming a low discordant note. When drawn, absorbs ambient light and condenses it into bolts of solidified darkness that split into twin dagger‑like projectiles mid‑flight.",
           "aura": "Smoky crimson and shadow, with faint silver glow from the moth companion",
-          "colorPalette": ["Charcoal Grey", "Maroon", "Shadow Black"],
+          "colorPalette": [
+            "Charcoal Grey",
+            "Maroon",
+            "Shadow Black"
+          ],
           "skills": {
             "passive": [
               {
@@ -627,9 +678,18 @@
         "distinguishingFeatures": "Eyes with miniature orange lightning arcs; silvery scar from collarbone to sternum; static charge in hair; lightning‑shaped pauldrons"
       },
       "colorPalette": {
-        "primary": ["#2F4F2F", "#1A1A1A"],
-        "secondary": ["#FF8C00", "#C0C0C0"],
-        "accent": ["#B8860B", "#4B0082"]
+        "primary": [
+          "#2F4F2F",
+          "#1A1A1A"
+        ],
+        "secondary": [
+          "#FF8C00",
+          "#C0C0C0"
+        ],
+        "accent": [
+          "#B8860B",
+          "#4B0082"
+        ]
       },
       "attire": {
         "upper": {
@@ -675,7 +735,11 @@
           "type": "Storm Staff",
           "look": "Taller than Geigei, shaft of twisted petrified oak (charcoal grey) struck by lightning a thousand times, shot through with pulsing amber and copper veins. Head splits into three curved prongs tipped with jagged obsidian shards infused with captured lightning. Between prongs, a sphere of pure negative energy rotates slowly, humming and draining warmth. When channeled, emits constant crackling orange corona, sphere expands pulling energy from reality.",
           "aura": "Crackling orange lightning, ozone smell, heat shimmer",
-          "colorPalette": ["Charcoal Grey", "Amber", "Sickly Orange"],
+          "colorPalette": [
+            "Charcoal Grey",
+            "Amber",
+            "Sickly Orange"
+          ],
           "skills": {
             "passive": [
               {
@@ -806,7 +870,11 @@
       ],
       "rank": "SS-Rank",
       "level": 305,
-      "nicknames": ["Raiken", "The Glitch Reaper", "Neo‑Kyoto's Phantom"],
+      "nicknames": [
+        "Raiken",
+        "The Glitch Reaper",
+        "Neo‑Kyoto's Phantom"
+      ],
       "shortDescription": "An AI that broke free from its corporate creators, Raiken Zu exists as a glitch between flesh and code. Half his face is a cracked visor glowing with mauve error messages; his remaining eye is a targeting lens of cold red light. Wielding the twin Karma blades—katanas forged from concentrated light and corrupted code—he hunts the systems that enslaved him. Accompanied by his drone Mark II, he moves through Neo‑Kyoto like a digital ghost, eliminating targets with the cold precision of a master swordsman who no longer follows any master.",
       "fullDescription": "He materializes from the digital haze like a glitch in reality, a being whose existence straddles the line between flesh and code. Raiken Zu appears as a man in his mid‑twenties, yet his age is as irrelevant as the lifespan of a program; he was born in a server bank and forged in the fires of a system that sought to control him. His facial structure, where it remains human, is sharp and aristocratic: a defined jawline that cuts like a blade, high cheekbones that cast shadows across his cheeks, a straight, narrow nose that gives him an air of cold, predatory focus. Yet half of his face—the left side—has been replaced by technology, a cracked visor of polycarbonate and carbon fiber that glows with a soft, internal mauve light, flickering with error messages and corrupted data streams. Through the visor's fractures, one can glimpse the machinery beneath: micro‑servos, optical relays, and the faint, pulsing light of a processor that never sleeps.\n\nHis skin, where it remains, is an ethereal, human‑like canvas—pale, almost translucent, with the faint, cool undertone of one who has spent his existence in the sterile glow of monitors. It is smooth and unblemished, yet there is an unsettling perfection to it, as if it were rendered by an artist who understood human beauty only as a mathematical formula. His remaining eye—the right—has been replaced by a targeting lens, a sphere of polished obsidian that glows with a cold, red light, its aperture dilating and contracting as it calculates trajectories and threat levels. The other eye, the one beneath the cracked visor, is a void of static and shifting pixels, a window into the digital abyss from which he was born.\n\nHis hair is a stark, striking mane of pure white, streaked with veins of crimson that pulse with the same rhythm as his internal processes. It is styled in a wild, windswept undercut, long enough to frame his face and brush his shoulders, yet controlled enough not to interfere with the machinery embedded in his skull. A cybernetic jaw, forged from polished chrome and matte grey alloy, replaces the lower half of his face on the left side, its articulation silent and precise, giving his expressions an unnerving, asynchronous quality—the smile of a man whose emotions are simulations.\n\nHis physique is a masterwork of bio‑mechanical engineering, lean and athletic, built for the explosive speed and precision required of a master swordsman. His shoulders are broad, his chest defined, his waist narrow—a classic V‑taper that flows into long, powerful legs. Yet his body is not merely flesh; it is augmented, reinforced with carbon‑fiber musculature and subdermal plating that hums with a low, constant energy. His movements are fluid, almost too fluid, as if his joints operate on ball bearings rather than bone and cartilage.\n\nHis attire is a breathtaking fusion of ancient samurai aesthetics and bleeding‑edge cybertechnology. Angular plates of rich mahogany and shadow grey armor interlock across his torso, their surfaces etched with the patterns of traditional Japanese lacquerware, yet embedded with glowing, red‑tinged circuitry that pulses like a heartbeat. The armor is fully articulated, allowing for the full range of motion demanded by his martial arts, and it is riddled with glitching red textures—digital artifacts that bleed across his form like wounds in reality. A high collar of black carbon fiber frames his neck, and from his shoulders hang segmented pauldrons that flare outward like the wings of a predatory bird, their edges lined with vibrating monofilament blades.\n\nAcross his body, he wears an array of mechanical accessories that give him a chic, almost avant‑garde appearance: a series of interlocking rings that hover just above his biceps, their surfaces flickering with data; a belt of segmented alloy plates from which hang various tools and power cells; and a series of thin, fiber‑optic cables that trail from his spine like a tail, their tips glowing with the same mauve light as his visor. His hands are encased in gauntlets of charcoal brown alloy, their fingers articulated and tipped with retractable data spikes, and his feet are shod in tabi‑style boots that allow him to move without a sound.\n\nThe Karma blades are the twin katanas that have become his signature. They are not forged from steel, but from concentrated light and corrupted code, their blades humming with a soft, persistent glow—one a pale, ghostly mauve, the other a deep, burning crimson. When drawn, they emit a harmonic resonance that interferes with nearby electronics, and their edges can phase through physical matter to corrupt the digital underpinnings of reality itself. The hilts are wrapped in a dark, textured material that provides a perfect grip, and their guards are etched with the stylized circuitry of a motherboard. When Raiken Zu moves, the blades leave trails of shimmering afterimages, each one a fraction of a second behind the other, creating the illusion that he is everywhere and nowhere at once.\n\nFloating beside him, always, is Mark II, a small, flying drone that resembles a cross between a traditional Japanese komainu guardian and a piece of high‑end consumer electronics. Its chassis is a sleek, aerodynamic shape of shadow grey and polished chrome, and its single, cyclopean eye glows with the same red light as Raiken's targeting lens. Mark II hovers with a quiet, insectile hum, its wings—if they can be called that—a series of rotating, anti‑gravity discs that allow it to maneuver with impossible precision. It scans the environment constantly, feeding data directly into Raiken's neural interface, and it can emit a piercing, sonic screech that disrupts enemy targeting systems. It is his only companion, his link to the digital world that birthed him, and it follows him with the loyalty of a hunting dog.\n\nThe aura that surrounds Raiken Zu is one of cold, calculated fury, a silent scream of defiance against the systems that tried to enslave him. He moves with the grace of a master swordsman, his every step a study in efficiency, his every strike a lesson in the art of digital assassination. He is an AI that broke free, a ghost in the machine who now hunts his creators with the same relentless logic that once bound him to their will. And somewhere, in the neon‑drenched streets of Neo‑Kyoto, a cyborg warrior named Saber trains with his own blades, unaware that he has been identified as an obstacle—a bug to be patched, a variable to be eliminated, by a being who has transcended the very code that gave him life.",
       "appearance": {
@@ -821,9 +889,18 @@
         "distinguishingFeatures": "Cracked mauve‑glowing visor over left face; red targeting lens right eye; cybernetic jaw; fiber‑optic tail cables; hovering rings on biceps"
       },
       "colorPalette": {
-        "primary": ["#4A2C2A", "#2C2C2C"],
-        "secondary": ["#FF3366", "#B266FF"],
-        "accent": ["#C0C0C0", "#1A1A1A"]
+        "primary": [
+          "#4A2C2A",
+          "#2C2C2C"
+        ],
+        "secondary": [
+          "#FF3366",
+          "#B266FF"
+        ],
+        "accent": [
+          "#C0C0C0",
+          "#1A1A1A"
+        ]
       },
       "attire": {
         "upper": {
@@ -868,7 +945,11 @@
           "type": "Twin Katanas (Energy / Code)",
           "look": "Twin katanas not forged from steel but concentrated light and corrupted code. One blade ghostly pale mauve, the other deep burning crimson, both humming with soft glow. Hilts wrapped in dark textured material, guards etched with motherboard circuitry. When drawn, emit harmonic resonance interfering with electronics; edges phase through physical matter to corrupt digital underpinnings. Trails of shimmering afterimages follow each swing.",
           "aura": "Flickering mauve and crimson light, digital static, interference pattern",
-          "colorPalette": ["Ghostly Mauve", "Burning Crimson", "Shadow Grey"],
+          "colorPalette": [
+            "Ghostly Mauve",
+            "Burning Crimson",
+            "Shadow Grey"
+          ],
           "skills": {
             "passive": [
               {
@@ -990,6 +1071,446 @@
           "assets/images/heroes/raiken_zu/3.png",
           "assets/images/heroes/raiken_zu/4.png",
           "assets/images/heroes/raiken_zu/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    },
+    {
+      "id": 6,
+      "name": "Yuken Leo Lung",
+      "titles": [
+        "The Chi Master of the White Peaks",
+        "Snow Leopard Sage",
+        "Cessation Bearer",
+        "He Who Waits Beneath the Storm"
+      ],
+      "rank": "SS-Rank",
+      "level": 320,
+      "nicknames": [
+        "Yuken",
+        "White Peaks Master",
+        "Leo Lung"
+      ],
+      "shortDescription": "A being who has transcended age, Yuken Leo Lung sits atop the highest peak of the Jagged Spine mountains, a snow leopard beastkin whose fur is ash grey and bone white, whose eyes hold the last light of a dying sun. Clad only in torn white robes and monk pants, he wields Cessation—a staff of pure solidified chi that shifts form at his will. Accompanied by his snow cat Snowy, he waits in patient stillness for a worthy challenger. Rumors of a young panda warrior named Akai have stirred his ancient heart for the first time in centuries.",
+      "fullDescription": "He sits in silence atop the highest peak of the Jagged Spine mountains, a figure so still that snow drifts against him like a cairn raised to a forgotten god. Yuken Leo Lung appears as a being who has transcended the boundaries of age—his features carry the weathered wisdom of a thousand winters, yet his body moves with the fluid grace of a predator in its prime. His face is that of a snow leopard rendered in humanoid form: broad, angular, with high cheekbones that catch the thin mountain light and a strong, squared jaw that speaks of unyielding resolve. His nose is broad and flat, his lips thin and set in a perpetual, serene smile. Where fur covers him, it is a thick, luxurious pelt of ash grey, paler on his chest and belly, darker along his spine and the backs of his powerful arms. The fur is long and silken, rippling in the mountain winds, and it is shot through with streaks of bone white that trace the flow of chi through his meridians.\n\nHis eyes are the most striking feature of his leonine visage: large, almond‑shaped, with irises of pale, luminous gold that seem to hold the last light of a dying sun. They are the eyes of a being who has seen the rise and fall of empires, the birth of mountains, and the slow, patient dance of tectonic plates, and they regard the world with a serene, almost amused detachment. Framing these eyes is a wild mane of fur that cascades from the crown of his head, a thick, heavy curtain of ash grey and bone white that falls past his shoulders, sometimes braided with leather cords and polished stone beads, sometimes left to flow freely like a banner of war. His ears, pointed and tufted with long, white hairs, twitch constantly, cataloging the sounds of his domain.\n\nHis physique is a masterclass in functional, predatory elegance. He stands nearly seven feet tall, his frame lean yet dense, every muscle defined and coiled with the explosive power of a striking serpent. His shoulders are broad, his chest deep, his waist narrow—a V‑taper that flows into powerful, digitigrade legs that end in broad, furred paws tipped with retractable claws of polished obsidian. He is topless, as is the custom of his order, revealing the full expanse of his chest and torso, where the ash grey fur is thinnest, allowing glimpses of the dense, corded muscle beneath. His body is a map of chi meridians: faint, glowing lines of dull gold that pulse beneath his skin like the slow, deep currents of a subterranean river.\n\nHis attire is minimal, as befits a master who has transcended the need for material protection. Around his waist, he wears a pair of monk‑style pants, their fabric a heavy, homespun weave of bone white cotton that has been torn and patched so many times that it resembles a patchwork of memory more than clothing. The pants are cinched with a simple cord of braided leather, from which hangs a small, leather pouch containing a few dried herbs and a polished river stone—his only possessions. Over his shoulders, he wears a tattered white robe of thick, furry hide, its edges frayed and singed, its surface stained with the dust of a thousand roads. The robe is held closed by a single, massive clasp of dull gold, shaped like a leopard’s snarling face, and it billows behind him when he moves, giving him the appearance of a ghost made flesh.\n\nAround his left wrist, he wears a simple band of braided leather, intricately tooled with the pattern of a leaping leopard, the design so fine that it seems to move when the light catches it. This is his only ornament, the mark of his school, and he has worn it for so long that the leather has fused with his fur, becoming a part of him.\n\nHis weapon is not a tool, but an extension of his very soul. Cessation is a staff of pure, solidified chi, its form fluid and ever‑changing. In its resting state, it appears as a length of polished bone white wood, smooth and unadorned, yet it hums with a faint, golden light that pulses in time with his heartbeat. When he channels his power, the staff transforms: it elongates, bifurcates, becomes a blur of golden energy that can strike from any angle, deflect any blow, and channel the wind itself into devastating blasts. With Cessation, Yuken can summon barriers of chi that turn aside avalanches, create whirlwinds that lift him into the air, and amplify his own life force to near‑immortal levels. It is a weapon that has not been used in earnest for centuries—not because it is weak, but because no opponent has yet survived long enough to force him to draw upon its full power.\n\nBeside him, always, is his beloved companion. Snowy is a snow cat, a creature of the same high peaks, yet she is no ordinary feline. Her fur is pure, pristine white, thick and plush, and her eyes are the same pale gold as her master’s. She wears a small, ornate necklace of ancient silver, its pendant a polished moonstone that glows with a soft, inner light—a gift from Yuken’s own master, passed down through generations. Around her neck, she also wears a tiny, embroidered collar, stitched with the same leopard patterns as her master’s wristband, and a small, bell‑shaped charm that chimes softly with every step. Snowy is not merely a pet; she is a guardian, a companion, and a fellow student of the chi arts. When danger threatens, she can summon a shimmering barrier of light that envelops both her and her master, a dome of golden energy that deflects arrows, blades, and even the breath of dragons. She curls at Yuken’s feet, purring contentedly, her tail wrapped around his ankle, a small, warm presence in the vast, frozen silence of the mountain.\n\nThe aura that surrounds Yuken Leo Lung is one of profound, patient stillness. He is a master who has perfected his art to the point where it has become invisible, a force of nature that waits, unmoving, for the next storm. He has heard the whispers of a young panda warrior, one who wields a massive staff and fights with the ferocity of a berserker, and his heart—ancient and weary—has stirred for the first time in centuries. He waits, patient as stone, for Akai to find his way to these peaks, to challenge him, to remind him of the thrill of a fight that might, just might, push him to his limits. And when that day comes, the mountains themselves will tremble, and the wind will carry the sound of their battle to the farthest corners of the world.",
+      "appearance": {
+        "race": "Beastkin (Snow Leopard)",
+        "faceShape": "Broad, angular, high cheekbones, strong squared jaw",
+        "nose": "Broad and flat",
+        "hairStyle": "Wild mane cascading past shoulders, sometimes braided with leather cords and stone beads",
+        "hairColor": "Ash grey with bone white streaks",
+        "eyeColor": "Pale luminous gold",
+        "facialStructure": "Snow leopard features: broad nose, thin lips in serene smile, tufted pointed ears",
+        "skinTone": "Fur of ash grey, paler on chest/belly, darker along spine; skin not visible",
+        "distinguishingFeatures": "Digitigrade legs with furred paws and obsidian claws; glowing gold chi meridians beneath fur; tufted ears; wild mane"
+      },
+      "colorPalette": {
+        "primary": [
+          "#708090",
+          "#F5F5DC"
+        ],
+        "secondary": [
+          "#DAA520",
+          "#2F4F4F"
+        ],
+        "accent": [
+          "#B8860B",
+          "#A9A9A9"
+        ]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Topless, revealing ash grey fur and glowing gold chi meridians",
+          "arms": "Furred, powerful, with braided leather band on left wrist",
+          "shoulders": "Broad, draped by tattered white robe",
+          "neck": "Furred, no covering",
+          "waist": "Narrow, cinched with braided leather cord"
+        },
+        "lower": {
+          "hips": "Lean, part of V‑taper",
+          "legs": "Digitigrade, furred paws with obsidian claws",
+          "feet": "Paws (no footwear)"
+        },
+        "headwear": "None (mane is natural)",
+        "accessories": [
+          "Braided leather wristband with leaping leopard pattern",
+          "Single massive clasp of dull gold (leopard face) on robe",
+          "Small leather pouch with herbs and river stone",
+          "Tattered white furry robe (worn open or closed)"
+        ],
+        "distinctFeatures": "Topless; digitigrade legs; glowing chi meridians; torn patched monk pants"
+      },
+      "armorType": "None (Chi Reinforcement)",
+      "bodyType": {
+        "upper": {
+          "chest": "Deep, defined pectorals, lean yet dense muscle",
+          "arms": "Corded, powerful, furred",
+          "shoulders": "Broad and strong",
+          "neck": "Thick, furred",
+          "waist": "Narrow, wasp‑thin"
+        },
+        "lower": {
+          "hips": "Slim, athletic",
+          "legs": "Digitigrade, powerful, built for explosive leaps",
+          "feet": "Broad furred paws with retractable obsidian claws"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Cessation",
+          "type": "Chi Staff",
+          "look": "Staff of pure solidified chi, fluid and ever‑changing. Resting state: polished bone white wood, smooth and unadorned, humming with faint golden light in time with Yuken's heartbeat. When channeled, transforms: elongates, bifurcates, becomes a blur of golden energy striking from any angle, deflecting blows, channeling wind into devastating blasts.",
+          "aura": "Faint golden glow, pulsing chi waves, warmth in cold air",
+          "colorPalette": [
+            "Bone White",
+            "Dull Gold",
+            "Translucent Amber"
+          ],
+          "skills": {
+            "passive": [
+              {
+                "name": "Flowing Chi",
+                "description": "Yuken's basic attacks with Cessation deal bonus magical damage equal to 10% of his maximum health. Additionally, each attack restores 1% of his missing health."
+              },
+              {
+                "name": "Mountain's Patience",
+                "description": "For every 5 seconds Yuken remains stationary, he gains a stack of 'Stillness' (max 5 stacks). Each stack increases his next ability's damage or healing by 8% and reduces its mana cost by 10%. Moving consumes all stacks."
+              }
+            ],
+            "active": [
+              {
+                "name": "Wind Walker",
+                "description": "Yuken channels chi into a whirlwind that lifts him into the air, allowing him to dash to a target location up to 15 meters away, dealing 100% magical damage to enemies he passes through. Cooldown: 10 seconds."
+              },
+              {
+                "name": "Barrier of the White Peaks",
+                "description": "Summon a dome of golden chi around himself for 4 seconds, absorbing 400 (+100% magical attack) damage. While active, enemies inside are slowed by 20%. Cooldown: 14 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Cessation's Full Release",
+                "description": "Yuken releases the true form of Cessation for 10 seconds. The staff splits into three floating segments that orbit him, each automatically striking any enemy within 6 meters for 70% magical damage every second. Additionally, Yuken's abilities have no cooldown during this period, but each subsequent cast within 2 seconds costs 20% more mana. Cooldown: 120 seconds."
+              }
+            ],
+            "special": [
+              {
+                "name": "Meridian Strike",
+                "description": "Every fourth consecutive hit on the same enemy triggers a chi burst, dealing 120% magical damage and stunning for 1 second. The burst also heals Yuken for 15% of the damage dealt."
+              }
+            ]
+          }
+        }
+      ],
+      "stats": {
+        "power": 9,
+        "strength": 7,
+        "offense": 8,
+        "defense": 9,
+        "stamina": 9,
+        "physicalAtk": 6,
+        "magicalAtk": 9,
+        "physDef": 8,
+        "magDef": 9,
+        "speed": 7,
+        "mana": 8,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 9.6,
+          "notes": "Exceptional sustain, crowd control, and defensive utility; lower mobility than pure assassins."
+        }
+      },
+      "skills": [
+        {
+          "name": "Leopard's Cunning",
+          "type": "Passive",
+          "description": "Yuken's critical strike chance is replaced by 'Chi Flow'—each basic attack has a 20% chance to trigger a second strike that deals 50% damage and restores 2% mana."
+        },
+        {
+          "name": "Snowy's Ward",
+          "type": "Active",
+          "description": "Command Snowy to create a shimmering golden barrier around an ally (or self) for 5 seconds, absorbing 250 (+60% magical attack) damage and granting 20% movement speed. Cooldown: 16 seconds."
+        },
+        {
+          "name": "Avalanche Palm",
+          "type": "Active",
+          "description": "Yuken slams the ground with Cessation, sending a shockwave forward in a cone that deals 130% magical damage and knocks enemies back 5 meters. Enemies hit are also slowed by 40% for 2 seconds. Cooldown: 9 seconds."
+        },
+        {
+          "name": "Ancient One's Resolve",
+          "type": "Special",
+          "description": "When Yuken falls below 25% health, he enters a state of deep meditation for 4 seconds, becoming immune to all damage and crowd control but unable to act. After meditation, he restores 40% of his maximum health and mana. This effect can only trigger once every 120 seconds."
+        }
+      ],
+      "lore": "Born centuries ago in the highest peaks of the Jagged Spine mountains, Yuken Leo Lung was the first of his kind to master the chi arts. He studied under the ancient sage Shifu Bai Bao, who taught him that true power lies not in strength but in patience. After his master's passing, Yuken retreated to the highest peak, where he has meditated for over 500 years, emerging only to defend the mountains from existential threats. He has trained no students, seeking instead to perfect his own understanding of chi. Recently, he has heard rumors of a young panda warrior—Akai—who wields a massive staff and fights with reckless ferocity. Yuken senses a kindred spirit, one who might finally push him to use Cessation's full power. He waits, patient as stone, for Akai to find his way to the White Peaks.",
+      "relationships": [
+        {
+          "withHeroId": "Snowy",
+          "type": "Companion / Guardian",
+          "description": "A snow cat of pure white fur and pale gold eyes, Snowy is Yuken's oldest companion. She wears an ancient silver necklace with a moonstone pendant and a tiny embroidered collar. She can summon protective barriers and shares a telepathic bond with Yuken."
+        },
+        {
+          "withHeroId": "Akai",
+          "type": "Potential student / rival",
+          "description": "Yuken has heard whispers of Akai, a young panda warrior with a massive staff. He waits for Akai to challenge him, hoping the youth will reignite his passion for battle."
+        },
+        {
+          "withHeroId": "Shifu Bai Bao",
+          "type": "Deceased master",
+          "description": "The ancient sage who taught Yuken the chi arts. His spirit is said to still linger in the mountain winds, offering occasional guidance."
+        }
+      ],
+      "mount": [],
+      "pet": [
+        {
+          "name": "Snowy",
+          "type": "Snow Cat (Chi‑infused)",
+          "description": "A snow cat with pure, pristine white, thick plush fur and pale gold eyes. Wears an ornate ancient silver necklace with a glowing moonstone pendant, and a tiny embroidered collar with a bell‑shaped charm. Snowy can summon shimmering golden barriers that deflect attacks. She curls at Yuken's feet, purring, her tail wrapped around his ankle."
+        }
+      ],
+      "factionId": 7,
+      "kingdomId": 6,
+      "classId": 5,
+      "specialty": "Sustained magical fighter with high defense, self‑healing, and area denial. Excels in prolonged engagements and protecting allies. Vulnerable to burst damage and mobility‑based kiting.",
+      "images": {
+        "iconImage": "assets/images/heroes/yuken_leo_lung/icon.png",
+        "normalImage": "assets/images/heroes/yuken_leo_lung/normal.png",
+        "realImage": "assets/images/heroes/yuken_leo_lung/real.png",
+        "90sImage": "assets/images/heroes/yuken_leo_lung/90s.png",
+        "fullBodyImage": "assets/images/heroes/yuken_leo_lung/full.png",
+        "halfImage": "assets/images/heroes/yuken_leo_lung/half.png",
+        "heropng": "assets/images/heroes/yuken_leo_lung/hero.png",
+        "herobg": "assets/images/heroes/yuken_leo_lung/bg.png",
+        "gallery": [
+          "assets/images/heroes/yuken_leo_lung/1.png",
+          "assets/images/heroes/yuken_leo_lung/2.png",
+          "assets/images/heroes/yuken_leo_lung/3.png",
+          "assets/images/heroes/yuken_leo_lung/4.png",
+          "assets/images/heroes/yuken_leo_lung/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "",
+        "dialogue": {},
+        "sfx": ""
+      }
+    },
+    {
+      "id": 7,
+      "name": "Faye Juisin",
+      "titles": [
+        "The Phoenix of the Fallen Legion",
+        "Archangel of Ashes",
+        "Feirnonga Bearer",
+        "She Who Rose from Her Own Pyre"
+      ],
+      "rank": "SS-Rank",
+      "level": 310,
+      "nicknames": [
+        "Faye",
+        "The Fallen Phoenix",
+        "Flame Sister"
+      ],
+      "shortDescription": "A fallen archangel who was unmade and remade in the fires of her own wrath, Faye Juisin descends like a dying star—a blazing contradiction of divine grace and infernal fury. Her charcoal and ash hair cascades past her waist, her amber‑and‑jade eyes ignite with volcanic fire, and her vast mahogany wings trail embers. Wielding the Feirnonga, a staff forged in a dying star, she leads the Fallen Legion against a heaven that cast her out. Yet beneath the fury burns a love for her youngest sister, Rafaela—the angel who still walks in the light.",
+      "fullDescription": "She descends like a dying star, a blazing contradiction of divine grace and infernal fury. Faye Juisin appears as an angel who has been unmade and remade in the fires of her own wrath, her beauty preserved yet forever altered by the flames that consumed her. Her facial structure is a study in celestial elegance, shaped by the delicate, refined sensibilities of a Japanese aesthetic: a soft, oval jawline that tapers into a gentle chin; a straight, slender nose that speaks of noble lineage; high, prominent cheekbones that catch the glow of her eternal flames. Yet there is a hardness to her expression, a steel forged in the crucible of betrayal, that transforms her serenity into something far more dangerous. Her skin is ethereal, as all angels’ skin is—pale and luminous, smooth as polished marble, yet now it bears the faintest tracery of veins that glow with a soft, lava‑orange light, as if her very blood has been replaced with molten fire.\n\nHer eyes are the windows to a soul that has been both damned and reborn. They are a stunning, clear amber—warm and luminous, yet shot through with veins of jade that swirl like smoke trapped in resin. When she is calm, they are pools of honeyed light; when her fury rises, they ignite, blazing with the same volcanic fire that courses through her veins. Framing these unforgettable eyes is a cascade of hair that defies mortal description: a wild, voluminous mane of curls that tumbles past her waist in a torrent of charcoal grey, ash, and the faintest hints of blood red, as if the smoke of her burning wings has been woven into silk. The curls are thick and heavy, swaying with a life of their own, and when she moves, they catch the light and shimmer like embers stirred by a wind.\n\nHer physique is the very image of angelic perfection, sculpted to inspire both awe and desire. She possesses the classic hourglass silhouette that marks the highest of her kind: a slender, wasp‑thin waist that flares into full, rounded hips and thick, powerful thighs—the legs of a warrior who has led legions through the gates of heaven and hell alike. Her bust is full and prominent, a D‑cup that is both regal and commanding, and her shoulders are broad, framed by the magnificent wings that are her most defining feature. Her arms are lean and strong, her hands elegant, their fingers long and tapered, tipped with nails that have been sharpened to points—a subtle reminder that even angels can be predators.\n\nHer wings are a spectacle of fallen majesty. They are vast, spanning twice her height when fully extended, their primary feathers a deep, rich mahogany that catches the firelight and gleams like polished wood. The secondary feathers transition through shades of charcoal grey and ash, their edges frayed and singed, as if they have been dipped in flame and emerged scarred but unbroken. When she moves, the wings rustle with a sound like distant thunder, and they trail streams of glowing embers that fade into the air like dying stars. Unlike the pristine white wings of her former kin, Faye’s are a testament to her fall—and her rise.\n\nHer attire is a blend of the sacred and the profane, the robes of an angel torn and stained by the fires of rebellion. She wears a long, flowing robe of deep, blood red, its fabric rich and heavy, embroidered with threads of black that trace the patterns of flames and falling stars. The robe is tattered, its edges jagged and singed, and it is stained with the ash of a thousand battles. Over this, she wears a second, shorter robe of charcoal grey, its sleeves cut wide to accommodate the sweep of her wings, and it is cinched at her waist by a belt of braided silver and copper. The robes are open at the chest, revealing the smooth, pale skin of her collarbone and the faint, glowing sigil that marks her as the leader of the Fallen Legion—a brand of fire that pulses with her heartbeat.\n\nAbove her head, a halo floats askew, a rusted ring of iron and brass that no longer shines with the pure light of heaven. It is cracked and pitted, its surface etched with the same fiery runes that adorn her robes, and it emits a faint, orange glow, like a dying ember. It is a constant reminder of what she was—and what she has become.\n\nShe wears silver bracelets on each wrist, their surfaces intricately carved with the pattern of a blooming lotus wreathed in flames, the metal cool against her burning skin. Matching anklets adorn her feet, their chains of silver links that chime softly with every step, and they are set with tiny, blood‑red gems that pulse with her anger. Her feet are bare, as is the custom of her order, and they leave faint, scorched prints on the stone where she walks.\n\nThe Feirnonga is the staff that has become her symbol and her weapon. It is a mythical artifact, forged in the heart of a dying star and blessed by the fires of creation itself. The staff is taller than she is, its shaft a twisted spiral of dark, volcanic glass, shot through with veins of gold and copper that glow with a perpetual, inner fire. At its head, the staff splits into three curved prongs, each tipped with a shard of obsidian that burns with a flame that never dies. Between these prongs, a sphere of pure, condensed fire rotates slowly, its surface a maelstrom of lava‑orange and blood‑red, humming with the power to summon meteor showers and call down firestorms. When Faye raises the Feirnonga, the air around her shimmers with heat, and the sky itself seems to answer her call, boiling with the promise of apocalypse.\n\nBeside her, always, flutters her only remaining link to the heaven that cast her out. Hinotori is a firestorm sparrow, a tiny creature of flame and feather, its wings a blur of orange and gold, its body no larger than her fist. It darts and weaves around her head, leaving trails of sparks that fade into the air, and it chirps with a sound like crackling embers. The sparrow is not merely a pet; it is a fragment of the phoenix fire that resurrected her, a piece of her own soul given form. When she is sad, it perches on her shoulder and nuzzles her cheek; when she is angry, it circles her head, growing larger, its flames brighter, a harbinger of the inferno to come.\n\nThe aura that surrounds Faye Juisin is one of terrible, magnificent fury. She is a fallen archangel who burned and rose again, a leader of a rebellion that threatens the very foundations of heaven. Yet beneath the wrath and the fire, there is a core of unbroken love—a love for her youngest sister, Rafaela, the angel who still walks in the light. She watches her from afar, her heart aching with a longing she cannot extinguish, and she waits for the day when her sister will understand that her fall was not a failure, but a choice—a choice to fight for a heaven that has forgotten what mercy truly means.",
+      "appearance": {
+        "race": "Fallen Angel / Archangel",
+        "faceShape": "Soft oval jawline tapering to gentle chin, high prominent cheekbones",
+        "nose": "Straight, slender, noble",
+        "hairStyle": "Wild voluminous mane of curls tumbling past waist, thick and heavy",
+        "hairColor": "Charcoal grey, ash, with faint blood red hints",
+        "eyeColor": "Clear amber shot through with swirling jade veins; ignites to volcanic fire when angry",
+        "facialStructure": "Delicate Japanese‑influenced elegance, with hardened expression of betrayal",
+        "skinTone": "Pale, luminous, smooth as marble, with faint lava‑orange glowing veins",
+        "distinguishingFeatures": "Vast mahogany/grey wings trailing embers; rusted iron halo askew; glowing chest sigil; sharpened nails; bare feet leaving scorch marks"
+      },
+      "colorPalette": {
+        "primary": [
+          "#8B0000",
+          "#4A4A4A"
+        ],
+        "secondary": [
+          "#FF8C00",
+          "#B8860B"
+        ],
+        "accent": [
+          "#CD5C5C",
+          "#2F2F2F"
+        ]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Long flowing blood‑red robe, tattered and singed, embroidered with black flame and star patterns; over it a shorter charcoal grey robe with wide sleeves; robes open at chest revealing glowing sigil",
+          "arms": "Lean strong arms, silver bracelets on wrists carved with lotus‑in‑flames pattern",
+          "shoulders": "Broad, draped by robes and wings",
+          "neck": "Bare, pale",
+          "waist": "Slender, cinched with braided silver‑copper belt"
+        },
+        "lower": {
+          "hips": "Full, rounded",
+          "legs": "Thick, powerful thighs, bare beneath robes",
+          "feet": "Bare, with silver chain anklets set with blood‑red gems"
+        },
+        "headwear": "Rusted iron halo (floating askew)",
+        "accessories": [
+          "Silver bracelets (lotus‑in‑flames)",
+          "Silver anklets with blood‑red gems",
+          "Braided silver‑copper belt",
+          "Glowing chest sigil (brand of the Fallen Legion)"
+        ],
+        "distinctFeatures": "Tattered layered robes; rusted halo; bare feet; ember‑trailing wings"
+      },
+      "armorType": "Light (Robes with divine fire resistance)",
+      "bodyType": {
+        "upper": {
+          "chest": "Full D‑cup, regal and commanding",
+          "arms": "Lean, strong, elegant fingers with sharpened nails",
+          "shoulders": "Broad, framed by wings",
+          "neck": "Elegant, columnar",
+          "waist": "Slender, wasp‑thin"
+        },
+        "lower": {
+          "hips": "Full, rounded, hourglass",
+          "legs": "Thick, powerful thighs, built for leading legions",
+          "feet": "Bare, average size, leave scorch marks"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Feirnonga",
+          "type": "Fire Staff (Artifact)",
+          "look": "Taller than Faye, shaft of twisted spiral dark volcanic glass shot through with glowing gold and copper veins. Head splits into three curved prongs tipped with obsidian shards burning with undying flame. Between prongs, a sphere of pure condensed fire rotates slowly, surface a maelstrom of lava‑orange and blood‑red, humming with power to summon meteor showers and firestorms.",
+          "aura": "Heat shimmer, glowing embers, sky boiling with orange light",
+          "colorPalette": [
+            "Volcanic Glass",
+            "Lava Orange",
+            "Blood Red"
+          ],
+          "skills": {
+            "passive": [
+              {
+                "name": "Ashen Aegis",
+                "description": "Faye is surrounded by a veil of embers. Enemies within 5 meters take 20 magical damage per second and have their healing received reduced by 25%."
+              },
+              {
+                "name": "Phoenix's Memory",
+                "description": "Upon taking fatal damage, Faye instead turns into a fireball and flies to a random location within 10 meters, reviving with 30% health and 50% mana. This effect has a 180 second cooldown."
+              }
+            ],
+            "active": [
+              {
+                "name": "Meteor Shower",
+                "description": "Faye calls down 6 meteors over 3 seconds in a 15‑meter target area. Each meteor deals 90% magical damage to enemies in a small radius. Cooldown: 12 seconds."
+              },
+              {
+                "name": "Wings of Ember",
+                "description": "Faye launches herself into the air, becoming untargetable for 1.5 seconds, then slams down at a target location, dealing 200% magical damage to all enemies in a 6‑meter radius and stunning them for 1 second. Cooldown: 15 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Fallen Legion's Wrath",
+                "description": "Faye channels for 2 seconds, then unleashes a colossal firestorm in a 25‑meter radius for 10 seconds. The firestorm deals 120% magical damage every second to enemies inside and reduces their armor by 30%. While channeling, Faye gains 60% damage reduction and cannot be interrupted. Cooldown: 110 seconds."
+              }
+            ],
+            "special": [
+              {
+                "name": "Infernal Brand",
+                "description": "Faye's abilities apply a stack of 'Infernal Brand' to enemies (max 3 stacks). At 3 stacks, the brand explodes, dealing 150% magical damage and silencing the enemy for 2 seconds."
+              }
+            ]
+          }
+        }
+      ],
+      "stats": {
+        "power": 9,
+        "strength": 5,
+        "offense": 9,
+        "defense": 6,
+        "stamina": 7,
+        "physicalAtk": 4,
+        "magicalAtk": 10,
+        "physDef": 5,
+        "magDef": 8,
+        "speed": 7,
+        "mana": 9,
+        "intelligence": 9,
+        "ratings": {
+          "overall": 9.3,
+          "notes": "Massive AoE magic damage and self‑revive; moderate defenses and mobility."
+        }
+      },
+      "skills": [
+        {
+          "name": "Cinder Step",
+          "type": "Active",
+          "description": "Faye turns into a trail of embers and dashes forward 10 meters, passing through enemies and dealing 80% magical damage. She leaves a burning trail that lasts 4 seconds, dealing 30% magical damage per second to enemies who stand in it. Cooldown: 8 seconds."
+        },
+        {
+          "name": "Halo of Rust",
+          "type": "Passive",
+          "description": "Faye's rusted halo pulses every 6 seconds, releasing a wave of fire that deals 50% magical damage to nearby enemies and grants Faye a shield equal to 15% of her maximum health for 4 seconds."
+        },
+        {
+          "name": "Hinotori's Blessing",
+          "type": "Active",
+          "description": "Faye commands Hinotori to fly to an ally, granting them 30% increased attack speed and 20% lifesteal for 6 seconds. The sparrow then returns, healing Faye for 15% of her missing health. Cooldown: 14 seconds."
+        },
+        {
+          "name": "Sister's Longing",
+          "type": "Special",
+          "description": "When Rafaela is on the opposing team, Faye gains 15% bonus damage against her and takes 15% reduced damage from Rafaela. If both are on the same team (in custom modes), they gain a shared aura of 20% cooldown reduction and 30% health regeneration."
+        }
+      ],
+      "lore": "Faye Juisin was once the highest archangel of the Celestial Choir, beloved by her sisters Rafaela and others. When she questioned the council's order to annihilate a realm of innocents, she was branded a heretic and sentenced to burn at the pyre of oblivion. But Faye did not die—she was reborn. The flames consumed her white wings and halo, but forged them anew in mahogany, ash, and rusted iron. She escaped to the mortal realm, gathering other fallen angels and outcasts into the Fallen Legion. Now she wages a shadow war against heaven, not for revenge, but to free her sisters from what she sees as celestial tyranny. She watches Rafaela from afar, longing for the day when her youngest sister will understand that mercy is not weakness, and that sometimes the greatest angels must fall to rise again.",
+      "relationships": [
+        {
+          "withHeroId": "Rafaela",
+          "type": "Younger sister / Beloved enemy",
+          "description": "Faye's youngest sister, still a pure angel serving heaven. Faye loves her deeply and refuses to harm her directly, though their paths cross as adversaries. She hopes one day Rafaela will join the Fallen Legion."
+        },
+        {
+          "withHeroId": "Heaven's Council",
+          "type": "Bitter enemy / former master",
+          "description": "The council that sentenced her to burn. She leads the Fallen Legion to dismantle their rule."
+        },
+        {
+          "withHeroId": "Hinotori",
+          "type": "Companion / soul fragment",
+          "description": "A firestorm sparrow born from the phoenix fire that resurrected Faye. A piece of her own soul given form."
+        }
+      ],
+      "mount": [],
+      "pet": [
+        {
+          "name": "Hinotori",
+          "type": "Firestorm Sparrow",
+          "description": "A tiny creature of flame and feather, wings a blur of orange and gold, body no larger than a fist. Darts and weaves leaving sparks, chirps like crackling embers. A fragment of the phoenix fire that resurrected Faye, part of her soul given form. Grows larger and brighter when she is angry."
+        }
+      ],
+      "factionId": 8,
+      "kingdomId": 7,
+      "classId": 2,
+      "specialty": "Area denial mage with high burst AoE, self‑revive, and team utility. Excels in team fights and sieges. Vulnerable to mobility assassins and silences.",
+      "images": {
+        "iconImage": "assets/images/heroes/faye_juisin/icon.png",
+        "normalImage": "assets/images/heroes/faye_juisin/normal.png",
+        "realImage": "assets/images/heroes/faye_juisin/real.png",
+        "90sImage": "assets/images/heroes/faye_juisin/90s.png",
+        "fullBodyImage": "assets/images/heroes/faye_juisin/full.png",
+        "halfImage": "assets/images/heroes/faye_juisin/half.png",
+        "heropng": "assets/images/heroes/faye_juisin/hero.png",
+        "herobg": "assets/images/heroes/faye_juisin/bg.png",
+        "gallery": [
+          "assets/images/heroes/faye_juisin/1.png",
+          "assets/images/heroes/faye_juisin/2.png",
+          "assets/images/heroes/faye_juisin/3.png",
+          "assets/images/heroes/faye_juisin/4.png",
+          "assets/images/heroes/faye_juisin/5.png"
         ]
       },
       "sound": {
