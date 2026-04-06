@@ -36,3 +36,45 @@ After you finish writing a prompt paragraph, copy it into a word counter. It mus
 
 Step 9 – Ready to receive character data
 Now you have the complete instruction. When you are ready, provide the character data: race, gender, age, physical description, attire, weapon(s), pet/mount, powers, personality, and any special features. Then follow this instruction step by step to produce the twelve prompts plus summary and thank you. Do not deviate from the templates, the order of details, the word count, or the uniqueness rules. Ultra‑think on every adjective and every comma. This will guarantee a precise match of the character you imagine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Before generating anything, you must begin with an H1 heading that contains the hero’s title and hero’s name only. Do not include the name inside the body paragraphs that follow; the name appears only in the H1 heading. After that, you will generate exactly four sections, each marked clearly with H2 headings. Every section except the dialogue must be written as one single, continuous, unified long paragraph with no bullet points, no numbering, no line breaks inside the paragraph, and no fragmented formatting. The writing must feel deliberate, deeply analyzed, and internally consistent. Before writing, you must ultra-think, reread the provided character data multiple times, and construct a complete internal master list of every attribute including skin tone, facial structure, hairstyle, hair color, eye color, scars, markings, musculature, height, build, posture tendencies, attire layers from undergarments to outer cloaks, armor materials, wear patterns, weapon structure down to hilt and pommel, aura behavior, pet or mount anatomy, markings, size relative to the character, and any special features such as wings, horns, cybernetics, tattoos, ritual paint, or glowing veins. Once that master list is formed, you must ensure that no detail changes across sections and that adjectives describing fixed traits remain exactly the same wherever referenced. Precision and consistency are mandatory.
+
+1. In-Depth Visual and Physical Summarization
+
+In this section, write one single, highly detailed, unified paragraph that fully describes the character visually from head to toe in systematic anatomical order. Begin with the head and face, including skin tone, texture, bone structure, jawline, nose shape, lips, brow shape, eye color and intensity, hairstyle, hair color, hair texture, and any facial markings or scars. Then move to the upper body, describing shoulders, chest build, muscle definition or softness, posture, and any visible markings. Continue to the lower body, detailing stance, leg build, footwear, and movement readiness. After the anatomy, describe attire and armor in extreme detail, including fabric types, metal types, stitching, weathering, scratches, embroidery, symbolic engravings, scent of materials, and how the fabric sounds when shifting. Then describe the weapon with precision, including its size relative to the character, material composition, balance, engravings, aura color and behavior, glow intensity, magical or technological effects, and any small design features. After that, describe the pet or mount if present, including species, posture, expression, armor or barding, markings, and relationship positioning relative to the character. Conclude with the character’s posture and facial expression in this specific scene, followed by a fully described background with time of day, environment type, atmospheric elements, weather, lighting direction, color temperature, shadows, and emotional tone. End with any special features such as wings, horns, scars, energy manifestations, cybernetic implants, or supernatural traits. This paragraph must feel cinematic, precise, and complete.
+
+2. Cinematic Character Dialogue
+
+This section must contain exactly ten separate lines of dialogue, each written on its own line. The dialogue must feel like it was taken directly from a high-budget cinematic film. The lines should reflect the character’s personality, worldview, emotional depth, power, motivations, and relationships. The tone must match the character’s nature whether heroic, tragic, villainous, noble, sarcastic, calm, or ruthless. The dialogue should hint at backstory, internal conflict, ambitions, and bonds with allies or enemies. Each line should be impactful, memorable, and emotionally charged.
+
+3. Personality and Relationships
+
+This section must be written as one single unified paragraph that contains a structured table embedded within it. The paragraph must introduce the psychological depth of the character, explaining their core temperament, moral alignment, ambitions, fears, leadership style, emotional control, and behavioral tendencies in battle and peace. Within the same section, you must include a clearly formatted table that outlines relationships with other relevant characters, describing the nature of each relationship, emotional dynamic, trust level, conflicts, and shared history. The table must include columns for the other character, relationship type, emotional dynamic, strengths of the bond, and weaknesses or tensions. After the table, the paragraph must continue briefly to summarize how these relationships shape the character’s growth, decision-making, and narrative arc. Everything must remain consistent with the established character traits.
+
+4. Creator’s Thank You Note
+
+This final section must be one single unified long paragraph written as a heartfelt thank you note from the creator to the character. It must explain why the character was created, what themes they embody, what emotions they represent, and what narrative purpose they serve. The tone may be affectionate, reflective, proud, or solemn depending on the character’s nature. It should explain what makes the character meaningful, how their design and personality were carefully crafted, and what legacy they are meant to leave within their world. The note should feel intentional and emotionally resonant, as though the creator deeply understands and values the character.
+
+Throughout all sections, you must recheck consistency before finalizing. No physical attribute may change, no color may shift, no material may be altered, and no personality trait may contradict another section. Every adjective describing permanent traits must remain identical wherever referenced. Ultra-think before writing, verify internally, and then deliver the final structured output with H1 for the hero title and name, followed by the four H2 sections exactly as defined above.

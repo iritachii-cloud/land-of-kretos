@@ -1,6 +1,6 @@
 /**
  * ======================================================================================
- * heroes.js – Kretos Heroes Page (Standalone, No Conflict with Homepage)
+ * heroes.js – Kretos heroes Page (Standalone, No Conflict with Homepage)
  * ======================================================================================
  * Version: 1.0.0
  * Author: Kretos Team
@@ -20,11 +20,11 @@
 // To avoid conflicts with homepage scripts, all logic is wrapped in an IIFE or a dedicated class.
 // We'll use a class-based approach with a single instance.
 
-class HeroesPage {
+class heroesPage {
     constructor() {
         // Core data
         this.heroes = [];
-        this.filteredHeroes = [];
+        this.filteredheroes = [];
         this.currentRankFilter = '';
         this.currentSearchTerm = '';
 
@@ -39,15 +39,16 @@ class HeroesPage {
         // Modals & Swipers
         this.fullscreenModal = null;
         this.heroDetailSwiper = null;
-        this.currentHeroSwiperIndex = 0;
+        this.currentheroSwiperIndex = 0;
         this.activeGallerySwiper = null; // will hold the gallery swiper instance for current slide
+        this.activeStorySwiper = null; // will hold the story swiper instance for current slide
         this.lightbox = null;
 
         // State
         this.isModalOpen = false;
         this.rankColors = {
             'SSS-Rank': '#FFD700',   // radiant gold
-            'SS-Rank': '#C0C0C0',   // platinum
+            'SS-Rank': '#ffa57b',   // platinum
             'S-Rank': '#DC143C',   // crimson
             'A-Rank': '#1E90FF',   // electric blue
             'B-Rank': '#2E8B57',   // emerald
@@ -65,35 +66,35 @@ class HeroesPage {
         this.loadData = this.loadData.bind(this);
         this.renderNavbar = this.renderNavbar.bind(this);
         this.buildRankFilters = this.buildRankFilters.bind(this);
-        this.filterHeroes = this.filterHeroes.bind(this);
-        this.renderHeroCards = this.renderHeroCards.bind(this);
-        this.openHeroModal = this.openHeroModal.bind(this);
-        this.closeHeroModal = this.closeHeroModal.bind(this);
-        this.buildHeroDetailSlide = this.buildHeroDetailSlide.bind(this);
+        this.filterheroes = this.filterheroes.bind(this);
+        this.renderheroCards = this.renderheroCards.bind(this);
+        this.openheroModal = this.openheroModal.bind(this);
+        this.closeheroModal = this.closeheroModal.bind(this);
+        this.buildheroDetailSlide = this.buildheroDetailSlide.bind(this);
         this.initDetailSwiper = this.initDetailSwiper.bind(this);
         this.animateStatsInModal = this.animateStatsInModal.bind(this);
         this.initGallerySwiper = this.initGallerySwiper.bind(this);
         this.destroyGallerySwiper = this.destroyGallerySwiper.bind(this);
         this.openLightbox = this.openLightbox.bind(this);
         this.closeLightbox = this.closeLightbox.bind(this);
-        this.applyHeroTheme = this.applyHeroTheme.bind(this);
+        this.applyheroTheme = this.applyheroTheme.bind(this);
         this.handleDeepLink = this.handleDeepLink.bind(this);
         this.setupEventListeners = this.setupEventListeners.bind(this);
     }
 
     // =============================== INITIALIZATION =====================================
     async init() {
-        console.log('HeroesPage initializing...');
+        console.log('heroesPage initializing...');
         await this.loadData();
         this.cacheDomElements();
         this.renderNavbar();
         this.buildRankFilters();
         this.populateThemePicker();
-        this.renderHeroCards();
+        this.renderheroCards();
         this.setupEventListeners();
         this.handleDeepLink();
         this.setupScrollAnimations();
-        console.log('HeroesPage initialized successfully.');
+        console.log('heroesPage initialized successfully.');
     }
 
     async loadData() {
@@ -101,7 +102,7 @@ class HeroesPage {
             const response = await fetch('data/heroes.json');
             const json = await response.json();
             this.heroes = json.heroes;
-            this.filteredHeroes = [...this.heroes];
+            this.filteredheroes = [...this.heroes];
             console.log(`Loaded ${this.heroes.length} heroes.`);
         } catch (error) {
             console.error('Failed to load heroes data:', error);
@@ -199,7 +200,7 @@ class HeroesPage {
             chip.addEventListener('click', (e) => {
                 const rank = chip.getAttribute('data-rank');
                 this.currentRankFilter = rank === '' ? '' : rank;
-                this.filterHeroes();
+                this.filterheroes();
                 this.updateRankChipsActive();
             });
         });
@@ -216,7 +217,7 @@ class HeroesPage {
         });
     }
 
-    filterHeroes() {
+    filterheroes() {
         let filtered = [...this.heroes];
         // Filter by rank
         if (this.currentRankFilter) {
@@ -227,27 +228,27 @@ class HeroesPage {
             const term = this.currentSearchTerm.toLowerCase();
             filtered = filtered.filter(h => h.name.toLowerCase().includes(term));
         }
-        this.filteredHeroes = filtered;
-        this.updateHeroCountDisplay();
-        this.renderHeroCards();
+        this.filteredheroes = filtered;
+        this.updateheroCountDisplay();
+        this.renderheroCards();
     }
 
-    updateHeroCountDisplay() {
+    updateheroCountDisplay() {
         if (this.heroCountDisplay) {
-            this.heroCountDisplay.textContent = `${this.filteredHeroes.length} hero${this.filteredHeroes.length !== 1 ? 'es' : ''}`;
+            this.heroCountDisplay.textContent = `${this.filteredheroes.length} hero${this.filteredheroes.length !== 1 ? 'es' : ''}`;
         }
     }
 
-    // =============================== HERO CARDS (ASYMMETRICAL) ==========================
-    renderHeroCards() {
+    // =============================== hero CARDS (ASYMMETRICAL) ==========================
+    renderheroCards() {
         if (!this.heroesGrid) return;
-        if (this.filteredHeroes.length === 0) {
+        if (this.filteredheroes.length === 0) {
             this.heroesGrid.innerHTML = '<div class="no-results">No heroes match your filters. Try adjusting rank or search.</div>';
             return;
         }
 
         let cardsHtml = '';
-        for (const hero of this.filteredHeroes) {
+        for (const hero of this.filteredheroes) {
             // Radial gradient from hero's colorPalette.primary (first color centre, second edge)
             const primaryColors = hero.colorPalette?.primary || ['#0a4d8c', '#002b4f'];
             const gradient = `radial-gradient(circle at 30% 20%, ${primaryColors[0]}, ${primaryColors[1]})`;
@@ -280,7 +281,7 @@ class HeroesPage {
                 }
                 if (heroId) {
                     const hero = this.heroes.find(h => h.id == heroId);
-                    if (hero) this.openHeroModal(hero);
+                    if (hero) this.openheroModal(hero);
                 }
             });
         });
@@ -311,7 +312,7 @@ class HeroesPage {
     }
 
     // =============================== FULLSCREEN MODAL & SWIPER ==========================
-    openHeroModal(initialHero) {
+    openheroModal(initialhero) {
         document.body.classList.add('modal-open');
         if (!this.fullscreenModal) return;
         // Build slides for all heroes
@@ -338,7 +339,7 @@ class HeroesPage {
         this.initDetailSwiper();
 
         // Find index of initial hero
-        const initialIndex = this.heroes.findIndex(h => h.id === initialHero.id);
+        const initialIndex = this.heroes.findIndex(h => h.id === initialhero.id);
         if (initialIndex !== -1 && this.heroDetailSwiper) {
             this.heroDetailSwiper.slideTo(initialIndex, 0);
         }
@@ -387,7 +388,7 @@ class HeroesPage {
         if (!slideEl) return;
 
         // Build the detailed content
-        const detailedHtml = this.buildHeroDetailSlide(hero);
+        const detailedHtml = this.buildheroDetailSlide(hero);
         slideEl.innerHTML = detailedHtml;
 
         // Apply hero-specific background to modal
@@ -403,11 +404,14 @@ class HeroesPage {
         // Initialize gallery swiper for this hero
         this.initGallerySwiper(hero, slideEl);
 
+        // Initialize story swiper for this hero
+        this.initStorySwiper(hero, slideEl);
+
         // Apply hero's color palette to modal accents (buttons, borders)
-        this.applyHeroThemeToModal(hero);
+        this.applyheroThemeToModal(hero);
     }
 
-    applyHeroThemeToModal(hero) {
+    applyheroThemeToModal(hero) {
         const palette = hero.colorPalette;
         if (!palette) return;
         const primary = palette.primary?.[0] || '#0a4d8c';
@@ -419,7 +423,7 @@ class HeroesPage {
         modal.style.setProperty('--modal-accent', accent);
     }
 
-    buildHeroDetailSlide(hero) {
+    buildheroDetailSlide(hero) {
         // Stats bars html (will be animated later)
         const statsHtml = this.buildStatsHtml(hero);
         const starsHtml = this.renderStars(hero.stats?.ratings?.overall || 0);
@@ -435,6 +439,10 @@ class HeroesPage {
         const skillsHtml = hero.skills ? this.buildSkillsHtml(hero.skills) : '';
         // Relationships
         const relationshipsHtml = hero.relationships && hero.relationships.length ? this.buildRelationshipsHtml(hero.relationships) : '';
+
+        //weapon
+        const weaponHtml = hero.weapons && hero.weapons.length ? this.buildWeaponHtml(hero.weapons) : '';
+
         // Mount / Pet
         const mountHtml = hero.mount && hero.mount.length ? this.buildMountHtml(hero.mount) : '';
         const petHtml = hero.pet && hero.pet.length ? this.buildPetHtml(hero.pet) : '';
@@ -468,11 +476,14 @@ class HeroesPage {
                     <div class="hero-titles"><strong>Titles:</strong> ${this.escapeHtml(titles)}</div>
                     <div class="stats-section">${statsHtml}</div>
                     <div class="hero-short-desc"><strong>About:</strong> ${this.escapeHtml(hero.shortDescription || '')}</div>
+                    <div class="hero-short-desc"><strong>Full Description:</strong> ${this.escapeHtml(hero.fullDescription || '')}</div>
+                    ${this.buildStorySwiperHtml(hero)}
                     ${attireHtml}
                     ${armorTypeHtml}
                     ${bodyTypeHtml}
                     ${skillsHtml}
                     ${relationshipsHtml}
+                    ${weaponHtml}
                     ${mountHtml}
                     ${petHtml}
                 </div>
@@ -489,6 +500,46 @@ class HeroesPage {
                 </div>
             </div>
         `;
+    }
+
+    buildStorySwiperHtml(hero) {
+        if (!hero.story) return '';
+        // Extract all parts (part1..part5) into an array
+        const storyParts = [];
+        for (let i = 1; i <= 5; i++) {
+            const part = hero.story[`part${i}`];
+            if (part) storyParts.push(part);
+        }
+        if (storyParts.length === 0) return '';
+
+        const swiperId = `storySwiper-${hero.id}`;
+        let slidesHtml = '';
+        storyParts.forEach((part, idx) => {
+            slidesHtml += `
+            <div class="swiper-slide story-slide">
+                <div class="story-card">
+                    <div class="story-part-label">Chapter ${idx + 1}</div>
+                    <div class="story-text">${this.escapeHtml(part)}</div>
+                </div>
+            </div>
+        `;
+        });
+
+        return `
+        <div class="hero-story-section">
+            <h3>📖 Lore – The Untold Story</h3>
+            <div class="story-swiper-container">
+                <div class="swiper story-swiper" id="${swiperId}">
+                    <div class="swiper-wrapper">
+                        ${slidesHtml}
+                    </div>
+                    <div class="swiper-button-next story-next"></div>
+                    <div class="swiper-button-prev story-prev"></div>
+                    <div class="swiper-pagination story-pagination"></div>
+                </div>
+            </div>
+        </div>
+    `;
     }
 
     buildStatsHtml(hero) {
@@ -551,36 +602,154 @@ class HeroesPage {
     }
 
     buildRelationshipsHtml(relationships) {
+        if (!relationships || !relationships.length) return '';
+
         let html = '<div class="info-block relationships-block"><h4>Relationships</h4><div class="relationships-list">';
+
         relationships.forEach(rel => {
+            // ✅ Correct property name: withHeroId (capital H, capital I)
+            let relatedHeroId = rel.withHeroId || rel.withheroId; // fallback for any lowercase version
+            let relatedHeroName = relatedHeroId;
+
+            // Try to find the actual hero name from the loaded heroes array
+            if (relatedHeroId && this.heroes) {
+                const foundHero = this.heroes.find(h =>
+                    h.name.toLowerCase() === relatedHeroId.toLowerCase() ||
+                    h.id == relatedHeroId
+                );
+                if (foundHero) relatedHeroName = foundHero.name;
+            }
+
             html += `
-                <div class="relationship-item">
-                    <strong>${this.escapeHtml(rel.withHeroId || 'Unknown')}</strong> (${this.escapeHtml(rel.type)}):
-                    <span>${this.escapeHtml(rel.description)}</span>
-                </div>
-            `;
+            <div class="relationship-item">
+                <strong>${this.escapeHtml(relatedHeroName)}</strong> 
+                <span class="relationship-type">(${this.escapeHtml(rel.type)})</span>:
+                <span class="relationship-desc">${this.escapeHtml(rel.description)}</span>
+            </div>
+        `;
         });
+
         html += '</div></div>';
         return html;
     }
 
     buildMountHtml(mounts) {
         if (!mounts.length) return '';
-        let html = '<div class="info-block mount-block"><h4>Mount(s)</h4>';
+        let html = '<div class="enhanced-section mounts-section"><h3>🐉 Mounts</h3><div class="enhanced-grid">';
         mounts.forEach(m => {
-            html += `<div class="mount-item"><strong>${this.escapeHtml(m.name)}</strong> (${m.type}): ${this.escapeHtml(m.description)}</div>`;
+            const imgUrl = m.images ? this.getImageWithFallback(m.images) : this.fallbackImage;
+            const abilitiesHtml = m.abilities && m.abilities.length
+                ? `<div class="abilities-list"><strong>Abilities:</strong> ${m.abilities.map(a => `<span class="ability-badge">${this.escapeHtml(a)}</span>`).join('')}</div>`
+                : '';
+            html += `
+            <div class="enhanced-card mount-card">
+                <div class="card-header">
+                    <img src="${imgUrl}" alt="${this.escapeHtml(m.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <div>
+                        <h4>${this.escapeHtml(m.name)}</h4>
+                        <div class="meta-tags">
+                            <span class="rank-tag">${m.rank || '?'}</span>
+                            <span class="type-tag">${this.escapeHtml(m.type)}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p class="short-desc">${this.escapeHtml(m.description || '')}</p>
+                    ${m.fulldesc ? `<p class="full-desc">${this.escapeHtml(m.fulldesc)}</p>` : ''}
+                </div>
+                ${abilitiesHtml}
+            </div>
+        `;
         });
-        html += '</div>';
+        html += '</div></div>';
+        return html;
+    }
+
+    buildWeaponHtml(weapons) {
+        if (!weapons || !weapons.length) return '';
+
+        let html = '<div class="enhanced-section weapons-section"><h3>⚔️ Weapons</h3><div class="enhanced-grid">';
+
+        weapons.forEach(w => {
+            // Handle image (could be string or object)
+            let imgUrl = this.fallbackImage;
+            if (w.images) {
+                if (typeof w.images === 'string') imgUrl = w.images;
+                else if (w.images.url) imgUrl = w.images.url;
+            }
+            imgUrl = this.getImageWithFallback(imgUrl);
+
+            // Short description: use w.description if exists, else truncate fulldesc
+            let shortDesc = w.description || (w.fulldesc ? w.fulldesc.substring(0, 150) + '...' : 'No description available.');
+            let fullDesc = w.fulldesc ? `<p class="full-desc">${this.escapeHtml(w.fulldesc)}</p>` : '';
+
+            // Build skills breakdown
+            let skillsHtml = '';
+            if (w.skills && typeof w.skills === 'object') {
+                skillsHtml = '<div class="skills-breakdown"><strong>⚡ Skills</strong>';
+                const categories = ['passive', 'active', 'ultimate', 'special'];
+                for (const cat of categories) {
+                    if (w.skills[cat] && w.skills[cat].length) {
+                        skillsHtml += `<div class="skill-category"><span class="skill-cat">${cat}</span> `;
+                        skillsHtml += w.skills[cat].map(s => `<span class="skill-badge" title="${this.escapeHtml(s.description || '')}">${this.escapeHtml(s.name)}</span>`).join('');
+                        skillsHtml += `</div>`;
+                    }
+                }
+                skillsHtml += '</div>';
+            }
+
+            html += `
+            <div class="enhanced-card weapon-card">
+                <div class="card-header">
+                    <img src="${imgUrl}" alt="${this.escapeHtml(w.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <div>
+                        <h4>${this.escapeHtml(w.name)}</h4>
+                        <span class="type-tag">${this.escapeHtml(w.type || 'Weapon')}</span>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p class="short-desc">${this.escapeHtml(shortDesc)}</p>
+                    ${fullDesc}
+                </div>
+                ${skillsHtml}
+            </div>
+        `;
+        });
+
+        html += '</div></div>';
         return html;
     }
 
     buildPetHtml(pets) {
         if (!pets.length) return '';
-        let html = '<div class="info-block pet-block"><h4>Pet(s)</h4>';
+        let html = '<div class="enhanced-section pets-section"><h3>🐾 Pets / Companions</h3><div class="enhanced-grid">';
         pets.forEach(p => {
-            html += `<div class="pet-item"><strong>${this.escapeHtml(p.name)}</strong> (${p.type}): ${this.escapeHtml(p.description)}</div>`;
+            const imgUrl = p.images ? this.getImageWithFallback(p.images) : this.fallbackImage;
+            const abilitiesHtml = p.abilities && p.abilities.length
+                ? `<div class="abilities-list"><strong>Abilities:</strong> ${p.abilities.map(a => `<span class="ability-badge">${this.escapeHtml(a)}</span>`).join('')}</div>`
+                : '';
+            html += `
+            <div class="enhanced-card pet-card">
+                <div class="card-header">
+                    <!-- ✅ ADD onerror handler below -->
+                    <img src="${imgUrl}" alt="${this.escapeHtml(p.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <div>
+                        <h4>${this.escapeHtml(p.name)}</h4>
+                        <div class="meta-tags">
+                            <span class="rank-tag">${p.rank || 'Common'}</span>
+                            <span class="type-tag">${this.escapeHtml(p.type)}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p class="short-desc">${this.escapeHtml(p.description || '')}</p>
+                    ${p.fulldesc ? `<p class="full-desc">${this.escapeHtml(p.fulldesc)}</p>` : ''}
+                </div>
+                ${abilitiesHtml}
+            </div>
+        `;
         });
-        html += '</div>';
+        html += '</div></div>';
         return html;
     }
 
@@ -640,7 +809,7 @@ class HeroesPage {
         uniqueImages.forEach((imgUrl, idx) => {
             slidesHtml += `
                 <div class="swiper-slide gallery-slide">
-                    <img src="${this.getImageWithFallback(imgUrl)}" alt="Gallery image ${idx + 1}" data-fullsrc="${imgUrl}">
+                    <img src="${this.getImageWithFallback(imgUrl)}" alt="Gallery image ${idx + 1}" data-fullsrc="${imgUrl}" onerror="this.src='${this.fallbackImage}'">
                     <div class="slide-caption">Image ${idx + 1} / ${uniqueImages.length}</div>
                 </div>
             `;
@@ -685,6 +854,47 @@ class HeroesPage {
         }
     }
 
+    //Story swiper initialization (similar to gallery)
+
+    initStorySwiper(hero, container) {
+        const swiperId = `storySwiper-${hero.id}`;
+        const swiperEl = container.querySelector(`#${swiperId}`);
+        if (!swiperEl) return;
+
+        // Destroy previous instance if exists
+        if (this.activeStorySwiper) {
+            this.activeStorySwiper.destroy(true, true);
+        }
+
+        this.activeStorySwiper = new Swiper(swiperEl, {
+            effect: 'coverflow',           // Unique cool effect
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: `.story-next`,
+                prevEl: `.story-prev`
+            },
+            pagination: {
+                el: `.story-pagination`,
+                clickable: true
+            },
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: true
+            }
+        });
+    }
+
     // =============================== LIGHTBOX ============================================
     openLightbox(imageSrc, caption) {
         if (!this.lightbox) return;
@@ -717,7 +927,7 @@ class HeroesPage {
             const heroId = parseInt(e.target.value);
             if (heroId) {
                 const hero = this.heroes.find(h => h.id === heroId);
-                if (hero) this.applyHeroTheme(hero);
+                if (hero) this.applyheroTheme(hero);
             } else {
                 this.resetPageTheme();
             }
@@ -725,7 +935,7 @@ class HeroesPage {
         this.themeSelect.addEventListener('change', this.themeChangeHandler);
     }
 
-    applyHeroTheme(hero) {
+    applyheroTheme(hero) {
         const palette = hero.colorPalette;
         if (!palette) return;
         const primary = palette.primary?.[0] || '#0a4d8c';
@@ -777,7 +987,7 @@ class HeroesPage {
             if (hero) {
                 // Slight delay to ensure grid is rendered
                 setTimeout(() => {
-                    this.openHeroModal(hero);
+                    this.openheroModal(hero);
                 }, 500);
             }
         }
@@ -791,18 +1001,18 @@ class HeroesPage {
                 clearTimeout(this.searchDebounce);
                 this.searchDebounce = setTimeout(() => {
                     this.currentSearchTerm = e.target.value;
-                    this.filterHeroes();
+                    this.filterheroes();
                 }, 300);
             });
         }
 
         // Close modal buttons
-        const closeModalBtn = document.getElementById('closeHeroModal');
+        const closeModalBtn = document.getElementById('closeheroModal');
         if (closeModalBtn) {
-            closeModalBtn.addEventListener('click', () => this.closeHeroModal());
+            closeModalBtn.addEventListener('click', () => this.closeheroModal());
         }
         this.fullscreenModal?.addEventListener('click', (e) => {
-            if (e.target === this.fullscreenModal) this.closeHeroModal();
+            if (e.target === this.fullscreenModal) this.closeheroModal();
         });
 
         // Lightbox close
@@ -845,7 +1055,7 @@ class HeroesPage {
         });
     }
 
-    closeHeroModal() {
+    closeheroModal() {
         document.body.classList.remove('modal-open');   // ✅ FIX: remove scroll lock
         if (this.fullscreenModal) {
             this.fullscreenModal.style.display = 'none';
@@ -854,6 +1064,10 @@ class HeroesPage {
         if (this.heroDetailSwiper) {
             this.heroDetailSwiper.destroy(true, true);
             this.heroDetailSwiper = null;
+        }
+        if (this.activeStorySwiper) {
+            this.activeStorySwiper.destroy(true, true);
+            this.activeStorySwiper = null;
         }
         this.destroyGallerySwiper();
     }
@@ -870,7 +1084,7 @@ class HeroesPage {
 
 // =============================== INITIALIZE ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    window.heroesPage = new HeroesPage();
+    window.heroesPage = new heroesPage();
     window.heroesPage.init();
 });
 

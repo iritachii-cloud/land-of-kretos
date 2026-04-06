@@ -41,13 +41,14 @@ class monstersPage {
         this.monsterDetailSwiper = null;
         this.currentmonsterSwiperIndex = 0;
         this.activeGallerySwiper = null; // will hold the gallery swiper instance for current slide
+        this.activeStorySwiper = null; // will hold the story swiper instance for current slide
         this.lightbox = null;
 
         // State
         this.isModalOpen = false;
         this.rankColors = {
             'SSS-Rank': '#FFD700',   // radiant gold
-            'SS-Rank': '#C0C0C0',   // platinum
+            'SS-Rank': '#ffa57b',   // platinum
             'S-Rank': '#DC143C',   // crimson
             'A-Rank': '#1E90FF',   // electric blue
             'B-Rank': '#2E8B57',   // emerald
@@ -99,7 +100,9 @@ class monstersPage {
     async loadData() {
         try {
             const response = await fetch('data/monsters.json');
+            console.log('Fetch response:', response);
             const json = await response.json();
+            console.log('Parsed JSON:', json);
             this.monsters = json.monsters;
             this.filteredmonsters = [...this.monsters];
             console.log(`Loaded ${this.monsters.length} monsters.`);
@@ -403,6 +406,9 @@ class monstersPage {
         // Initialize gallery swiper for this monster
         this.initGallerySwiper(monster, slideEl);
 
+        // Initialize story swiper for this monster
+        this.initStorySwiper(monster, slideEl);
+
         // Apply monster's color palette to modal accents (buttons, borders)
         this.applymonsterThemeToModal(monster);
     }
@@ -435,6 +441,10 @@ class monstersPage {
         const skillsHtml = monster.skills ? this.buildSkillsHtml(monster.skills) : '';
         // Relationships
         const relationshipsHtml = monster.relationships && monster.relationships.length ? this.buildRelationshipsHtml(monster.relationships) : '';
+
+        //weapon
+        const weaponHtml = monster.weapons && monster.weapons.length ? this.buildWeaponHtml(monster.weapons) : '';
+
         // Mount / Pet
         const mountHtml = monster.mount && monster.mount.length ? this.buildMountHtml(monster.mount) : '';
         const petHtml = monster.pet && monster.pet.length ? this.buildPetHtml(monster.pet) : '';
@@ -468,11 +478,14 @@ class monstersPage {
                     <div class="monster-titles"><strong>Titles:</strong> ${this.escapeHtml(titles)}</div>
                     <div class="stats-section">${statsHtml}</div>
                     <div class="monster-short-desc"><strong>About:</strong> ${this.escapeHtml(monster.shortDescription || '')}</div>
+                    <div class="monster-short-desc"><strong>Full Description:</strong> ${this.escapeHtml(monster.fullDescription || '')}</div>
+                    ${this.buildStorySwiperHtml(monster)}
                     ${attireHtml}
                     ${armorTypeHtml}
                     ${bodyTypeHtml}
                     ${skillsHtml}
                     ${relationshipsHtml}
+                    ${weaponHtml}
                     ${mountHtml}
                     ${petHtml}
                 </div>
@@ -489,6 +502,46 @@ class monstersPage {
                 </div>
             </div>
         `;
+    }
+
+    buildStorySwiperHtml(monster) {
+        if (!monster.story) return '';
+        // Extract all parts (part1..part5) into an array
+        const storyParts = [];
+        for (let i = 1; i <= 5; i++) {
+            const part = monster.story[`part${i}`];
+            if (part) storyParts.push(part);
+        }
+        if (storyParts.length === 0) return '';
+
+        const swiperId = `storySwiper-${monster.id}`;
+        let slidesHtml = '';
+        storyParts.forEach((part, idx) => {
+            slidesHtml += `
+            <div class="swiper-slide story-slide">
+                <div class="story-card">
+                    <div class="story-part-label">Chapter ${idx + 1}</div>
+                    <div class="story-text">${this.escapeHtml(part)}</div>
+                </div>
+            </div>
+        `;
+        });
+
+        return `
+        <div class="monster-story-section">
+            <h3>📖 Lore – The Untold Story</h3>
+            <div class="story-swiper-container">
+                <div class="swiper story-swiper" id="${swiperId}">
+                    <div class="swiper-wrapper">
+                        ${slidesHtml}
+                    </div>
+                    <div class="swiper-button-next story-next"></div>
+                    <div class="swiper-button-prev story-prev"></div>
+                    <div class="swiper-pagination story-pagination"></div>
+                </div>
+            </div>
+        </div>
+    `;
     }
 
     buildStatsHtml(monster) {
@@ -551,14 +604,22 @@ class monstersPage {
     }
 
     buildRelationshipsHtml(relationships) {
+        if (!relationships || !relationships.length) return '';
         let html = '<div class="info-block relationships-block"><h4>Relationships</h4><div class="relationships-list">';
         relationships.forEach(rel => {
+            let relatedName = rel.withMonsterId || rel.withHeroId || 'Unknown';
+            // Optional: try to find actual monster/hero name
+            if (relatedName !== 'Unknown' && this.monsters) {
+                const found = this.monsters.find(m => m.name.toLowerCase() === relatedName.toLowerCase() || m.id == relatedName);
+                if (found) relatedName = found.name;
+            }
             html += `
-                <div class="relationship-item">
-                    <strong>${this.escapeHtml(rel.withmonsterId || 'Unknown')}</strong> (${this.escapeHtml(rel.type)}):
-                    <span>${this.escapeHtml(rel.description)}</span>
-                </div>
-            `;
+            <div class="relationship-item">
+                <strong>${this.escapeHtml(relatedName)}</strong> 
+                <span class="relationship-type">(${this.escapeHtml(rel.type)})</span>:
+                <span class="relationship-desc">${this.escapeHtml(rel.description)}</span>
+            </div>
+        `;
         });
         html += '</div></div>';
         return html;
@@ -566,21 +627,121 @@ class monstersPage {
 
     buildMountHtml(mounts) {
         if (!mounts.length) return '';
-        let html = '<div class="info-block mount-block"><h4>Mount(s)</h4>';
+        let html = '<div class="enhanced-section mounts-section"><h3>🐉 Mounts</h3><div class="enhanced-grid">';
         mounts.forEach(m => {
-            html += `<div class="mount-item"><strong>${this.escapeHtml(m.name)}</strong> (${m.type}): ${this.escapeHtml(m.description)}</div>`;
+            const imgUrl = m.images ? this.getImageWithFallback(m.images) : this.fallbackImage;
+            const abilitiesHtml = m.abilities && m.abilities.length
+                ? `<div class="abilities-list"><strong>Abilities:</strong> ${m.abilities.map(a => `<span class="ability-badge">${this.escapeHtml(a)}</span>`).join('')}</div>`
+                : '';
+            html += `
+            <div class="enhanced-card mount-card">
+                <div class="card-header">
+                    <img src="${imgUrl}" alt="${this.escapeHtml(m.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <div>
+                        <h4>${this.escapeHtml(m.name)}</h4>
+                        <div class="meta-tags">
+                            <span class="rank-tag">${m.rank || '?'}</span>
+                            <span class="type-tag">${this.escapeHtml(m.type)}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p class="short-desc">${this.escapeHtml(m.description || '')}</p>
+                    ${m.fulldesc ? `<p class="full-desc">${this.escapeHtml(m.fulldesc)}</p>` : ''}
+                </div>
+                ${abilitiesHtml}
+            </div>
+        `;
         });
-        html += '</div>';
+        html += '</div></div>';
+        return html;
+    }
+
+    buildWeaponHtml(weapons) {
+        if (!weapons || !weapons.length) return '';
+
+        let html = '<div class="enhanced-section weapons-section"><h3>⚔️ Weapons</h3><div class="enhanced-grid">';
+
+        weapons.forEach(w => {
+            // Handle image (could be string or object)
+            let imgUrl = this.fallbackImage;
+            if (w.images) {
+                if (typeof w.images === 'string') imgUrl = w.images;
+                else if (w.images.url) imgUrl = w.images.url;
+            }
+            imgUrl = this.getImageWithFallback(imgUrl);
+
+            // Short description: use w.description if exists, else truncate fulldesc
+            let shortDesc = w.description || (w.fulldesc ? w.fulldesc.substring(0, 150) + '...' : 'No description available.');
+            let fullDesc = w.fulldesc ? `<p class="full-desc">${this.escapeHtml(w.fulldesc)}</p>` : '';
+
+            // Build skills breakdown
+            let skillsHtml = '';
+            if (w.skills && typeof w.skills === 'object') {
+                skillsHtml = '<div class="skills-breakdown"><strong>⚡ Skills</strong>';
+                const categories = ['passive', 'active', 'ultimate', 'special'];
+                for (const cat of categories) {
+                    if (w.skills[cat] && w.skills[cat].length) {
+                        skillsHtml += `<div class="skill-category"><span class="skill-cat">${cat}</span> `;
+                        skillsHtml += w.skills[cat].map(s => `<span class="skill-badge" title="${this.escapeHtml(s.description || '')}">${this.escapeHtml(s.name)}</span>`).join('');
+                        skillsHtml += `</div>`;
+                    }
+                }
+                skillsHtml += '</div>';
+            }
+
+            html += `
+            <div class="enhanced-card weapon-card">
+                <div class="card-header">
+                    <img src="${imgUrl}" alt="${this.escapeHtml(w.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <div>
+                        <h4>${this.escapeHtml(w.name)}</h4>
+                        <span class="type-tag">${this.escapeHtml(w.type || 'Weapon')}</span>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p class="short-desc">${this.escapeHtml(shortDesc)}</p>
+                    ${fullDesc}
+                </div>
+                ${skillsHtml}
+            </div>
+        `;
+        });
+
+        html += '</div></div>';
         return html;
     }
 
     buildPetHtml(pets) {
         if (!pets.length) return '';
-        let html = '<div class="info-block pet-block"><h4>Pet(s)</h4>';
+        let html = '<div class="enhanced-section pets-section"><h3>🐾 Pets / Companions</h3><div class="enhanced-grid">';
         pets.forEach(p => {
-            html += `<div class="pet-item"><strong>${this.escapeHtml(p.name)}</strong> (${p.type}): ${this.escapeHtml(p.description)}</div>`;
+            const imgUrl = p.images ? this.getImageWithFallback(p.images) : this.fallbackImage;
+            const abilitiesHtml = p.abilities && p.abilities.length
+                ? `<div class="abilities-list"><strong>Abilities:</strong> ${p.abilities.map(a => `<span class="ability-badge">${this.escapeHtml(a)}</span>`).join('')}</div>`
+                : '';
+            html += `
+            <div class="enhanced-card pet-card">
+                <div class="card-header">
+                    <!-- ✅ ADD onerror handler below -->
+                    <img src="${imgUrl}" alt="${this.escapeHtml(p.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <div>
+                        <h4>${this.escapeHtml(p.name)}</h4>
+                        <div class="meta-tags">
+                            <span class="rank-tag">${p.rank || 'Common'}</span>
+                            <span class="type-tag">${this.escapeHtml(p.type)}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-description">
+                    <p class="short-desc">${this.escapeHtml(p.description || '')}</p>
+                    ${p.fulldesc ? `<p class="full-desc">${this.escapeHtml(p.fulldesc)}</p>` : ''}
+                </div>
+                ${abilitiesHtml}
+            </div>
+        `;
         });
-        html += '</div>';
+        html += '</div></div>';
         return html;
     }
 
@@ -640,7 +801,7 @@ class monstersPage {
         uniqueImages.forEach((imgUrl, idx) => {
             slidesHtml += `
                 <div class="swiper-slide gallery-slide">
-                    <img src="${this.getImageWithFallback(imgUrl)}" alt="Gallery image ${idx + 1}" data-fullsrc="${imgUrl}">
+                    <img src="${this.getImageWithFallback(imgUrl)}" alt="Gallery image ${idx + 1}" data-fullsrc="${imgUrl}" onerror="this.src='${this.fallbackImage}'">
                     <div class="slide-caption">Image ${idx + 1} / ${uniqueImages.length}</div>
                 </div>
             `;
@@ -683,6 +844,47 @@ class monstersPage {
             this.activeGallerySwiper.destroy(true, true);
             this.activeGallerySwiper = null;
         }
+    }
+
+    //Story swiper initialization (similar to gallery)
+
+    initStorySwiper(monster, container) {
+        const swiperId = `storySwiper-${monster.id}`;
+        const swiperEl = container.querySelector(`#${swiperId}`);
+        if (!swiperEl) return;
+
+        // Destroy previous instance if exists
+        if (this.activeStorySwiper) {
+            this.activeStorySwiper.destroy(true, true);
+        }
+
+        this.activeStorySwiper = new Swiper(swiperEl, {
+            effect: 'coverflow',           // Unique cool effect
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: `.story-next`,
+                prevEl: `.story-prev`
+            },
+            pagination: {
+                el: `.story-pagination`,
+                clickable: true
+            },
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            autoplay: {
+                delay: 8000,
+                disableOnInteraction: true
+            }
+        });
     }
 
     // =============================== LIGHTBOX ============================================
@@ -854,6 +1056,10 @@ class monstersPage {
         if (this.monsterDetailSwiper) {
             this.monsterDetailSwiper.destroy(true, true);
             this.monsterDetailSwiper = null;
+        }
+        if (this.activeStorySwiper) {
+            this.activeStorySwiper.destroy(true, true);
+            this.activeStorySwiper = null;
         }
         this.destroyGallerySwiper();
     }

@@ -512,7 +512,7 @@ const KretosModal = {
                     <div class="stats-section">
                         ${statsHtml}
                     </div>
-                    <a href="monsters.html" class="full-details-btn">Full Details →</a>
+                    <a href="monsters.html?id=${monster.id}" class="full-details-btn">Full Details →</a>
                 </div>
             </div>
         `;
