@@ -880,10 +880,10 @@ class monstersPage {
             centeredSlides: true,
             slidesPerView: 'auto',
             spaceBetween: 30,
-            autoplay: {
-                delay: 8000,
-                disableOnInteraction: true
-            }
+            // autoplay: {
+            //     delay: 8000,
+            //     disableOnInteraction: true
+            // }
         });
     }
 
