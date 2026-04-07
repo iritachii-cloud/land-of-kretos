@@ -794,7 +794,7 @@ class heroesPage {
             hero.images.gallery.forEach(img => imagesSet.add(img));
         }
         // Add other images in order: real, normal, 90s, fullBody, half, icon, heropng (if not duplicate)
-        const order = ['realImage', 'normalImage', '90sImage', 'fullBodyImage', 'halfImage', 'iconImage', 'heropng'];
+        const order = ['realImage', 'normalImage', '90sImage', 'iconImage'];
         order.forEach(key => {
             if (hero.images?.[key]) imagesSet.add(hero.images[key]);
         });

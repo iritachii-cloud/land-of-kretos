@@ -86,7 +86,7 @@ const HomePage = {
     },
 
     async renderHeroSlider() {
-        const heroes = kretosApp.getRandomItems(this.data.heroes, 7);
+        const heroes = kretosApp.getRandomItems(this.data.heroes, 62);
         const container = document.getElementById('heroSlider');
         if (!container) return;
 

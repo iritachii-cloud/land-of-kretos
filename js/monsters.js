@@ -786,7 +786,7 @@ class monstersPage {
             monster.images.gallery.forEach(img => imagesSet.add(img));
         }
         // Add other images in order: real, normal, 90s, fullBody, half, icon, monsterpng (if not duplicate)
-        const order = ['realImage', 'normalImage', '90sImage', 'fullBodyImage', 'halfImage', 'iconImage', 'monsterpng'];
+        const order = ['realImage', 'normalImage', '90sImage', 'iconImage'];
         order.forEach(key => {
             if (monster.images?.[key]) imagesSet.add(monster.images[key]);
         });
