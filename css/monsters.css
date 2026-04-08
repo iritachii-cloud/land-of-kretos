@@ -84,6 +84,7 @@
   z-index: 1500;
   /* border-bottom: 1px solid var(--monster-page-border); */
   transition: var(--monster-page-transition);
+  margin-top: 0;
 }
 
 .monsters-navbar .container {
