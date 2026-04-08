@@ -1716,7 +1716,7 @@ body.heroes-page.modal-open {
 /* ===== FIX: Ensure hero cards are visible on mobile ===== */
 @media (max-width: 768px) {
     .heroes-grid {
-        padding: 20px !important;      /* restore padding for visibility */
+        /* padding: 20px !important;      restore padding for visibility */
         gap: 1.5rem;
     }
 
@@ -1744,6 +1744,6 @@ body.heroes-page.modal-open {
 
 /* Additional global safety – prevent any accidental invisibility */
 .hero-card {
-    background: var(--hero-page-card-bg);
+    background-color: rgba(0, 0, 0, 0.8);  /* fallback solid color */
     color: white;
 }

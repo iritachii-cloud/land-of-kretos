@@ -1713,10 +1713,10 @@ body.monsters-page.modal-open {
     }
 }
 
-/* ===== FIX: Ensure hero cards are visible on mobile ===== */
+/* ===== FIX: Ensure monster cards are visible on mobile ===== */
 @media (max-width: 768px) {
     .monsters-grid {
-        padding: 20px !important;      /* restore padding for visibility */
+        /* padding: 20px !important;      restore padding for visibility */
         gap: 1.5rem;
     }
 
@@ -1735,7 +1735,7 @@ body.monsters-page.modal-open {
         width: 100%;
     }
 
-    .hero-icon {
+    .monster-icon {
         width: 80px;
         height: 80px;
         flex-shrink: 0;
@@ -1744,6 +1744,6 @@ body.monsters-page.modal-open {
 
 /* Additional global safety – prevent any accidental invisibility */
 .monster-card {
-    background: var(--monster-page-card-bg);
+    background-color: rgba(0, 0, 0, 0.8);  /* fallback solid color */
     color: white;
 }
