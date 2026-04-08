@@ -28,7 +28,7 @@
     --hero-page-text: #dbedfd;
     --hero-page-name-text: #002a3c;
     --hero-page-text-muted: #8fbcee;
-    --hero-page-card-bg: rgba(255, 255, 255, 0.9);
+    --hero-page-card-bg: rgba(0, 46, 130, 0.9);
     --hero-page-border: #e2f2ff;
     --hero-page-shadow: 0 12px 28px rgba(10, 77, 140, 0.15);
     --hero-page-glow: 0 0 12px rgba(45, 127, 193, 0.5);
@@ -965,7 +965,7 @@
     .heroes-navbar .nav-menu {
         position: fixed;
         top: 70px;
-        left: -110%;
+        left: -120%;
         width: 100%;
         height: calc(100vh - 70px);
         background: var(--hero-page-card-bg);
@@ -1221,7 +1221,7 @@ img {
 /* Ensure body doesn't overflow horizontally */
 .heroes-page {
     overflow-x: hidden;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
 }
 
