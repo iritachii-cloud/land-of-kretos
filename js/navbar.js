@@ -13,7 +13,7 @@ class Navbar {
             <div class="navbar">
                 <div class="container">
                     <div class="nav-brand">
-                        <img src="assets/images/kretos-logo.png" alt="Kretos" class="logo" onerror="this.src='https://placehold.co/42x42'">
+                        <img loading="lazy" src="assets/images/kretos-logo.png" alt="Kretos" class="logo" onerror="this.src='https://placehold.co/42x42'">
                         <span class="brand-text">Kretos</span>
                     </div>
                     <ul class="nav-menu">

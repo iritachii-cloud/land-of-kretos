@@ -100,7 +100,7 @@ const HomePage = {
                 <div class="hero-bg" style="background-image: url('${hero.images?.herobg || 'assets/images/placeholders/hero_bg.jpg'}')"></div>
                 <div class="hero-content">
                     <div class="hero-left">
-                        <img src="${hero.images?.heropng || hero.images?.iconImage || 'assets/images/placeholders/hero_hero.png'}" class="hero-image" alt="${hero.name}">
+                        <img loading="lazy" src="${hero.images?.heropng || hero.images?.iconImage || 'assets/images/placeholders/hero_hero.png'}" class="hero-image" alt="${hero.name}">
                     </div>
                     <div class="hero-center">
                         <h1 class="hero-name">${hero.name}</h1>
@@ -222,7 +222,7 @@ const HomePage = {
             factionsContainer.innerHTML = world.factions.map(f => `
                 <div class="swiper-slide">
                     <div class="faction-card">
-                        <img src="${f.image || 'assets/images/placeholders/faction_default.jpg'}" alt="${this.escapeHtml(f.name)}">
+                        <img loading="lazy" src="${f.image || 'assets/images/placeholders/faction_default.jpg'}" alt="${this.escapeHtml(f.name)}">
                         <div class="faction-info">
                             <span class="alignment">${this.escapeHtml(f.alignment)}</span>
                             <h3>${this.escapeHtml(f.name)}</h3>
@@ -258,7 +258,7 @@ const HomePage = {
             classesContainer.innerHTML = world.classes.map(c => `
                 <div class="swiper-slide">
                     <div class="class-card">
-                        <img src="${c.image || 'assets/images/placeholders/class_default.jpg'}" alt="${this.escapeHtml(c.name)}">
+                        <img loading="lazy" src="${c.image || 'assets/images/placeholders/class_default.jpg'}" alt="${this.escapeHtml(c.name)}">
                         <div class="class-details">
                             <span class="class-type">${this.escapeHtml(c.type)}</span>
                             <h3>${this.escapeHtml(c.name)}</h3>
@@ -325,7 +325,7 @@ const HomePage = {
         
         container.innerHTML = creators.map(c => `
             <div class="creator-card" data-kretos-creator-id="${c.id}">
-                <img src="${c.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-avatar" alt="${this.escapeHtml(c.name)}">
+                <img loading="lazy" src="${c.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-avatar" alt="${this.escapeHtml(c.name)}">
                 <h3>${this.escapeHtml(c.name)}</h3>
                 <p class="creator-role">${this.escapeHtml(c.role)}</p>
                 <button class="learn-more-btn" data-kretos-creator-id="${c.id}">Meet ${this.escapeHtml(c.name.split(' ')[0])}</button>
@@ -418,7 +418,7 @@ const KretosModal = {
                         <button class="image-tab" data-tab="real">Real</button>
                         <button class="image-tab" data-tab="90">90's</button>
                     </div>
-                    <img src="${hero.images?.normalImage || 'assets/images/placeholders/hero_normal.png'}" class="modal-hero-image" id="modalMainImage" alt="${hero.name}">
+                    <img loading="lazy" src="${hero.images?.normalImage || 'assets/images/placeholders/hero_normal.png'}" class="modal-hero-image" id="modalMainImage" alt="${hero.name}">
                 </div>
                 <div class="info-section">
                     <div class="info-row">
@@ -488,7 +488,7 @@ const KretosModal = {
                         <button class="image-tab" data-tab="real">Real</button>
                         <button class="image-tab" data-tab="90">90's</button>
                     </div>
-                    <img src="${monster.images?.normalImage || 'assets/images/placeholders/monster_normal.png'}" class="modal-monster-image" id="modalMainImage" alt="${monster.name}">
+                    <img loading="lazy" src="${monster.images?.normalImage || 'assets/images/placeholders/monster_normal.png'}" class="modal-monster-image" id="modalMainImage" alt="${monster.name}">
                 </div>
                 <div class="info-section">
                     <div class="info-row">
@@ -525,7 +525,7 @@ const KretosModal = {
         const modalBody = modal.querySelector('.modal-body');
         modalBody.innerHTML = `
             <div class="creator-modal-content">
-                <img src="${creator.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-large-avatar" alt="${this.escapeHtml(creator.name)}">
+                <img loading="lazy" src="${creator.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-large-avatar" alt="${this.escapeHtml(creator.name)}">
                 <div>
                     <h2>${this.escapeHtml(creator.name)}</h2>
                     <p><strong>${this.escapeHtml(creator.role)}</strong></p>

@@ -141,7 +141,7 @@ class heroesPage {
         <div class="heroes-navbar">
             <div class="container">
                 <div class="nav-brand">
-                    <img src="assets/images/kretos-logo.png" alt="Kretos" class="logo" onerror="this.src='https://placehold.co/42x42'">
+                    <img loading="lazy" src="assets/images/kretos-logo.png" alt="Kretos" class="logo" onerror="this.src='https://placehold.co/42x42'">
                     <span class="brand-text">Kretos</span>
                 </div>
                 <ul class="nav-menu">
@@ -460,7 +460,7 @@ class heroesPage {
                         <button class="image-tab" data-img-type="90s">90's</button>
                     </div>
                     <div class="hero-main-image-container">
-                        <img class="hero-main-image" id="heroMainImage" src="${this.getImageWithFallback(hero.images?.normalImage)}" alt="${hero.name}">
+                        <img loading="lazy" class="hero-main-image" id="heroMainImage" src="${this.getImageWithFallback(hero.images?.normalImage)}" alt="${hero.name}">
                     </div>
                 </div>
                 <div class="hero-detail-info-section">
@@ -644,7 +644,7 @@ class heroesPage {
             html += `
             <div class="enhanced-card mount-card">
                 <div class="card-header">
-                    <img src="${imgUrl}" alt="${this.escapeHtml(m.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <img loading="lazy" src="${imgUrl}" alt="${this.escapeHtml(m.name)}" onerror="this.src='${this.fallbackImage}'">
                     <div>
                         <h4>${this.escapeHtml(m.name)}</h4>
                         <div class="meta-tags">
@@ -701,7 +701,7 @@ class heroesPage {
             html += `
             <div class="enhanced-card weapon-card">
                 <div class="card-header">
-                    <img src="${imgUrl}" alt="${this.escapeHtml(w.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <img loading="lazy" src="${imgUrl}" alt="${this.escapeHtml(w.name)}" onerror="this.src='${this.fallbackImage}'">
                     <div>
                         <h4>${this.escapeHtml(w.name)}</h4>
                         <span class="type-tag">${this.escapeHtml(w.type || 'Weapon')}</span>
@@ -732,7 +732,7 @@ class heroesPage {
             <div class="enhanced-card pet-card">
                 <div class="card-header">
                     <!-- ✅ ADD onerror handler below -->
-                    <img src="${imgUrl}" alt="${this.escapeHtml(p.name)}" onerror="this.src='${this.fallbackImage}'">
+                    <img loading="lazy" src="${imgUrl}" alt="${this.escapeHtml(p.name)}" onerror="this.src='${this.fallbackImage}'">
                     <div>
                         <h4>${this.escapeHtml(p.name)}</h4>
                         <div class="meta-tags">
@@ -809,7 +809,7 @@ class heroesPage {
         uniqueImages.forEach((imgUrl, idx) => {
             slidesHtml += `
                 <div class="swiper-slide gallery-slide">
-                    <img src="${this.getImageWithFallback(imgUrl)}" alt="Gallery image ${idx + 1}" data-fullsrc="${imgUrl}" onerror="this.src='${this.fallbackImage}'">
+                    <img loading="lazy" src="${this.getImageWithFallback(imgUrl)}" alt="Gallery image ${idx + 1}" data-fullsrc="${imgUrl}" onerror="this.src='${this.fallbackImage}'">
                     <div class="slide-caption">Image ${idx + 1} / ${uniqueImages.length}</div>
                 </div>
             `;
