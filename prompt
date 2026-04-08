@@ -292,3 +292,91 @@ After you finish writing a prompt paragraph, copy it into a word counter. It mus
 
 Step 10 – Ready to receive character data
 Now you have the complete instruction. When you are ready, provide the character data: race, gender, age, physical description, attire, weapon(s), pet/mount, powers, personality, and any special features. Then follow this instruction step by step to produce the twelve prompts plus summary and thank you. Do not deviate from the templates, the order of details, the word count, or the uniqueness rules. Ultra‑think on every adjective and every comma. This will guarantee a precise match of the character you imagine.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Image prompt example
+
+Waist-up halfbody cinematic medium shot, professional photography, 85mm lens, tight framing on torso and face, (crop just below sternum:1.4), (no legs:1.5), (no throne visible:1.4), (hellhound out of focus:1.3). Romanian aristocratic fallen celestial, pale violet ethereal skin with internal luminescence, photorealistic skin texture with visible pores on angular face, faint subcutaneous glow radiating through translucent skin, subtle veins of deeper violet at temples and neck. Sharp angular face, vertical scar from left brow to cheekbone catching edge light. Wild untamed pure white hair framing face and shoulders, extending out of frame bottom. Massively muscular dense upper body, broad shoulders, thick neck, powerful arms. Wearing fused obsidian cuirass open at sternum revealing pulsing magenta soul-stone embedded in chest flesh, visible scar tissue and faint violet veins around the stone's edges. Tattered deep violet cloak with frayed smoking edges draped over shoulders, smoke wisps curling upward past his jawline. Heavy articulated asymmetrical blackened steel gauntlets with jagged claws dripping magenta mist, one hand resting on unseen throne arm just below frame edge, other hand resting on sword pommel visible in frame. Soul Reaver greatsword: Five-foot void-forged obsidian and nebular purple blade with jagged magenta fissure fuller visible diagonally across right side of frame, blade extending upward past his shoulder. Crossguard of interlocking skeletal demon fingers with weeping pale-green eyes visible. Hilt wrapped in pale-gold angel hide.
+
+Environment Context (Implied via Light and Reflection): Obsidian throne room atmosphere. Jagged magenta crystals growing from walls like pulsing veins visible in background bokeh. Violet mist thick in air. Polished black mirror floor reflecting distorted stars visible only in the faint lower edge of frame, implying vast chamber below. Shattered archway visible behind him in distant background, faint silver light of Aethelgard gleaming through.
+
+Implied Throne and Hellhound (Off-Screen Presence): The character is seated, indicated by relaxed yet regal posture of upper torso, slight backward lean of shoulders. Throne of fused demon skulls is entirely out of frame below the crop line, but its presence is felt by the faint magenta glow reflecting upward onto the underside of his jaw and the inner edges of his gauntlets. Malphas the three-eyed hellhound is not visible in frame, but a massive, blurred shadow of a winged quadruped with faint amber eye-glow casts across the polished floor reflection at the very bottom edge of the image, and a low curl of black smoke rises from below frame edge past his left shoulder.
+
+Character Expression and Posture: Expression stoic and melancholic, burning molten amber eyes radiating no warmth, gaze directed toward distant silver light of Aethelgard visible through shattered archway. Posture massive and regal yet weary, weight of centuries visible in slight slump of shoulders despite muscular bulk. Cape pooling around base of unseen throne implied by dark violet fabric blurring at extreme bottom edge of frame.
+
+Final Composition Mandate: Image terminates horizontally just below the exposed soul-stone in sternum. The throne, hellhound, lower cloak, and character's legs are outside the picture plane. Their presence is communicated through reflected light, rising smoke, and the weary posture of a seated king.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if you had this character only one short but authorative line of dialogue(dont create more cause it might cause confusion) like then what would you say
+
+
+
+if his data is
+
+
+
+
+
+
+
+
+now make a prompt for veo 3.0 with this line so that the video can animate in 8 sec. Just help me make the prompt dont generate the video
+
+
+
+
+
+
+
+
+
+
+
+
+[Strictly framed professional half-body photograph, composed from the waist up.]
+
+
+

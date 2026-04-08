@@ -708,7 +708,7 @@ class heroesPage {
                     </div>
                 </div>
                 <div class="card-description">
-                    <p class="short-desc">${this.escapeHtml(shortDesc)}</p>
+                    <!--p class="short-desc">${this.escapeHtml(shortDesc)}</p-->
                     ${fullDesc}
                 </div>
                 ${skillsHtml}
