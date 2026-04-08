@@ -1712,3 +1712,38 @@ body.heroes-page.modal-open {
         height: 55px;
     }
 }
+
+/* ===== FIX: Ensure hero cards are visible on mobile ===== */
+@media (max-width: 768px) {
+    .heroes-grid {
+        padding: 20px !important;      /* restore padding for visibility */
+        gap: 1.5rem;
+    }
+
+    .hero-card {
+        /* Use a safer clip‑path that works on all mobile browsers */
+        clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 95% 100%, 0% 100%) !important;
+        /* Fallback solid background in case the radial gradient fails */
+        /* background: var(--hero-page-card-bg) !important; */
+        /* Ensure card has size */
+        min-height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-inner {
+        width: 100%;
+    }
+
+    .hero-icon {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+}
+
+/* Additional global safety – prevent any accidental invisibility */
+.hero-card {
+    background: var(--hero-page-card-bg);
+    color: white;
+}
