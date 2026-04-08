@@ -122,7 +122,6 @@
   list-style: none;
   gap: 2rem;
   align-items: center;
-  padding: 0;
 }
 
 .heroes-navbar .nav-link {
@@ -1004,6 +1003,7 @@
     left: 0;
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 0;
   }
 
   .heroes-navbar .nav-link {
