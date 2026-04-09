@@ -315,17 +315,15 @@
   background: var(--monster-page-card-bg);
   border-radius: var(--monster-page-radius-md);
   padding: 1.5rem;
-  clip-path: polygon(
-    0% 0%,
-    95% 0%,
-    100% 15%,
-    100% 85%,
-    95% 100%,
-    0% 100%,
-    0% 85%,
-    5% 50%,
-    0% 15%
-  );
+  clip-path: polygon(0% 0%,
+      95% 0%,
+      100% 15%,
+      100% 85%,
+      95% 100%,
+      0% 100%,
+      0% 85%,
+      5% 50%,
+      0% 15%);
   transition: var(--monster-page-transition);
   box-shadow: var(--monster-page-shadow);
   cursor: pointer;
@@ -381,11 +379,9 @@
   font-size: 1.4rem;
   font-weight: 700;
   margin: 0;
-  background: linear-gradient(
-    135deg,
-    var(--monster-page-secondary),
-    var(--monster-page-accent)
-  );
+  background: linear-gradient(135deg,
+      var(--monster-page-secondary),
+      var(--monster-page-accent));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -697,11 +693,9 @@
 .stat-bar-fill {
   width: 0%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--monster-page-accent),
-    var(--monster-page-secondary)
-  );
+  background: linear-gradient(90deg,
+      var(--monster-page-accent),
+      var(--monster-page-secondary));
   border-radius: 10px;
   transition: width 0.6s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
@@ -1341,17 +1335,15 @@ img {
 
 /* Ensure asymmetrical clip-path doesn't cause horizontal overflow */
 .monster-card {
-  clip-path: polygon(
-    0% 0%,
-    95% 0%,
-    100% 15%,
-    100% 85%,
-    95% 100%,
-    0% 100%,
-    0% 85%,
-    5% 50%,
-    0% 15%
-  );
+  clip-path: polygon(0% 0%,
+      95% 0%,
+      100% 15%,
+      100% 85%,
+      95% 100%,
+      0% 100%,
+      0% 85%,
+      5% 50%,
+      0% 15%);
 }
 
 /* On mobile, use a simpler clip-path to avoid overflow */
@@ -1624,9 +1616,11 @@ body.monsters-page.modal-open {
   .story-slide {
     width: 90%;
   }
+
   .story-card {
     padding: 1.2rem;
   }
+
   .story-text {
     font-size: 0.9rem;
     max-height: 300px;
@@ -1639,24 +1633,25 @@ body.monsters-page.modal-open {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
 }
+
 .enhanced-section h3 {
   font-size: 1.6rem;
   margin-bottom: 1.2rem;
-  background: linear-gradient(
-    135deg,
-    var(--monster-page-secondary),
-    var(--monster-page-accent)
-  );
+  background: linear-gradient(135deg,
+      var(--monster-page-secondary),
+      var(--monster-page-accent));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+
 .enhanced-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
+
 .enhanced-card {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
@@ -1667,17 +1662,20 @@ body.monsters-page.modal-open {
     transform 0.2s,
     box-shadow 0.2s;
 }
+
 .enhanced-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   border-color: var(--monster-page-accent);
 }
+
 .card-header {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
 }
+
 .card-header img {
   width: 70px;
   height: 70px;
@@ -1686,15 +1684,18 @@ body.monsters-page.modal-open {
   background: #222;
   border: 2px solid var(--monster-page-primary);
 }
+
 .card-header h4 {
   font-size: 1.3rem;
   margin: 0 0 0.3rem 0;
 }
+
 .meta-tags {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
+
 .rank-tag,
 .type-tag {
   font-size: 0.7rem;
@@ -1703,24 +1704,29 @@ body.monsters-page.modal-open {
   background: rgba(0, 0, 0, 0.6);
   color: var(--monster-page-secondary);
 }
+
 .rank-tag {
   background: var(--monster-page-primary);
   color: white;
 }
+
 .card-description p {
   font-size: 0.9rem;
   line-height: 1.4;
   margin: 0.5rem 0;
 }
+
 .full-desc {
   opacity: 0.8;
   font-size: 0.85rem;
   border-left: 2px solid var(--monster-page-accent);
   padding-left: 0.8rem;
 }
+
 .abilities-list {
   margin-top: 1rem;
 }
+
 .ability-badge,
 .skill-badge {
   display: inline-block;
@@ -1732,14 +1738,17 @@ body.monsters-page.modal-open {
   margin: 0.2rem 0.3rem;
   border: 1px solid rgba(255, 215, 0, 0.4);
 }
+
 .skills-breakdown {
   margin-top: 1rem;
   border-top: 1px dashed rgba(255, 255, 255, 0.2);
   padding-top: 0.8rem;
 }
+
 .skill-category {
   margin: 0.5rem 0;
 }
+
 .skill-cat {
   font-weight: bold;
   font-size: 0.75rem;
@@ -1751,11 +1760,13 @@ body.monsters-page.modal-open {
   margin-right: 0.5rem;
   color: white;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
   .enhanced-grid {
     grid-template-columns: 1fr;
   }
+
   .card-header img {
     width: 55px;
     height: 55px;
@@ -1771,7 +1782,7 @@ body.monsters-page.modal-open {
 
   .monster-card {
     /* Use a safer clip‑path that works on all mobile browsers */
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 95% 100%, 0% 100%) !important;
+    clip-path: polygon(0% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 0% 100%, 0% 85%, 5% 50%, 0% 15%) !important;
     /* Fallback solid background in case the radial gradient fails */
     /* background: var(--monster-page-card-bg) !important; */
     /* Ensure card has size */
@@ -1797,6 +1808,7 @@ body.monsters-page.modal-open {
 
 /* Additional global safety – prevent any accidental invisibility */
 .monster-card {
-  background-color: rgba(0, 0, 0, 0.8); /* fallback solid color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* fallback solid color */
   color: white;
 }
