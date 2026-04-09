@@ -47,9 +47,10 @@ class heroesPage {
         // State
         this.isModalOpen = false;
         this.rankColors = {
-            'SSS-Rank': '#FFD700',   // radiant gold
-            'SS-Rank': '#ffa57b',   // platinum
-            'S-Rank': '#DC143C',   // crimson
+            'X-Rank': '#2b0009',   // Dark-Maroon
+            'SSS-Rank': '#DC143C',   // crimson
+            'SS-Rank': '#ffa57b',   // orange platinum
+            'S-Rank': '#FFD700',   // radiant gold
             'A-Rank': '#1E90FF',   // electric blue
             'B-Rank': '#2E8B57',   // emerald
             'C-Rank': '#A9A9A9',   // silver

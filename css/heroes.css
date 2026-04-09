@@ -1010,7 +1010,7 @@
   }
 
   .hero-main-image {
-    max-height: 350px;
+    max-height: 500px;
   }
 
   .stats-grid {
@@ -1023,6 +1023,10 @@
 
   .gallery-swiper {
     height: 300px;
+  }
+
+  .hero-main-image-container{
+    justify-items: center;
   }
 }
 
