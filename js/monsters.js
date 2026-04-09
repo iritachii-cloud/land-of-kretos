@@ -295,7 +295,7 @@ class monstersPage {
         const emptyStars = 10 - fullStars - (halfStar ? 1 : 0);
         let starsHtml = '';
         for (let i = 0; i < fullStars; i++) starsHtml += '<span class="star full">★</span>';
-        if (halfStar) starsHtml += '<span class="star half">½</span>';
+        if (halfStar) starsHtml += '<span class="star half">⯪</span>';
         for (let i = 0; i < emptyStars; i++) starsHtml += '<span class="star empty">☆</span>';
         return `<div class="star-rating">${starsHtml} <span class="rating-number">(${rating.toFixed(1)})</span></div>`;
     }
