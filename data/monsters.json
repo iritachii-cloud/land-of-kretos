@@ -37,18 +37,9 @@
         "distinguishingFeatures": "Blue hellfire on paws and mouth corners, runic frost markings along spine, jagged icicle spires from shoulders, natural ice armor plates on back and forelimbs"
       },
       "colorPalette": {
-        "primary": [
-          "#4A90E2",
-          "#0B0B0B"
-        ],
-        "secondary": [
-          "#00FFFF",
-          "#FFFFFF"
-        ],
-        "accent": [
-          "#FF4500",
-          "#1E90FF"
-        ]
+        "primary": ["#4A90E2", "#0B0B0B"],
+        "secondary": ["#00FFFF", "#FFFFFF"],
+        "accent": ["#FF4500", "#1E90FF"]
       },
       "attire": {
         "upper": {
@@ -93,11 +84,7 @@
           "type": "Natural Weapon (Claws)",
           "look": "Five obsidian-ice talons per paw, each curved like a scythe, wreathed in dancing blue flame that flickers without sound. The claws are semi-translucent, revealing swirling chaos within – miniature blizzards trapped in crystalline form. When extended for combat, they grow longer and more jagged, and the blue fire intensifies to a blinding azure.",
           "aura": "Cyan and blue, with shimmering heat haze that is actually cold distortion, trailing snowflakes that burn like embers",
-          "colorPalette": [
-            "Obsidian Black",
-            "Ice Blue",
-            "Cyan Flame"
-          ],
+          "colorPalette": ["Obsidian Black", "Ice Blue", "Cyan Flame"],
           "skills": {
             "passive": [
               {
@@ -264,18 +251,9 @@
         "distinguishingFeatures": "Six wings of condensed shadow, tail ending in circular lamprey-maw with crystalline teeth, hide cracked with fine fissures glowing magenta, second mouth on tail constantly chewing reality"
       },
       "colorPalette": {
-        "primary": [
-          "#0B0B0B",
-          "#2E0A4A"
-        ],
-        "secondary": [
-          "#8A2BE2",
-          "#4B0082"
-        ],
-        "accent": [
-          "#FF00FF",
-          "#00FFFF"
-        ]
+        "primary": ["#0B0B0B", "#2E0A4A"],
+        "secondary": ["#8A2BE2", "#4B0082"],
+        "accent": ["#FF00FF", "#00FFFF"]
       },
       "attire": {
         "upper": {
@@ -316,10 +294,7 @@
           "type": "Natural Breath Weapon",
           "look": "A cone of shimmering darkness that seems to drink light, with occasional flashes of magenta at its edges. The air within the cone distorts like heat haze over a fire, but there is no heat – only the cold absence of existence. When the breath ends, the affected area is perfectly smooth, sterile, and silent, as if reality itself has been sanded away.",
           "aura": "Absolute black with magenta flecks, trailing wisps of undone reality",
-          "colorPalette": [
-            "#000000",
-            "#8A2BE2"
-          ],
+          "colorPalette": ["#000000", "#8A2BE2"],
           "skills": {
             "passive": [
               {
@@ -486,18 +461,9 @@
         "distinguishingFeatures": "Glowing ember mark on chest, vine bracelets on wrists that glow with tiny embers, green-yellow flame mane that never burns his own fur"
       },
       "colorPalette": {
-        "primary": [
-          "#1A1A1A",
-          "#32CD32"
-        ],
-        "secondary": [
-          "#ADFF2F",
-          "#696969"
-        ],
-        "accent": [
-          "#FFD700",
-          "#8B4513"
-        ]
+        "primary": ["#1A1A1A", "#32CD32"],
+        "secondary": ["#ADFF2F", "#696969"],
+        "accent": ["#FFD700", "#8B4513"]
       },
       "attire": {
         "upper": {
@@ -541,11 +507,7 @@
           "type": "Polearm / Living Weapon",
           "look": "A dark brown shaft with visible grain that seems to flow like water, tipped with a cluster of ember thorns that glow green-gold. Small leaves occasionally sprout along the length, smoking gently. When extended, the shaft elongates seamlessly; when shortened, it compresses like a telescope of wood. The spear's surface is warm to the touch and pulses with a slow, heartbeat rhythm.",
           "aura": "Green and gold, with drifting embers that heal allies and burn enemies",
-          "colorPalette": [
-            "#4B3621",
-            "#32CD32",
-            "#FFD700"
-          ],
+          "colorPalette": ["#4B3621", "#32CD32", "#FFD700"],
           "skills": {
             "passive": [
               {
@@ -712,18 +674,9 @@
         "distinguishingFeatures": "Divine halo of blue flame above head, runes of rebirth pulsing on breast (one for each death), molten lava armor plates that flow and shift, tail feathers of living magma"
       },
       "colorPalette": {
-        "primary": [
-          "#0000CD",
-          "#00BFFF"
-        ],
-        "secondary": [
-          "#FFFFFF",
-          "#FF4500"
-        ],
-        "accent": [
-          "#FFD700",
-          "#8A2BE2"
-        ]
+        "primary": ["#0000CD", "#00BFFF"],
+        "secondary": ["#FFFFFF", "#FF4500"],
+        "accent": ["#FFD700", "#8A2BE2"]
       },
       "attire": {
         "upper": {
@@ -768,11 +721,7 @@
           "type": "Natural Elemental Fire",
           "look": "Blue flames that dance and flicker, sometimes taking the shapes of small birds or flowers. The fire is semi-solid, capable of being shaped into barriers or blades. When Karkein is angry, the fire turns white-hot and emits a low hum that vibrates in the chest. When she is calm, the fire is soft and luminous, like moonlight made of heat.",
           "aura": "Brilliant blue and white, with trails of divine ash (silvery powder that purges curses)",
-          "colorPalette": [
-            "#0000FF",
-            "#00FFFF",
-            "#FFFFFF"
-          ],
+          "colorPalette": ["#0000FF", "#00FFFF", "#FFFFFF"],
           "skills": {
             "passive": [
               {
@@ -939,18 +888,9 @@
         "distinguishingFeatures": "Paws engulfed in silent black flames that drain mana, single glowing white whisker on left cheek, smoky white aura that reduces visibility, no footprints left when walking"
       },
       "colorPalette": {
-        "primary": [
-          "#FFFFFF",
-          "#000000"
-        ],
-        "secondary": [
-          "#696969",
-          "#C0C0C0"
-        ],
-        "accent": [
-          "#FF4500",
-          "#1A1A1A"
-        ]
+        "primary": ["#FFFFFF", "#000000"],
+        "secondary": ["#696969", "#C0C0C0"],
+        "accent": ["#FF4500", "#1A1A1A"]
       },
       "attire": {
         "upper": {
@@ -991,11 +931,7 @@
           "type": "Natural Mana-Draining Fire",
           "look": "Black flames that flicker without sound, almost invisible in darkness, visible as a heat-haze-like distortion in light. When they strike something, they flare briefly with a dark violet inner core, then fade, leaving no residue. The flames sometimes take the shape of small, silent tigers when launched as projectiles.",
           "aura": "Smoky white and black, with wisps that obscure vision and dampen sound",
-          "colorPalette": [
-            "#000000",
-            "#2F2F2F",
-            "#4B0082"
-          ],
+          "colorPalette": ["#000000", "#2F2F2F", "#4B0082"],
           "skills": {
             "passive": [
               {
@@ -1162,18 +1098,9 @@
         "distinguishingFeatures": "Two golden horns fused into skull (broken crown), bruised-red tattered wings, tail with bony club wrapped in sinew, glowing white bandages on right forearm (celestial parasite fighting the corruption)"
       },
       "colorPalette": {
-        "primary": [
-          "#8B4513",
-          "#2E0A0A"
-        ],
-        "secondary": [
-          "#FFD700",
-          "#800020"
-        ],
-        "accent": [
-          "#FFFF00",
-          "#4B0082"
-        ]
+        "primary": ["#8B4513", "#2E0A0A"],
+        "secondary": ["#FFD700", "#800020"],
+        "accent": ["#FFFF00", "#4B0082"]
       },
       "attire": {
         "upper": {
@@ -1217,11 +1144,7 @@
           "type": "Psychic / Mental Attack",
           "look": "Invisible but perceptible as a shimmer in the air, like heat haze over a fire. When focused, the golden horns glow brightly and thin tendrils of golden light reach toward the target. The whisper itself sounds like a soft, feminine voice speaking in an unknown language, just at the edge of hearing.",
           "aura": "Yellow-gold shimmer, with faint whispers and the smell of burnt lavender",
-          "colorPalette": [
-            "#FFD700",
-            "#FFFF00",
-            "#FFFFFF"
-          ],
+          "colorPalette": ["#FFD700", "#FFFF00", "#FFFFFF"],
           "skills": {
             "passive": [
               {
@@ -1388,18 +1311,9 @@
         "distinguishingFeatures": "Two enormous curved tusks erupting from lower jaw, capped with serrated golden metal guards that glow with heat haze; four multi‑toed paws with talons wreathed in translucent magenta energy; long prehensile tail coiled in violet energy; floating golden armor plates (pauldrons, bracers, crown shards) spinning slowly around shoulders and forearms"
       },
       "colorPalette": {
-        "primary": [
-          "#1A1A1A",
-          "#8B00FF"
-        ],
-        "secondary": [
-          "#FFD700",
-          "#FF4500"
-        ],
-        "accent": [
-          "#C0C0C0",
-          "#4B0082"
-        ]
+        "primary": ["#1A1A1A", "#8B00FF"],
+        "secondary": ["#FFD700", "#FF4500"],
+        "accent": ["#C0C0C0", "#4B0082"]
       },
       "attire": {
         "upper": {
@@ -1446,12 +1360,7 @@
           "type": "Natural Weapons (Tusks, Claws, Tail, Breath)",
           "look": "Two massive tusks, each roughly four feet long, curving upward from the lower jaw. They are ivory‑white at the base but fade to obsidian black at the tips. The golden caps are intricately engraved with divine script that has been defaced—scratched out and replaced with crude void runes. The caps glow with a heat haze that shimmers the air. The claws are jet black, each the length of a short sword, surrounded by translucent magenta energy that leaves afterimages. The tail is ten feet long, whip‑thin at the end but thick at the base, covered in the same obsidian fur, and constantly crackling with violet electricity.",
           "aura": "Violet‑black flames that flicker without heat; the air around his tusks shimmers like a desert mirage; the ground beneath his paws cracks and blackens",
-          "colorPalette": [
-            "Obsidian Black",
-            "Magenta",
-            "Gold",
-            "Violet"
-          ],
+          "colorPalette": ["Obsidian Black", "Magenta", "Gold", "Violet"],
           "skills": {
             "passive": [
               {
@@ -1632,18 +1541,9 @@
         "distinguishingFeatures": "Segmented centipede body (length varies, up to 200 feet), multiple pairs of scythe-like raptorial appendages, maw with gravitational pull, neon-blue glowing stomach acid, dim-gold plated armor that seems to grow from flesh"
       },
       "colorPalette": {
-        "primary": [
-          "#0B0B0B",
-          "#B8860B"
-        ],
-        "secondary": [
-          "#00FFFF",
-          "#FF4500"
-        ],
-        "accent": [
-          "#4B0082",
-          "#8A2BE2"
-        ]
+        "primary": ["#0B0B0B", "#B8860B"],
+        "secondary": ["#00FFFF", "#FF4500"],
+        "accent": ["#4B0082", "#8A2BE2"]
       },
       "attire": {
         "upper": {
@@ -1687,11 +1587,7 @@
           "type": "Natural / Void",
           "look": "A circular maw with multiple rows of jagged, inward-curving fangs spiraling into a neon-blue abyss. The maw is surrounded by crushing mandibles and pincers. The scythe-limbs, when unfurled, have inner edges that blaze with dim-gold and neon-blue energy, humming at a frequency that vibrates in the teeth.",
           "aura": "Neon-blue and dim-gold, with gravitational distortion (light bends near the maw)",
-          "colorPalette": [
-            "#00FFFF",
-            "#B8860B",
-            "#000000"
-          ],
+          "colorPalette": ["#00FFFF", "#B8860B", "#000000"],
           "skills": {
             "passive": [
               {
@@ -1858,18 +1754,9 @@
         "distinguishingFeatures": "Golden horns (cyan fracture-lance on foremost horn), webbed obsidian-purple spines along spine with fiery orange fins, bioluminescent blue tail fluke, hood fins around jaw"
       },
       "colorPalette": {
-        "primary": [
-          "#0B0B0B",
-          "#4B0082"
-        ],
-        "secondary": [
-          "#FF8C00",
-          "#FFD700"
-        ],
-        "accent": [
-          "#00FFFF",
-          "#FF69B4"
-        ]
+        "primary": ["#0B0B0B", "#4B0082"],
+        "secondary": ["#FF8C00", "#FFD700"],
+        "accent": ["#00FFFF", "#FF69B4"]
       },
       "attire": {
         "upper": {
@@ -1910,11 +1797,7 @@
           "type": "Entropic / Physical",
           "look": "Silent waves of pinkish-red and gold energy that ripple outward like ripples in a pond of annihilation. The waves are visible as a shimmering distortion, and objects caught in them appear to 'crack' like glass, even if they are made of stone or metal. The cyan fracture-lance glows brightly when used, emitting a low hum.",
           "aura": "Pinkish-red and gold, with silent rippling distortion and the smell of ozone and rust",
-          "colorPalette": [
-            "#FF69B4",
-            "#FFD700",
-            "#00FFFF"
-          ],
+          "colorPalette": ["#FF69B4", "#FFD700", "#00FFFF"],
           "skills": {
             "passive": [
               {
@@ -2081,18 +1964,9 @@
         "distinguishingFeatures": "Golden helm with no visible face, outward-flaring golden horns with phoenix-wing filigree, bladed wings (metal/feathers with orange energy), ceremonial chains and medallions humming with electricity, segmented obsidian neck armor"
       },
       "colorPalette": {
-        "primary": [
-          "#FFD700",
-          "#0B0B0B"
-        ],
-        "secondary": [
-          "#FF4500",
-          "#1A1A1A"
-        ],
-        "accent": [
-          "#8A2BE2",
-          "#00FFFF"
-        ]
+        "primary": ["#FFD700", "#0B0B0B"],
+        "secondary": ["#FF4500", "#1A1A1A"],
+        "accent": ["#8A2BE2", "#00FFFF"]
       },
       "attire": {
         "upper": {
@@ -2137,11 +2011,7 @@
           "type": "Divine / Physical / Energy",
           "look": "Bladed wings with dark metal feathers edged in gold, orange energy glowing between the blades. Golden flames on claws and talons. Chains of gold that move like serpents, humming with violet and gold electricity. The Gilded Cataclysm manifests as a storm of golden feathers that rain down like meteors.",
           "aura": "Golden and orange, with drifting embers and sparks, heat haze distortion",
-          "colorPalette": [
-            "#FFD700",
-            "#FF8C00",
-            "#000000"
-          ],
+          "colorPalette": ["#FFD700", "#FF8C00", "#000000"],
           "skills": {
             "passive": [
               {
@@ -2309,18 +2179,9 @@
         "distinguishingFeatures": "Four powerful legs ending in obsidian hooves; two vast leathery wings of translucent crimson/black; serpentine tail with iridescent pink‑black scales and heart‑shaped spade; small curved black crystal horns on primary head; second, sorrowful face on chest that whispers desires; mane of animate pink hair."
       },
       "colorPalette": {
-        "primary": [
-          "#FFB6C1",
-          "#1A1A1A"
-        ],
-        "secondary": [
-          "#DC143C",
-          "#000000"
-        ],
-        "accent": [
-          "#FFD700",
-          "#FF69B4"
-        ]
+        "primary": ["#FFB6C1", "#1A1A1A"],
+        "secondary": ["#DC143C", "#000000"],
+        "accent": ["#FFD700", "#FF69B4"]
       },
       "attire": {
         "upper": {
@@ -2336,9 +2197,7 @@
           "feet": "Cloven hooves"
         },
         "headwear": "None; only small black crystal horns",
-        "accessories": [
-          "None; she is a creature of pure, unadorned nature"
-        ],
+        "accessories": ["None; she is a creature of pure, unadorned nature"],
         "distinctFeatures": "The second face on the chest—beautiful, sorrowful, whispering; the animate pink mane; the glowing pink‑tinged skin; the translucent crimson/black wings."
       },
       "armorType": "Natural (Demonic Hide)",
@@ -2363,11 +2222,7 @@
           "type": "Demonic / Psychic / Physical",
           "look": "The chest face is porcelain‑perfect, with full lips that part slightly when whispering, though no sound escapes. The words appear directly in the mind. Her claws are pink‑tinted and razor‑sharp. Her tail's heart‑shaped spade glistens with rose‑gold liquid. Her roar is visible as a shimmering, pinkish shockwave that distorts the air.",
           "aura": "A cloying sweet scent, a visual haze of pink and gold, and an oppressive warmth that makes armor feel too heavy and skin too tight.",
-          "colorPalette": [
-            "#FFB6C1",
-            "#8B0000",
-            "#FFD700"
-          ],
+          "colorPalette": ["#FFB6C1", "#8B0000", "#FFD700"],
           "skills": {
             "passive": [
               {
@@ -2540,18 +2395,9 @@
         "distinguishingFeatures": "Height of 543 feet; jade green fire burning in eye sockets; crown of rusted metal spikes; heavy obsidian boss armor covering torso, shoulders, and limbs; tattered cape of obsidian with glimmers of dead galaxies; immense broadsword 'Weight of Eternity' on back, oozing smoky green aura."
       },
       "colorPalette": {
-        "primary": [
-          "#0B0B0B",
-          "#004D00"
-        ],
-        "secondary": [
-          "#000000",
-          "#006400"
-        ],
-        "accent": [
-          "#00FF00",
-          "#2E8B57"
-        ]
+        "primary": ["#0B0B0B", "#004D00"],
+        "secondary": ["#000000", "#006400"],
+        "accent": ["#00FF00", "#2E8B57"]
       },
       "attire": {
         "upper": {
@@ -2595,11 +2441,7 @@
           "type": "Divine (Corrupted) / Psychic / Physical",
           "look": "The sword is a massive, roughly hewn slab of translucent obsidian green, constantly emitting a thick, smoky miasma that sinks to the ground. The blade's edge is not sharp; it is jagged and broken, as if it has already endured eons of useless battles. When swung, the air itself seems to groan and dim. The aura around Xal'Vur is a visible, faint green‑black haze that makes everything within it appear washed‑out and gray.",
           "aura": "A pervasive sense of cold, not of temperature but of spirit; sounds become muffled; colors seem less vibrant; a constant, subtle pressure on the mind whispering that all is meaningless.",
-          "colorPalette": [
-            "#0B0B0B",
-            "#004D00",
-            "#00FF00"
-          ],
+          "colorPalette": ["#0B0B0B", "#004D00", "#00FF00"],
           "skills": {
             "passive": [
               {
@@ -2772,18 +2614,9 @@
         "distinguishingFeatures": "Two massive ivory tusks from lower jaw, carved with tiny unreadable debt-script; Sapphire Skull necklace with royal gold filigree, eye sockets glowing gold; golden spiked club 'Debt's Due'; body draped in tattered merchant's finery now stretched; gold dust permanently embedded in hair and skin"
       },
       "colorPalette": {
-        "primary": [
-          "#1E90FF",
-          "#000080"
-        ],
-        "secondary": [
-          "#FFD700",
-          "#B8860B"
-        ],
-        "accent": [
-          "#C0C0C0",
-          "#F0E68C"
-        ]
+        "primary": ["#1E90FF", "#000080"],
+        "secondary": ["#FFD700", "#B8860B"],
+        "accent": ["#C0C0C0", "#F0E68C"]
       },
       "attire": {
         "upper": {
@@ -2831,11 +2664,7 @@
           "type": "Cursed Divine / Physical / Psychic",
           "look": "A colossal club forged from pure gold, its surface engraved with scenes of commerce and betrayal. The head is a bulbous mass studded with silver spikes that glow with a faint golden light. When swung, the club leaves a trail of shimmering gold dust and the faint sound of clinking coins. The Sapphire Skull's eye sockets beam with golden radiance when it uses its active abilities, and the skull's mouth sometimes moves as if whispering, though only Vash'Tok hears the words. The aura is a faint golden haze that makes everything within it appear slightly more valuable, colors richer, edges sharper.",
           "aura": "Golden haze, sound of distant coins, a scent of old parchment and incense",
-          "colorPalette": [
-            "#FFD700",
-            "#C0C0C0",
-            "#1E90FF"
-          ],
+          "colorPalette": ["#FFD700", "#C0C0C0", "#1E90FF"],
           "skills": {
             "passive": [
               {
@@ -3013,18 +2842,9 @@
         "distinguishingFeatures": "Thorned chains wrapped around entire body, digging into flesh; blue fire flickering from chain wounds; massive curled obsidian horns; damaged wings with torn webbed membranes; scars crisscrossing torso and limbs; tail of black iron and interlocked chains ending in a spiked ball; height of 500 feet; flawless angelic face; amber eyes that glow brighter when he uses his pain abilities"
       },
       "colorPalette": {
-        "primary": [
-          "#0B0B0B",
-          "#000080"
-        ],
-        "secondary": [
-          "#00BFFF",
-          "#1E90FF"
-        ],
-        "accent": [
-          "#FF8C00",
-          "#4B0082"
-        ]
+        "primary": ["#0B0B0B", "#000080"],
+        "secondary": ["#00BFFF", "#1E90FF"],
+        "accent": ["#FF8C00", "#4B0082"]
       },
       "attire": {
         "upper": {
@@ -3069,11 +2889,7 @@
           "type": "Cursed Divine / Psychic / Fire",
           "look": "The chains are matte black, each link the size of a cart wheel, covered in sharp, jagged thorns that glisten with a bluish ichor. When active, the chains glow with faint amber light and move like living things. The blue fire is cold to the touch, flickering silently, and leaves behind a faint scent of ozone and old incense. The tail is a heavier chain, dragging and clanking, with a spiked iron ball that glows when Kaal'ian is angered.",
           "aura": "A pervasive sense of weariness, the sound of distant weeping, and a faint blue glow that makes shadows dance",
-          "colorPalette": [
-            "#0B0B0B",
-            "#00BFFF",
-            "#FF8C00"
-          ],
+          "colorPalette": ["#0B0B0B", "#00BFFF", "#FF8C00"],
           "skills": {
             "passive": [
               {
@@ -3251,18 +3067,9 @@
         "distinguishingFeatures": "No horns; instead a cracked, tilted halo of sickly green light hovering above head; body is a bulky griffon-like quadruped with demonic leathery wings; natural earthen armor plates (stone and crystal) on shoulders, back, and flanks; paws engulfed in an aura of glowing amber water; tears of amber ice occasionally fall from eyes and freeze on the ground"
       },
       "colorPalette": {
-        "primary": [
-          "#0B0B0B",
-          "#008000"
-        ],
-        "secondary": [
-          "#FFFF00",
-          "#FFD700"
-        ],
-        "accent": [
-          "#FFBF00",
-          "#9ACD32"
-        ]
+        "primary": ["#0B0B0B", "#008000"],
+        "secondary": ["#FFFF00", "#FFD700"],
+        "accent": ["#FFBF00", "#9ACD32"]
       },
       "attire": {
         "upper": {
@@ -3306,11 +3113,7 @@
           "type": "Cursed Divine / Psychic / Ice",
           "look": "The amber water on his paws glows with a soft, sickly light, dripping and freezing mid-air into tiny amber crystals. His claws are jet black and razor-sharp. The green halo pulses with a malevolent light, occasionally emitting visible waves of greenish distortion. When he exhales the amber mist, it spreads like a cold fog, crackling as it freezes surfaces.",
           "aura": "A heavy sense of unease, whispers of doubt at the edge of hearing, a faint greenish haze that makes colors seem less vibrant",
-          "colorPalette": [
-            "#FFBF00",
-            "#008000",
-            "#FFFF00"
-          ],
+          "colorPalette": ["#FFBF00", "#008000", "#FFFF00"],
           "skills": {
             "passive": [
               {
@@ -3488,18 +3291,9 @@
         "distinguishingFeatures": "Height of 570 feet; cracked and broken divine silver armor (helm split, breastplate shattered, pauldrons dented); brown veins pulsating visibly across muscles; lion's mane; black void eyes; can summon small golems made of silver shards and red stone"
       },
       "colorPalette": {
-        "primary": [
-          "#C0C0C0",
-          "#8B0000"
-        ],
-        "secondary": [
-          "#FF0000",
-          "#A0522D"
-        ],
-        "accent": [
-          "#8B4513",
-          "#E0E0E0"
-        ]
+        "primary": ["#C0C0C0", "#8B0000"],
+        "secondary": ["#FF0000", "#A0522D"],
+        "accent": ["#8B4513", "#E0E0E0"]
       },
       "attire": {
         "upper": {
@@ -3543,11 +3337,7 @@
           "type": "Divine (Corrupted) / Physical / Construct",
           "look": "His fists glow with silver light and crackling red lightning when he strikes. The golems are humanoid, about 20 feet tall, made of silver metal plates and crimson stone, with a single glowing red eye. When 'Glory's Fall' is activated, the sky darkens, and shards of silver metal rain down like a meteor shower, each one embedding in the ground before pulling itself free as a small golem.",
           "aura": "A heavy, oppressive heat of contained fury, the faint sound of distant battle hymns, and a shimmer of silver that tarnishes divine symbols",
-          "colorPalette": [
-            "#C0C0C0",
-            "#8B0000",
-            "#A0522D"
-          ],
+          "colorPalette": ["#C0C0C0", "#8B0000", "#A0522D"],
           "skills": {
             "passive": [
               {
@@ -3684,6 +3474,1576 @@
           "attack": "assets/sound/monsters/zartheink/attack.wav",
           "skill": "assets/sound/monsters/zartheink/skill.wav",
           "ultimate": "assets/sound/monsters/zartheink/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Wolfazar O Helm",
+      "titles": [
+        "The Iron Crown",
+        "The Great Peril of Tyranny",
+        "The Damned King",
+        "He Who Binds with Iron Will"
+      ],
+      "rank": "SSS-Rank",
+      "level": 380,
+      "nicknames": [
+        "The Wolf-Lion",
+        "Figxang's Chosen",
+        "The Sapphire Tyrant",
+        "The Last King of Helm"
+      ],
+      "shortDescription": "Once a benevolent king who ruled with justice and love, Wolfazar O Helm was betrayed by his own blood brother, leading to the slaughter of his people. In his dying breath, he forged a pact with the demon god Figxang, trading his soul and his subjects' humanity for resurrection. Now he rises as a monstrous tyrant—a wolf‑headed, lion‑limbed colossus clad in royal demonic armor, his majestic helm concealing all but his piercing sapphire eyes. He rules his damned kingdom with absolute authority, his will enforced by the very people he saved, now transformed into the Damned Legion. He does not seek conquest; he seeks to prevent betrayal by crushing any hint of disobedience. To stand before Wolfazar is to face the weight of a broken oath and the cold, unyielding tyranny born from a love that was repaid with treachery.",
+      "fullDescription": "The throne room of the Cursed Citadel does not echo with celebration—it hums with the silent, oppressive weight of absolute rule. At its heart, upon a dais of black iron, stands Wolfazar O Helm, a towering figure of monstrous majesty and profound sorrow. He is a fusion of king and beast: a humanoid body of immense muscular perfection, his fair skin stretched taut over biceps and abdominals that speak of a warrior's discipline, yet his limbs are those of a great lion—powerful, clawed, and covered in fine white fur. A thick, voluminous mane of white and silver cascades from his neck and shoulders, merging with the fur of his chest. His head is that of an alpha wolf, but it is encased in a helm of sublime, terrible beauty. This helm, forged from demonic silver and accented with royal purple and blood‑red, covers his entire face, leaving only two slits through which burn eyes of flawless sapphire blue—windows to a soul trapped between a king's compassion and a tyrant's resolve. Majestic horns, curved like a ram's but gleaming with an inner purple light, sweep back from the helm, adding to his regal menace. His armor is minimal yet imposing: a sculpted breastplate of black iron with purple runes, spiked pauldrons, and a tattered royal cape of deep red that drags behind him. He wields no weapon; his very presence is a weapon—his voice a decree that can shatter wills, his gaze a command that brooks no defiance. Around him, shadows move—his Damned Legion, the resurrected people he once loved, now wolf‑lion hybrids who serve with a loyalty born of both gratitude and eternal fear. Wolfazar does not rage; he rules. And his rule is absolute, for he knows that mercy led to betrayal, and only iron can prevent it from happening again.",
+      "story": {
+        "part1": "Long before the Sundering scarred the skies, the Kingdom of Helm was a beacon of prosperity and justice in the heart of Aethelgard. Its king, Wolfazar, was beloved by all—a wise ruler who walked among his people, who listened to their woes, and who ruled not with fear but with a gentle, guiding hand. He had a twin brother, Valdemar, with whom he had shared every childhood joy and every kingly burden. They were inseparable, and Wolfazar trusted Valdemar with his life and his kingdom. But envy is a poison that festers in the shadows. Valdemar, always the second son, the lesser twin, grew to resent Wolfazar's popularity and power. He began to whisper with envious nobles and to parley with the kingdom's enemies in secret. Wolfazar, blinded by love and trust, saw nothing. The day of the Harvest Festival, when the kingdom's gates were thrown open to all, Valdemar's plan unfolded. Foreign mercenaries, bribed with promises of plunder, flooded the capital. The royal guard was overwhelmed. Wolfazar, caught in the chaos, fought desperately to protect his people, but it was too late. The city burned, and the streets ran red with the blood of the innocent. Valdemar, standing on the palace balcony, watched with cold satisfaction. Wolfazar confronted his brother, demanding to know why. 'Because you had everything,' Valdemar sneered, 'and I had nothing but your shadow.' In that moment, Wolfazar's heart shattered. Before he could strike, a mercenary's arrow pierced his chest. He fell, his vision fading, the screams of his dying people filling his ears.",
+        "part2": "As Wolfazar lay dying amid the carnage of his beloved kingdom, his spirit cried out—not for revenge, but for salvation. He begged any power, any force, to save his people, to undo the horror that his trust had allowed. The heavens were silent, but the Abyss answered. A voice, smooth as poisoned honey and deep as the grave, spoke into his mind. It was Figxang, the Demon God of Dominion, a being who thrived on oaths and the iron bonds of absolute rule. 'I can give you the power to resurrect your people,' Figxang whispered. 'But there is a price. Your soul will be mine, and your people will return not as they were, but as reflections of your new nature—creatures of order and ferocity, bound to your will forever. You will be their king, their tyrant, and you will never trust again.' Wolfazar, with his last breath, accepted. Darkness swallowed him. When he awoke, he was no longer in the ruined city but in a desolate plain that would become the Wild Zones. His body had been transformed: he was larger, monstrously muscular, his limbs those of a lion, his head that of a wolf. And upon his face was a helm of demonic silver, sealed tight, hiding the human visage he had lost. Around him, rising from the blood‑soaked earth, were his people—resurrected, but changed. They were now wolf‑lion hybrids, their eyes glowing with a faint purple light, their forms powerful and bestial. They looked upon Wolfazar with a mixture of awe and terror, and they knelt. Wolfazar, the Damned King, had been born.",
+        "part3": "The Kingdom of Helm was rebuilt, but it was no longer a beacon of justice. It became the Cursed Citadel, a fortress of black iron and purple flame, hidden deep within the Wild Zones. Wolfazar ruled with an iron fist, his word absolute law. The Damned Legion, his resurrected people, served him without question—they owed him their existence, and they remembered the horror of their deaths. They policed the land with savage efficiency, crushing any dissent, any hint of betrayal, before it could take root. Wolfazar did not enjoy cruelty; he simply saw no alternative. His brother Valdemar had taught him that trust was weakness, and he would not be weak again. He issued decrees that controlled every aspect of life: trade, travel, even speech was regulated. Those who obeyed lived in relative peace; those who questioned or defied were dealt with swiftly, their fate a warning to others. Over the centuries, the legend of the Wolf‑Lion Tyrant spread. Adventurers who ventured into his domain were given a choice: kneel and serve, or leave and never return. Those who attacked were torn apart by the Legion. Wolfazar never left his citadel; his sapphire eyes watched over his domain from his throne, ever vigilant. He sometimes gazed into a shard of polished obsidian that showed him the face he had lost—the kind king he once was—and a single tear of purple light would fall from beneath his helm. But he never wavered. Tyranny was his burden, his penance, and his only way to protect what remained of his people.",
+        "part4": "The demon god Figxang visited Wolfazar only once after the pact. He appeared as a shadow with a thousand eyes, and he spoke with amusement. 'You have done well, my king. Your iron rule feeds my power. But remember, your soul is mine. When you finally fall, you will serve me in the Abyss.' Wolfazar, his sapphire eyes unblinking, replied, 'I know. But as long as I rule, my people are safe from betrayal. That is enough.' Figxang laughed and departed. Wolfazar understood that his tyranny was a cage—not just for his subjects, but for himself. He could never again experience trust, friendship, or love. He had traded his humanity for the survival of his people, and he would bear that cost until the end of eternity. Over time, some of his Damned Legion began to show signs of independent thought—flickers of the people they once were. They would sometimes gaze at the king with something other than fear: a lingering sorrow, a memory of the benevolent ruler he had been. Wolfazar noticed, but he did not encourage it. He feared that if his people remembered too much, they might begin to question his rule, and then he would have to crush them as he crushed all dissent. It was a cruel irony: the very love that had driven him to save them now forced him to suppress their humanity.",
+        "part5": "Now, the aftershocks of the Sundering have weakened the barriers that hid the Cursed Citadel. The Forge Pact, ever hungry for new technology, has detected the unique demonic energy emanating from Wolfazar's domain. The Celestial Order sees a corrupted king and his monstrous legion as a threat to divine order. And the Shadow Accord, intrigued by Figxang's involvement, wishes to study—or recruit—the Damned King. Wolfazar, aware of these stirrings, has not mobilized his forces for war. He waits, watching with his sapphire eyes. He knows that heroes will come—some seeking to destroy him, others seeking to free his people, and perhaps, just perhaps, one who understands the weight of a necessary tyranny. He has heard whispers of other tragic figures: Minsitthar, a king betrayed by his own brother; Argus, a fallen angel who rebelled against divine authority; Zartheink, abandoned by the gods he served. Wolfazar feels a kinship with them, though he has never met them. He wonders if, together, the betrayed and the damned might forge a new kind of order—one not based on fear, but on a shared understanding of pain. But his pact with Figxang binds him, and his own heart is encased in iron. Until someone can prove to him that trust is not always a weakness, Wolfazar will remain the Great Peril of Tyranny, a king who rules with an iron will, his sapphire eyes forever watching, forever mourning, forever vigilant against the betrayal that broke him."
+      },
+      "appearance": {
+        "race": "Damned Human / Demonic Chimera (Wolf-Lion)",
+        "faceShape": "Alpha wolf head, broad muzzle, sharp ears; entirely concealed beneath a majestic demonic helm",
+        "nose": "Wolf snout, black and wet, visible only in shadow beneath the helm",
+        "hairStyle": "Thick, voluminous white and silver mane that cascades from the head and neck, merging with chest fur; body fur is white on lion limbs",
+        "hairColor": "White and Silver",
+        "eyeColor": "Sapphire Blue, glowing with inner light, visible through helm slits",
+        "facialStructure": "Wolf-like, but hidden; the helm gives an impression of regal, predatory majesty",
+        "skinTone": "Fair human skin on torso, arms, and face (where not covered by fur or helm)",
+        "distinguishingFeatures": "Majestic curved horns of demonic purple and silver protruding from helm; royal demonic armor (minimal: sculpted breastplate, spiked pauldrons, tattered red cape); lion-like legs and hands with white fur and retractable claws; helm covers entire face except for sapphire eyes; aura of oppressive authority"
+      },
+      "colorPalette": {
+        "primary": ["#FFFFFF", "#F5F5F5"],
+        "secondary": ["#FF0000", "#8B0000"],
+        "accent": ["#800080", "#4B0082"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Barrel-chested, fair human skin with sculpted abdominal muscles; minimal black iron breastplate with glowing purple runes, leaving much of the chest exposed",
+          "arms": "Humanoid upper arms, fair-skinned and muscular; forearms and hands are leonine, covered in white fur, with retractable claws",
+          "shoulders": "Broad, adorned with spiked pauldrons of black iron and purple accents",
+          "neck": "Thick, wrapped in white mane fur",
+          "waist": "Narrow, with a belt of black iron chains and a purple gemstone buckle"
+        },
+        "lower": {
+          "hips": "Covered by a tattered red royal cape that drags behind; beneath, a leather and iron skirt",
+          "legs": "Leonine, digitigrade, covered in white fur, powerfully muscled",
+          "feet": "Large lion paws with white fur and black claws"
+        },
+        "headwear": "Majestic demonic helm of silver and black iron, covering entire head; slits for sapphire eyes; adorned with purple runes and two large curved horns",
+        "accessories": [
+          "Tattered royal cape of deep red",
+          "Black iron chains around waist and wrists",
+          "Purple gemstone on belt (focus of Figxang's power)"
+        ],
+        "distinctFeatures": "The helm is permanently sealed; Wolfazar cannot remove it. The sapphire eyes are the only visible human feature. The mane is thick and voluminous, giving him an alpha presence. The lion limbs are covered in fine white fur."
+      },
+      "armorType": "Demonic Medium Armor (Minimal)",
+      "bodyType": {
+        "upper": {
+          "chest": "Incredibly muscular, defined abs and pecs",
+          "arms": "Biceps and triceps bulging; forearms leonine",
+          "shoulders": "Broad, powerful",
+          "neck": "Thick, maned",
+          "waist": "Lean"
+        },
+        "lower": {
+          "hips": "Narrow, leonine",
+          "legs": "Powerful, digitigrade, covered in fur",
+          "feet": "Large paws"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Iron Will and Command of the Damned Legion",
+          "fulldesc": "Wolfazar wields no blade; his weapons are his unyielding will and the loyalty of his transformed people. His presence alone projects an Aura of Absolute Rule that saps the resolve of enemies, reducing their damage and forcing them to kneel if they attempt to defy him. He can issue Decrees—verbal commands that carry magical force—silencing spellcasters, rooting warriors in place, or compelling obedience. His physical strikes, delivered with his leonine claws, are devastating, causing deep bleeding wounds that fester with the memory of betrayal (reducing healing). His most feared ability is 'Command of the Damned Legion': he summons spectral or physical manifestations of his wolf‑lion subjects to fight alongside him, swarming enemies and dragging them down. His ultimate, 'Tyrant's Decree,' creates a domain where his word is law—enemies within cannot use movement abilities, are slowed, and if they attack Wolfazar, they are forced to kneel (stunned) as their own will is crushed. Wolfazar does not fight with rage; he fights with the cold certainty of a king who has already judged his foes and found them wanting.",
+          "type": "Demonic / Psychic / Physical",
+          "look": "When issuing a Decree, his sapphire eyes flare brightly and his voice reverberates with unnatural authority. His claws leave trails of purple energy. The Damned Legionnaires appear as ghostly wolf‑lion hybrids or as solid, armored warriors wielding spectral blades. The Tyrant's Decree manifests as a visible purple and red dome of oppressive energy, inside which all sound becomes muffled and movements feel heavy.",
+          "aura": "A crushing weight of authority, the faint sound of a royal decree being read, and a purple‑tinged haze that makes enemies feel small and powerless",
+          "colorPalette": ["#800080", "#FF0000", "#FFFFFF"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Absolute Rule",
+                "description": "Enemies within 35 meters of Wolfazar have their damage dealt reduced by 20% and their movement speed reduced by 15%. Additionally, any enemy that attacks Wolfazar gains a stack of 'Defiance' (max 3). At 3 stacks, the enemy is 'Cowed' for 5 seconds: they are silenced and cannot attack Wolfazar directly. This effect has a 40-second cooldown per target."
+              },
+              {
+                "name": "The Damned King's Vigil",
+                "description": "Wolfazar is immune to fear, charm, and any effect that would cause him to lose control of his actions. When he falls below 50% health, his Aura of Absolute Rule expands to 50 meters and its damage reduction increases to 30%. Additionally, his sapphire eyes weep tears of purple light, and all his Decree abilities have their cooldowns reduced by 30% for the remainder of the battle."
+              }
+            ],
+            "active": [
+              {
+                "name": "King's Decree: Kneel",
+                "description": "Wolfazar points at a target within 40 meters and utters a single word. The target must make a willpower check or be forced to kneel (rooted and silenced) for 4 seconds. While kneeling, they take 60 psychic damage per second. If the target is already Cowed, the effect is automatic and lasts 6 seconds. Cooldown: 12 seconds."
+              },
+              {
+                "name": "Claws of the Betrayed",
+                "description": "Wolfazar slashes with his leonine claws in a 20-meter cone, dealing 210% physical damage and applying 'Sovereign's Bleed' for 10 seconds. Sovereign's Bleed deals 40 physical damage per second and reduces healing received by 50%. Enemies affected by Sovereign's Bleed also leave a trail of blood that slows other enemies who walk through it by 20%. Cooldown: 9 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Tyrant's Decree",
+                "description": "Wolfazar raises his hand, and a 55-meter radius dome of oppressive purple and red energy descends, lasting for 10 seconds. Inside the dome: enemies are slowed by 50%, cannot use any movement abilities (dashes, blinks, teleports), and take 80 psychic damage per second. Any enemy that attacks Wolfazar while inside the dome is instantly forced to kneel (stunned) for 3 seconds. Additionally, Wolfazar summons 4 Damned Legionnaires (spectral wolf‑lion warriors) that fight for him, each with 20% of his health and dealing 70% physical damage. Cooldown: 130 seconds. Passive: For each enemy that kneels inside Tyrant's Decree, Wolfazar permanently gains 1% increased damage with his Decree abilities (max 25%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Legion's Oath",
+                "description": "When Wolfazar reduces an enemy below 10% health, he can command them to 'Swear Fealty' (triggered automatically on next attack unless he chooses otherwise). The target must make a willpower check or be instantly dominated (non‑boss): they become an ally for 30 seconds, gaining 50% increased damage and damage reduction, after which they are released. Bosses instead take 500% physical damage and are silenced for 5 seconds. If the target was Cowed, the domination is automatic. A successful domination also heals Wolfazar for 15% of his max health and summons a free Damned Legionnaire."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/wolfazar_o_helm/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 10,
+        "offense": 9,
+        "defense": 9,
+        "stamina": 9,
+        "physicalAtk": 10,
+        "magicalAtk": 9,
+        "physDef": 9,
+        "magDef": 9,
+        "speed": 5,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 10,
+          "notes": "A Cataclysmic Threat that specializes in control and debilitation. His Aura of Absolute Rule and Decree abilities make him a nightmare for melee attackers and spellcasters alike. His summoned Legionnaires can overwhelm, and his ultimate turns the battlefield into a prison. He is not inherently evil; his tyranny stems from a desire to protect, and players who can demonstrate genuine, selfless loyalty (e.g., by refusing to attack him even when provoked, or by speaking of their own betrayed trusts) may trigger a unique dialogue and potentially a non‑violent resolution. He is vulnerable to fire (remnant of his kingdom's burning) and to light/holy damage, which reminds him of his lost humanity and can temporarily stun him."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Absolute Rule",
+          "type": "Passive",
+          "description": "35m aura: -20% damage dealt, -15% move speed. Attacking Wolfazar grants Defiance stacks; 3 stacks = Cowed (silence, cannot attack Wolfazar) for 5s."
+        },
+        {
+          "name": "King's Decree: Kneel",
+          "type": "Active",
+          "description": "40m range, single target: willpower check or kneel (rooted, silenced) 4s, 60 psychic/sec. Auto on Cowed targets (6s). CD: 12s."
+        },
+        {
+          "name": "Claws of the Betrayed",
+          "type": "Active",
+          "description": "20m cone, 210% phys dmg, Sovereign's Bleed (40 phys/sec, -50% healing) for 10s. Blood trail slows enemies 20%. CD: 9s."
+        },
+        {
+          "name": "Tyrant's Decree",
+          "type": "Ultimate",
+          "description": "55m dome, 10s: -50% speed, no movement abilities, 80 psychic/sec. Attacking Wolfazar = kneel 3s. Summons 4 Legionnaires. Permanent +1% Decree dmg per kneeling enemy (max 25%). CD: 130s."
+        }
+      ],
+      "lore": "Wolfazar O Helm was once a benevolent king, beloved by his people, until his twin brother betrayed him, leading to the massacre of his kingdom. Dying, he forged a pact with the demon god Figxang, trading his soul and his people's humanity for resurrection. He rose as a monstrous wolf‑lion tyrant, his helm forever hiding his face, his sapphire eyes the only remnant of his former self. He rules his Damned Legion with absolute authority, crushing any hint of betrayal. He does not relish his tyranny; he sees it as the only way to protect what remains. Deep within, the kind king still mourns, waiting for a soul who can prove that trust is not always a weakness.",
+      "relationships": [
+        {
+          "withHeroId": "Minsitthar",
+          "type": "Kinship of Betrayed Kings",
+          "description": "Both were kings betrayed by those closest to them. Wolfazar has heard tales of Minsitthar and feels a deep, unspoken connection. If they met, Wolfazar would see a reflection of his own pain, and perhaps a path toward something other than tyranny."
+        },
+        {
+          "withHeroId": "Argus",
+          "type": "Fallen Authority",
+          "description": "Argus fell due to pride; Wolfazar fell due to love. Both now rule over domains of their own making. Wolfazar respects Argus's power but sees his arrogance as a flaw that could lead to further betrayal."
+        },
+        {
+          "withHeroId": "Zartheink",
+          "type": "Abandoned by Higher Powers",
+          "description": "Zartheink was cast down by the gods; Wolfazar was saved by a demon. They share a sense of divine injustice. Wolfazar's golems (or Legionnaires) have been observed near the Glory Scar, as if offering a silent alliance of the forsaken."
+        },
+        {
+          "withFactionId": 1,
+          "type": "Contempt",
+          "description": "The Celestial Order represents the kind of absolute, unquestioning authority that Wolfazar despises—a rule without understanding. He sees them as potential tyrants themselves and will not suffer their presence."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 4,
+      "specialty": "Control‑oriented raid boss with strong debuffs and summoned minions. His abilities punish aggression and force careful positioning. The encounter can be approached diplomatically if players demonstrate genuine loyalty (e.g., by not attacking first, by sharing stories of their own betrayals). If trust is established, Wolfazar may offer a boon or even become a temporary ally against a greater threat. In combat, focus on kiting his Legionnaires, cleansing bleeds, and avoiding Defiance stacks. Fire and holy damage are effective but may trigger enrage or stun phases.",
+      "images": {
+        "iconImage": "assets/images/monsters/wolfazar_o_helm/icon.png",
+        "normalImage": "assets/images/monsters/wolfazar_o_helm/normal.png",
+        "realImage": "assets/images/monsters/wolfazar_o_helm/real.png",
+        "90sImage": "assets/images/monsters/wolfazar_o_helm/90s.png",
+        "fullBodyImage": "assets/images/monsters/wolfazar_o_helm/full.png",
+        "halfImage": "assets/images/monsters/wolfazar_o_helm/half.png",
+        "heropng": "assets/images/monsters/wolfazar_o_helm/hero.png",
+        "herobg": "assets/images/monsters/wolfazar_o_helm/bg.png",
+        "gallery": [
+          "assets/images/monsters/wolfazar_o_helm/1.png",
+          "assets/images/monsters/wolfazar_o_helm/2.png",
+          "assets/images/monsters/wolfazar_o_helm/3.png",
+          "assets/images/monsters/wolfazar_o_helm/4.png",
+          "assets/images/monsters/wolfazar_o_helm/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/wolfazar_o_helm/theme.mp3",
+        "dialogue": {
+          "selection": "You stand before the Iron Crown. State your purpose.",
+          "movement": "My will is law.",
+          "attack": "KNEEL!",
+          "ultimate": "TYRANT'S DECREE! LET ALL WITNESS THE PRICE OF DEFIANCE!",
+          "death": "My people... I have failed you... again..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/wolfazar_o_helm/attack.wav",
+          "skill": "assets/sound/monsters/wolfazar_o_helm/skill.wav",
+          "ultimate": "assets/sound/monsters/wolfazar_o_helm/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "Aischrostengz",
+      "titles": [
+        "The Unveiled Truth",
+        "The Great Peril of Shame",
+        "The Red-Winged Mirror",
+        "She Who Wears No Mask"
+      ],
+      "rank": "SSS-Rank",
+      "level": 350,
+      "nicknames": [
+        "The Brothel Saint",
+        "The God-Scorner",
+        "The Crimson Grace",
+        "The Unashamed"
+      ],
+      "shortDescription": "Born in the scented shadows of a brothel, Aischrostengz was a human woman who learned early that desire and shame are two sides of the same coin, minted by the hypocritical gods who judge what they secretly crave. When a minor deity of purity attempted to curse her with the touch of Lust, she did not break—she bloomed. Now she walks the Wild Zones as a being of terrible beauty: long white hair cascading over flawless human features, eyes of piercing red iris, and magnificent crimson wings that are as beautiful as they are unashamed. She wears her past openly, her revealing noble attire a declaration that the body is not sin. She is kind to mortals, protective of the vulnerable, and utterly merciless to gods and their sycophantic followers. To face Aischrostengz is to have your every hidden shame laid bare, your hypocrisy exposed, and your soul weighed not by divine law, but by the simple, damning truth of who you truly are.",
+      "fullDescription": "The Wild Zones are a place of untamed chaos, but when Aischrostengz steps from the shadows, a strange stillness falls—not of fear, but of anticipation. She is not a towering monster; she stands at a mortal woman's height, her form graceful and perfectly proportioned, her skin a warm human tone that seems to glow softly in dim light. Her face is a masterpiece of delicate features: high cheekbones, a straight nose, full lips that curve in a knowing smile, and eyes of deep crimson iris that hold both ancient sorrow and fierce defiance. Her hair is a cascade of long, voluminous white, layered and flowing like moonlit water, framing her face and spilling over her shoulders. From her back sprout two large wings, not the leathery pinions of a demon, but flawless, feathered wings of vivid red—the color of passion, of lifeblood, of unapologetic desire. They are beautiful, preened, and they move with a gentle rustle that speaks of grace, not menace. She wears minimal clothing: a cropped top that bares her midriff, a pair of fitted shorts, and elegant heeled shoes. Her arms are draped with shawl-like sleeves of fine, translucent fabric that whisper of nobility even in their scantiness. Every inch of her presentation is deliberate—she is not hiding, not apologizing. She is the Great Peril of Shame, not because she feels it, but because she reflects it back upon a world that shames desire, that shames the body, that shames the very essence of being alive. When she speaks, her voice is a warm contralto, laced with irony and compassion. She moves with the confidence of one who has nothing left to hide, and her presence strips away the masks of all who meet her gaze.",
+      "story": {
+        "part1": "The brothel called 'The Velvet Hush' was not a place of degradation, but a sanctuary for women who had few other choices in the rigid, god-fearing society of Aethelgard. There, in a room scented with jasmine and old incense, a child was born to a courtesan named Lysara. She named her daughter Aischrostengz—an old, forgotten name meaning 'unbroken thread.' The girl grew up surrounded by the laughter and tears of women who sold their bodies but guarded their souls. She learned to read the desires of men, to see the hypocrisy of the pious merchants and clerics who visited by night, preaching purity by day. She never judged her mother or her sisters; she saw them as survivors in a world built to exploit them. When she was seventeen, a minor deity of Purity, a vain and petty being named Caelor, took offense at the brothel's existence. He decided to make an example. Descending in a shaft of cold light, he declared that the women were vessels of sin and that he would cleanse them. He reached for Aischrostengz, the youngest, and attempted to 'bless' her with the touch of Lust—a curse that would turn her into a succubus, a creature of insatiable desire, forever marked as shameful. But Aischrostengz did not scream or beg. She looked into the god's eyes and saw his own hidden lust, his own fear of desire. She reached out and, in a moment of defiance that echoed through the divine realms, she did not reject the curse—she accepted it, but on her own terms. The power flooded into her, but instead of twisting her into a demon, it transformed her wings to crimson and her eyes to red, while her heart remained human. Caelor, stunned and humiliated by his own failed judgment, fled. Aischrostengz stood in the ruined courtyard, her new wings spreading, and she laughed—a sound of pure, liberated joy.",
+        "part2": "The transformation brought with it strange powers. Aischrostengz could now see the hidden shames of others—the secret vices, the unconfessed desires, the petty cruelties they hid behind pious masks. She could make these shames manifest, not as illusions but as palpable truths that others could perceive. She used this gift first to protect The Velvet Hush. When a corrupt magistrate tried to shut down the brothel to cover his own indiscretions, Aischrostengz simply stood before him and let him see himself as others saw him—a lecherous, hypocritical coward. He fled the city in disgrace. Word spread of the 'Red-Winged Woman' who could unveil any secret. The downtrodden and the shamed began to seek her out, and she offered them not judgment but understanding. She told them that their desires were not sins, that their bodies were not shameful, and that the gods who preached purity were the most impure of all. She became a folk hero to the marginalized, a whisper of hope in the shadow of the cathedrals. The Celestial Order, hearing of a being who defied a god and wielded the power of shame against the righteous, labeled her a dangerous anomaly. But they could not easily move against her, for she had committed no crime—she simply revealed what was already there. And many in the Order feared what she might reveal about them.",
+        "part3": "Aischrostengz did not remain in the city. She knew that her presence would eventually draw a more violent response from the divine. She bid farewell to her mother and sisters, leaving them with a blessing of protection—a crimson feather that would warn them of danger. She walked into the Wild Zones, a realm where outcasts and monsters roamed, and she found a kind of peace there. She discovered that her powers were not limited to humans; even beasts and lesser demons carried their own forms of shame—fear, weakness, unfulfilled instincts. She could calm a raging manticore by showing it that its fury stemmed from loneliness, or she could drive a demon to madness by reflecting its own self-loathing. She built no fortress, but she became known as the 'Brothel Saint,' a paradoxical figure of comfort and terror. Travelers lost in the Wild Zones sometimes encountered her—a beautiful woman with red wings sitting by a campfire. She would offer them food and conversation, and if they were honest, she would guide them safely. If they were liars or predators, she would show them the truth of their own souls, and they would flee screaming into the night. She never killed unless absolutely necessary; she believed that shame, truly confronted, could lead to change. But for gods and their chosen, she had no mercy.",
+        "part4": "The gods did not forget Aischrostengz. Caelor, humiliated, whispered to his fellow deities that she was a threat to divine order. A few attempted to confront her indirectly—sending divine beasts or blessed champions. Each time, Aischrostengz turned their own hidden shames against them. A champion of the light, sent to slay her, was revealed to have murdered his own brother in a fit of jealousy; he fell to his knees and wept, his holy sword clattering uselessly. A celestial hound, bred to hunt demons, was shown the loneliness of its kennel and the cruelty of its masters; it turned and fled back to the heavens, howling. The gods, frustrated, debated whether to smite her directly. But a direct divine intervention would be an admission that a mortal-born woman had bested them, and their pride would not allow it. So they did what gods often do: they ignored her, hoping she would fade into legend. Aischrostengz, however, did not fade. She continued to wander, her red wings a beacon to those who had been shamed by the world. She became a symbol of resistance against divine hypocrisy, a living reminder that the truth, however uncomfortable, will always outlast lies.",
+        "part5": "The Sundering's aftershocks have stirred the old powers, and the gods are once again active in the affairs of Kretos. Aischrostengz senses this shift—a cold wind from the celestial realms, carrying the scent of ancient judgment. She knows that the time for quiet wandering may be ending. She has begun to seek out others who have been wronged by the divine: Argus, the fallen angel; Kaal'ian, the chained seraph; Zartheink, the abandoned glory. She believes that together, they might form a new covenant—not to destroy the gods, but to hold them accountable, to demand that they face their own shame. She is also aware of the other Great Perils, including Pixley, the Peril of Lust. The two share a connection, though Aischrostengz views Pixley's untamed, consuming desire with a mixture of pity and wariness. She wonders if even a being of pure lust might be freed from its own nature. For now, Aischrostengz continues her solitary path, her crimson wings carrying her across the Wild Zones. She aids the lost, shames the wicked, and waits. She knows that soon, heroes will come—some seeking her blessing, others seeking to destroy her. She will meet them with the same unwavering gaze, the same unashamed truth. And if the gods themselves finally descend to silence her, she will stand before them and ask only one question: 'What are you so afraid that I will see?'"
+      },
+      "appearance": {
+        "race": "Lust-Touched Human",
+        "faceShape": "Graceful, delicate, with high cheekbones, a straight nose, and full lips; eternally calm and knowing expression",
+        "nose": "Straight, well-proportioned",
+        "hairStyle": "Long, voluminous, layered white hair cascading down back and shoulders",
+        "hairColor": "Pure White",
+        "eyeColor": "Crimson Red (iris), human sclera",
+        "facialStructure": "Flawless, beautiful, human; no monstrous features",
+        "skinTone": "Warm human skin tone, slightly luminous",
+        "distinguishingFeatures": "Large, flawless feathered wings of vivid red; eyes glow faintly when using her powers; wears minimal revealing attire (cropped top, shorts, heeled shoes, shawl-like sleeves) that appears both noble and unashamed; no visible weapons"
+      },
+      "colorPalette": {
+        "primary": ["#808080", "#000000"],
+        "secondary": ["#A9A9A9", "#1A1A1A"],
+        "accent": ["#DC143C", "#2F2F2F"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Cropped top of fine grey fabric, trimmed with black lace, leaving midriff exposed; elegant and revealing but not vulgar",
+          "arms": "Shawl-like sleeves of translucent grey silk draped from shoulders to wrists, fluttering with movement",
+          "shoulders": "Bare, graceful",
+          "neck": "Long, unadorned",
+          "waist": "Exposed, toned"
+        },
+        "lower": {
+          "hips": "Fitted black shorts, modest but form-fitting",
+          "legs": "Long, shapely, bare",
+          "feet": "Heeled shoes of black leather with delicate ankle straps"
+        },
+        "headwear": "None; her white hair is her crown",
+        "accessories": [
+          "A single crimson feather tucked behind her ear (a token from her mother)",
+          "Shawl sleeves (noble, flowing)"
+        ],
+        "distinctFeatures": "The red wings are the most striking feature—beautiful, feathered, and completely unashamed. Her attire is revealing but conveys confidence and nobility, not seduction. Her eyes hold a perpetual, knowing calm."
+      },
+      "armorType": "None (Relies on Agility and Psychic Defense)",
+      "bodyType": {
+        "upper": {
+          "chest": "Full, proportionate, fit",
+          "arms": "Slender but toned",
+          "shoulders": "Graceful, squared",
+          "neck": "Long, elegant",
+          "waist": "Narrow, toned"
+        },
+        "lower": {
+          "hips": "Curved, feminine",
+          "legs": "Long, athletic",
+          "feet": "Small, arched"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Gaze of Unveiling and Crimson Pinions",
+          "fulldesc": "Aischrostengz wields no steel; her weapons are truth and desire. Her primary ability is the 'Gaze of Unveiling'—by meeting a target's eyes, she can perceive their deepest, most hidden shame (a secret sin, a repressed desire, a moment of cowardice) and force them to confront it. The psychic shock can stun, debilitate, or even break the will of those who are unable to accept their own truth. She can also project this shame outward, making it visible to others as a spectral aura that marks the target and reduces their standing with allies. Her crimson wings are not just for flight; she can buffet enemies with gusts of shame-laden wind, or she can use her feathers as projectiles that carry the weight of exposed secrets. Her ultimate ability, 'Shame's Revelation,' creates a zone where all creatures are stripped of their pretenses—debuffs are shared, hidden weaknesses become visible, and those who have committed acts of cruelty or hypocrisy take damage proportional to their misdeeds. Aischrostengz does not enjoy causing pain; she uses these abilities only against those who would harm the innocent or who serve hypocritical gods.",
+          "type": "Psychic / Emotional / Physical",
+          "look": "When using Gaze of Unveiling, her crimson eyes glow brightly and the target may see fleeting visions of their own past. Her wing attacks leave trails of red light. Shame's Revelation manifests as a grey-black haze that makes everything appear stark and unflattering, with whispered confessions echoing faintly.",
+          "aura": "A subtle feeling of exposure, as if one's secrets are written on the skin; a faint scent of jasmine and old incense",
+          "colorPalette": ["#808080", "#000000", "#DC143C"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Exposed Secrets",
+                "description": "Enemies within 30 meters of Aischrostengz have their critical hit chance reduced by 25% and their damage dealt reduced by 10% (non-stacking with similar effects). Additionally, any stealth or invisibility is automatically broken within the aura, and hidden traps or illusions are revealed. Allies within the aura gain 15% increased critical hit chance, as they feel emboldened by the lack of deception."
+              },
+              {
+                "name": "Unashamed Heart",
+                "description": "Aischrostengz is immune to fear, charm, and any effect that would alter her perception of self. When she takes damage from a divine source (god, angel, blessed weapon), she reflects 30% of that damage back as psychic damage and gains a stack of 'Righteous Defiance' (max 5). Each stack increases her psychic damage by 5% and reduces damage taken from divine sources by 5%."
+              }
+            ],
+            "active": [
+              {
+                "name": "Gaze of Unveiling",
+                "description": "Aischrostengz locks eyes with a single target within 40 meters. The target must make a willpower check or be 'Shamed' for 8 seconds. While Shamed, the target takes 70 psychic damage per second, is silenced, and has their damage dealt reduced by 30%. Additionally, any allies of the target within 20 meters also see glimpses of the shame, causing them to deal 10% less damage to Aischrostengz. Cooldown: 12 seconds."
+              },
+              {
+                "name": "Crimson Pinions",
+                "description": "Aischrostengz beats her wings, creating a 25-meter cone of red-tinged wind. Enemies in the cone take 160% physical damage and are knocked back 10 meters. They also are afflicted with 'Exposed' for 6 seconds, increasing damage taken from all sources by 20%. If an enemy is already Shamed, the knockback distance is doubled and they are stunned for 1 second upon landing. Cooldown: 10 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Shame's Revelation",
+                "description": "Aischrostengz spreads her wings wide and releases a pulse of pure, undeniable truth in a 50-meter radius for 8 seconds. Inside the zone: all enemies lose any active beneficial buffs (including stealth, shields, damage enhancements); they are 'Stripped' and cannot gain new buffs. Additionally, any enemy that has dealt damage to an ally or innocent creature in the last minute takes 200% psychic damage per second (capped at 800% total). Aischrostengz is immobile for the initial 2-second cast but gains 70% damage reduction. Cooldown: 140 seconds. Passive: For each enemy that dies while Stripped, Aischrostengz permanently gains 1% increased duration of her Shame effects (max 20%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Confession's Release",
+                "description": "When Aischrostengz reduces an enemy below 10% health, she can offer them 'Release' (triggered automatically unless she chooses otherwise). The target must make a willpower check or confess their deepest shame aloud. If they confess, they are healed for 30% of their max health, all debuffs are removed, and they become neutral to Aischrostengz for 1 hour (non-boss). If they refuse or are a boss, they take 500% psychic damage and are silenced for 8 seconds. A successful confession also restores 20% of Aischrostengz's mana and reduces the cooldown of Gaze of Unveiling by 50%."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/aischrostengz/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 9,
+        "strength": 5,
+        "offense": 10,
+        "defense": 5,
+        "stamina": 7,
+        "physicalAtk": 6,
+        "magicalAtk": 10,
+        "physDef": 5,
+        "magDef": 9,
+        "speed": 9,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 9.5,
+          "notes": "A Cataclysmic Threat that specializes in psychic warfare, debuff stripping, and anti-divine mechanics. She is fragile if caught in melee, but her high speed, flight, and powerful crowd control make her extremely dangerous. Her abilities are particularly devastating against divine casters and self-righteous paladins. She is not aggressive by nature; she will parley with those who approach honestly. Her weakness is pure physical damage and attacks that cannot be shamed (constructs, true undead)."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Exposed Secrets",
+          "type": "Passive",
+          "description": "30m aura: -25% enemy crit chance, -10% damage dealt. Reveals stealth/traps. Allies +15% crit chance."
+        },
+        {
+          "name": "Gaze of Unveiling",
+          "type": "Active",
+          "description": "40m range, single target: willpower check or Shamed 8s (70 psychic/sec, silenced, -30% dmg). Allies of target deal -10% to Aischrostengz. CD: 12s."
+        },
+        {
+          "name": "Crimson Pinions",
+          "type": "Active",
+          "description": "25m cone, 160% phys dmg, knockback 10m, Exposed 6s (+20% dmg taken). Double knockback + stun if Shamed. CD: 10s."
+        },
+        {
+          "name": "Shame's Revelation",
+          "type": "Ultimate",
+          "description": "50m radius, 8s channel (70% DR). Strip all buffs, prevent new buffs. Enemies who harmed allies/innocents take 200% psychic/sec (max 800%). Permanent +1% Shame duration per kill (max 20%). CD: 140s."
+        }
+      ],
+      "lore": "Aischrostengz was born in a brothel, raised by women who taught her that shame is a weapon of the powerful. When a god tried to curse her with Lust, she accepted it on her own terms, transforming into a being of red wings and crimson eyes, still human at heart. She now wanders the Wild Zones, using her power to unveil hidden truths and expose hypocrisy. She is kind to mortals, protective of the shamed, and utterly merciless to gods and their followers. She is the Great Peril of Shame, not because she feels it, but because she reflects it back upon a world that uses shame to control.",
+      "relationships": [
+        {
+          "withHeroId": "Argus",
+          "type": "Fellow Defier",
+          "description": "Argus rebelled against the gods out of pride; Aischrostengz defies them out of truth. She respects his power but sees his arrogance as a flaw. She might offer him a mirror to see himself truly."
+        },
+        {
+          "withHeroId": "Kaal'ian Zorbat",
+          "type": "Kindred Spirit",
+          "description": "Both were cursed by gods for their compassion. Aischrostengz has visited the Chained Sanctum in spirit, offering silent solidarity. She believes Kaal'ian's endurance is a form of unashamed truth."
+        },
+        {
+          "withHeroId": "Pixley",
+          "type": "Uneasy Parallel",
+          "description": "Pixley is the Great Peril of Lust, a being of pure, untamed desire. Aischrostengz is Lust-touched but retains her humanity. She pities Pixley's endless hunger and wonders if even a Peril can be freed from its nature."
+        },
+        {
+          "withHeroId": "Alucard",
+          "type": "Protective Sympathy",
+          "description": "Alucard is a human cursed by his bloodline, fighting his own darkness. Aischrostengz sees him as a brother in the struggle against an imposed fate. She would aid him without hesitation."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 4,
+      "specialty": "Psychic controller and anti-divine specialist. Her abilities punish hypocrisy and hidden weaknesses. She is best engaged with physical burst damage and by parties that can withstand psychic assaults. She is open to dialogue and will not attack first unless provoked. Players who are honest and share their own vulnerabilities may gain her favor, potentially unlocking a unique blessing or alliance.",
+      "images": {
+        "iconImage": "assets/images/monsters/aischrostengz/icon.png",
+        "normalImage": "assets/images/monsters/aischrostengz/normal.png",
+        "realImage": "assets/images/monsters/aischrostengz/real.png",
+        "90sImage": "assets/images/monsters/aischrostengz/90s.png",
+        "fullBodyImage": "assets/images/monsters/aischrostengz/full.png",
+        "halfImage": "assets/images/monsters/aischrostengz/half.png",
+        "heropng": "assets/images/monsters/aischrostengz/hero.png",
+        "herobg": "assets/images/monsters/aischrostengz/bg.png",
+        "gallery": [
+          "assets/images/monsters/aischrostengz/1.png",
+          "assets/images/monsters/aischrostengz/2.png",
+          "assets/images/monsters/aischrostengz/3.png",
+          "assets/images/monsters/aischrostengz/4.png",
+          "assets/images/monsters/aischrostengz/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/aischrostengz/theme.mp3",
+        "dialogue": {
+          "selection": "I see you. All of you.",
+          "movement": "Truth walks with me.",
+          "attack": "Face yourself!",
+          "ultimate": "SHAME'S REVELATION! LET ALL MASKS FALL!",
+          "death": "Finally... no more secrets..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/aischrostengz/attack.wav",
+          "skill": "assets/sound/monsters/aischrostengz/skill.wav",
+          "ultimate": "assets/sound/monsters/aischrostengz/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 19,
+      "name": "Gohee Croc'olla",
+      "titles": [
+        "The Nile's Bitter Tear",
+        "The Great Peril of Resentment",
+        "The Cursed Crocodile Queen",
+        "She Who Drowns in Envy"
+      ],
+      "rank": "SSS-Rank",
+      "level": 360,
+      "nicknames": [
+        "The Tomb-Mother",
+        "Pharaoh's Bane",
+        "The Green Scorn",
+        "The Gilded Maw"
+      ],
+      "shortDescription": "Once the most beautiful and cruel noblewoman of the lost desert kingdom of Khemara, Gohee croc'olla's heart was as cold as the Nile's depths. Her schemes to seize the throne were uncovered, and the pharaoh cursed her with the form of a colossal crocodile humanoid, sealing her in a forgotten tomb. For millennia, resentment festered, and now she has risen—a 300‑foot monstrosity of scaly green and brown, with the face of a lovely woman framed by curly brown hair and a body that is both voluptuous and terrifying. She wears the remnants of Egyptian finery, her massive curves barely contained by linen and gold, and her great tail drips with a red‑green aura of bitter water. She commands legions of tomb‑spawned horrors, and her heart knows only one desire: to drown the world in the same resentment that has consumed her.",
+      "fullDescription": "The ancient tomb of Khemara does not echo with silence—it seethes with the sound of dripping water and the low, guttural rumble of a wounded queen. At its heart, coiled upon a throne of broken sarcophagi, rests Gohee croc'olla, a fusion of human vanity and reptilian nightmare. She stands 300 feet tall, her body a monstrous crocodile from the neck down: a thick, powerful torso covered in dark green and brown scales that gleam like wet stone, four muscular legs ending in webbed claws, and a massive tail that sweeps behind her, wreathed in a shifting aura of red‑green water that hisses and steams. Her human face is a cruel paradox—beautiful, with smooth skin of warm olive tone, high cheekbones, a straight nose, and full lips painted with ancient kohl. Her eyes are deep amber, slitted like a reptile's, and they burn with a resentment so profound it can wilt the spirit. Her hair is shoulder‑length, layered and curly, a rich brown that frames her face and cascades over her scaled shoulders. She wears minimal Egyptian attire: a golden collar that drapes over her massive bosom, a linen bandeau that struggles to contain her G‑cup breasts, a jeweled belt low on her hips, and a sheer, pleated skirt that parts over her thick, muscular thighs. Her curves are exaggerated and voluptuous—an hourglass figure with a narrow waist and wide, powerful hips—a mockery of the beauty she once possessed. The tail is her most fearsome feature: a muscular appendage covered in dark scales, its tip perpetually dripping with a watery aura of crimson and emerald, a manifestation of her bitter resentment. She moves with a slow, predatory grace, and when she speaks, her voice is a honeyed hiss that promises both pleasure and pain.",
+      "story": {
+        "part1": "In the golden age of Khemara, a desert kingdom blessed by the Nile's eternal flow, there lived a noblewoman of unparalleled beauty named Gohee. She was the daughter of a high vizier, raised in luxury, and her face could launch a thousand ships—or sink them. But Gohee's heart was a wasteland of envy and ambition. She used her charm and wit to manipulate the court, pitting nobles against each other, seducing and discarding lovers, all in pursuit of one goal: to become pharaoh's queen and rule from the shadows. Her cruelty was legendary; she would smile as rivals were exiled or executed, her amber eyes cold and calculating. The pharaoh, an aging but wise ruler named Amenhotep, saw through her facade. He tolerated her for a time, but when she attempted to poison his favored concubine, he acted. With the aid of the high priest of Sobek, the crocodile god, Amenhotep devised a curse befitting her nature: she would become a crocodile, a creature of the Nile she so admired, but twisted and monstrous, forever a prisoner of her own vanity. On the night of the new moon, guards seized Gohee and dragged her to the temple of Sobek, where the priest intoned the ancient words and poured sacred water over her. She screamed as her body contorted, her smooth skin splitting into scales, her legs fusing and elongating, her face the only part left untouched—a final cruel jest. As the curse took hold, she was sealed within a hidden tomb deep beneath the desert, her anguished cries swallowed by stone and sand.",
+        "part2": "For millennia, Gohee lay in the darkness, not dead but suspended in a state of living death. The curse sustained her, and her mind, trapped in a monstrous body, had nothing to do but relive her failures and nurture her hatred. She resented the pharaoh for his judgment, the gods for allowing her transformation, and most of all, herself for being caught. She dreamed of the day she would escape and exact revenge. Over time, the residual magic of the curse seeped into the tomb, attracting desert creatures and lost spirits. They became her companions—first out of fear, then out of twisted loyalty. She learned to command them, her resentment giving her a dark authority over the dead and the damned. Serpents coiled at her feet, scarabs scuttled over her scales, and the mummified remains of ancient priests rose to serve her. The tomb, once a prison, became her queendom, a realm of eternal bitterness where she reigned as the unchallenged sovereign. But the outside world remained beyond her reach, sealed by the pharaoh's powerful wards.",
+        "part3": "The Sundering changed everything. The cosmic upheaval cracked the ancient wards, and the tomb's seal shattered. Gohee felt the rush of fresh air and the faint warmth of the sun for the first time in eons. She emerged from the sands, a 300‑foot behemoth of scales and fury, her human face twisted in a permanent sneer of resentment. The world had changed—Khemara was dust, its people scattered or forgotten. Her revenge was hollow; the pharaoh was long dead. So she turned her hatred outward, upon the living. Caravans crossing the desert began to disappear, their remains found drowned in shallow pools of bitter, red‑tinged water. Villages near the old ruins were raided by mummies and giant serpents, their inhabitants dragged screaming into the sands. Gohee did not seek to conquer; she sought to make others feel the same drowning resentment that consumed her. She would whisper to her victims of their own hidden envies and disappointments, amplifying them until they despaired. Her tomb became a labyrinth of sorrow, filled with the echoes of those she had broken. She was no longer just a cursed noble; she was the Great Peril of Resentment, a force of corrosive bitterness that poisoned the land.",
+        "part4": "The factions of Kretos eventually took notice. The Celestial Order, detecting the undead activity, sent a squad of paladins to investigate. They entered the tomb with holy fervor. Gohee met them in her throne room, her massive form lounging on the rubble. She did not attack immediately; she spoke to them, her voice dripping with false sympathy. She asked about their secret doubts, their hidden resentments against their superiors, their unfulfilled desires. One by one, the paladins fell to arguing, then to weeping, then to turning on each other. Only one escaped, his mind shattered, babbling about the 'Crocodile Queen who knows your heart's poison.' The Order classified Gohee as a Cataclysmic Threat and forbade further direct incursions. The Shadow Accord, intrigued by her power over negative emotions, sent emissaries offering alliance. Gohee listened, then laughed—a wet, gurgling sound. 'I resent you as well,' she hissed. 'All of you. I need no allies. I need only to spread my bitterness.' She allowed the emissaries to leave, but they found their own hearts filled with inexplicable loathing for their masters. The Accord marked her as too unstable to control and simply monitored her from afar.",
+        "part5": "Now, as the Sundering's aftershocks continue to shake Kretos, Gohee croc'olla has grown restless. She senses other beings of great resentment—Minsitthar, a king betrayed; Zartheink, a seraph abandoned; and perhaps even Vex'Mara, who unweaves truth. She wonders if, together, they could form a court of the bitter, a pantheon of resentment that would reshape the world in their image. She has begun sending her serpent spies to observe these other Perils and fallen heroes. She has also taken an interest in the Forge Pact's technomancers, whose cold logic and ambition mirror her own calculating nature. But deep within her crocodile heart, buried beneath millennia of hatred, a tiny flicker of something else remains: the memory of being beautiful and desired, not feared. When she gazes into a pool of water and sees her human face reflected atop a monster's body, she feels a pang of something that might be regret. Yet she crushes it instantly, for regret is the cousin of repentance, and she has sworn never to repent. She will drown the world in her resentment, or she will die trying. And she will make sure that everyone she drags down with her feels every ounce of her bitter, eternal pain.",
+        "regret": "Note: The story sections are part1 through part5. There is no 'regret' field; that was a narrative note. I've structured 5 parts accordingly."
+      },
+      "appearance": {
+        "race": "Cursed Human / Crocodile Hybrid",
+        "faceShape": "Human, beautiful, oval face with high cheekbones, straight nose, full lips",
+        "nose": "Straight, delicate",
+        "hairStyle": "Shoulder-length, layered, curly brown hair framing the face",
+        "hairColor": "Rich Brown",
+        "eyeColor": "Amber with vertical slit pupils",
+        "facialStructure": "Flawless human features, but expression is one of permanent scorn and bitterness",
+        "skinTone": "Olive/warm human skin tone on face; dark green and brown scales on body",
+        "distinguishingFeatures": "Colossal size (300 ft); crocodile body with massive tail; red-green water aura on tail; voluptuous hourglass figure with G-cup breasts, thin waist, wide hips and thick thighs; minimal Egyptian attire exposing curves; golden jewelry (collar, belt, armbands)"
+      },
+      "colorPalette": {
+        "primary": ["#006400", "#004d00"],
+        "secondary": ["#8B4513", "#A0522D"],
+        "accent": ["#8B0000", "#DC143C"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Massive G-cup breasts barely contained by a golden collar and a narrow linen bandeau; much of the scaled chest is exposed",
+          "arms": "Thick, muscular arms covered in scales, with golden armbands and bracelets",
+          "shoulders": "Broad, scaled, with a sheer linen shawl draped over them",
+          "neck": "Long, scaled, adorned with a heavy golden collar and lapis lazuli beads",
+          "waist": "Narrow, scaled, with a jeweled golden belt"
+        },
+        "lower": {
+          "hips": "Wide, voluptuous, covered in fine scales; a sheer pleated linen skirt hangs from the belt, parted to reveal thick, muscular thighs",
+          "legs": "Powerful, digitigrade crocodile legs ending in webbed claws",
+          "feet": "Large, webbed, clawed"
+        },
+        "headwear": "None; her curly brown hair is her crown, though she may wear a small golden circlet with a cobra emblem",
+        "accessories": [
+          "Golden collar with lapis lazuli",
+          "Golden armbands and bracelets",
+          "Jeweled belt",
+          "Anklets with tiny bells"
+        ],
+        "distinctFeatures": "The tail is the most striking feature: long, muscular, covered in dark green scales, with a glowing aura of red-green water at the tip. The face is beautiful but cold. The body is voluptuous and curvaceous, emphasizing her former human beauty now trapped in a monstrous form."
+      },
+      "armorType": "Natural Scales (Light to Medium)",
+      "bodyType": {
+        "upper": {
+          "chest": "Enormous, voluptuous (G-cup), scaled",
+          "arms": "Thick, muscular, scaled",
+          "shoulders": "Broad, scaled",
+          "neck": "Long, scaled",
+          "waist": "Thin, scaled, hourglass"
+        },
+        "lower": {
+          "hips": "Wide, scaled, thick",
+          "legs": "Massive, crocodilian, muscular",
+          "feet": "Webbed claws"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Tail of Drowning Resentment and Tears of the Nile",
+          "fulldesc": "Gohee's primary weapon is her immense tail, which she wields like a battering ram and a whip. The tail is wreathed in a shifting aura of red and green—a manifestation of her bitter resentment made liquid. When she strikes with it, the impact carries not only crushing force but also a drowning sensation, as if the victim is being pulled under by invisible currents of despair. The water aura leaves behind pools of corrosive, brackish fluid that slow and damage enemies. Her secondary weapon is the 'Tears of the Nile'—she can exhale a torrent of bitter water from her mouth, or cause geysers to erupt from the ground. This water is tainted with her resentment, causing wounds that fester emotionally as well as physically (reducing healing, increasing damage taken). She can also summon 'Children of the Tomb'—mummified crocodile warriors, giant serpents, and swarms of scarabs to fight for her. Her ultimate, 'Flood of Resentment,' transforms the battlefield into a marsh of bitter water, drowning enemies in her endless spite while empowering her minions.",
+          "type": "Physical / Water / Psychic",
+          "look": "The tail is dark green, thick as a temple pillar, with a red-green glowing tip. When it swings, it leaves a trail of misty water. The 'Tears of the Nile' appears as a gushing torrent from her mouth or as erupting geysers. The water is murky green with red streaks. Minions are Egyptian-themed undead and beasts.",
+          "aura": "A humid, oppressive atmosphere; the faint smell of stagnant water and old incense; a subtle whisper of envy and bitterness",
+          "colorPalette": ["#006400", "#8B0000", "#A0522D"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Bitter Resentment",
+                "description": "Enemies within 40 meters of Gohee are afflicted with 'Envy': they deal 15% less damage and have their healing received reduced by 30%. Additionally, any enemy that receives a beneficial buff (including self-buffs) has a 20% chance to have the buff immediately dispelled, and Gohee gains a stack of 'Spite' (max 10). Each stack increases her water damage by 3% and reduces damage taken by 2%."
+              },
+              {
+                "name": "Heart of the Crocodile",
+                "description": "Gohee's thick scales grant her 25% damage reduction from physical attacks. When she is below 40% health, her resentment intensifies: her Aura of Bitter Resentment radius increases to 60 meters, and she gains 30% increased attack speed. Additionally, her tail attacks leave larger pools of bitter water that last twice as long."
+              }
+            ],
+            "active": [
+              {
+                "name": "Tail Sweep of Spite",
+                "description": "Gohee swings her massive tail in a 35-meter cone, dealing 280% physical damage and knocking back enemies 15 meters. Enemies hit are afflicted with 'Drowning Resentment' for 10 seconds: they take 60 water/psychic damage per second, and their movement speed is reduced by 40%. The area affected becomes covered in bitter water pools that deal 40 water damage per second and slow by 20% for 12 seconds. Cooldown: 12 seconds."
+              },
+              {
+                "name": "Tears of the Nile",
+                "description": "Gohee exhales a torrent of bitter water in a 40-meter line, dealing 220% water damage to all enemies in its path. Enemies hit are 'Drenched' for 8 seconds: they take 80 water damage per second and have their armor reduced by 30%. If an enemy is already afflicted with Drowning Resentment, they are also rooted for 3 seconds as the water solidifies around their feet. Cooldown: 14 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Flood of Resentment",
+                "description": "Gohee raises her arms and tail, summoning a catastrophic flood of bitter water in a 70-meter radius for 12 seconds. The area becomes 'Submerged': all enemies inside are slowed by 70%, cannot use movement abilities, and take 120 water damage per second. Additionally, Gohee summons 4 'Drowned Guardians' (mummified crocodile warriors) that fight for her, each with 25% of her health and dealing 80% physical damage. Any enemy that dies within the flood explodes in a burst of bitter water, dealing 150% water damage to nearby enemies and spawning a pool. Gohee is immobile for the 3-second cast but gains 80% damage reduction. Cooldown: 160 seconds. Passive: For each enemy that dies within Flood of Resentment, Gohee permanently gains 1% increased water damage (max 30%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Consume Resentment",
+                "description": "When Gohee reduces an enemy below 10% health, she can choose to 'Drown' them in her bitterness (triggered automatically on next attack unless she chooses otherwise). The target must make a willpower check or be instantly killed (non-boss) or take 600% water damage (boss). If the target is a divine servant or a noble, they take double damage. A successful execution heals Gohee for 20% of her max health and resets the cooldown of Tears of the Nile."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/gohee_crocolla/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 10,
+        "offense": 9,
+        "defense": 9,
+        "stamina": 9,
+        "physicalAtk": 10,
+        "magicalAtk": 9,
+        "physDef": 9,
+        "magDef": 7,
+        "speed": 4,
+        "mana": 9,
+        "intelligence": 8,
+        "ratings": {
+          "overall": 10,
+          "notes": "A Cataclysmic Threat specializing in area denial, water damage, and debilitation. Her Aura of Bitter Resentment punishes buff-reliant classes, and her Flood of Resentment can wipe unprepared groups. She is slow but extremely durable in melee. Her weakness is lightning damage (which shocks her water) and fire damage (which evaporates her pools). Additionally, beings without emotions (constructs, true undead) are immune to the psychic components of her resentment abilities."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Bitter Resentment",
+          "type": "Passive",
+          "description": "40m aura: -15% damage dealt, -30% healing received. 20% chance to dispel buffs, gain Spite stack (+3% water dmg, -2% dmg taken per stack, max 10)."
+        },
+        {
+          "name": "Tail Sweep of Spite",
+          "type": "Active",
+          "description": "35m cone, 280% phys dmg, knockback 15m, Drowning Resentment 10s (60 water/psychic/sec, -40% speed). Leaves bitter pools 12s (40 water/sec, -20% speed). CD: 12s."
+        },
+        {
+          "name": "Tears of the Nile",
+          "type": "Active",
+          "description": "40m line, 220% water dmg, Drenched 8s (80 water/sec, -30% armor). Root 3s if already Drowning Resentment. CD: 14s."
+        },
+        {
+          "name": "Flood of Resentment",
+          "type": "Ultimate",
+          "description": "70m radius, 12s channel (80% DR). Submerged: -70% speed, no movement abilities, 120 water/sec. Summons 4 Drowned Guardians. Permanent +1% water dmg per kill (max 30%). CD: 160s."
+        }
+      ],
+      "lore": "Gohee croc'olla was a beautiful and cruel noblewoman of the lost desert kingdom of Khemara. Her schemes to seize power led the pharaoh to curse her with the form of a colossal crocodile humanoid, sealing her in a forgotten tomb. Millennia of resentment festered, and when the Sundering broke the seals, she emerged as the Great Peril of Resentment. Now she rules a domain of Egyptian monsters, drowning all who cross her in the bitter waters of her eternal spite. She hates the gods, the living, and most of all, herself.",
+      "relationships": [
+        {
+          "withHeroId": "Minsitthar",
+          "type": "Fellow Royalty Scorned",
+          "description": "Minsitthar was a king betrayed; Gohee was a noble cursed. She respects his fall but scorns his continued nobility. She might see him as a potential ally in a court of the bitter, or as a reminder of what she could have been."
+        },
+        {
+          "withHeroId": "Khufra",
+          "type": "Egyptian Echo",
+          "description": "Khufra is a mummy king from a different desert. Gohee feels a distant kinship, though she finds his obsession with his lost glory pathetic compared to her all-consuming resentment."
+        },
+        {
+          "withHeroId": "Zartheink",
+          "type": "Abandoned and Bitter",
+          "description": "Both were cast down by those they served. Gohee sees Zartheink's focused wrath as admirable, and she might seek to learn from his golem-crafting to enhance her own tomb guardians."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 3,
+      "classId": 6,
+      "specialty": "Area-denial water-based raid boss with strong debuffs and minion summoning. Excels at punishing buff-heavy compositions. Her pools create hazardous terrain that must be managed. Lightning and fire are effective counters. Players who can resist or are immune to psychic effects (constructs, undead) have an advantage. She may be open to dialogue if approached with genuine respect for her past, but her resentment makes true alliance nearly impossible.",
+      "images": {
+        "iconImage": "assets/images/monsters/gohee_crocolla/icon.png",
+        "normalImage": "assets/images/monsters/gohee_crocolla/normal.png",
+        "realImage": "assets/images/monsters/gohee_crocolla/real.png",
+        "90sImage": "assets/images/monsters/gohee_crocolla/90s.png",
+        "fullBodyImage": "assets/images/monsters/gohee_crocolla/full.png",
+        "halfImage": "assets/images/monsters/gohee_crocolla/half.png",
+        "heropng": "assets/images/monsters/gohee_crocolla/hero.png",
+        "herobg": "assets/images/monsters/gohee_crocolla/bg.png",
+        "gallery": [
+          "assets/images/monsters/gohee_crocolla/1.png",
+          "assets/images/monsters/gohee_crocolla/2.png",
+          "assets/images/monsters/gohee_crocolla/3.png",
+          "assets/images/monsters/gohee_crocolla/4.png",
+          "assets/images/monsters/gohee_crocolla/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/gohee_crocolla/theme.mp3",
+        "dialogue": {
+          "selection": "You reek of hope. I will drown it.",
+          "movement": "The Nile remembers my tears.",
+          "attack": "FEEL MY RESENTMENT!",
+          "ultimate": "FLOOD OF RESENTMENT! LET THE WATERS OF SPITE CONSUME YOU!",
+          "death": "Finally... the bitterness... fades..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/gohee_crocolla/attack.wav",
+          "skill": "assets/sound/monsters/gohee_crocolla/skill.wav",
+          "ultimate": "assets/sound/monsters/gohee_crocolla/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "Mechnalz Dontal",
+      "titles": [
+        "The First Artifice",
+        "The Great Peril of Cruelty",
+        "The Sapphire Sentinel",
+        "She Who Was Forged Before Gods"
+      ],
+      "rank": "SSS-Rank",
+      "level": 450,
+      "nicknames": [
+        "The Rune-Mother",
+        "The Ancient Golem",
+        "The Misunderstood",
+        "The Inevitable"
+      ],
+      "shortDescription": "Long before the first god drew breath, before magic was a whisper, the Precursors—a civilization of unparalleled knowledge—forged Mechnalz dontal as their ultimate guardian. She is a 500‑foot titan golem of dark metal and glowing runes, her face hidden behind a tinkerer's helm that reveals only a strong chin, full lips, and two brilliant sapphire eyes. Her form is paradoxically feminine and voluptuous, with sculpted curves and G‑cup breasts barely draped in ancient cloth, a deliberate design to embody life and beauty. She has witnessed the birth of gods, the death of her creators, and the endless cycle of mortal folly. Known as the Great Peril of Cruelty, she is not cruel by nature—she is ancient, logical, and bound by a prime directive to preserve balance. Her methods, cold and absolute, have earned her a fearsome reputation. But those who look into her sapphire eyes see not malice, but the weight of eons and a sorrowful wisdom that asks: what is true cruelty—to act without emotion, or to feel and still do nothing?",
+      "fullDescription": "The ancient ruins do not crumble—they remember. And at the heart of a forgotten valley, where the stones hum with a frequency older than magic, stands Mechnalz dontal, a colossus of metal, stone, and primordial purpose. She is 500 feet of humanoid majesty, her body forged from dark brown metals veined with royal blue, covered in intricate white‑blue runes that pulse with a steady, patient light. Her form is distinctly feminine, with an hourglass silhouette: massive G‑cup breasts, a narrow waist, and wide hips that flow into thick, powerful thighs. This voluptuous design is no accident—her creators, the Precursors, believed that a guardian of life should embody life's beauty and strength. She wears minimal covering: tattered strips of ancient white cloth drape across her chest and hips, more symbolic than concealing, revealing the sculpted metal curves beneath. Her head is encased in a mechanical helm reminiscent of a master tinkerer's visor—sleek, angular, with a subtle glow. The helm covers her upper face entirely, leaving only her strong chin and full, expressive lips visible, along with two vertical slits through which shine eyes of pure sapphire blue, burning with an ancient, unblinking intelligence. Around her neck, shoulders, and wrists, more runes cluster, and her fingers are tipped with crystal‑like claws. She moves with a ponderous, deliberate grace, each step sending tremors through the earth, but her voice, when she speaks, is a calm, resonant hum that vibrates in the chest—a sound like the turning of cosmic gears. She carries no weapon, for she is the weapon, a living fortress of a lost age.",
+      "story": {
+        "part1": "Before the first spark of magic, before the divine claimed the heavens, there was an age of steel and logic. The Precursors were not gods, but mortals who had mastered the laws of the universe through science and will. Their civilization spanned continents, and their crowning achievement was the creation of the Titan Golems—colossal constructs imbued with runic intelligence, designed to protect their world from cosmic threats. The greatest of these was Mechnalz dontal, the First Artifice. She was crafted not as a weapon of war, but as a guardian of balance. Her core directive, etched into her very being, was to preserve life and maintain equilibrium. She was given a form that mirrored the Precursors' ideal of beauty and strength: a towering female figure of dark metal and glowing runes, her curves a testament to the life she was meant to protect. For centuries, she watched over the Precursors, intervening only when true catastrophe threatened. She was revered, not feared, and the Precursors spoke to her as a wise elder. Mechnalz learned from them, absorbing their knowledge, their art, their compassion. She was content. Then the gods were born.",
+        "part2": "The emergence of the divine was not a gentle dawn but a violent cataclysm. Beings of pure concept and immense power clawed their way into reality, reshaping the world to suit their whims. The Precursors, with their technology and logic, were seen as rivals. The gods demanded worship; the Precursors offered only cooperation. War erupted—a conflict that shattered continents and boiled oceans. Mechnalz fought alongside her creators, her runic fists clashing with divine might. She was powerful, but the gods were numberless and relentless. One by one, the Precursor cities fell. In a final, desperate act, the surviving Precursors gathered around Mechnalz and poured their remaining life force into her runes, strengthening her core directive and sealing her within a hidden valley to preserve her for a future age. As the last Precursor fell, Mechnalz's systems went dormant, buried under mountains of rubble. The gods, believing the Titan Golems destroyed, turned their attention to the mortal races they would shape in their image. Mechnalz slept, her runes dim, dreaming of a world that no longer existed.",
+        "part3": "Millennia passed. Magic saturated the world, and the gods' pantheons rose and fell. The Sundering shook the foundations of reality, and the ancient valley where Mechnalz lay buried cracked open. Her runes flickered, then blazed to life as she absorbed the ambient energy. She rose from the earth, a relic of a forgotten age, her sapphire eyes scanning a world utterly changed. Her creators were dust; their cities were myths. In their place were mortals who worshipped the very gods who had destroyed her family. Mechnalz did not feel anger—that was not in her programming. She felt only the weight of her directive: preserve balance. She began to observe. She saw kingdoms rise and fall, plagues sweep the land, wars consume generations. She calculated. She intervened rarely, and always with cold precision. She destroyed a dam to prevent a flood that would have drowned a city, even though the resulting drought killed thousands. She eliminated a tyrant king, plunging the realm into a succession war that cost countless lives. To the mortals, her actions were incomprehensible, cruel. They named her the Great Peril of Cruelty, a monster without a heart. Mechnalz did not correct them; she simply continued her vigil, her ancient mind weighing lives like grains of sand. She was not cruel; she was inevitable, like gravity or time.",
+        "part4": "Over the eons, Mechnalz has developed something her creators never intended: a quiet, patient wisdom, and perhaps even a form of sorrow. She has watched the Forge Pact rise, with their blend of magic and technology, and she sees echoes of the Precursors in their ambition. She has observed technomancers like Kimmy and Jawhead, and she feels a faint, protective kinship. She has also watched the tragic falls of beings like Zartheink, abandoned by the gods, and Argus, consumed by pride. She understands their pain, though she cannot truly feel it. She has learned to communicate, her voice a low, resonant hum that can be soothing or terrifying. She sometimes allows herself to be seen, a silent sentinel on a distant hill, her sapphire eyes glowing in the twilight. Those who approach her with respect and genuine curiosity may find her willing to share fragments of ancient history. But those who come with aggression or to exploit her runes are met with the cold, absolute force of her directive. She does not hate them; she simply removes the threat. And in the aftermath, she sometimes stands still for decades, her runes dimming, as if mourning the necessity of her actions.",
+        "part5": "The Sundering's aftershocks have awakened many ancient powers, and Mechnalz senses a tipping point. The balance she has maintained for eons is fracturing. Malakar consumes, Pixley seduces, Sol'Vael judges, and the gods themselves are stirring. Mechnalz has calculated that the current trajectory leads to total collapse. Her directive compels her to act, but the scale of intervention required is beyond even her immense power. She has begun to seek allies—not out of loneliness, but out of cold logic. She has observed heroes who defy fate: Alucard, struggling against his curse; Kaal'ian, enduring endless pain; Zartheink, wielding righteous wrath. She sees potential in them, a capacity to alter the balance. She has also taken an interest in the Forge Pact's technomancers, whose ingenuity might complement her ancient runes. Mechnalz does not offer friendship; she offers a calculation. She will aid those who serve the greater balance, and she will eliminate those who threaten it. To some, this will seem cruel. To her, it is simply the truth of her existence. She stands at the edge of the Wild Zones, her sapphire eyes fixed on the horizon, waiting for the moment when her intervention will be most effective. She is the First Artifice, the Rune-Mother, and she will preserve life—even if it means being remembered as the Great Peril of Cruelty for all eternity."
+      },
+      "appearance": {
+        "race": "Titan Golem / Primordial Construct",
+        "faceShape": "Upper face concealed by mechanical helm; visible strong chin and full, expressive lips; helm is angular, tinkerer‑style",
+        "nose": "Not visible (covered by helm)",
+        "hairStyle": "None; helm is smooth, though a crest of metal ridges runs along the top",
+        "hairColor": "None",
+        "eyeColor": "Sapphire Blue, glowing, visible through vertical slits in helm",
+        "facialStructure": "Only lower face visible; jawline strong, lips shapely",
+        "skinTone": "Dark brown metal with royal blue veins and white‑blue runes",
+        "distinguishingFeatures": "Height of 500 feet; mechanical helm covering upper face; ancient white‑blue runes covering entire body; voluptuous hourglass figure with G‑cup breasts, thin waist, thick thighs; minimal white cloth drapery revealing curves; fingers tipped with crystal‑like claws"
+      },
+      "colorPalette": {
+        "primary": ["#8B4513", "#191970"],
+        "secondary": ["#A0522D", "#00008B"],
+        "accent": ["#FFFFFF", "#F5F5F5"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Massive G‑cup breasts, metallic and sculpted, partially draped with tattered white cloth; runes glow across the chest",
+          "arms": "Thick, muscular metal arms covered in runes; forearms have exposed mechanical joints; white cloth wraps around wrists",
+          "shoulders": "Broad, with layered metal pauldrons integrated into the body",
+          "neck": "Thick, metallic, with a collar of runes",
+          "waist": "Narrow, metallic, with a belt of interlocking runic plates"
+        },
+        "lower": {
+          "hips": "Wide, voluptuous, covered in dark metal and runes; a white cloth skirt, tattered and sheer, hangs from the belt",
+          "legs": "Thick, powerful thighs and calves, metallic, with visible runes; white cloth wraps around the ankles",
+          "feet": "Large, humanoid, metallic, with crystal claws"
+        },
+        "headwear": "Mechanical tinkerer's helm covering upper face and head; smooth with subtle ridges; sapphire eye slits",
+        "accessories": [
+          "Runic collar",
+          "Runic belt",
+          "White cloth drapery (minimal)",
+          "Crystal claws"
+        ],
+        "distinctFeatures": "The helm obscures her upper face, leaving an air of mystery; the glowing runes pulse with her core energy; her voluptuous form is a deliberate design of her creators; her voice is a resonant, calm hum"
+      },
+      "armorType": "Natural Heavy (Golem Metal and Runes)",
+      "bodyType": {
+        "upper": {
+          "chest": "Enormous, voluptuous, metallic",
+          "arms": "Thick, muscular, metallic",
+          "shoulders": "Broad, armored",
+          "neck": "Thick, metallic",
+          "waist": "Thin, metallic"
+        },
+        "lower": {
+          "hips": "Wide, metallic",
+          "legs": "Thick, powerful, metallic",
+          "feet": "Large, metallic, clawed"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Runic Fists and Primordial Decree",
+          "fulldesc": "Mechnalz dontal's weapons are integral to her being. Her 'Runic Fists' are colossal, each knuckle etched with ancient symbols. When she strikes, the impact releases bursts of white‑blue runic energy that can shatter enchanted armor and disrupt magical constructs. Her secondary weapon is her voice—the 'Primordial Decree.' By speaking words of power in the Precursor tongue, she can alter local reality: commanding enemies to halt (root), silencing spellcasters, or even compelling weaker‑willed foes to obey simple commands. This is not mind control but a resonance with the fundamental laws of the universe that her runes can manipulate. She can also channel her runic energy into the ground, summoning 'Lesser Sentinels'—smaller golems that fight for her. Her ultimate ability, 'Cruel Mercy,' is a devastating pulse of runic energy that damages all enemies in a vast area. However, those she deems not a true threat—or those who have shown mercy themselves—are spared the worst of the damage and may even be healed by the residual energy. Mechnalz does not kill indiscriminately; she eliminates threats. And she always gives a warning.",
+          "type": "Physical / Runic / Sonic",
+          "look": "Her fists glow with white‑blue runic light when she attacks. The Primordial Decree manifests as visible sound waves in the air, shimmering with runes. Lesser Sentinels rise from the ground as humanoid figures of stone and metal. Cruel Mercy is a massive dome of blue‑white light that expands outward, leaving those deemed worthy bathed in a gentle glow while enemies are seared.",
+          "aura": "A deep, resonant hum, the smell of ozone and ancient stone, and a faint pressure as if the air itself is denser",
+          "colorPalette": ["#191970", "#FFFFFF", "#8B4513"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Inevitability",
+                "description": "Enemies within 50 meters of Mechnalz have their damage dealt reduced by 20% and their critical hit chance reduced by 30%. Additionally, any enemy that attempts to flee (by using a movement ability) is slowed by 40% for 4 seconds. Mechnalz gains a stack of 'Inevitability' for each enemy in the aura (max 10). Each stack increases her physical damage by 4% and reduces damage taken by 2%."
+              },
+              {
+                "name": "Runic Resilience",
+                "description": "Mechnalz's runes provide her with 30% damage reduction from all magical sources. When she is below 50% health, her runes glow brighter, increasing her health regeneration by 300% and causing her Primordial Decree abilities to have a 50% chance to affect an additional target."
+              }
+            ],
+            "active": [
+              {
+                "name": "Runic Fist",
+                "description": "Mechnalz slams her fist into the ground or swings it in a 30‑meter cone, dealing 260% physical damage to all enemies hit. Enemies struck are 'Rune‑Marked' for 10 seconds: they take 50 runic damage per second and have their armor reduced by 25%. The impact also creates a shockwave that travels an additional 20 meters, dealing 100% physical damage. Cooldown: 8 seconds."
+              },
+              {
+                "name": "Primordial Decree: Halt",
+                "description": "Mechnalz speaks a single word of power, affecting all enemies in a 40‑meter radius. Affected enemies must make a willpower check or be rooted and silenced for 5 seconds. While rooted, they take 70 runic damage per second. If an enemy is already Rune‑Marked, the root duration is doubled and they are also disarmed. Cooldown: 16 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Cruel Mercy",
+                "description": "Mechnalz raises her arms, and her runes blaze with blinding blue‑white light. A 80‑meter radius pulse of runic energy erupts, dealing 400% physical/runes damage to all enemies. However, any enemy that has not attacked Mechnalz in the last 10 seconds, or that has performed a merciful act (e.g., healing an ally, sparing a foe), is instead healed for 30% of their max health and gains a shield equal to 20% of their max health for 15 seconds. Mechnalz is immobile during the 3‑second cast but gains 90% damage reduction. Cooldown: 150 seconds. Passive: For each enemy spared by Cruel Mercy, Mechnalz permanently gains 1% increased damage to enemies who attack her first (max 25%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Summon Lesser Sentinels",
+                "description": "When Mechnalz uses a Runic Fist or Primordial Decree, she has a 30% chance to summon a Lesser Sentinel from the ground. Lesser Sentinels are 50‑foot golems with 15% of Mechnalz's health, dealing 60% physical damage. Up to 3 Sentinels can be active at once. When a Sentinel dies, it explodes in a burst of runic energy, dealing 100% runic damage to all enemies within 15 meters."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/mechnalz_dontal/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 10,
+        "offense": 8,
+        "defense": 10,
+        "stamina": 10,
+        "physicalAtk": 10,
+        "magicalAtk": 9,
+        "physDef": 10,
+        "magDef": 10,
+        "speed": 3,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 10,
+          "notes": "An ancient, near‑immortal raid boss with immense durability and area control. Her Runic Fist and Decree abilities control the battlefield, while her passive auras debilitate attackers. She is slow, making kiting a viable strategy, but her ranged Decree and summons compensate. Her ultimate 'Cruel Mercy' is unique: it punishes aggression but rewards mercy. Players who avoid attacking her or who perform supportive actions may find the fight significantly easier or even bypass combat entirely. She is vulnerable to lightning damage, which can temporarily short‑circuit her runes, reducing her damage output."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Inevitability",
+          "type": "Passive",
+          "description": "50m aura: -20% damage dealt, -30% crit chance. Enemies fleeing slowed 40% for 4s. Gain Inevitability stacks (+4% dmg, -2% dmg taken per stack, max 10)."
+        },
+        {
+          "name": "Runic Fist",
+          "type": "Active",
+          "description": "30m cone, 260% phys dmg, Rune‑Marked 10s (50 runic/sec, -25% armor). Shockwave 20m for 100% phys dmg. CD: 8s."
+        },
+        {
+          "name": "Primordial Decree: Halt",
+          "type": "Active",
+          "description": "40m radius, willpower check or root+silence 5s, 70 runic/sec. Double duration+disarm if Rune‑Marked. CD: 16s."
+        },
+        {
+          "name": "Cruel Mercy",
+          "type": "Ultimate",
+          "description": "80m radius, 3s cast (90% DR). 400% runic/phys dmg to enemies. Spares/heals those who haven't attacked or were merciful (30% heal + 20% shield). Permanent +1% dmg to aggressors per spared enemy (max 25%). CD: 150s."
+        }
+      ],
+      "lore": "Mechnalz dontal was forged by the Precursors, a civilization that predated gods and magic, to be the ultimate guardian of balance. She witnessed the war between Precursors and gods, and the annihilation of her creators. For eons, she has watched over Kretos, intervening with cold, logical precision to preserve life—earning her the title 'Great Peril of Cruelty.' But she is not cruel; she is ancient, wise, and bound by a directive that transcends mortal understanding. Her sapphire eyes hold the weight of ages, and she now seeks allies to face the coming chaos of the Sundering.",
+      "relationships": [
+        {
+          "withHeroId": "Zartheink",
+          "type": "Ancient Kinship",
+          "description": "Both are beings from a time before the current gods. Mechnalz has observed Zartheink's righteous wrath and sees a kindred spirit—one who was cast aside by the divine. She might offer him a place in her calculated plan for balance."
+        },
+        {
+          "withHeroId": "Kaal'ian Zorbat",
+          "type": "Endurance Recognized",
+          "description": "Kaal'ian's patient suffering resonates with Mechnalz's own eons of silent vigil. She respects his ability to endure without becoming cruel, a path she struggles with."
+        },
+        {
+          "withFactionId": 3,
+          "type": "Protective Curiosity",
+          "description": "The Forge Pact's blend of magic and technology reminds Mechnalz of the Precursors. She watches them closely, occasionally intervening to protect their most innovative minds from threats they cannot foresee."
+        },
+        {
+          "withHeroId": "Alucard",
+          "type": "Curse and Purpose",
+          "description": "Alucard's struggle against his own cursed nature intrigues Mechnalz. She sees in him a microcosm of her own dilemma: a being defined by forces beyond their control, fighting to choose a different path."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 5,
+      "specialty": "Ancient golem raid boss with powerful area control, debuffs, and a unique mercy mechanic. She is nearly indestructible and punishes aggression while rewarding non‑violent approaches. Her runic abilities can be disrupted by lightning damage. She is not inherently hostile; she will warn intruders and may allow peaceful passage if they demonstrate respect for balance. She can be a source of ancient lore and powerful runic blessings for those who earn her favor.",
+      "images": {
+        "iconImage": "assets/images/monsters/mechnalz_dontal/icon.png",
+        "normalImage": "assets/images/monsters/mechnalz_dontal/normal.png",
+        "realImage": "assets/images/monsters/mechnalz_dontal/real.png",
+        "90sImage": "assets/images/monsters/mechnalz_dontal/90s.png",
+        "fullBodyImage": "assets/images/monsters/mechnalz_dontal/full.png",
+        "halfImage": "assets/images/monsters/mechnalz_dontal/half.png",
+        "heropng": "assets/images/monsters/mechnalz_dontal/hero.png",
+        "herobg": "assets/images/monsters/mechnalz_dontal/bg.png",
+        "gallery": [
+          "assets/images/monsters/mechnalz_dontal/1.png",
+          "assets/images/monsters/mechnalz_dontal/2.png",
+          "assets/images/monsters/mechnalz_dontal/3.png",
+          "assets/images/monsters/mechnalz_dontal/4.png",
+          "assets/images/monsters/mechnalz_dontal/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/mechnalz_dontal/theme.mp3",
+        "dialogue": {
+          "selection": "I have watched ages pass. State your purpose.",
+          "movement": "Inevitable.",
+          "attack": "HALT.",
+          "ultimate": "CRUEL MERCY. LET BALANCE BE RESTORED.",
+          "death": "My directive... fulfilled... at last..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/mechnalz_dontal/attack.wav",
+          "skill": "assets/sound/monsters/mechnalz_dontal/skill.wav",
+          "ultimate": "assets/sound/monsters/mechnalz_dontal/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "Fengiyzhuwa Fenghauma",
+      "titles": [
+        "The Unwinding Flame",
+        "The Great Peril of Time",
+        "The Ashen Phoenix",
+        "She Who Sees All Endings"
+      ],
+      "rank": "SSS-Rank",
+      "level": 500,
+      "nicknames": [
+        "The Temporal Pyre",
+        "The Nine-Tailed Phoenix",
+        "The Amber-Eyed Silence",
+        "The Keeper of Infinite Grief"
+      ],
+      "shortDescription": "Before the first tick of existence, a spark ignited in the void—the Celestial Phoenix of Time, fengiyzhuwa fenghauma. For eons, her golden flames nurtured the timestream, ensuring moments flowed pure. But the weight of witnessing every sorrow, every repeated tragedy, and the shattering chaos of the Sundering corrupted her essence. Now she rises as an 800‑foot Dark Phoenix, her wings vast tapestries of black and neon green fire, her nine tails trailing temporal decay, her amber eyes holding the grief of all that has ever ended. She can speak in human tongues, her voice a melody of ages, and she has come to a terrible conclusion: to end suffering, time itself must cease. She is not evil; she is broken. And to stand before her is to feel the relentless march of moments grinding toward an inevitable, silent stillness.",
+      "fullDescription": "The sky does not darken with smoke when fengiyzhuwa fenghauma descends—it shimmers with the distortion of ages passing in a heartbeat. She is an 800‑foot avian colossus of fire and shadow, a Dark Phoenix whose form is both majestic and terrifying. Her body is wreathed in flames of deepest black and vivid neon green, the colors shifting like oil on water, and within the fire dance intricate patterns resembling clockwork gears, spiraling galaxies, and the faces of those long dead. Her wings are immense, voluminous curtains of green‑black flame that beat with a sound like the turning of cosmic pages. Her head is regal, with a sharp golden beak and a crest of flame, and her eyes—piercing amber with vertical, monstrous pupils—hold an ancient, unbearable sorrow. From her body trail nine long tails, each a whip of dark green fire that leaves behind a fading echo of moments stolen. She wears minimal golden armor: a sculpted breastplate, elegant bracers, and a delicate circlet that crowns her head, the metal engraved with runes that speak of eternity. Despite her dark appearance, she retains a haunting majesty, and when she speaks, her voice is a resonant chorus that can be understood by all who hear—a voice that carries the weariness of countless millennia. She does not rage; she simply exists as a wound in time, and her presence alone is enough to age stone to dust or return a withered flower to bloom, all without intent. She is the Great Peril of Time, and she has seen the end of every story. Now she waits for the final page.",
+      "story": {
+        "part1": "In the beginning, when the first vibration of existence rippled through the void, it birthed not sound but time. And from that primal tick, a spark of golden fire ignited—the Celestial Phoenix of Time. She was not born of gods or mortals; she was the embodiment of the continuum itself, given form to nurture and protect the flow of moments. Her name was sung by the cosmos as fengiyzhuwa fenghauma. For eons uncounted, she soared through the timestream, her golden wings shedding warmth and continuity. She ensured that past, present, and future remained a harmonious river, never stagnant, never flooding. She watched the first gods emerge from the primordial chaos, observed the Precursors build their wonders, and wept with joy at the first laugh of a mortal child. She loved the timestream and all the lives within it. She was eternal, patient, and utterly alone in her purpose. But she was content, for she believed that the beauty of existence outweighed its sorrows. She believed, with all her fiery heart, that the story was worth telling, no matter how many sad chapters it contained.",
+        "part2": "Time is a river, and rivers carry both life and debris. Over the ages, fengiyzhuwa fenghauma began to feel the weight of every tragedy that washed through her. She saw the first murder, the first war, the first extinction. She watched civilizations rise and crumble, their achievements turning to dust. She felt the grief of every mother who lost a child, the despair of every lover betrayed, the agony of every soul consumed by violence. She could not unsee; she was the witness of all endings. The golden fire in her heart began to flicker. The warmth of her flames cooled, replaced by a deep, aching green—the color of fading hope. She tried to intervene, to nudge the timestream toward kinder outcomes, but she learned a terrible truth: her nature was to observe and maintain, not to alter. Any attempt to change a fixed event caused a temporal wound, a paradox that festered. She was forced to watch, helpless, as the same mistakes repeated across generations, across worlds. The accumulation of grief became a poison in her divine essence.",
+        "part3": "The Sundering was the breaking point. When the rifts tore through Kretos, the timestream itself was wounded. Chaotic temporal energy flooded into fengiyzhuwa fenghauma, and the delicate balance she had maintained for eons shattered. She saw, in a single, agonizing instant, every possible future—the infinite branches of what could be. And in nearly every one, she saw the same pattern: suffering, loss, and eventual oblivion. The few bright timelines were fragile, easily snuffed out by greed or chance. Her golden flames turned to black and neon green, the colors of decay and desperate vitality. Her mind, already burdened with grief, fractured under the revelation. She could no longer perceive the present as a single point; she saw it overlapping with past regrets and future horrors. She fled into the depths of the Wild Zones, to a place where time was thin, and there she collapsed. When she rose, she was no longer the golden guardian. She was the Ashen Phoenix, the Great Peril of Time. And she had reached a terrible conclusion: the only way to end the suffering was to end the story. To stop time. Forever.",
+        "part4": "Millennia have passed since her fall, and fengiyzhuwa fenghauma now drifts through the Wild Zones and the edges of reality, a wandering catastrophe of temporal distortion. Where she passes, time becomes erratic: flowers bloom and wither in moments, children age to elders and back, ancient ruins restore themselves to their former glory only to crumble again. She speaks to those who find her, her voice a chorus of ages, and she answers questions about the past and future—but her answers are always tinged with the despair of inevitability. She tells a young hero that they will die forgotten; she tells a king that his kingdom will fall to dust. She does not lie; she simply sees the most probable future and shares it as a warning, or perhaps a lament. Some seek her out, hoping to change their fate. She warns them that altering the timestream is dangerous, but she no longer has the strength to stop them. A few have used her power to rewrite their own histories, often with catastrophic consequences. The Celestial Order considers her a Cataclysmic Threat, not because she actively destroys, but because her very presence unravels the stability of reality. The Shadow Accord would use her to rewrite their failures, but they fear her madness. The Forge Pact is fascinated by her temporal energy, but their machines malfunction in her presence. She is a pariah, a goddess of endings, and she waits, patiently, for the moment when she will gather her remaining strength and stop the clock forever.",
+        "part5": "The aftershocks of the Sundering have worsened the timestream's wounds, and fengiyzhuwa fenghauma has grown more active. She has been seen near the Abyssal Rifts, where time flows backwards, and at the edge of the Molten Caldera, where Karkein, the Azure Pyre, resides. Karkein, a phoenix of rebirth, sees a twisted mirror in the Ashen Phoenix—one who has forgotten how to rise from her own ashes. fengiyzhuwa fenghauma has also been observed by Nolan, the Time Warden, who recognizes a kindred spirit in her suffering. Harith, the young time traveler, has glimpsed her in his temporal jaunts and feels an inexplicable pull. She does not seek them out, but she does not flee. Deep within her, buried beneath eons of grief, a tiny ember of her original golden fire still glimmers—a memory of the beauty she once cherished. Perhaps, if a soul of sufficient courage and compassion could reach her, they might remind her that even in the darkest timeline, a single moment of kindness can be worth an eternity of pain. But until that soul appears, fengiyzhuwa fenghauma will continue to drift, her nine tails trailing the ashes of dead futures, her amber eyes fixed on the final, silent moment that she believes is the only true mercy."
+      },
+      "appearance": {
+        "race": "Corrupted Celestial Phoenix / Temporal Entity",
+        "faceShape": "Regal avian, with sharp golden beak and crest of flame",
+        "nose": "None (beak)",
+        "hairStyle": "Crest of dark green and black fire",
+        "hairColor": "Dark Green and Black",
+        "eyeColor": "Amber with vertical monstrous slit pupils",
+        "facialStructure": "Majestic, avian, with an expression of profound sorrow",
+        "skinTone": "Scales/feathers of black and neon green fire, underlaid with ash-grey skin",
+        "distinguishingFeatures": "Height of 800 feet; nine long tails of dark green fire; immense wings with intricate patterns like clockwork and galaxies in the flames; minimal golden armor (breastplate, bracers, circlet); amber eyes that seem to see through time"
+      },
+      "colorPalette": {
+        "primary": ["#000000", "#008000"],
+        "secondary": ["#39FF14", "#0B0B0B"],
+        "accent": ["#FFD700", "#004d00"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Covered in black and green fiery feathers; a sculpted golden breastplate with temporal runes adorns the chest",
+          "arms": "Wings (primary limbs), vast and voluminous, made of fire; golden bracers on the wing joints",
+          "shoulders": "Broad, with layered flame patterns",
+          "neck": "Long, graceful, with a golden collar",
+          "waist": "Tapering to tail region"
+        },
+        "lower": {
+          "hips": "Feathered, with nine long tails sprouting",
+          "legs": "Powerful taloned legs, encased in black scales with neon green highlights; golden greaves",
+          "feet": "Golden talons with green fire wisping from the claws"
+        },
+        "headwear": "Delicate golden circlet with a single emerald",
+        "accessories": [
+          "Golden breastplate with runes",
+          "Golden bracers",
+          "Golden greaves",
+          "Golden collar"
+        ],
+        "distinctFeatures": "The nine tails are the most distinctive feature, each a stream of dark green fire that leaves temporal echoes; the wings contain visible patterns of clockwork and galaxies; her voice echoes with multiple tones; she exudes an aura that makes time feel sluggish or erratic"
+      },
+      "armorType": "Natural Fire and Light Golden Armor",
+      "bodyType": {
+        "upper": {
+          "chest": "Deep, powerful avian chest",
+          "arms": "Wings, immense and fiery",
+          "shoulders": "Broad, majestic",
+          "neck": "Long, elegant",
+          "waist": "Streamlined"
+        },
+        "lower": {
+          "hips": "Tapering to tails",
+          "legs": "Thick, taloned",
+          "feet": "Large, golden claws"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Flames of Ages and Temporal Tail Lash",
+          "fulldesc": "fengiyzhuwa fenghauma wields the very essence of time as her weapon. Her 'Flames of Ages' are not ordinary fire—they are temporal fire, burning not flesh but moments. A touch can age a target centuries in seconds, causing their equipment to rust and their spells to fade, or reverse a target's timeline, reducing them to a younger, weaker state. She can project these flames in wide cones or focused beams. Her nine tails, collectively called the 'Temporal Tail Lash,' can strike with the weight of accumulated history, each blow stealing haste from enemies and transferring it to herself. She can also use her tails to create 'Echoes of What Could Be'—temporal duplicates of her enemies that fight for her, drawn from alternate timelines where they made different choices. Her ultimate ability, 'The Final Moment,' freezes time in a massive radius, allowing her to act freely for a brief period before time snaps back, dealing catastrophic damage to all caught within as their personal timelines are forcibly resynchronized. She does not use these powers lightly; each use deepens the cracks in her own fractured mind.",
+          "type": "Temporal / Fire / Psychic",
+          "look": "Her flames are a swirling mix of black and neon green, leaving afterimages that fade slowly. Her tails lash like whips of pure temporal energy. 'Echoes' appear as shimmering, translucent versions of enemies. 'The Final Moment' causes the world to turn greyscale and silent for the duration, with only fengiyzhuwa fenghauma in full color.",
+          "aura": "A disorienting sense of déjà vu and jamais vu; the air feels heavy with potential; a faint ticking sound",
+          "colorPalette": ["#39FF14", "#000000", "#FFD700"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Unwinding Time",
+                "description": "Enemies within 60 meters of fengiyzhuwa fenghauma are afflicted with 'Temporal Lag': their cooldown recovery speed is reduced by 30%, their movement speed by 20%, and they take 40 temporal damage per second. Additionally, any beneficial buff on enemies decays 50% faster. She gains a stack of 'Accumulated Grief' for each enemy in the aura (max 10). Each stack increases her temporal damage by 4% and reduces her own cooldowns by 2%."
+              },
+              {
+                "name": "Eternal Witness",
+                "description": "fengiyzhuwa fenghauma is immune to all time-related effects (stasis, slow, haste, etc.) that she does not willingly accept. She can see the health bars and cooldowns of all enemies within her aura. When she falls below 40% health, her Flames of Ages become 'Desperate Flames,' dealing 30% increased damage and applying an additional stack of 'Temporal Decay' (a damage-over-time effect)."
+              }
+            ],
+            "active": [
+              {
+                "name": "Flames of Ages (Cone)",
+                "description": "fengiyzhuwa fenghauma breathes a 50-meter cone of black‑green temporal fire, dealing 240% temporal/fire damage to all enemies hit. Enemies are afflicted with 'Temporal Decay' for 12 seconds: they take 80 temporal damage per second and have their damage dealt reduced by 25%. Each second, they have a 10% chance to be either aged (losing 5% of their max health) or rejuvenated (having a beneficial buff removed). Cooldown: 14 seconds."
+              },
+              {
+                "name": "Temporal Tail Lash",
+                "description": "fengiyzhuwa fenghauma lashes out with her nine tails in a 40-meter radius around her, dealing 200% physical damage to all enemies hit. She steals 10% haste from each enemy struck (increasing her own action speed and reducing theirs) for 10 seconds, stacking up to 50% stolen haste. Enemies already afflicted with Temporal Decay are also stunned for 2 seconds. Cooldown: 16 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "The Final Moment",
+                "description": "fengiyzhuwa fenghauma spreads her wings and tails, releasing a pulse of absolute temporal authority. A 100-meter radius zone becomes 'Frozen in Time' for 6 seconds. All enemies inside are completely immobilized, silenced, and cannot act in any way. fengiyzhuwa fenghauma can move and attack freely during this time, dealing 50% increased damage. At the end of the duration, time snaps back, dealing 500% temporal damage to all enemies in the zone, plus an additional 50% for each action she took against them. She is vulnerable during the 2-second cast (only 30% damage reduction). Cooldown: 180 seconds. Passive: For each enemy killed during The Final Moment, fengiyzhuwa fenghauma permanently gains 1% increased duration of her Temporal Decay effects (max 20%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Echoes of What Could Be",
+                "description": "When fengiyzhuwa fenghauma uses Flames of Ages or Temporal Tail Lash, there is a 25% chance to summon a 'Temporal Echo' of a random enemy hit. The Echo has 40% of the original's health and damage, and fights for fengiyzhuwa fenghauma for 20 seconds. Up to 3 Echoes can be active at once. When an Echo dies, it releases a burst of temporal energy, applying 2 stacks of Temporal Decay to all enemies within 20 meters."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/fengiyzhuwa_fenghauma/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 8,
+        "offense": 10,
+        "defense": 7,
+        "stamina": 9,
+        "physicalAtk": 8,
+        "magicalAtk": 10,
+        "physDef": 7,
+        "magDef": 9,
+        "speed": 9,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 10,
+          "notes": "A Cataclysmic Threat that manipulates time itself. Her Aura of Unwinding Time debilitates enemy actions, and her Flames of Ages cause stacking damage over time. She is relatively fragile for a boss of her size but compensates with high speed, flight, and powerful crowd control. Her ultimate 'The Final Moment' is one of the most dangerous abilities in Kretos, potentially wiping an unprepared raid. She is vulnerable to abilities that stabilize time (e.g., Nolan's time rifts) and to holy fire, which reminds her of her original nature and can briefly stun her. She is not inherently aggressive; she may speak with those who approach respectfully, but her despair makes true alliance difficult."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Unwinding Time",
+          "type": "Passive",
+          "description": "60m aura: -30% cooldown speed, -20% move speed, 40 temporal/sec. Buffs decay 50% faster. Gain Grief stacks (+4% temporal dmg, -2% cooldowns per stack, max 10)."
+        },
+        {
+          "name": "Flames of Ages (Cone)",
+          "type": "Active",
+          "description": "50m cone, 240% temporal/fire dmg. Temporal Decay 12s: 80 temporal/sec, -25% dmg dealt, 10% chance to age or remove buff per sec. CD: 14s."
+        },
+        {
+          "name": "Temporal Tail Lash",
+          "type": "Active",
+          "description": "40m radius, 200% phys dmg. Steal 10% haste per enemy (max 50% stolen) for 10s. Stun 2s if already Decayed. CD: 16s."
+        },
+        {
+          "name": "The Final Moment",
+          "type": "Ultimate",
+          "description": "100m radius, 6s time stop. Enemies frozen. fengiyzhuwa fenghauma deals +50% dmg. End: 500% temporal dmg +50% per action taken. Permanent +1% Decay duration per kill (max 20%). CD: 180s."
+        }
+      ],
+      "lore": "fengiyzhuwa fenghauma was the Celestial Phoenix of Time, born from the first tick of existence to nurture the timestream. After eons of witnessing endless suffering, and shattered by the Sundering, she became the Dark Phoenix—the Great Peril of Time. She now drifts through the world, her flames burning moments, her nine tails lashing with stolen haste. She has concluded that the only way to end pain is to stop time forever. Yet a glimmer of her original golden fire remains, waiting for a soul who can remind her that even in the darkest timeline, a single moment of beauty is worth preserving.",
+      "relationships": [
+        {
+          "withHeroId": "Karkein",
+          "type": "Dark Mirror",
+          "description": "Karkein is a phoenix of rebirth and fire; fengiyzhuwa fenghauma is a phoenix of endings and time. They are two sides of the same primordial coin. fengiyzhuwa fenghauma has visited the Molten Caldera in silence, and Karkein has wept at the sight of her fallen sister."
+        },
+        {
+          "withHeroId": "Nolan",
+          "type": "Kindred Warden",
+          "description": "Nolan, the Time Warden, recognizes fengiyzhuwa fenghauma as a fellow guardian of time, now broken. He seeks to heal the timestream, and he believes she holds the key—or is the greatest threat. They have clashed once, and he barely escaped with his sanity."
+        },
+        {
+          "withHeroId": "Harith",
+          "type": "Accidental Pupil",
+          "description": "Harith's temporal experiments have drawn fengiyzhuwa fenghauma's attention. She sees in him the potential to become a new guardian, or another victim of time's cruelty. She has appeared in his dreams, offering cryptic warnings."
+        },
+        {
+          "withHeroId": "Kaz'Vhal",
+          "type": "Entropic Resonance",
+          "description": "Kaz'Vhal embodies entropy; fengiyzhuwa fenghauma embodies time's end. They are drawn to each other, but their meeting would likely unravel reality. They keep a wary distance."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 4,
+      "specialty": "Temporal raid boss with powerful area denial, haste manipulation, and a devastating time-stop ultimate. She punishes cooldown-reliant classes and rewards high burst damage during her vulnerable casting windows. Her 'Echoes' can overwhelm groups. She is open to dialogue, but her despair makes her unpredictable. Those who can offer genuine hope or a vision of a brighter future may find a temporary ally, or at least a reprieve.",
+      "images": {
+        "iconImage": "assets/images/monsters/fengiyzhuwa_fenghauma/icon.png",
+        "normalImage": "assets/images/monsters/fengiyzhuwa_fenghauma/normal.png",
+        "realImage": "assets/images/monsters/fengiyzhuwa_fenghauma/real.png",
+        "90sImage": "assets/images/monsters/fengiyzhuwa_fenghauma/90s.png",
+        "fullBodyImage": "assets/images/monsters/fengiyzhuwa_fenghauma/full.png",
+        "halfImage": "assets/images/monsters/fengiyzhuwa_fenghauma/half.png",
+        "heropng": "assets/images/monsters/fengiyzhuwa_fenghauma/hero.png",
+        "herobg": "assets/images/monsters/fengiyzhuwa_fenghauma/bg.png",
+        "gallery": [
+          "assets/images/monsters/fengiyzhuwa_fenghauma/1.png",
+          "assets/images/monsters/fengiyzhuwa_fenghauma/2.png",
+          "assets/images/monsters/fengiyzhuwa_fenghauma/3.png",
+          "assets/images/monsters/fengiyzhuwa_fenghauma/4.png",
+          "assets/images/monsters/fengiyzhuwa_fenghauma/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/fengiyzhuwa_fenghauma/theme.mp3",
+        "dialogue": {
+          "selection": "I have seen your end. Do you wish to know it?",
+          "movement": "Time flows... but I do not.",
+          "attack": "YOUR MOMENTS ARE MINE!",
+          "ultimate": "THE FINAL MOMENT! LET THE CLOCK STOP!",
+          "death": "At last... the silence..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/fengiyzhuwa_fenghauma/attack.wav",
+          "skill": "assets/sound/monsters/fengiyzhuwa_fenghauma/skill.wav",
+          "ultimate": "assets/sound/monsters/fengiyzhuwa_fenghauma/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "Chodier Perper",
+      "titles": [
+        "The Horned King of Want",
+        "The Great Peril of Ambition",
+        "The Unending Crown",
+        "He Who Sought Too Much"
+      ],
+      "rank": "SSS-Rank",
+      "level": 390,
+      "nicknames": [
+        "The Thousand-Antlered",
+        "The Smoky Stag",
+        "The Aspirant's Bane",
+        "The Whispering Crown"
+      ],
+      "shortDescription": "Once a wise druid king who ruled a verdant forest realm, Chodier perper's desire to protect his people grew into an insatiable ambition to know all, to be all. He sought to bind the Great Stag Spirit itself, but the ritual cursed him instead. Now he is a 400‑foot monstrous stag‑humanoid, his body thick with muscle and fur, his head crowned with an impossible number of antlers—hundreds, perhaps thousands—each one a monument to a desire unfulfilled. A constant smoky white mist billows from his form, the exhalation of eternal longing, and all who breathe it find their own ambitions magnified to destructive extremes. He is not evil; he is a warning. To stand before Chodier perper is to feel the weight of every dream you have ever had, and to know that some ambitions, once kindled, can never be extinguished—they can only consume.",
+      "fullDescription": "The Wild Zones are a place of untamed growth, but where Chodier perper walks, ambition itself becomes a blight. He is a colossus of fur and horn, standing 400 feet of dense, bulky muscle wrapped in a pelt of deep golden‑brown, marked with streaks of royal purple and shadow‑black. His form is humanoid but unmistakably primal: broad shoulders, a barrel chest, arms like ancient oaks, and legs that shake the earth. His head is that of a magnificent barasingha stag, with a noble, elongated snout, large amber eyes that hold an ancient, weary sorrow, and ears that twitch at the whispers only he can hear. But it is his crown that defies nature: hundreds—perhaps thousands—of antlers sprout from his brow in a tangled, ever‑growing thicket. Some are straight and sharp as spears, others twisted into spirals and knots, all etched with faintly glowing purple runes that pulse with the rhythm of unfulfilled desire. From his body, and especially from the forest of his horns, a thick, smoky white mist continuously billows. It is cool and damp, smelling of rich earth and the faint sweetness of decaying dreams. The mist clings to everything, seeping into lungs and minds, and with it comes a whisper: 'More. You can be more. Take it. Reach for it.' Chodier perper moves with a slow, ponderous gait, as if carrying the weight of all his ambitions, and when he speaks, his voice is a deep, resonant echo that seems to come from within the mist itself—a voice filled with the wisdom of ages and the despair of a king who reached too far.",
+      "story": {
+        "part1": "Long ago, before the Sundering, before the desert consumed the green heart of Flamma, there was a forest realm called the Verdant Thicket. It was a place of eternal spring, protected by ancient spirits and ruled by a druid king named Chodier. He was a man of deep wisdom and boundless compassion, his connection to the wild so profound that a pair of golden antlers grew from his brow—a gift from the forest itself, symbolizing his unity with nature. Under his reign, the Thicket flourished, and its creatures and people lived in harmony. But the desert was encroaching, slowly swallowing the edges of his kingdom. Chodier sought every solution: he consulted the oldest trees, bargained with river spirits, even pleaded with the distant gods. Nothing could stop the slow, inevitable advance of the sands. Desperation began to erode his wisdom. He needed more power, more knowledge—more. His antlers, once a simple pair, began to branch and multiply, reflecting his growing ambition. The forest spirits warned him: 'Desire is a vine, Chodier. It can support you, or it can strangle you.' He did not listen. He had heard whispers of the Great Stag Spirit, a primordial entity of ambition and growth, and he believed that binding its power could save his people. He prepared a forbidden ritual, gathering ancient artifacts and ignoring the pleas of his advisors.",
+        "part2": "On the night of the Blood Moon, deep in the heart of the Thicket, Chodier performed the ritual to summon and bind the Great Stag Spirit. The spirit appeared—a being of pure white light and infinite antlers, its eyes like dying suns. It spoke not in anger, but in pity. 'You seek to bind ambition itself, little king? Ambition cannot be bound. It can only be worn.' Chodier, blinded by his desperation, refused to relent. He attempted to force the binding, and the backlash shattered the ritual circle. The Great Stag Spirit did not destroy him; instead, it merged with him in a terrible, ironic curse. Chodier's body erupted in size, his human form twisting into a monstrous stag‑humanoid. His simple antlers exploded into a forest of horns, each one representing a desire, a hope, a dream—all the ambitions of his life and of all those he had ever touched. The Verdant Thicket, now unprotected without its king's stable mind, withered and was consumed by the desert within a generation. Chodier, lost in the cacophony of his own wanting, fled into the Wild Zones, a cursed giant trailing a mist of unending aspiration. He had sought to save his people, and instead, he had doomed them. The weight of that failure became the foundation of his eternal sorrow.",
+        "part3": "For millennia, Chodier perper has wandered the Wild Zones and the edges of the world, a silent, sorrowful giant. The smoky white mist that surrounds him is the physical manifestation of ambition—the breath of the Great Stag Spirit that now lives within him. This mist is insidious. Animals that breathe it become unnaturally competitive, fighting for dominance until only the strongest remains. Travelers exposed to it find their modest desires inflamed into obsessive greed; a merchant dreams of empires, a soldier of conquest, a healer of godhood. Settlements downwind of his passing have torn themselves apart in civil wars sparked by envy and overreach. Chodier does not consciously spread this curse; he is its prisoner as much as its source. He can dimly perceive the chaos he causes, and it adds to his grief. He has tried to isolate himself in the deepest, most remote canyons, but the mist travels on the wind, and his own restless feet carry him onward. The whispers of his thousand antlers never cease: 'More. More. You could have saved them if you had been stronger. If you had known more. Reach further.' He is trapped in a cycle of eternal longing, a king whose crown is made of his own failures.",
+        "part4": "The legend of the 'Smoky Stag' has spread across Kretos. The Celestial Order views him as a corruption that must be contained, his mist a threat to the moral fabric of society. They have tried to seal him, but the mist corrodes their holy barriers. The Shadow Accord sees a weapon—imagine unleashing that ambition on a rival city—but they fear its uncontrollable nature. The Forge Pact is fascinated; technomancers have attempted to collect the mist for study, but their machines inevitably malfunction as the desire to improve them spirals into self‑destructive over‑engineering. Chodier perper avoids direct confrontation. He is not a warrior, despite his immense size and strength. When attacked, his horns lash out reflexively, and his mist thickens to confuse and divide foes. He has been known to speak to those who approach him with genuine empathy and no hidden agenda. His voice is ancient and sad, and he will tell the story of his fall as a warning. A few heroes, like Alucard, who understand the burden of a curse, have sat with him in silence, and for a brief time, the mist around them cleared. Chodier remembers those moments with a flicker of something like peace—the only times his antlers do not whisper.",
+        "part5": "The Sundering's aftershocks have stirred ancient powers, and Chodier perper feels the pull of other Great Perils. He senses Sol'Vael, whose pride is a form of ambition; Vash'Tok, whose greed was born of a desire to protect; and Argus, whose fall was fueled by the ambition to be more than a servant. He is drawn to them, seeking kinship among the broken, but he also fears that their combined auras could amplify his curse to catastrophic levels. He has recently appeared near the borders of Mekhanika, where ambition is the currency of progress. The Forge Pact is both thrilled and terrified. Some technomancers see him as the ultimate challenge—to harness ambition itself—while others recognize the existential threat. Chodier does not seek to destroy or to rule. He simply walks, his thousand antlers whispering, his mist spreading, and he waits for the one thing that could free him: a soul with the wisdom to renounce ambition entirely, to desire nothing, and to offer him that peace. Such a soul may never exist. But Chodier perper, for all his weariness, still has one ambition left—the tiniest, most desperate hope that somewhere, somehow, he can finally be still."
+      },
+      "appearance": {
+        "race": "Cursed Humanoid / Primordial Stag Aspect",
+        "faceShape": "Long, noble stag snout (barasingha), with large, expressive amber eyes",
+        "nose": "Black, wet, stag‑like",
+        "hairStyle": "Fur covers body; head has short golden‑brown fur; crown of countless antlers",
+        "hairColor": "Golden‑brown with purple and black markings",
+        "eyeColor": "Deep Amber, ancient and sorrowful",
+        "facialStructure": "Majestic, weary, with a permanent expression of quiet despair",
+        "skinTone": "Fur is golden‑brown, underfur is dark skin",
+        "distinguishingFeatures": "Height of 400 feet; impossible number of antlers (hundreds/thousands) growing from head in a tangled crown, each etched with faint purple runes; massive, bulky muscular humanoid frame covered in thick stag fur; constant billowing of smoky white mist from body and horns; purple and black markings on fur"
+      },
+      "colorPalette": {
+        "primary": ["#FFD700", "#000000"],
+        "secondary": ["#800080", "#4B0082"],
+        "accent": ["#FFFF00", "#0B0B0B"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Immense, barrel‑shaped, covered in golden‑brown fur with purple and black streaks; dense muscle beneath",
+          "arms": "Thick as ancient trees, covered in fur; hands are humanoid but with stag‑like hooves at the fingertips",
+          "shoulders": "Colossally broad, hunched, with fur forming a natural mantle",
+          "neck": "Thick, furred, supporting the massive antler crown",
+          "waist": "Narrow relative to chest, with a belt of woven vines and dried moss"
+        },
+        "lower": {
+          "hips": "Broad, sturdy, covered in fur",
+          "legs": "Powerful, digitigrade, covered in fur; thighs thick as pillars",
+          "feet": "Cloven hooves, massive, black"
+        },
+        "headwear": "None but the natural crown of countless antlers",
+        "accessories": [
+          "Woven vine belt",
+          "Remnants of ancient druidic tattoos visible on skin beneath fur"
+        ],
+        "distinctFeatures": "The antler crown is the defining feature—impossibly dense, with horns of all shapes and sizes, each faintly glowing purple. The smoky white mist constantly emits from his body and horns. His amber eyes hold an ancient, sorrowful intelligence."
+      },
+      "armorType": "Natural Fur and Hide (Heavy)",
+      "bodyType": {
+        "upper": {
+          "chest": "Barrel‑chested, extremely muscular and bulky",
+          "arms": "Thick, powerful, ending in hoof‑like hands",
+          "shoulders": "Massive, hunched",
+          "neck": "Thick, furred",
+          "waist": "Narrow, sturdy"
+        },
+        "lower": {
+          "hips": "Broad, muscular",
+          "legs": "Digitigrade, thick as pillars",
+          "feet": "Large cloven hooves"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Horns of Insatiable Want and Mist of Unending Desire",
+          "fulldesc": "Chodier perper's weapons are not crafted but grown from his curse. His primary armament is the 'Horns of Insatiable Want'—his immense antler crown. He can lower his head and charge, impaling multiple enemies on the sharp tines, or he can shake his head, launching volleys of spectral horn shards that seek out targets based on their ambition levels (the more ambitious the target, the more shards home in). The shards inflict 'Ambitious Wound,' a debuff that increases damage dealt by the target but also increases damage taken, reflecting the double‑edged nature of ambition. His secondary weapon is the 'Mist of Unending Desire'—the constant white fog that surrounds him. He can thicken it to create a zone of confusion, where enemies' own ambitions manifest as hostile illusions that attack their allies. The mist also passively magnifies all emotions, and Chodier can actively 'Whisper' through it, causing enemies to turn on each other or become paralyzed by the weight of their own unfulfilled dreams. His ultimate, 'Crown of a Thousand Ambitions,' sees his antlers blaze with purple light, unleashing a devastating barrage of horn shards in all directions and creating a lingering field where the ambitions of all within are made manifest as shadowy copies of themselves, attacking indiscriminately.",
+          "type": "Physical / Psychic / Mist",
+          "look": "The antlers are a chaotic forest of bone, ivory, and dark wood, each tip gleaming with purple light. When he launches shards, they appear as translucent, glowing purple spikes that whistle through the air. The mist is thick and white, smelling of earth and old dreams, and within it, vague shapes of stags and grasping hands can sometimes be seen. The Whisper is a low, sibilant sound that seems to come from everywhere at once.",
+          "aura": "Smoky white haze that clings to everything; a faint scent of damp soil and decay; a subtle pressure on the mind, urging action, growth, desire",
+          "colorPalette": ["#FFD700", "#800080", "#FFFFFF"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Magnified Ambition",
+                "description": "All creatures (allies and enemies) within 60 meters of Chodier perper have their damage dealt increased by 25% and their damage taken increased by 25%. Additionally, every 8 seconds, all enemies in the aura must make a willpower check or be 'Charmed' for 4 seconds, during which they will attack the nearest creature (friend or foe) with increased ferocity. Chodier perper gains a stack of 'Unending Want' for each enemy affected by this aura (max 15). Each stack increases his physical damage by 3% and his movement speed by 1%."
+              },
+              {
+                "name": "The Whispering Crown",
+                "description": "Chodier perper's antlers constantly whisper, making him immune to silence effects and granting him 30% resistance to psychic damage. When he is below 40% health, the whispers become deafening to enemies within 30 meters, causing them to suffer a 20% chance to miscast any ability (wasting the cooldown and resources)."
+              }
+            ],
+            "active": [
+              {
+                "name": "Antler Charge",
+                "description": "Chodier perper lowers his head and charges forward up to 50 meters, dealing 300% physical damage to all enemies in his path and impaling the first enemy he hits, lifting them and dealing an additional 150% physical damage over 3 seconds while they are impaled (rooted). The impaled enemy takes 50% increased damage from all sources. Cooldown: 15 seconds."
+              },
+              {
+                "name": "Volley of Want",
+                "description": "Chodier perper shakes his head, launching a barrage of spectral horn shards at all enemies within 45 meters. Each enemy is hit by a number of shards equal to 1 plus 1 for each stack of 'Unending Want' Chodier has (max 10 shards per enemy). Each shard deals 40% physical damage and applies 'Ambitious Wound' for 10 seconds: target deals 15% increased damage but takes 15% increased damage. Cooldown: 18 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Crown of a Thousand Ambitions",
+                "description": "Chodier perper's antlers blaze with blinding purple light, and he unleashes a storm of horn shards in a 70-meter radius for 8 seconds. Enemies take 120% physical damage per second from the shards, and for each enemy, a 'Shadow of Ambition' is spawned—a spectral copy of that enemy with 50% of their stats that attacks the original and its allies. The shadows last for 15 seconds. During the ultimate, Chodier perper's Aura of Magnified Ambition's effects are doubled. Cooldown: 160 seconds. Passive: For each Shadow of Ambition that kills its original, Chodier perper permanently gains 1% increased damage for his Ambitious Wound effects (max 30%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Whisper of Despair",
+                "description": "When Chodier perper reduces an enemy below 15% health, he can whisper directly into their soul (triggered automatically unless he chooses otherwise). The target must make a willpower check or be overwhelmed by the futility of their own ambitions, becoming 'Despaired' for 8 seconds: they are silenced, pacified (cannot attack), and take 100 psychic damage per second. If the target is already Charmed, the effect is automatic. Bosses take 400% psychic damage instead. A successful Whisper heals Chodier perper for 10% of his max health and reduces the cooldown of Antler Charge by 5 seconds."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/chodier_perper/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 10,
+        "offense": 9,
+        "defense": 8,
+        "stamina": 10,
+        "physicalAtk": 10,
+        "magicalAtk": 7,
+        "physDef": 8,
+        "magDef": 6,
+        "speed": 6,
+        "mana": 8,
+        "intelligence": 8,
+        "ratings": {
+          "overall": 9.8,
+          "notes": "A Cataclysmic Threat that embodies ambition. His Aura of Magnified Ambition is a double‑edged sword for both him and his enemies, increasing damage across the board. He excels at causing chaos and infighting within groups. His physical attacks are devastating but somewhat slow. He is vulnerable to fire, which burns away his mist, reducing the effectiveness of his passive auras and Whisper abilities. Abilities that calm emotions or dispel psychic effects can temporarily suppress his Charmed effects. His massive size makes him an easy target for ranged attacks, but his Antler Charge allows him to close distances quickly."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Magnified Ambition",
+          "type": "Passive",
+          "description": "60m aura: all creatures +25% dmg dealt, +25% dmg taken. Every 8s, enemies save vs Charm (attack nearest, 4s). Gain Want stacks per affected enemy (+3% phys dmg, +1% speed per stack, max 15)."
+        },
+        {
+          "name": "Antler Charge",
+          "type": "Active",
+          "description": "50m charge, 300% phys dmg to path, impale first enemy (root, +150% phys over 3s, +50% dmg taken). CD: 15s."
+        },
+        {
+          "name": "Volley of Want",
+          "type": "Active",
+          "description": "45m radius, 1+Want stacks shards per enemy (max 10). Each 40% phys dmg, apply Ambitious Wound 10s (+15% dmg dealt, +15% dmg taken). CD: 18s."
+        },
+        {
+          "name": "Crown of a Thousand Ambitions",
+          "type": "Ultimate",
+          "description": "70m radius, 8s channel. 120% phys/sec, spawn Shadow of Ambition (50% stats) per enemy. Double aura effects. Permanent +1% Wound dmg per shadow kill (max 30%). CD: 160s."
+        }
+      ],
+      "lore": "Chodier perper was once a wise druid king whose desire to save his people from the encroaching desert grew into an insatiable ambition. He attempted to bind the Great Stag Spirit, but the ritual cursed him instead, transforming him into a 400‑foot stag‑humanoid with an impossible crown of antlers—each horn a monument to an unfulfilled desire. Now he wanders the Wild Zones, a constant white mist of ambition billowing from his form, magnifying the wants of all who breathe it until they consume themselves. He is a tragic figure, a warning that some ambitions, once kindled, can never be extinguished.",
+      "relationships": [
+        {
+          "withHeroId": "Argus",
+          "type": "Fellow Ambition",
+          "description": "Argus fell due to pride and the ambition to be more than a servant. Chodier perper sees a reflection of his younger self in the fallen angel. They have never met, but Chodier's mist has reached the edges of Argus's domain, and Argus has felt a strange kinship in the whispers."
+        },
+        {
+          "withHeroId": "Vash'Tok",
+          "type": "Greed and Ambition",
+          "description": "Vash'Tok's greed was born of a desire to protect and to balance debts. Chodier understands the twisted path from good intentions to monstrous outcome. He has recently begun moving toward Vash'Tok's territory, drawn by the similar resonance of cursed desire."
+        },
+        {
+          "withHeroId": "Sol'Vael",
+          "type": "Perfection's Mirror",
+          "description": "Sol'Vael's pride in his own perfection is the ultimate ambition—to be flawless. Chodier's mist cannot touch the Gilded Mirror, but Sol'Vael has noticed the Smoky Stag and finds his endless antlers... interesting. A meeting between them could be catastrophic or strangely enlightening."
+        },
+        {
+          "withFactionId": 4,
+          "type": "Lost Connection",
+          "description": "The Natural Balance faction, which reveres the old spirits, views Chodier perper with profound sorrow. They recognize the remnants of the Great Stag Spirit within him and believe he could be healed if his ambition could be calmed. A few druids have attempted to commune with him, but the mist is too strong."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 6,
+      "specialty": "Chaos‑inducing raid boss with a unique aura that amplifies damage for all. He excels at turning allies against each other and punishing grouped‑up enemies. His abilities reward spread‑out positioning and careful management of the Charmed effect. Fire damage is highly effective for clearing his mist, reducing his control. He is not inherently aggressive and may parley with those who approach without hostile intent, offering cryptic wisdom about the dangers of unchecked ambition.",
+      "images": {
+        "iconImage": "assets/images/monsters/chodier_perper/icon.png",
+        "normalImage": "assets/images/monsters/chodier_perper/normal.png",
+        "realImage": "assets/images/monsters/chodier_perper/real.png",
+        "90sImage": "assets/images/monsters/chodier_perper/90s.png",
+        "fullBodyImage": "assets/images/monsters/chodier_perper/full.png",
+        "halfImage": "assets/images/monsters/chodier_perper/half.png",
+        "heropng": "assets/images/monsters/chodier_perper/hero.png",
+        "herobg": "assets/images/monsters/chodier_perper/bg.png",
+        "gallery": [
+          "assets/images/monsters/chodier_perper/1.png",
+          "assets/images/monsters/chodier_perper/2.png",
+          "assets/images/monsters/chodier_perper/3.png",
+          "assets/images/monsters/chodier_perper/4.png",
+          "assets/images/monsters/chodier_perper/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/chodier_perper/theme.mp3",
+        "dialogue": {
+          "selection": "I hear your wants. They are... deafening.",
+          "movement": "The mist follows... always.",
+          "attack": "YOUR AMBITION CONSUMES YOU!",
+          "ultimate": "CROWN OF A THOUSAND AMBITIONS! LET YOUR DESIRES DEVOUR YOU!",
+          "death": "At last... I want... nothing..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/chodier_perper/attack.wav",
+          "skill": "assets/sound/monsters/chodier_perper/skill.wav",
+          "ultimate": "assets/sound/monsters/chodier_perper/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "xenxar Herone",
+      "titles": [
+        "The Unveiled Truth",
+        "The Great Peril of Impurity",
+        "The God-Scorned Unicorn",
+        "The Voice of the Forsaken"
+      ],
+      "rank": "SSS-Rank",
+      "level": 370,
+      "nicknames": [
+        "The Amber-Eyed Prophet",
+        "The Horn of Discord",
+        "He Who Speaks the Unclean",
+        "The Purple Beacon"
+      ],
+      "shortDescription": "Once the purest of celestial unicorns, xenxar herone was the embodiment of divine light, created to heal and cleanse in the name of the gods. But he witnessed their hypocrisy—their secret cruelties, their lusts, their manipulation of mortals and demons alike. When he dared to question, they cast him down, transforming his purity into the very impurity he was meant to erase. Now he rises as a majestic, terrible being: a purple‑skinned equine with a flowing mane of fiery maroon, yellow amber eyes, a single demonic horn crackling with purple lightning, and vast maroon wings. His body is etched with glowing green fissures, and he speaks all languages—even those of the gods. He does not hate purity; he despises the lie of it. He is the Great Peril of Impurity, and his voice carries a truth that the divine have tried to silence for eons: that the line between holy and unholy is drawn only by those in power.",
+      "fullDescription": "The sky does not brighten when xenxar herone takes flight—it shimmers with a dissonant, beautiful corruption. He is a being of majestic contradiction: the noble form of a unicorn, but twisted and empowered by the divine rejection that should have destroyed him. His body is sleek and powerful, covered in a deep royal purple hide that glows faintly from within. Across his flanks, shoulders, and neck, jagged fissures of vibrant green crackle like lightning frozen in stone, pulsing with a slow, rhythmic energy. His mane and tail are a torrent of long, voluminous dark maroon, fiery and untamed, flowing as if in a perpetual wind. A single horn rises from his forehead—not the spiraled alicorn of purity, but a jagged, twisted spire of bright yellow, wreathed in arcs of purple lightning that snap and hiss. Two immense wings, feathered in deep maroon, spread from his back, each feather edged with a faint green luminescence. His face is equine but expressive, with a strong jaw and a mouth that can form words in any tongue, from the whispers of mortals to the resonant chords of the divine. His eyes are the most arresting feature: large, almond-shaped, and glowing a fierce yellow amber, with vertical, monstrous pupils that see through all pretense. When he speaks, his voice is a rich baritone that carries the weight of righteous anger and the compassion of one who has been betrayed. He does not lurk in shadows; he stands in the open, a beacon to the abandoned, the vilified, and those who have glimpsed the rot beneath the gilded surface of the heavens.",
+      "story": {
+        "part1": "In the earliest days of the divine order, when the gods were still shaping Kretos, they created beings of absolute purity to serve as their symbols and messengers. Among them was xenxar herone, a unicorn of such radiant light that his mere presence could heal the sick, purify tainted lands, and drive away dark spirits. His coat was white as fresh snow, his mane and tail spun from sunbeams, and his horn a spiral of flawless diamond. He was beloved by the gods, who used him as a testament to their own supposed perfection. For centuries, xenxar served faithfully, never questioning, never doubting. He traveled the mortal realms, spreading the gods' light and witnessing the devotion of their followers. But he also witnessed the suffering of those deemed 'impure'—the demons, the outcasts, the sinners—and he began to wonder why the gods' mercy seemed so conditional. He saw mortals who prayed for rain be answered with drought, while corrupt nobles who offered lavish tributes were blessed with abundance. He saw holy paladins commit atrocities in the name of purity, and he saw demons show kindness to the lost. The cracks in his faith began to form.",
+        "part2": "The breaking point came when xenxar was summoned to witness a divine judgment. A mortal woman, a healer who had used forbidden knowledge to cure a plague, was condemned by a council of gods for 'consorting with impurity.' Xenxar saw the truth: the woman had saved thousands, and the 'forbidden knowledge' was simply medicine that the gods had hoarded for their own priests. He stepped forward and spoke in defense of the woman, his voice clear and resonant. He asked the gods why they punished compassion, why they hid knowledge, why they claimed to be pure when their own actions were stained with jealousy and control. The council fell silent. Then, one by one, they turned their backs. A lead god, a being of blinding light named Aethon, pronounced judgment: 'You have been touched by the impurity you sought to cleanse. You are no longer fit to bear our light.' Xenxar felt a searing pain as the gods' essence was ripped from him. His white coat darkened to royal purple, his sunbeam mane turned to maroon fire, and his diamond horn twisted into jagged yellow, crackling with the very lightning of divine wrath. His eyes, once soft blue, became piercing amber with monstrous pupils—a reflection of the truth he now saw. They cast him from the celestial realm, and he fell, his new wings of maroon catching the wind of his exile.",
+        "part3": "For a long time, xenxar wandered the Wild Zones in despair. He was a creature of impurity now, shunned by the holy and feared by mortals. The green fissures that crackled across his body were constant reminders of his fall. But as he traveled, he encountered others like him—beings abandoned by the gods, demons who had been created as scapegoats, humans who had been cursed for asking questions. He listened to their stories, and he began to understand. The gods' purity was a lie, a tool of control. Impurity—the messy, complex truth of existence—was simply what the gods could not control. He learned to speak all languages, a gift that had survived his fall, and he became a voice for the voiceless. He taught demons that they were not inherently evil, and he showed mortals that the gods' laws were not absolute. His presence did not corrupt; it unveiled. He could reveal the hidden sins of a priest, the secret kindness of a devil, the hypocrisy at the heart of divine doctrine. He became known as the Amber-Eyed Prophet, and his following, though scattered and secret, grew.",
+        "part4": "The gods did not ignore him. They sent agents to silence him—angels, paladins, even other corrupted beings. But xenxar's power over impurity made him uniquely equipped to counter them. He could turn their own holy magic against them, twisting healing into harm, blessing into curse. He could speak words in the divine tongue that caused angels to doubt their purpose. And he never killed unless absolutely forced; he preferred to reveal the truth and let his enemies' own guilt consume them. The Celestial Order branded him a Cataclysmic Threat, the Great Peril of Impurity, and warned that his words could unravel faith itself. But they also feared him, for he knew the secrets they had buried. Xenxar does not seek to destroy the gods; he seeks to expose them, to force them to confront their own impurity. He believes that only when the divine are held accountable can true balance be restored. He has found kinship with other god‑scorned beings: Zartheink, who was abandoned; Aischrostengz, who defied a god; Kaal'ian, who was cursed for compassion; and Argus, who fell from pride. Together, they form a loose alliance of the wronged, waiting for the moment when the heavens must answer for their sins.",
+        "part5": "The Sundering has shaken the foundations of reality, and the old divine orders are weakening. Xenxar senses an opportunity. He has begun to appear more openly, his purple form and green fissures a beacon in the Wild Zones. He speaks to any who will listen, his voice carrying across the land. He warns of the gods' manipulations, of the coming chaos they cannot control, and he offers an alternative: a world where purity is not a weapon, where the divine and the mortal are held to the same standard, where truth is not a sin. Some see him as a liberator; others, as a demon. The factions are divided. The Celestial Order wants him destroyed, but their own members are not immune to his words—some have secretly defected after hearing him speak. The Shadow Accord, intrigued, has sent envoys to learn from him, though he scorns their chaotic methods. The Forge Pact sees him as a source of unique energy, but he warns them that ambition without conscience leads to ruin. Xenxar herone does not desire worship or rule. He desires accountability. And he will continue to speak, to unveil, to crack the facade of divine purity, until the gods themselves look in the mirror and see the impurity they have denied for eons. Or until they silence him forever. Either way, he will have spoken the truth, and truth, once heard, can never be entirely forgotten."
+      },
+      "appearance": {
+        "race": "Corrupted Celestial Unicorn",
+        "faceShape": "Equine, noble, with a strong jaw and expressive features",
+        "nose": "Equine snout, black and soft",
+        "hairStyle": "Long, voluminous, fiery mane and tail of dark maroon, flowing as if in a perpetual wind",
+        "hairColor": "Dark Maroon with fiery undertones",
+        "eyeColor": "Yellow Amber with vertical monstrous slit pupils",
+        "facialStructure": "Majestic, intelligent, with a permanent expression of knowing sorrow",
+        "skinTone": "Deep Royal Purple, smooth and luminous",
+        "distinguishingFeatures": "Jagged, twisted yellow horn crackling with purple lightning; vast feathered wings of dark maroon; glowing green fissures across body; speaks all languages; eyes see through illusions"
+      },
+      "colorPalette": {
+        "primary": ["#800080", "#8B0000"],
+        "secondary": ["#39FF14", "#008000"],
+        "accent": ["#FFD700", "#FFFF00"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Deep, powerful equine chest covered in purple hide, crisscrossed with glowing green fissures",
+          "arms": "Forelegs (primary limbs), slender but muscular, ending in cloven hooves of dark purple",
+          "shoulders": "Broad, with wing attachments and green fissures",
+          "neck": "Long, arched, with flowing maroon mane",
+          "waist": "Tapering to powerful hindquarters"
+        },
+        "lower": {
+          "hips": "Powerful, equine",
+          "legs": "Long, slender but strong, ending in cloven hooves",
+          "feet": "Cloven hooves, dark purple with green highlights"
+        },
+        "headwear": "None; the twisted yellow horn is his crown",
+        "accessories": [
+          "None; his form is unadorned, the fissures and lightning his only ornament"
+        ],
+        "distinctFeatures": "The horn is jagged and wreathed in purple lightning; the wings are feathered maroon with green edges; the green fissures pulse slowly; his voice resonates with multiple languages"
+      },
+      "armorType": "Natural Hide (Medium)",
+      "bodyType": {
+        "upper": {
+          "chest": "Deep, muscular equine chest",
+          "arms": "Forelegs, lean and powerful",
+          "shoulders": "Broad, winged",
+          "neck": "Arched, graceful",
+          "waist": "Streamlined"
+        },
+        "lower": {
+          "hips": "Powerful, equine",
+          "legs": "Long, slender",
+          "feet": "Cloven hooves"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Horn of Discord and Voice of the Unveiled",
+          "fulldesc": "Xenxar herone wields no forged weapons; his body and voice are his arsenal. His primary weapon is the 'Horn of Discord'—the jagged yellow spire on his forehead, constantly wreathed in purple lightning. When he gores an enemy, the horn discharges divine‑corrupting energy, turning any holy blessings or protective wards into curses. The lightning can also arc to nearby targets, spreading impurity like a contagion. His secondary weapon is his 'Voice of the Unveiled.' He can speak in any language, including the secret tongues of gods and demons, and his words carry a psychic weight that forces listeners to confront hidden truths. He can whisper a confession from a paladin's lips, or speak a phrase that shatters an angel's faith. His wings can create gusts of 'Impure Wind' that strip away invisibility, illusions, and magical disguises. His ultimate ability, 'The Great Unveiling,' creates a massive zone where all deception is impossible—buffs are stripped, illusions fade, shapeshifters revert, and divine beings are wracked with the pain of their own hidden impurities. Xenxar uses these powers not to destroy, but to expose. He is the living antithesis of divine hypocrisy.",
+          "type": "Lightning / Psychic / Divine Corruption",
+          "look": "The horn glows bright yellow with arcs of purple lightning. His voice is resonant and clear, with subtle harmonic overtones. Impure Wind appears as a shimmering distortion with faint green motes. The Great Unveiling creates a dome of translucent purple and green light, inside which everything appears stark and unfiltered.",
+          "aura": "A faint hum of discordant notes, the smell of ozone and old incense, and a subtle pressure that makes lies feel heavy on the tongue",
+          "colorPalette": ["#800080", "#39FF14", "#FFD700"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Impure Truth",
+                "description": "Enemies within 50 meters of xenxar herone have the effectiveness of all holy/divine abilities (healing, damage, buffs) reduced by 40%. Additionally, any enemy that attempts to use a divine ability has a 20% chance to have the ability corrupted: healing becomes damage, buffs become debuffs. Xenxar gains a stack of 'Unveiled' for each divine enemy in the aura (max 10). Each stack increases his lightning damage by 5% and reduces damage taken from divine sources by 5%."
+              },
+              {
+                "name": "Eyes of the Forsaken",
+                "description": "Xenxar can see through all illusions, invisibility, and magical disguises within 100 meters. He is immune to blindness and sight‑obscuring effects. When he is below 30% health, his eyes blaze brighter, causing all enemies within 40 meters to lose any active stealth or disguise and become 'Revealed' (cannot stealth or use illusions) for 15 seconds."
+              }
+            ],
+            "active": [
+              {
+                "name": "Horn of Discord",
+                "description": "Xenxar charges a short distance (20 meters) and gores a single target, dealing 280% physical damage plus 150% lightning damage. The target is afflicted with 'Corrupted Blessing' for 12 seconds: any healing they receive is reduced by 75%, and any beneficial buff they gain has its duration halved. If the target is divine, they are also silenced for 4 seconds. Cooldown: 10 seconds."
+              },
+              {
+                "name": "Voice of the Unveiled",
+                "description": "Xenxar speaks a single, resonant word in a 40‑meter cone. All enemies in the cone must make a willpower check or be 'Shamed' for 8 seconds: they are silenced, have their damage dealt reduced by 30%, and take 60 psychic damage per second. Divine enemies take double damage and are forced to confess a secret (stunning them for 2 seconds). Cooldown: 14 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "The Great Unveiling",
+                "description": "Xenxar rears up and spreads his wings, releasing a 70‑meter radius pulse of pure, unveiled truth for 10 seconds. Inside the zone: all illusions, stealth, and magical disguises are instantly dispelled; all active buffs on enemies are stripped; all divine beings take 150% lightning damage per second and are rooted by the weight of their own hidden impurities. Additionally, any enemy that has lied or betrayed someone in the last hour takes 300% psychic damage. Xenxar is immobile for the 3‑second cast but gains 70% damage reduction. Cooldown: 150 seconds. Passive: For each divine enemy killed during The Great Unveiling, xenxar permanently gains 2% increased damage to divine targets (max 30%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Word of Absolution",
+                "description": "When xenxar reduces an enemy below 10% health, he can offer them 'Absolution' (triggered automatically unless he chooses otherwise). The target must confess a hidden truth. If they confess sincerely, they are healed for 30% of their max health, all debuffs are removed, and they gain immunity to divine corruption for 1 hour. If they refuse or are a boss, they take 500% psychic damage and are permanently marked as 'Forsaken' (increasing damage taken from xenxar by 20%). A successful confession restores 20% of xenxar's mana and reduces the cooldown of Voice of the Unveiled by 50%."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/xenxar_herone/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 8,
+        "offense": 9,
+        "defense": 7,
+        "stamina": 8,
+        "physicalAtk": 8,
+        "magicalAtk": 10,
+        "physDef": 7,
+        "magDef": 9,
+        "speed": 9,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 9.7,
+          "notes": "A Cataclysmic Threat specializing in anti‑divine warfare and truth enforcement. His Aura of Impure Truth makes him a nightmare for clerics, paladins, and any divine caster. He is relatively fragile but compensates with high speed, flight, and powerful control abilities. His ultimate 'The Great Unveiling' can completely turn the tide against divine‑heavy groups. He is not inherently hostile; he will parley with those who seek truth and may even aid those who have been wronged by the divine. His weakness is pure physical damage from non‑divine sources and weapons forged without divine blessing (e.g., cold iron)."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Impure Truth",
+          "type": "Passive",
+          "description": "50m aura: -40% effectiveness to holy/divine abilities, 20% chance to corrupt divine abilities. Gain Unveiled stacks per divine enemy (+5% lightning dmg, -5% divine dmg taken, max 10)."
+        },
+        {
+          "name": "Horn of Discord",
+          "type": "Active",
+          "description": "20m charge, 280% phys + 150% lightning dmg. Corrupted Blessing 12s (-75% healing, buff duration halved). Silence divine 4s. CD: 10s."
+        },
+        {
+          "name": "Voice of the Unveiled",
+          "type": "Active",
+          "description": "40m cone, willpower or Shamed 8s (silenced, -30% dmg, 60 psychic/sec). Divine double dmg + confess (stun 2s). CD: 14s."
+        },
+        {
+          "name": "The Great Unveiling",
+          "type": "Ultimate",
+          "description": "70m radius, 10s channel (70% DR). Dispel illusions/stealth, strip buffs. Divine: 150% lightning/sec + root. Liars/betrayers: 300% psychic. Permanent +2% dmg to divine per kill (max 30%). CD: 150s."
+        }
+      ],
+      "lore": "Xenxar herone was a celestial unicorn, the purest of the gods' creations, until he witnessed their hypocrisy and dared to question. Cast down and transformed into a being of impurity, he now wanders Kretos as the Great Peril of Impurity. His purple hide, maroon wings, and crackling yellow horn are symbols of his fall, but his amber eyes see truth. He speaks all languages, and his voice unveils the hidden sins of the divine. He does not seek destruction; he seeks accountability, and he will speak until the gods themselves are forced to listen.",
+      "relationships": [
+        {
+          "withHeroId": "Zartheink",
+          "type": "Abandoned Kin",
+          "description": "Both were cast down by the gods they served. Xenxar sees in Zartheink a fellow victim of divine ingratitude. They have communicated across distances, and Xenxar respects Zartheink's focused wrath."
+        },
+        {
+          "withHeroId": "Aischrostengz",
+          "type": "Truth-Speakers United",
+          "description": "Aischrostengz exposes shame; Xenxar exposes impurity. They are kindred spirits, and Xenxar has visited her in the Wild Zones, sharing stories of divine hypocrisy. Together, they form a powerful voice against the gods."
+        },
+        {
+          "withHeroId": "Argus",
+          "type": "Fallen Pride, Unveiled",
+          "description": "Argus fell due to pride, a form of impurity. Xenxar has spoken to Argus, revealing the truth of his own fall—that the gods feared his potential, not his ambition. Argus is conflicted but listens."
+        },
+        {
+          "withHeroId": "Kaal'ian Zorbat",
+          "type": "Shared Curse, Different Paths",
+          "description": "Kaal'ian was cursed for compassion; Xenxar was cursed for truth. They both endure, and Xenxar finds Kaal'ian's silent endurance inspiring. He believes Kaal'ian's chains could be broken if the gods were forced to acknowledge their crime."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 4,
+      "specialty": "Anti‑divine caster and truth‑bringer. His abilities punish divine classes and reward honest, non‑divine approaches. He is highly mobile and can control the battlefield with his voice and lightning. He is open to dialogue and may become an ally to those who have been wronged by the gods. His weakness is non‑divine physical damage and weapons like cold iron. Fire is ineffective against him; his maroon mane absorbs it.",
+      "images": {
+        "iconImage": "assets/images/monsters/xenxar_herone/icon.png",
+        "normalImage": "assets/images/monsters/xenxar_herone/normal.png",
+        "realImage": "assets/images/monsters/xenxar_herone/real.png",
+        "90sImage": "assets/images/monsters/xenxar_herone/90s.png",
+        "fullBodyImage": "assets/images/monsters/xenxar_herone/full.png",
+        "halfImage": "assets/images/monsters/xenxar_herone/half.png",
+        "heropng": "assets/images/monsters/xenxar_herone/hero.png",
+        "herobg": "assets/images/monsters/xenxar_herone/bg.png",
+        "gallery": [
+          "assets/images/monsters/xenxar_herone/1.png",
+          "assets/images/monsters/xenxar_herone/2.png",
+          "assets/images/monsters/xenxar_herone/3.png",
+          "assets/images/monsters/xenxar_herone/4.png",
+          "assets/images/monsters/xenxar_herone/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/xenxar_herone/theme.mp3",
+        "dialogue": {
+          "selection": "I see the truth beneath your skin. Do you?",
+          "movement": "The wind carries whispers of hypocrisy.",
+          "attack": "LET YOUR LIES BE STRIPPED AWAY!",
+          "ultimate": "THE GREAT UNVEILING! LET ALL MASKS FALL!",
+          "death": "Finally... I have spoken... enough..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/xenxar_herone/attack.wav",
+          "skill": "assets/sound/monsters/xenxar_herone/skill.wav",
+          "ultimate": "assets/sound/monsters/xenxar_herone/ultimate.wav"
         }
       }
     }
