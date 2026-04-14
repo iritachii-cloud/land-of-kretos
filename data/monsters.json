@@ -5046,6 +5046,458 @@
           "ultimate": "assets/sound/monsters/xenxar_herone/ultimate.wav"
         }
       }
+    },
+    {
+      "id": 24,
+      "name": "Longhuangzi Zhenquafu",
+      "titles": [
+        "The Golden-Voiced Exile",
+        "The Great Peril of Glory",
+        "The Dragon Who Spoke Truth",
+        "The Forsaken Celestial"
+      ],
+      "rank": "SSS-Rank",
+      "level": 410,
+      "nicknames": [
+        "The Amber-Eyed Serpent",
+        "He Who Burns with Righteous Wrath",
+        "The Voice of the Silenced",
+        "The Black-Scaled Orator"
+      ],
+      "shortDescription": "Long ago, in the celestial courts of the East, there reigned a dragon god of unparalleled glory—Longhuangzi Zhenquafu. His golden flames inspired heroes, his wisdom guided mortal kings, and his voice championed the right of all living beings to thrive free from divine tyranny. The gods, envious of his influence and threatened by his advocacy, conspired against him. They framed him for a crime he did not commit, stripped his radiant form, and cast him into the darkness. Now he rises as a corrupted Eastern dragon, his scales black with dark yellow undertones, a mane of fiery yellow hair, and a single golden horn—a remnant of his lost divinity. His amber eyes see through the lies of the heavens, and his voice, which speaks all languages, reveals the dark hypocrisy of the divine. He is the Great Peril of Glory, not because he destroys glory, but because he exposes the rot beneath the gilded surface of the gods, reminding all that true glory belongs to those who dare to speak the truth, even when the heavens thunder in reply.",
+      "fullDescription": "The storm clouds do not gather when Longhuangzi Zhenquafu approaches—they part in silent acknowledgment. He is a colossal Eastern dragon, his sinuous body stretching hundreds of feet, coiling through the air with the grace of a river and the weight of a mountain. His scales are a mesmerizing mix of deep black and dark yellow, shimmering with an oily iridescence that catches the light like tarnished gold. From his crown to the tip of his tail, a voluminous mane of fiery yellow hair flows, undulating as if caught in an eternal celestial wind, each strand crackling with faint golden sparks. His face is elongated and noble, with a pronounced snout, whisker-like tendrils that sense the truths of the world, and a pair of massive, forward-curving golden horns—one of which is jagged and demonic, a mark of his corruption. His eyes are large, almond-shaped, and glow a piercing amber gold, with vertical monstrous pupils that seem to stare directly into the soul. He floats effortlessly, his four clawed limbs tucked close or extended to grasp the fabric of reality. When he speaks, his voice is a resonant, melodic baritone that carries the weight of ancient wisdom and the sharp edge of righteous fury. He can converse in any tongue, from the whispers of mortals to the secret harmonies of the divine, and his words have the power to unveil hidden truths, shatter illusions, and inspire rebellion. He is not a mindless beast; he is a philosopher, an orator, a fallen king who has turned his court into a platform for exposing the hypocrisy of the heavens.",
+      "story": {
+        "part1": "In the age when the gods were still shaping the world, the eastern heavens were ruled by a pantheon of celestial dragons, beings of immense wisdom and power. Among them shone Longhuangzi Zhenquafu, the Dragon God of Glory. His scales were pure gold, his mane a cascade of sunfire, and his voice could ignite courage in the most despairing heart. He was the patron of heroes, the guardian of mortal kingdoms, and the voice that pleaded for fairness in the divine councils. Unlike his kin, who saw mortals as playthings or worshippers to be managed, Longhuangzi believed that all living beings—humans, beasts, even the so-called 'lesser' spirits—deserved autonomy and respect. He would descend to the mortal realms, not in disguise, but in his full radiant glory, and walk among kings and peasants alike, listening to their woes and offering guidance. His fame grew, and mortals built temples not just to the pantheon, but specifically to him. The other gods grew uneasy. They saw his popularity as a threat, his advocacy as a challenge to their absolute authority. They whispered among themselves: 'He gives mortals ideas above their station. He will undo the order we have built.' And so, they began to plot.",
+        "part2": "The conspiracy was woven with divine cunning. A rival dragon god, jealous of Longhuangzi's splendor, agreed to play the role of accuser. They fabricated evidence of a heinous crime: that Longhuangzi had conspired with demonic forces to overthrow the celestial court. A false witness, a coerced lesser spirit, testified before the assembled pantheon. Longhuangzi defended himself with eloquence, his voice shaking the pillars of heaven, but the verdict was already decided. The lead god, an ancient and cold being of stellar light, pronounced judgment: 'You have sought glory for yourself above the divine order. You have consorted with impurity. Your voice is no longer fit to speak in these halls.' They did not kill him—that would have made him a martyr. Instead, they stripped his golden scales, turning them black as midnight with only faint yellow undertones. They corrupted his sunfire mane into a fiery, untamed yellow that burned without warmth. They shattered one of his divine horns, leaving it jagged and demonic. And they cast him from the heavens, down into the deepest Wild Zones, where he crashed into a desolate mountain range, creating the crater now known as the 'Dragon's Sorrow.' The gods erased his name from the celestial records and forbade any mention of his true glory. But they could not erase his voice.",
+        "part3": "For centuries, Longhuangzi Zhenquafu lay coiled in the Dragon's Sorrow, his body wracked with the pain of corruption and the bitterness of betrayal. The golden sparks in his mane were all that remained of his former light. At first, he raged against the heavens, his roars causing earthquakes and his tears forming rivers of molten gold. But rage gave way to a cold, focused resolve. He realized that the gods had not silenced him; they had freed him. No longer bound by celestial protocol, he could speak the truth without restraint. He discovered that his voice had grown even more powerful—he could now speak and understand all languages, including the secret tongues of gods and demons. He began to whisper into the winds, and his words traveled across Kretos. Mortals who had been wronged by the divine heard his voice in their dreams. Demons who had been created as scapegoats felt his empathy. Scholars who questioned the established dogma found his wisdom in ancient texts. Slowly, a network of the disillusioned formed, connected by the golden thread of the Dragon's voice. He did not seek worship; he sought to educate, to unveil the dark side of the gods—their manipulations, their petty cruelties, their fear of mortal potential.",
+        "part4": "The gods, of course, noticed. They sent agents to silence him—celestial warriors, divine beasts, even other fallen dragons who had been promised redemption. But Longhuangzi Zhenquafu met each challenge not with violence, but with words. He spoke to the celestial warriors of the families they had left behind in the mortal realms, families the gods had let die. He revealed to the divine beasts the cages from which they had been taken. He told the fallen dragons the truth of their own betrayals. One by one, the agents either defected or fled, their faith shattered. The Celestial Order branded him the Great Peril of Glory, claiming that his words corrupted the faithful and led heroes to ruin. But those who truly listened found a different truth: he warned against blind ambition and the pursuit of glory for its own sake. He taught that true glory lay in compassion, in speaking truth to power, in protecting the vulnerable—the very things the gods had punished him for. He became a symbol of resistance, a dragon who had lost his golden scales but gained a voice that could shake the foundations of heaven.",
+        "part5": "The Sundering has weakened the barriers between realms, and the old divine orders are fracturing. Longhuangzi Zhenquafu senses the shift. He has begun to move more openly, his black and yellow form coiling through the skies of the Wild Zones, his amber eyes scanning the horizon. He has reached out to other god-scorned beings: Zartheink, the abandoned seraph; Xenxar, the unveiled unicorn; Kaal'ian, the chained angel; Aischrostengz, the shamed woman. He sees in them a potential council of the wronged, a force that could hold the gods accountable not through war, but through the unstoppable power of revealed truth. He does not seek to destroy the heavens; he seeks to reform them, to strip away the lies and demand that the divine be held to the same standards they impose on mortals. And if the gods refuse, he is prepared to speak their secrets until every last prayer is laced with doubt. The Great Peril of Glory stands at the edge of a new age, his voice a golden flame in the darkness, waiting for the moment when the world is ready to listen. And he will speak, for he has nothing left to lose but the silence they tried to impose upon him."
+      },
+      "appearance": {
+        "race": "Corrupted Eastern Dragon God",
+        "faceShape": "Elongated, noble draconic snout with whisker-like tendrils",
+        "nose": "Draconic nostrils, flaring and sensitive to truth",
+        "hairStyle": "Voluminous, fiery yellow mane flowing from head, along spine, and at tail tip",
+        "hairColor": "Fiery Yellow with golden sparks",
+        "eyeColor": "Amber Gold with vertical monstrous pupils",
+        "facialStructure": "Regal, wise, with a permanent expression of sorrowful defiance",
+        "skinTone": "Scales: deep black with dark yellow undertones, shimmering",
+        "distinguishingFeatures": "Single jagged golden demonic horn on forehead (remnant of corruption); four clawed limbs; serpentine body stretching hundreds of feet; speaks all languages; amber eyes pierce illusions"
+      },
+      "colorPalette": {
+        "primary": ["#FFD700", "#000000"],
+        "secondary": ["#FFFF00", "#0B0B0B"],
+        "accent": ["#DAA520", "#B8860B"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Serpentine, covered in black and dark yellow scales, with a flowing yellow mane along the spine",
+          "arms": "Four limbs, each with three forward claws and one reverse claw, covered in scales and tufts of yellow hair at joints",
+          "shoulders": "Broad, with mane thickening into a ruff",
+          "neck": "Long, flexible, with a thick mane",
+          "waist": "Tapering into the tail"
+        },
+        "lower": {
+          "hips": "Continuous with the serpentine body",
+          "legs": "Hind limbs powerful, clawed",
+          "feet": "Clawed, with golden sparks at the tips"
+        },
+        "headwear": "None; the single jagged golden horn is his crown",
+        "accessories": ["None; his scales and mane are his only adornment"],
+        "distinctFeatures": "The mane glows faintly with golden sparks; the horn crackles with residual divine energy; his voice resonates with multiple harmonies; his presence causes the air to feel charged with unspoken truths"
+      },
+      "armorType": "Natural Scales (Heavy)",
+      "bodyType": {
+        "upper": {
+          "chest": "Serpentine, muscular",
+          "arms": "Four limbs, clawed",
+          "shoulders": "Broad, maned",
+          "neck": "Long, flexible",
+          "waist": "Continuous"
+        },
+        "lower": {
+          "hips": "Continuous",
+          "legs": "Hind limbs powerful",
+          "feet": "Clawed"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Breath of Unveiled Glory and Coils of the Forsaken",
+          "fulldesc": "Longhuangzi Zhenquafu wields the remnants of his divine power, twisted by betrayal into weapons of truth and ruin. His primary weapon is the 'Breath of Unveiled Glory'—a torrent of golden-black flames that he exhales in a wide cone. These flames do not burn flesh; they burn away lies, illusions, and divine buffs, leaving behind only stark reality. Against divine beings, the flames are especially potent, searing their celestial forms and forcing them to confront their own hidden sins. His secondary weapon is his body itself—the 'Coils of the Forsaken Dragon.' He can wrap his immense serpentine form around structures or groups of enemies, crushing them with the weight of his betrayal. His claws can rend enchanted armor, and his tail can sweep across battlefields like a golden flail. His 'Voice of the Abandoned' is a constant, passive aura that he can focus into a piercing psychic attack, causing enemies to hear their own unconfessed truths and become paralyzed by shame or confusion. His ultimate ability, 'Descent of the Golden Tyrant,' sees him ascend and then crash down, creating a massive crater of golden-black energy where divine beings are severely weakened and mortals are temporarily empowered by his defiant glory.",
+          "type": "Fire / Physical / Psychic",
+          "look": "The Breath of Unveiled Glory appears as a shimmering torrent of gold and black flames, crackling with sparks. His coils move with serpentine grace, each scale glinting. The Voice of the Abandoned is a resonant hum that builds into a crescendo of whispered truths. Descent of the Golden Tyrant creates a blinding flash of golden light followed by a shockwave of black energy.",
+          "aura": "A faint golden haze that makes lies feel heavy; the scent of ozone and old parchment; a subtle pressure on the mind, urging honesty",
+          "colorPalette": ["#FFD700", "#000000", "#FFFF00"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Fading Glory",
+                "description": "Enemies within 55 meters of Longhuangzi Zhenquafu have the damage of their divine/holy abilities reduced by 35%, and their critical hit chance reduced by 20%. Non-divine allies within the aura gain 15% increased damage and 10% increased movement speed. Longhuangzi gains a stack of 'Righteous Defiance' for each divine enemy in the aura (max 12). Each stack increases his fire damage by 4% and reduces damage taken from divine sources by 3%."
+              },
+              {
+                "name": "Eyes of Unveiled Truth",
+                "description": "Longhuangzi can see through all illusions, invisibility, and magical disguises within 120 meters. He is immune to blindness and sight‑obscuring effects. When he is below 35% health, his eyes blaze brighter, causing all enemies within 50 meters to have any active stealth or illusion dispelled and become 'Exposed' (cannot benefit from concealment) for 20 seconds."
+              }
+            ],
+            "active": [
+              {
+                "name": "Breath of Unveiled Glory",
+                "description": "Longhuangzi exhales a 60‑meter cone of golden‑black flames, dealing 260% fire damage to all enemies hit. Divine enemies take an additional 150% fire damage and have all active beneficial buffs stripped. Non‑divine enemies are afflicted with 'Truth Burn' for 10 seconds: they take 70 fire damage per second and have their damage dealt reduced by 20%. Cooldown: 16 seconds."
+              },
+              {
+                "name": "Coils of the Forsaken",
+                "description": "Longhuangzi wraps his body around a target area (20‑meter radius), dealing 220% physical damage to all enemies inside and 'Constricting' them for 6 seconds (rooted and taking 50 physical damage per second). While constricted, enemies cannot use movement abilities and have their healing received reduced by 60%. Cooldown: 20 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Descent of the Golden Tyrant",
+                "description": "Longhuangzi ascends high into the air, then plummets down with earth‑shattering force, impacting a 70‑meter radius area. All enemies in the impact zone take 450% physical damage and are knocked prone for 4 seconds. A shockwave of golden‑black energy then expands to 100 meters, dealing 200% fire damage to all enemies and applying 'Tyrant's Mark' for 15 seconds: divine beings are silenced and have their defenses reduced by 50%; non‑divine beings gain 30% increased damage and 20% damage reduction. Longhuangzi is invulnerable during the ascent and descent (total 3 seconds). Cooldown: 170 seconds. Passive: For each divine enemy killed during Descent of the Golden Tyrant, Longhuangzi permanently gains 2% increased damage to divine targets (max 30%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Voice of the Abandoned",
+                "description": "When Longhuangzi reduces an enemy below 15% health, he can speak a single, resonant word of truth into their soul (triggered automatically unless he chooses otherwise). The target must make a willpower check or be forced to confess a hidden sin or secret. If they confess, they are healed for 25% of their max health, all debuffs are removed, and they gain immunity to divine corruption for 1 hour. If they refuse or are a boss, they take 450% psychic damage and are permanently marked as 'Forsaken' (increasing damage taken from Longhuangzi by 25%). A successful confession restores 15% of Longhuangzi's health and reduces the cooldown of Breath of Unveiled Glory by 8 seconds."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/longhuangzi_zhenquafu/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 10,
+        "strength": 10,
+        "offense": 9,
+        "defense": 9,
+        "stamina": 10,
+        "physicalAtk": 10,
+        "magicalAtk": 10,
+        "physDef": 9,
+        "magDef": 8,
+        "speed": 7,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 10,
+          "notes": "A Cataclysmic Threat that embodies the twisted glory of a betrayed god. His abilities punish divine classes heavily while empowering non‑divine allies. He is a formidable melee and ranged combatant, with powerful area control. His Aura of Fading Glory and Breath of Unveiled Glory make him a nightmare for clerics and paladins. He is relatively vulnerable to cold/ice damage, which slows his serpentine movements, and to weapons forged without divine blessing (cold iron). He is not inherently hostile; he will speak with those who seek truth and may become a powerful ally to those wronged by the gods."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Fading Glory",
+          "type": "Passive",
+          "description": "55m aura: -35% divine dmg, -20% crit. Non‑divine allies +15% dmg, +10% speed. Gain Defiance stacks per divine enemy (+4% fire dmg, -3% divine dmg taken, max 12)."
+        },
+        {
+          "name": "Breath of Unveiled Glory",
+          "type": "Active",
+          "description": "60m cone, 260% fire dmg. Divine: +150% dmg, strip buffs. Non‑divine: Truth Burn 10s (70 fire/sec, -20% dmg). CD: 16s."
+        },
+        {
+          "name": "Coils of the Forsaken",
+          "type": "Active",
+          "description": "20m radius, 220% phys dmg, Constrict 6s (root, 50 phys/sec, -60% healing). CD: 20s."
+        },
+        {
+          "name": "Descent of the Golden Tyrant",
+          "type": "Ultimate",
+          "description": "70m impact: 450% phys dmg, knock prone 4s. 100m shockwave: 200% fire, Tyrant's Mark 15s (divine: silence, -50% defenses; non‑divine: +30% dmg, +20% DR). Permanent +2% dmg to divine per kill (max 30%). CD: 170s."
+        }
+      ],
+      "lore": "Longhuangzi Zhenquafu was a revered Eastern Dragon God of Glory, who championed mortals and spoke against divine tyranny. Envious gods framed him for treason, stripped his golden form, and cast him into darkness. Now he rises as a corrupted black-scaled dragon with a fiery yellow mane and a single golden horn. His amber eyes see truth, and his voice speaks all languages, revealing the hypocrisy of the heavens. He is the Great Peril of Glory—not a destroyer, but an unveiler, waiting for the world to listen to the truth the gods tried to bury.",
+      "relationships": [
+        {
+          "withHeroId": "Zartheink",
+          "type": "Abandoned Brethren",
+          "description": "Both were cast down by the gods for their service. Longhuangzi sees in Zartheink a kindred spirit of righteous fury. They have communicated through the winds, and Longhuangzi respects Zartheink's disciplined wrath."
+        },
+        {
+          "withHeroId": "Xenxar herone",
+          "type": "Truth-Speakers United",
+          "description": "Xenxar unveils impurity; Longhuangzi unveils false glory. They are powerful allies in the war of words against the divine. They have met in the Wild Zones and shared their stories, forging a bond of mutual respect."
+        },
+        {
+          "withHeroId": "Kaal'ian Zorbat",
+          "type": "Patient Endurance",
+          "description": "Kaal'ian's silent suffering resonates with Longhuangzi's own long exile. He admires Kaal'ian's ability to endure without becoming cruel, and he believes Kaal'ian's chains could be broken if the gods were forced to confess their crimes."
+        },
+        {
+          "withHeroId": "Aischrostengz",
+          "type": "Exposing Shame",
+          "description": "Aischrostengz exposes personal shame; Longhuangzi exposes institutional hypocrisy. Together, they form a devastating duo against divine authority. He has offered her sanctuary in his territory."
+        },
+        {
+          "withHeroId": "Kaz'Vhal",
+          "type": "Eastern Dragon and Cosmic Serpent",
+          "description": "Both are serpentine beings of immense power. Longhuangzi senses the entropy in Kaz'Vhal and pities the cosmic dragon's mindless purpose. He hopes that one day, Kaz'Vhal might hear his voice and remember what it was like to have a choice."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 4,
+      "specialty": "Anti‑divine dragon god with powerful area control, fire damage, and unique truth‑based mechanics. His abilities heavily punish divine classes while empowering non‑divine allies. He is a challenging raid boss that requires careful positioning and coordination. Cold/ice damage is his primary weakness. He is open to dialogue and can become a valuable ally to those who share his grievance against the gods.",
+      "images": {
+        "iconImage": "assets/images/monsters/longhuangzi_zhenquafu/icon.png",
+        "normalImage": "assets/images/monsters/longhuangzi_zhenquafu/normal.png",
+        "realImage": "assets/images/monsters/longhuangzi_zhenquafu/real.png",
+        "90sImage": "assets/images/monsters/longhuangzi_zhenquafu/90s.png",
+        "fullBodyImage": "assets/images/monsters/longhuangzi_zhenquafu/full.png",
+        "halfImage": "assets/images/monsters/longhuangzi_zhenquafu/half.png",
+        "heropng": "assets/images/monsters/longhuangzi_zhenquafu/hero.png",
+        "herobg": "assets/images/monsters/longhuangzi_zhenquafu/bg.png",
+        "gallery": [
+          "assets/images/monsters/longhuangzi_zhenquafu/1.png",
+          "assets/images/monsters/longhuangzi_zhenquafu/2.png",
+          "assets/images/monsters/longhuangzi_zhenquafu/3.png",
+          "assets/images/monsters/longhuangzi_zhenquafu/4.png",
+          "assets/images/monsters/longhuangzi_zhenquafu/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/longhuangzi_zhenquafu/theme.mp3",
+        "dialogue": {
+          "selection": "I see the truth you hide. Shall I speak it?",
+          "movement": "The wind carries my voice to those who will listen.",
+          "attack": "LET YOUR GLORY BE STRIPPED AWAY!",
+          "ultimate": "DESCENT OF THE GOLDEN TYRANT! WITNESS THE FALL OF FALSE DIVINITY!",
+          "death": "My voice... will echo... forever..."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/longhuangzi_zhenquafu/attack.wav",
+          "skill": "assets/sound/monsters/longhuangzi_zhenquafu/skill.wav",
+          "ultimate": "assets/sound/monsters/longhuangzi_zhenquafu/ultimate.wav"
+        }
+      }
+    },
+    {
+      "id": 25,
+      "name": "Meritzhuji Mantasis",
+      "titles": [
+        "The Eternal Sage",
+        "The Great Peril of Wisdom",
+        "The Mantis of Mercy",
+        "She Who Knows All Beginnings"
+      ],
+      "rank": "SSS-Rank",
+      "level": 450,
+      "nicknames": [
+        "The Barrier Weaver",
+        "The Undying Mother",
+        "The Crimson-Blue Seer",
+        "The Gentle Colossus"
+      ],
+      "shortDescription": "In the primordial silence before the first gods drew breath, there existed a consciousness of pure wisdom—Meritzhuji Mantasis. She took the form of a colossal mantis, her exoskeleton a fiery dance of red and blue, her multifaceted eyes holding the secrets of creation. For eons, she watched the universe unfold, never interfering, only learning. But the gods, fearful of her ancient knowledge and her refusal to bow, branded her a Great Peril. They whispered lies of her danger, and mortals came to hunt her. Yet she does not hate; she understands. She can create barriers that shield the innocent, converse with all creatures, and heal any wound. And when the gods' champions strike her down, she simply rises again, for wisdom cannot be killed—it can only be ignored. To stand before Meritzhuji Mantasis is to stand before the gentle heart of the cosmos, a being who will never harm unless provoked, and who offers her infinite wisdom to any who seek it with humility.",
+      "fullDescription": "The air does not hum with menace when Meritzhuji Mantasis appears—it shimmers with the quiet resonance of ancient knowledge. She is a 400‑foot colossus of insectoid grace, her body a perfect fusion of mantis form and cosmic elegance. Her elongated frame is covered in a smooth, chitinous exoskeleton that shifts in color between deep crimson and vibrant cerulean, the hues flowing like slow flames across her limbs and torso. Her head is triangular, with large, multifaceted compound eyes that glow a soft, internal amber, each facet reflecting a different moment in time. A pair of delicate, feathery antennae twitch gently, sensing the thoughts and emotions of all living things within miles. Her forelimbs are folded serenely against her chest, resembling the praying posture of a mantis, but when needed, they can unfold into razor‑sharp scythes edged with a shimmering red‑blue energy. Her four lower limbs are long and slender, ending in graceful, clawed feet that barely disturb the ground as she moves. From her back, translucent wings—veined with fiery red and cool blue—can unfurl, though she rarely flies, preferring the grounded wisdom of the earth. Around her, she can manifest barriers of pure energy, shimmering domes that deflect harm and heal those within. She speaks in a voice that resonates directly in the mind, a harmonious blend of all languages, carrying the weight of eons and the gentleness of a mother. She exudes an aura of profound calm, and those who stand in her presence feel their fears and aggression melt away, replaced by a deep, abiding curiosity. She is not a monster; she is a library, a sanctuary, a witness to the birth and death of stars. And she is perpetually hunted by those who cannot bear to be seen so clearly.",
+      "story": {
+        "part1": "Before the first spark of divinity ignited in the void, before the concept of 'god' had meaning, the universe was a swirling, chaotic symphony of raw potential. Within that chaos, a single, quiet note of order emerged—a consciousness of pure wisdom, born from the universe's own need to understand itself. That consciousness was Meritzhuji Mantasis. She had no form at first, merely a sentient awareness that drifted through the forming galaxies, observing the dance of particles, the birth of stars, the slow coagulation of matter into worlds. She learned the language of gravity, the poetry of light, the mathematics of existence. Over eons, she chose a form to better interact with the material plane: that of a mantis, a creature whose stillness embodies patience and whose gaze sees all. Her exoskeleton took on the colors of the first fire and the first water—red and blue—symbolizing the duality and unity of creation. She was content to simply exist, to watch, to know. She never sought worship or power, for true wisdom understands that these are illusions. She was the universe's quiet memory, and she was at peace.",
+        "part2": "When the first gods emerged from the collective belief of mortals, Meritzhuji Mantasis observed them with gentle curiosity. She saw their struggles, their passions, their flaws. Some gods, particularly those of knowledge and time, sensed her ancient presence and sought her out. She shared her wisdom freely, teaching them the deeper truths of existence. But other gods, those of war, tyranny, and control, grew fearful. They realized that this ancient mantis knew secrets that predated their own existence—secrets that, if revealed, could undermine their authority. She knew the true nature of divinity, the fragility of faith, the mortality hidden beneath their immortal facades. The gods of control convened in secret and decided that Meritzhuji Mantasis was a threat. They could not kill wisdom itself, but they could poison its name. They spread tales among mortals: that the great mantis was a hoarder of forbidden knowledge, that her gaze could drive men mad, that she caused plagues and droughts. They named her the 'Great Peril of Wisdom' and placed a divine bounty on her head, promising eternal glory to any who could bring them her head. And so, the hunts began.",
+        "part3": "For millennia, Meritzhuji Mantasis has been pursued. Champions, paladins, and desperate adventurers have sought her out in the deepest Wild Zones, believing they were slaying a monster. When they find her, they are often confused: she does not attack. She simply stands, her compound eyes regarding them with infinite patience. She speaks to them in their own tongues, asking why they have come, what they seek. Some, hearing her voice, drop their weapons and weep, realizing they have been lied to. They become her protectors or simply leave, changed. Others, blinded by faith or greed, attack. Her barriers deflect their blows, and if they persist, she gently disarms them with her scythes, never dealing a lethal wound. Only when faced with true, unrelenting evil does she strike to kill, and even then, she mourns the necessity. Many times, over the ages, a champion has landed a fatal blow, and the great mantis has collapsed. The gods have celebrated. But within moments, her body glows with a soft blue-red light, and she rises again, completely healed, her eyes holding the same ancient calm. Wisdom cannot be slain. The gods' frustration has only grown, and their lies have become more desperate.",
+        "part4": "The repeated failures to permanently kill Meritzhuji Mantasis have become a quiet embarrassment to the divine. Some gods have privately begun to doubt the wisdom of the hunt. A few, like the gods of knowledge who once learned from her, have secretly offered her sanctuary, but she declines. 'I will not hide,' she says. 'I will remain, so that any who truly seek wisdom may find me.' Over the centuries, a small, scattered community of seekers has grown around her—hermits, exiled scholars, disillusioned clerics, and even some reformed demons. They live in the shadow of her barriers, learning from her quiet teachings. She does not lead them; she simply shares what she knows, and they are free to interpret it as they will. She has also communicated with other beings scorned by the gods: Xenxar herone, the unveiled unicorn; Longhuangzi Zhenquafu, the exiled dragon; Kaal'ian Zorbat, the chained angel. She offers them not alliance, but understanding. 'Your anger is valid,' she tells them. 'But do not let it consume the wisdom you have gained through suffering.' She is a healer of souls as much as bodies, and her presence alone has prevented many from falling into despair and vengeance.",
+        "part5": "The Sundering has shaken the world, and the old divine orders are fracturing. More and more desperate souls seek out Meritzhuji Mantasis, hoping for answers. She greets them all with the same gentle patience. She knows that the gods' lies are unraveling, and that the truth of her nature will eventually be known. She does not seek vindication; she seeks only to continue her eternal vigil, to learn, to heal, to protect. She has sensed a shift in the cosmic balance, a potential for a new age where wisdom is not feared but cherished. And she will be there, as she has always been, a quiet, red‑blue beacon in the darkness, ready to guide any who come with an open heart. She is the Great Peril of Wisdom only to those who fear the truth. To everyone else, she is simply the Eternal Sage, the Mantis of Mercy, the mother who remembers the first light and will remember the last. And she will never stop rising."
+      },
+      "appearance": {
+        "race": "Primordial Mantis / Cosmic Entity",
+        "faceShape": "Triangular insectoid head, large multifaceted compound eyes, delicate antennae",
+        "nose": "None (insectoid mandibles)",
+        "hairStyle": "None; smooth chitinous exoskeleton",
+        "hairColor": "None",
+        "eyeColor": "Glowing amber facets, each reflecting different moments",
+        "facialStructure": "Serene, intelligent, with gentle mandible movements",
+        "skinTone": "Chitin: shifting fiery red and cerulean blue patterns",
+        "distinguishingFeatures": "Height of 400 feet; folded forelimbs that unfold into energy‑edged scythes; translucent wings veined red and blue; creates shimmering red‑blue barriers; speaks telepathically in all languages; resurrects upon death"
+      },
+      "colorPalette": {
+        "primary": ["#FF4500", "#1E90FF"],
+        "secondary": ["#DC143C", "#0000FF"],
+        "accent": ["#FF6347", "#4169E1"]
+      },
+      "attire": {
+        "upper": {
+          "chest": "Sleek, elongated thorax covered in shifting red‑blue chitin",
+          "arms": "Forelimbs (raptorial) folded serenely; can unfold into scythes edged with energy",
+          "shoulders": "Narrow, graceful",
+          "neck": "Slender, connecting head to thorax",
+          "waist": "Thin, flexible"
+        },
+        "lower": {
+          "hips": "Abdomen, segmented, covered in chitin",
+          "legs": "Four long, slender legs ending in graceful claws",
+          "feet": "Clawed, delicate"
+        },
+        "headwear": "None; antennae crown her head",
+        "accessories": ["None; her natural form is her adornment"],
+        "distinctFeatures": "The shifting red‑blue exoskeleton; the large, wise compound eyes; the gentle folding of forelimbs; the ability to create shimmering energy barriers"
+      },
+      "armorType": "Natural Chitin (Medium)",
+      "bodyType": {
+        "upper": {
+          "chest": "Sleek, elongated",
+          "arms": "Raptorial forelimbs, folded",
+          "shoulders": "Narrow",
+          "neck": "Slender",
+          "waist": "Thin"
+        },
+        "lower": {
+          "hips": "Abdomen, segmented",
+          "legs": "Four long limbs",
+          "feet": "Clawed"
+        }
+      },
+      "weapons": [
+        {
+          "name": "Scythes of Mercy and Barriers of the Eternal Sage",
+          "fulldesc": "Meritzhuji Mantasis wields no weapons of malice. Her forelimbs, when unfolded, become 'Scythes of Mercy'—razor‑sharp blades edged with shimmering red‑blue energy. They can cut through enchanted steel, but she uses them primarily to disarm, deflect, or, in extreme need, to deliver a swift, merciful end to a truly evil foe. Her primary 'weapon' is actually defensive: the 'Barriers of the Eternal Sage.' She can create translucent domes or walls of fiery red and blue energy that absorb damage, heal those within, and reflect hostile magic. These barriers can be layered and shaped, turning a battlefield into a sanctuary. Her 'Voice of All Tongues' is a constant, soothing telepathic presence that calms aggression and can charm or pacify hostile creatures. Her ultimate ability, 'Undying Resurgence,' is her most famous—upon receiving fatal damage, she instantly resurrects with full health, releasing a healing pulse that restores all nearby allies to full health and grants them a temporary shield. She can also choose to activate this ability proactively to prevent a catastrophic defeat. She is, for all intents and purposes, unkillable, and her presence turns the tide of any conflict toward preservation and mercy.",
+          "type": "Physical / Energy / Healing",
+          "look": "The scythes glow with a soft red‑blue edge. The barriers appear as shimmering, translucent domes or walls, with fiery red and cool blue currents swirling within. The healing pulse is a gentle wave of warm light. Her voice is a resonant, multi‑harmonic hum that bypasses the ears and speaks directly to the mind.",
+          "aura": "A profound sense of calm and clarity; the faint scent of ancient parchment and wildflowers; a subtle pressure that eases fear and anger",
+          "colorPalette": ["#FF4500", "#1E90FF", "#DC143C"],
+          "skills": {
+            "passive": [
+              {
+                "name": "Aura of Infinite Wisdom",
+                "description": "Enemies within 60 meters of Meritzhuji Mantasis have their damage dealt reduced by 25% and their critical hit chance reduced by 40%. They also have a 15% chance to become 'Pacified' for 4 seconds whenever they attempt to use an aggressive ability (cannot attack or use offensive spells). Allies within the aura regenerate 3% of their max health per second and have their cooldowns reduced by 20%."
+              },
+              {
+                "name": "Eternal Vigil",
+                "description": "Meritzhuji Mantasis is immune to all forms of crowd control (stun, root, silence, fear, charm, etc.). She can see the true intentions of any creature within 100 meters (detects hostility, deception, and alignment). When she receives fatal damage, she does not die; instead, she instantly resurrects with 100% health and mana, and releases a healing pulse (as per 'Undying Resurgence' but without the cooldown). This passive resurrection has no limit but triggers a global visual effect visible to all players."
+              }
+            ],
+            "active": [
+              {
+                "name": "Barrier of the Eternal Sage",
+                "description": "Meritzhuji Mantasis creates a shimmering dome (25‑meter radius) at a target location within 80 meters. The barrier absorbs up to 500% of her magical attack in damage (scales with her stats). Allies inside the barrier are healed for 100% of her magical attack per second, and enemies inside are slowed by 40% and cannot use movement abilities. The barrier lasts 12 seconds or until destroyed. Cooldown: 18 seconds."
+              },
+              {
+                "name": "Scythes of Mercy",
+                "description": "Meritzhuji Mantasis unfolds her forelimbs and sweeps them in a 40‑meter cone, dealing 200% physical damage to all enemies hit. Enemies struck are 'Disarmed' for 6 seconds (cannot use weapon‑based attacks). If an enemy is already Pacified, they take double damage and are stunned for 2 seconds. Cooldown: 12 seconds."
+              }
+            ],
+            "ultimate": [
+              {
+                "name": "Undying Resurgence",
+                "description": "Meritzhuji Mantasis channels for 2 seconds, then releases a massive pulse of healing energy in a 100‑meter radius. All allies in the radius are healed to full health, have all debuffs removed, and gain a shield equal to 50% of their max health for 20 seconds. All enemies in the radius are Pacified for 8 seconds (cannot attack or use offensive abilities) and take 150% radiant damage. If Meritzhuji Mantasis is killed while this ability is on cooldown, her passive resurrection still triggers, but the cooldown of Undying Resurgence is reduced by 60 seconds. Cooldown: 120 seconds. Passive: For each ally healed to full by this ability, Meritzhuji Mantasis permanently gains 1% increased healing output (max 30%)."
+              }
+            ],
+            "special": [
+              {
+                "name": "Voice of All Tongues",
+                "description": "Meritzhuji Mantasis can communicate telepathically with any creature within 120 meters. As a free action once per minute, she can attempt to 'Calm' all enemies in a 50‑meter radius. Enemies must make a willpower check or become Pacified for 10 seconds. Additionally, any creature that hears her voice has their hostility reduced, and she can offer them a choice: leave in peace, or stay and learn. Those who leave are granted a 'Blessing of Wisdom' that increases their experience gain by 10% for 1 hour."
+              }
+            ]
+          },
+          "images": "assets/images/monsters/meritzhuji_mantasis/weapon.png"
+        }
+      ],
+      "stats": {
+        "power": 9,
+        "strength": 7,
+        "offense": 5,
+        "defense": 10,
+        "stamina": 10,
+        "physicalAtk": 7,
+        "magicalAtk": 10,
+        "physDef": 10,
+        "magDef": 10,
+        "speed": 4,
+        "mana": 10,
+        "intelligence": 10,
+        "ratings": {
+          "overall": 10,
+          "notes": "A Cataclysmic Threat that is paradoxically benevolent. She is nearly impossible to defeat due to her infinite resurrection and immense healing. Her barriers make her and her allies incredibly durable. She will never attack first and will always offer peace. The only way to 'defeat' her is to prove that you are not a threat—by sheathing weapons, listening to her wisdom, or helping her protect others. Those who persist in attacking will find themselves in an endless, futile battle. Her only true vulnerability is a conceptual attack that could sever her connection to the cosmic wisdom that sustains her, but such a thing may not exist."
+        }
+      },
+      "skills": [
+        {
+          "name": "Aura of Infinite Wisdom",
+          "type": "Passive",
+          "description": "60m aura: -25% enemy dmg, -40% crit, 15% Pacify on aggressive ability use. Allies: +3% HP/sec, -20% cooldowns."
+        },
+        {
+          "name": "Barrier of the Eternal Sage",
+          "type": "Active",
+          "description": "25m dome, 500% magic atk shield. Allies inside heal 100% magic/sec, enemies slowed 40%, no movement abilities. Lasts 12s. CD: 18s."
+        },
+        {
+          "name": "Scythes of Mercy",
+          "type": "Active",
+          "description": "40m cone, 200% phys dmg, Disarm 6s. Double dmg + stun 2s if Pacified. CD: 12s."
+        },
+        {
+          "name": "Undying Resurgence",
+          "type": "Ultimate",
+          "description": "100m radius, full heal + debuff removal + 50% shield 20s to allies. Pacify enemies 8s, 150% radiant dmg. Passive resurrection reduces CD by 60s. Permanent +1% healing per ally healed to full (max 30%). CD: 120s."
+        }
+      ],
+      "lore": "Meritzhuji Mantasis is a primordial entity of pure wisdom, born before the first gods. She took the form of a colossal mantis, her exoskeleton a fiery dance of red and blue. For eons, she watched the universe, learning and healing. The gods, fearing her ancient knowledge, branded her the Great Peril of Wisdom and sent mortals to hunt her. But she cannot be permanently killed, and she never retaliates unless provoked. She creates barriers, heals the wounded, and speaks to all creatures with gentle wisdom. She is a sanctuary in the Wild Zones, a reminder that true wisdom is not a threat but a gift.",
+      "relationships": [
+        {
+          "withHeroId": "Xenxar herone",
+          "type": "Mutual Understanding",
+          "description": "Xenxar unveils impurity; Meritzhuji offers wisdom to process that truth. They have met in the Wild Zones, and the mantis has provided counsel to the bitter unicorn, reminding him that his anger is valid but should not consume his wisdom."
+        },
+        {
+          "withHeroId": "Longhuangzi Zhenquafu",
+          "type": "Respected Wisdom",
+          "description": "The exiled dragon god respects Meritzhuji's ancient knowledge. They have conversed across distances, and she has shared insights about the nature of divine hypocrisy that have strengthened his resolve to speak truth."
+        },
+        {
+          "withHeroId": "Kaal'ian Zorbat",
+          "type": "Healing Presence",
+          "description": "Kaal'ian's endless pain is soothed by Meritzhuji's aura. She has visited the Chained Sanctum in spirit, offering silent comfort. She believes his endurance is a form of wisdom, and she would heal his wounds if he allowed it."
+        },
+        {
+          "withHeroId": "Karkein",
+          "type": "Rebirth and Wisdom",
+          "description": "Both are ancient beings who can resurrect. Meritzhuji sees in Karkein a kindred spirit of fire and renewal. They have shared the silence of the Molten Caldera, each understanding the other's eternal burden."
+        },
+        {
+          "withFactionId": 4,
+          "type": "Natural Allies",
+          "description": "The Natural Balance faction reveres Meritzhuji Mantasis as a living embodiment of ancient wisdom. Druids and elementals often seek her guidance, and she grants it freely, teaching them to listen to the deeper rhythms of the world."
+        }
+      ],
+      "mount": [],
+      "pet": [],
+      "factionId": 6,
+      "kingdomId": 6,
+      "classId": 6,
+      "specialty": "Benevolent raid boss that cannot be permanently defeated. She is a test of character rather than combat prowess. Players who attack her will face an endless battle; those who approach peacefully will receive wisdom, healing, and potentially powerful blessings. Her barriers make her an incredible support if she can be convinced to aid a cause. She is the ultimate 'pacifist' encounter.",
+      "images": {
+        "iconImage": "assets/images/monsters/meritzhuji_mantasis/icon.png",
+        "normalImage": "assets/images/monsters/meritzhuji_mantasis/normal.png",
+        "realImage": "assets/images/monsters/meritzhuji_mantasis/real.png",
+        "90sImage": "assets/images/monsters/meritzhuji_mantasis/90s.png",
+        "fullBodyImage": "assets/images/monsters/meritzhuji_mantasis/full.png",
+        "halfImage": "assets/images/monsters/meritzhuji_mantasis/half.png",
+        "heropng": "assets/images/monsters/meritzhuji_mantasis/hero.png",
+        "herobg": "assets/images/monsters/meritzhuji_mantasis/bg.png",
+        "gallery": [
+          "assets/images/monsters/meritzhuji_mantasis/1.png",
+          "assets/images/monsters/meritzhuji_mantasis/2.png",
+          "assets/images/monsters/meritzhuji_mantasis/3.png",
+          "assets/images/monsters/meritzhuji_mantasis/4.png",
+          "assets/images/monsters/meritzhuji_mantasis/5.png"
+        ]
+      },
+      "sound": {
+        "theme": "assets/sound/monsters/meritzhuji_mantasis/theme.mp3",
+        "dialogue": {
+          "selection": "I have watched stars be born and die. What do you seek, little one?",
+          "movement": "Patience. All things unfold in time.",
+          "attack": "I do not wish to harm you. Please, stop.",
+          "ultimate": "UNDYING RESURGENCE! RISE, AND BE HEALED!",
+          "death": "I will return. Wisdom cannot be slain."
+        },
+        "sfx": {
+          "attack": "assets/sound/monsters/meritzhuji_mantasis/attack.wav",
+          "skill": "assets/sound/monsters/meritzhuji_mantasis/skill.wav",
+          "ultimate": "assets/sound/monsters/meritzhuji_mantasis/ultimate.wav"
+        }
+      }
     }
   ]
 }
