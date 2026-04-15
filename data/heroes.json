@@ -608,7 +608,7 @@
               }
             ]
           },
-          "images": "assets/images/heroes/roisin_pelvet/weapon.png"
+          "images": "assets/images/heroes/roisin_pelveti/weapon.png"
         }
       ],
       "stats": {
@@ -677,7 +677,7 @@
             "Blinding Burst – emits a flash that stuns enemies for 1 second.",
             "Heartbeat Bond – warns Roisin of danger before it arrives."
           ],
-          "images": "assets/images/heroes/roisin_pelvet/pet.png"
+          "images": "assets/images/heroes/roisin_pelveti/pet.png"
         }
       ],
       "factionId": 4,
@@ -685,24 +685,24 @@
       "classId": 3,
       "specialty": "Stealth marksman with vision control, anti‑demon bonuses, and high single‑target burst damage. Excels at ambushes and hit‑and‑run tactics in dark environments.",
       "images": {
-        "iconImage": "assets/images/heroes/roisin_pelvet/icon.png",
-        "normalImage": "assets/images/heroes/roisin_pelvet/normal.png",
-        "realImage": "assets/images/heroes/roisin_pelvet/real.png",
-        "90sImage": "assets/images/heroes/roisin_pelvet/90s.png",
-        "fullBodyImage": "assets/images/heroes/roisin_pelvet/full.png",
-        "halfImage": "assets/images/heroes/roisin_pelvet/half.png",
-        "heropng": "assets/images/heroes/roisin_pelvet/hero.png",
-        "herobg": "assets/images/heroes/roisin_pelvet/bg.png",
+        "iconImage": "assets/images/heroes/roisin_pelveti/icon.png",
+        "normalImage": "assets/images/heroes/roisin_pelveti/normal.png",
+        "realImage": "assets/images/heroes/roisin_pelveti/real.png",
+        "90sImage": "assets/images/heroes/roisin_pelveti/90s.png",
+        "fullBodyImage": "assets/images/heroes/roisin_pelveti/full.png",
+        "halfImage": "assets/images/heroes/roisin_pelveti/half.png",
+        "heropng": "assets/images/heroes/roisin_pelveti/hero.png",
+        "herobg": "assets/images/heroes/roisin_pelveti/bg.png",
         "gallery": [
-          "assets/images/heroes/roisin_pelvet/1.png",
-          "assets/images/heroes/roisin_pelvet/2.png",
-          "assets/images/heroes/roisin_pelvet/3.png",
-          "assets/images/heroes/roisin_pelvet/4.png",
-          "assets/images/heroes/roisin_pelvet/5.png"
+          "assets/images/heroes/roisin_pelveti/1.png",
+          "assets/images/heroes/roisin_pelveti/2.png",
+          "assets/images/heroes/roisin_pelveti/3.png",
+          "assets/images/heroes/roisin_pelveti/4.png",
+          "assets/images/heroes/roisin_pelveti/5.png"
         ]
       },
       "sound": {
-        "theme": "assets/sound/heroes/roisin_pelvet/theme.mp3",
+        "theme": "assets/sound/heroes/roisin_pelveti/theme.mp3",
         "dialogue": {
           "selection": "The forest knows my name. The demons fear it.",
           "movement": "Shadows are my cloak.",
@@ -711,9 +711,9 @@
           "death": "Miya... protect them..."
         },
         "sfx": {
-          "attack": "assets/sound/heroes/roisin_pelvet/attack.wav",
-          "skill": "assets/sound/heroes/roisin_pelvet/skill.wav",
-          "ultimate": "assets/sound/heroes/roisin_pelvet/ultimate.wav"
+          "attack": "assets/sound/heroes/roisin_pelveti/attack.wav",
+          "skill": "assets/sound/heroes/roisin_pelveti/skill.wav",
+          "ultimate": "assets/sound/heroes/roisin_pelveti/ultimate.wav"
         }
       }
     },
