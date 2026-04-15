@@ -384,7 +384,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* -webkit-text-stroke: 5px var(--hero-page-name-text); */
+  -webkit-text-stroke: 0.5px var(--hero-page-primary);
 }
 
 .star-rating {
