@@ -23,7 +23,7 @@ class KretosApp {
         try {
             const [worldRes, heroesRes, monstersRes, creatorsRes] = await Promise.all([
                 fetch('data/world.json'),
-                fetch('data/heroes.json'),
+                fetch('data/kretosheroes.json'),
                 fetch('data/monsters.json'),
                 fetch('data/creators.json')
             ]);

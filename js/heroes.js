@@ -100,7 +100,7 @@ class heroesPage {
 
     async loadData() {
         try {
-            const response = await fetch('data/heroes.json');
+            const response = await fetch('data/kretosheroes.json');
             const json = await response.json();
             this.heroes = json.heroes;
             this.filteredheroes = [...this.heroes];
