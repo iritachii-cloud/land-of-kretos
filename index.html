@@ -16,9 +16,9 @@
         <section class="hero-section">
             <div class="hero-swiper swiper">
                 <div class="swiper-wrapper" id="heroSlider"></div>
-                <!-- <div class="swiper-pagination hero-pagination"></div> -->
             </div>
         </section>
+
         <!-- Legendary Heroes Grid -->
         <section class="legendary-heroes section">
             <div class="container">
@@ -29,6 +29,7 @@
                 <div class="heroes-grid" id="legendaryHeroesGrid"></div>
             </div>
         </section>
+
         <!-- Kingdoms Swiper -->
         <section class="kingdoms-section section">
             <div class="container">
@@ -43,6 +44,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Factions Swiper -->
         <section class="factions-section section">
             <div class="container">
@@ -57,6 +59,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Classes Swiper -->
         <section class="classes-section section">
             <div class="container">
@@ -71,6 +74,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Monsters Grid -->
         <section class="monsters-section section">
             <div class="container">
@@ -81,6 +85,7 @@
                 <div class="monsters-grid" id="homeMonstersGrid"></div>
             </div>
         </section>
+
         <!-- Creators Grid -->
         <section class="creators-section section">
             <div class="container">
@@ -92,25 +97,54 @@
             </div>
         </section>
     </main>
-    <!-- Modals -->
+
+    <!-- ==================== MODALS ==================== -->
+    <!-- Hero Modal -->
     <div id="heroModal" class="modal">
         <div class="modal-content large-modal">
             <span class="close">&times;</span>
             <div class="modal-body"></div>
         </div>
     </div>
+
+    <!-- Monster Modal -->
     <div id="monsterModal" class="modal">
         <div class="modal-content large-modal">
             <span class="close">&times;</span>
             <div class="modal-body"></div>
         </div>
     </div>
+
+    <!-- Creator Modal -->
     <div id="creatorModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="modal-body"></div>
         </div>
     </div>
+
+    <!-- ==================== NEW: KINGDOM MODAL (FULLSCREEN SWIPER) ==================== -->
+    <div id="kingdomModal" class="modal kingdom-modal">
+        <div class="modal-close">&times;</div>
+        <div class="kingdom-swiper-container">
+            <div class="swiper kingdom-detail-swiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next kingdom-next"></div>
+                <div class="swiper-button-prev kingdom-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NEW: LANDMARK LIGHTBOX ==================== -->
+    <div id="landmarkLightbox" class="landmark-lightbox">
+        <div class="lightbox-close">&times;</div>
+        <div class="lightbox-content">
+            <img id="landmarkImage" src="" alt="Landmark">
+            <h3 id="landmarkName"></h3>
+            <p id="landmarkDesc"></p>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/main.js"></script>

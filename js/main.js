@@ -2,11 +2,11 @@
 class KretosApp {
     constructor() {
         this.data = { world: null, heroes: [], monsters: [], creators: [] };
-        this.swipers = { 
+        this.swipers = {
             hero: null,
-            kingdoms: null, 
-            factions: null, 
-            classes: null 
+            kingdoms: null,
+            factions: null,
+            classes: null
         };
     }
 
@@ -16,6 +16,7 @@ class KretosApp {
         ThemeManager.init();
         await HomePage.init(this.data);
         KretosModal.init();
+        KingdomModal.init();  // <-- NEW: initialise kingdom modal
         this.setupScrollAnimations();
     }
 
@@ -75,7 +76,7 @@ class KretosApp {
 
 const HomePage = {
     data: null,
-    
+
     async init(data) {
         this.data = data;
         await this.renderHeroSlider();
@@ -110,8 +111,8 @@ const HomePage = {
                     <div class="hero-right">
                         <div class="stats-container">
                             ${Object.entries(hero.stats || {})
-                                .filter(([k]) => !['ratings'].includes(k) && typeof hero.stats[k] === 'number')
-                                .map(([k, v]) => `
+                .filter(([k]) => !['ratings'].includes(k) && typeof hero.stats[k] === 'number')
+                .map(([k, v]) => `
                                     <div class="stat-item">
                                         <span class="stat-label">${k.charAt(0).toUpperCase() + k.slice(1)}</span>
                                         <div class="progress-bar-bg"><div class="progress-fill" data-value="${v}"></div></div>
@@ -150,12 +151,12 @@ const HomePage = {
         const heroes = kretosApp.getRandomItems(this.data.heroes, 5);
         const container = document.getElementById('legendaryHeroesGrid');
         if (!container) return;
-        
+
         if (heroes.length === 0) {
             container.innerHTML = '<p>No heroes found</p>';
             return;
         }
-        
+
         container.innerHTML = heroes.map(hero => `
             <div class="asymmetrical-card" data-kretos-hero-id="${hero.id}">
                 <div class="hero-icon" style="background-image: url('${hero.images?.iconImage || 'assets/images/placeholders/hero_icon.png'}')"></div>
@@ -178,7 +179,7 @@ const HomePage = {
         if (kingdomsContainer && world.kingdoms && world.kingdoms.length) {
             kingdomsContainer.innerHTML = world.kingdoms.map(k => `
                 <div class="swiper-slide">
-                    <div class="kingdom-card" style="background-image: url('${k.image || 'assets/images/placeholders/kingdom_default.jpg'}')">
+                    <div class="kingdom-card" style="background-image: url('${k.image || 'assets/images/dunnyimage.png'}')">
                         <div class="kingdom-overlay">
                             <h3>${this.escapeHtml(k.name)}</h3>
                             <p><strong>Region:</strong> ${this.escapeHtml(k.region)}</p>
@@ -187,7 +188,7 @@ const HomePage = {
                     </div>
                 </div>
             `).join('');
-            
+
             setTimeout(() => {
                 if (kretosApp.swipers.kingdoms) {
                     kretosApp.swipers.kingdoms.destroy(true, true);
@@ -196,22 +197,40 @@ const HomePage = {
                     slidesPerView: 1,
                     spaceBetween: 30,
                     effect: 'coverflow',
-                    coverflowEffect: { 
-                        rotate: 30, 
-                        stretch: 0, 
-                        depth: 100, 
-                        modifier: 1, 
-                        slideShadows: true 
+                    coverflowEffect: {
+                        rotate: 30,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true
                     },
-                    navigation: { 
-                        nextEl: '.kingdoms-swiper .swiper-button-next', 
-                        prevEl: '.kingdoms-swiper .swiper-button-prev' 
+                    navigation: {
+                        nextEl: '.kingdoms-swiper .swiper-button-next',
+                        prevEl: '.kingdoms-swiper .swiper-button-prev'
                     },
-                    breakpoints: { 
-                        768: { slidesPerView: 1 }, 
-                        1024: { slidesPerView: 1 } 
+                    breakpoints: {
+                        768: { slidesPerView: 1 },
+                        1024: { slidesPerView: 1 }
                     },
                     loop: world.kingdoms.length > 1
+                });
+
+                // Detect if the device supports touch (mobile/tablet)
+                const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+                // Use single click for mobile, double click for desktop
+                const eventType = isTouchDevice ? 'click' : 'dblclick';
+
+                document.querySelectorAll('.kingdom-card').forEach(card => {
+                    card.addEventListener(eventType, (e) => {
+                        e.stopPropagation();
+                        const kingdomName = card.querySelector('h3')?.innerText;
+                        const kingdoms = window.kretosData?.world?.kingdoms || [];
+                        const kingdom = kingdoms.find(k => k.name === kingdomName);
+                        if (kingdom) {
+                            const index = kingdoms.findIndex(k => k.id === kingdom.id);
+                            KingdomModal.open(kingdom, kingdoms, index);
+                        }
+                    });
                 });
             }, 100);
         }
@@ -222,7 +241,7 @@ const HomePage = {
             factionsContainer.innerHTML = world.factions.map(f => `
                 <div class="swiper-slide">
                     <div class="faction-card">
-                        <img loading="lazy" src="${f.image || 'assets/images/placeholders/faction_default.jpg'}" alt="${this.escapeHtml(f.name)}">
+                        <img loading="lazy" src="${f.image || 'assets/images/dunnyimage.png'}" alt="${this.escapeHtml(f.name)}">
                         <div class="faction-info">
                             <span class="alignment">${this.escapeHtml(f.alignment)}</span>
                             <h3>${this.escapeHtml(f.name)}</h3>
@@ -231,7 +250,7 @@ const HomePage = {
                     </div>
                 </div>
             `).join('');
-            
+
             setTimeout(() => {
                 if (kretosApp.swipers.factions) {
                     kretosApp.swipers.factions.destroy(true, true);
@@ -239,13 +258,13 @@ const HomePage = {
                 kretosApp.swipers.factions = new Swiper('.factions-swiper', {
                     slidesPerView: 1,
                     effect: 'cube',
-                    cubeEffect: { 
-                        shadow: false, 
-                        slideShadows: false 
+                    cubeEffect: {
+                        shadow: false,
+                        slideShadows: false
                     },
-                    navigation: { 
-                        nextEl: '.factions-swiper .swiper-button-next', 
-                        prevEl: '.factions-swiper .swiper-button-prev' 
+                    navigation: {
+                        nextEl: '.factions-swiper .swiper-button-next',
+                        prevEl: '.factions-swiper .swiper-button-prev'
                     },
                     loop: world.factions.length > 1
                 });
@@ -258,7 +277,7 @@ const HomePage = {
             classesContainer.innerHTML = world.classes.map(c => `
                 <div class="swiper-slide">
                     <div class="class-card">
-                        <img loading="lazy" src="${c.image || 'assets/images/placeholders/class_default.jpg'}" alt="${this.escapeHtml(c.name)}">
+                        <img loading="lazy" src="${c.image || 'assets/images/dunnyimage.png'}" alt="${this.escapeHtml(c.name)}">
                         <div class="class-details">
                             <span class="class-type">${this.escapeHtml(c.type)}</span>
                             <h3>${this.escapeHtml(c.name)}</h3>
@@ -267,7 +286,7 @@ const HomePage = {
                     </div>
                 </div>
             `).join('');
-            
+
             setTimeout(() => {
                 if (kretosApp.swipers.classes) {
                     kretosApp.swipers.classes.destroy(true, true);
@@ -275,12 +294,12 @@ const HomePage = {
                 kretosApp.swipers.classes = new Swiper('.classes-swiper', {
                     slidesPerView: 1,
                     effect: 'flip',
-                    flipEffect: { 
-                        slideShadows: true 
+                    flipEffect: {
+                        slideShadows: true
                     },
-                    navigation: { 
-                        nextEl: '.classes-swiper .swiper-button-next', 
-                        prevEl: '.classes-swiper .swiper-button-prev' 
+                    navigation: {
+                        nextEl: '.classes-swiper .swiper-button-next',
+                        prevEl: '.classes-swiper .swiper-button-prev'
                     },
                     loop: world.classes.length > 1
                 });
@@ -299,12 +318,12 @@ const HomePage = {
         const monsters = kretosApp.getRandomItems(this.data.monsters, 6);
         const container = document.getElementById('homeMonstersGrid');
         if (!container) return;
-        
+
         if (monsters.length === 0) {
             container.innerHTML = '<p>No monsters found</p>';
             return;
         }
-        
+
         container.innerHTML = monsters.map(monster => `
             <div class="asymmetrical-card" data-kretos-monster-id="${monster.id}">
                 <div class="monster-icon" style="background-image: url('${monster.images?.iconImage || 'assets/images/placeholders/monster_icon.png'}')"></div>
@@ -322,10 +341,10 @@ const HomePage = {
         const creators = this.data.creators;
         const container = document.getElementById('creatorsGrid');
         if (!container || !creators) return;
-        
+
         container.innerHTML = creators.map(c => `
             <div class="creator-card" data-kretos-creator-id="${c.id}">
-                <img loading="lazy" src="${c.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-avatar" alt="${this.escapeHtml(c.name)}">
+                <img loading="lazy" src="${c.avatar || 'assets/images/dunnyimage.png'}" class="creator-avatar" alt="${this.escapeHtml(c.name)}">
                 <h3>${this.escapeHtml(c.name)}</h3>
                 <p class="creator-role">${this.escapeHtml(c.role)}</p>
                 <button class="learn-more-btn" data-kretos-creator-id="${c.id}">Meet ${this.escapeHtml(c.name.split(' ')[0])}</button>
@@ -334,7 +353,7 @@ const HomePage = {
     }
 };
 
-// ---------- Namespaced Modal Manager (no conflict with heroes page) ----------
+// ---------- Namespaced Modal Manager (hero/monster/creator) ----------
 const KretosModal = {
     init() {
         this.setupEventListeners();
@@ -342,7 +361,6 @@ const KretosModal = {
 
     setupEventListeners() {
         document.addEventListener('click', (e) => {
-            // Hero buttons
             const heroBtn = e.target.closest('[data-kretos-hero-id]');
             if (heroBtn) {
                 e.preventDefault();
@@ -351,8 +369,7 @@ const KretosModal = {
                 if (hero) this.showHeroModal(hero);
                 return;
             }
-            
-            // Monster buttons
+
             const monsterBtn = e.target.closest('[data-kretos-monster-id]');
             if (monsterBtn) {
                 e.preventDefault();
@@ -361,8 +378,7 @@ const KretosModal = {
                 if (monster) this.showMonsterModal(monster);
                 return;
             }
-            
-            // Creator buttons
+
             const creatorBtn = e.target.closest('[data-kretos-creator-id]');
             if (creatorBtn) {
                 e.preventDefault();
@@ -371,8 +387,7 @@ const KretosModal = {
                 if (creator) this.showCreatorModal(creator);
                 return;
             }
-            
-            // Close modals
+
             if (e.target.classList.contains('close') || e.target.classList.contains('modal')) {
                 this.closeAllModals();
             }
@@ -382,18 +397,18 @@ const KretosModal = {
     showHeroModal(hero) {
         const modal = document.getElementById('heroModal');
         if (!modal) return;
-        
+
         const modalBody = modal.querySelector('.modal-body');
         modalBody.innerHTML = this.renderHeroModal(hero);
         modal.style.display = 'flex';
-        
+
         setTimeout(() => {
             modal.querySelectorAll('.progress-fill').forEach(bar => {
                 const val = bar.dataset.value;
                 if (val) bar.style.width = (val * 10) + '%';
             });
         }, 100);
-        
+
         this.setupImageTabs(hero.images);
     },
 
@@ -409,7 +424,7 @@ const KretosModal = {
                     <span class="stat-value">${v}/10</span>
                 </div>
             `).join('');
-        
+
         return `
             <div class="modal-grid">
                 <div class="image-section">
@@ -442,7 +457,6 @@ const KretosModal = {
                     <div class="stats-section">
                         ${statsHtml}
                     </div>
-                    <!-- DEEP LINK: pass hero id to heroes page -->
                     <a href="heroes.html?id=${hero.id}" class="full-details-btn">Full Details →</a>
                 </div>
             </div>
@@ -452,18 +466,18 @@ const KretosModal = {
     showMonsterModal(monster) {
         const modal = document.getElementById('monsterModal');
         if (!modal) return;
-        
+
         const modalBody = modal.querySelector('.modal-body');
         modalBody.innerHTML = this.renderMonsterModal(monster);
         modal.style.display = 'flex';
-        
+
         setTimeout(() => {
             modal.querySelectorAll('.progress-fill').forEach(bar => {
                 const val = bar.dataset.value;
                 if (val) bar.style.width = (val * 10) + '%';
             });
         }, 100);
-        
+
         this.setupImageTabs(monster.images);
     },
 
@@ -479,7 +493,7 @@ const KretosModal = {
                     <span class="stat-value">${v}/10</span>
                 </div>
             `).join('');
-        
+
         return `
             <div class="modal-grid">
                 <div class="image-section">
@@ -521,11 +535,11 @@ const KretosModal = {
     showCreatorModal(creator) {
         const modal = document.getElementById('creatorModal');
         if (!modal) return;
-        
+
         const modalBody = modal.querySelector('.modal-body');
         modalBody.innerHTML = `
             <div class="creator-modal-content">
-                <img loading="lazy" src="${creator.avatar || 'assets/images/placeholders/creator_default.jpg'}" class="creator-large-avatar" alt="${this.escapeHtml(creator.name)}">
+                <img loading="lazy" src="${creator.avatar || 'assets/images/dunnyimage.png'}" class="creator-large-avatar" alt="${this.escapeHtml(creator.name)}">
                 <div>
                     <h2>${this.escapeHtml(creator.name)}</h2>
                     <p><strong>${this.escapeHtml(creator.role)}</strong></p>
@@ -547,11 +561,11 @@ const KretosModal = {
 
     setupImageTabs(images) {
         if (!images) return;
-        
+
         const tabs = document.querySelectorAll('.image-tab');
         const imgEl = document.getElementById('modalMainImage');
         if (!imgEl || !tabs.length) return;
-        
+
         tabs.forEach(tab => {
             tab.removeEventListener('click', this.imageTabHandler);
             this.imageTabHandler = (e) => {
@@ -581,7 +595,166 @@ const KretosModal = {
     }
 };
 
-// Initialize app
+// ==================== NEW: KINGDOM MODAL (SWIPER) ====================
+const KingdomModal = {
+    init() {
+        this.modal = document.getElementById('kingdomModal');
+        this.swiperContainer = document.querySelector('.kingdom-detail-swiper');
+        this.swiperWrapper = document.querySelector('#kingdomModal .swiper-wrapper');
+        this.swiperInstance = null;
+        this.landmarkLightbox = document.getElementById('landmarkLightbox');
+        this.setupEventListeners();
+    },
+
+    setupEventListeners() {
+        const closeBtn = document.querySelector('#kingdomModal .modal-close');
+        if (closeBtn) closeBtn.addEventListener('click', () => this.close());
+        this.modal?.addEventListener('click', (e) => {
+            if (e.target === this.modal) this.close();
+        });
+        const lbClose = document.querySelector('#landmarkLightbox .lightbox-close');
+        if (lbClose) lbClose.addEventListener('click', () => this.closeLightbox());
+        this.landmarkLightbox?.addEventListener('click', (e) => {
+            if (e.target === this.landmarkLightbox) this.closeLightbox();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (this.modal?.style.display === 'flex') this.close();
+                if (this.landmarkLightbox?.style.display === 'flex') this.closeLightbox();
+            }
+        });
+    },
+
+    open(kingdom, allKingdoms, startIndex) {
+        if (!this.modal) return;
+        this.swiperWrapper.innerHTML = '';
+        allKingdoms.forEach((k, idx) => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide kingdom-detail-slide';
+            slide.setAttribute('data-kingdom-id', k.id);
+            slide.innerHTML = `<div class="kingdom-slide-content" id="kingdom-slide-${k.id}">Loading...</div>`;
+            this.swiperWrapper.appendChild(slide);
+        });
+        this.modal.style.display = 'flex';
+        document.body.classList.add('modal-open');
+        if (this.swiperInstance) this.swiperInstance.destroy(true, true);
+        this.swiperInstance = new Swiper('.kingdom-detail-swiper', {
+            effect: 'coverflow',
+            coverflowEffect: { rotate: 30, stretch: 0, depth: 200, modifier: 1, slideShadows: true },
+            loop: allKingdoms.length > 1,
+            navigation: { nextEl: '.kingdom-next', prevEl: '.kingdom-prev' },
+            keyboard: { enabled: true },
+            speed: 800,
+            grabCursor: true,
+            on: { slideChange: () => this.populateCurrentSlide() }
+        });
+        setTimeout(() => {
+            if (this.swiperInstance) this.swiperInstance.slideTo(startIndex, 0);
+            this.populateCurrentSlide();
+        }, 100);
+    },
+
+    populateCurrentSlide() {
+        if (!this.swiperInstance) return;
+        const realIndex = this.swiperInstance.realIndex;
+        const allKingdoms = window.kretosData?.world?.kingdoms || [];
+        const kingdom = allKingdoms[realIndex];
+        if (!kingdom) return;
+        const slideEl = document.querySelector(`.kingdom-detail-slide[data-kingdom-id="${kingdom.id}"] .kingdom-slide-content`);
+        if (!slideEl) return;
+        slideEl.innerHTML = this.buildKingdomHTML(kingdom);
+        const landmarkCards = slideEl.querySelectorAll('.landmark-card');
+        landmarkCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                const landmarkId = card.dataset.landmarkId;
+                const landmark = kingdom.landmarks?.find(l => l.name === landmarkId);
+                if (landmark) this.showLandmark(landmark);
+            });
+        });
+    },
+
+    buildKingdomHTML(kingdom) {
+        const imageUrl = kingdom.mapImage || 'assets/images/dunnyimage.png';
+        const races = Array.isArray(kingdom.races) ? kingdom.races.join(', ') : kingdom.races || '—';
+        const climate = kingdom.climate || '—';
+        const culture = kingdom.culture || '—';
+        const capital = kingdom.capital || '—';
+        const landmarks = kingdom.landmarks || [];
+        let landmarksHtml = '';
+        if (landmarks.length) {
+            landmarksHtml = `<div class="landmarks-grid">`;
+            landmarks.forEach(lm => {
+                const lmImg = lm.image || 'assets/images/dunnyimage.png';
+                landmarksHtml += `
+                    <div class="landmark-card" data-landmark-id="${this.escapeHtml(lm.name)}">
+                        <img loading="lazy" src="${lmImg}" alt="${this.escapeHtml(lm.name)}" onerror="this.src='assets/images/dunnyimage.png'">
+                        <div class="landmark-info">
+                            <h4>${this.escapeHtml(lm.name)}</h4>
+                            <p>${this.escapeHtml(lm.description?.substring(0, 80))}...</p>
+                        </div>
+                    </div>
+                `;
+            });
+            landmarksHtml += `</div>`;
+        } else {
+            landmarksHtml = `<p>No landmarks defined for this kingdom.</p>`;
+        }
+
+        return `
+            <div class="kingdom-hero-container">
+                <img class="kingdom-hero" src="${imageUrl}" alt="${this.escapeHtml(kingdom.name)}" onerror="this.src='assets/images/dunnyimage.png'">
+            </div> 
+            <div class="kingdom-header">
+                <h2 class="kingdom-name">${this.escapeHtml(kingdom.name)}</h2>
+                <span class="kingdom-region">${this.escapeHtml(kingdom.region || 'Unknown Region')}</span>
+            </div>
+            <div class="kingdom-description">${this.escapeHtml(kingdom.description || 'No description available.')}</div>
+            <div class="info-grid">
+                <div class="info-card"><h4>🏛️ Races</h4><p>${races}</p></div>
+                <div class="info-card"><h4>🌡️ Climate</h4><p>${climate}</p></div>
+                <div class="info-card"><h4>🎭 Culture</h4><p>${culture}</p></div>
+                <div class="info-card"><h4>👑 Capital</h4><p>${capital}</p></div>
+            </div>
+            <div class="map-section">
+                <h3>📍 Notable Landmarks</h3>
+                ${landmarksHtml}
+            </div>
+        `;
+    },
+
+    showLandmark(landmark) {
+        if (!this.landmarkLightbox) return;
+        const img = document.getElementById('landmarkImage');
+        const nameEl = document.getElementById('landmarkName');
+        const descEl = document.getElementById('landmarkDesc');
+        if (img) img.src = landmark.image || 'assets/images/dunnyimage.png';
+        if (nameEl) nameEl.textContent = landmark.name;
+        if (descEl) descEl.textContent = landmark.description || 'No description available.';
+        this.landmarkLightbox.style.display = 'flex';
+    },
+
+    closeLightbox() {
+        if (this.landmarkLightbox) this.landmarkLightbox.style.display = 'none';
+    },
+
+    close() {
+        if (this.modal) this.modal.style.display = 'none';
+        document.body.classList.remove('modal-open');
+        if (this.swiperInstance) {
+            this.swiperInstance.destroy(true, true);
+            this.swiperInstance = null;
+        }
+    },
+
+    escapeHtml(str) {
+        if (!str) return '';
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+    }
+};
+
+// Initialize the app
 document.addEventListener('DOMContentLoaded', async () => {
     window.kretosApp = new KretosApp();
     await window.kretosApp.init();
