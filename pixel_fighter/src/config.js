@@ -28,19 +28,18 @@ export const CONFIG = {
         musicVolume: 0.7,
         sfxVolume: 0.8,
         rounds: 3,
-        timer: 0
-        , // seconds, 0 = infinite
+        timer: 0,
         difficulty: 'Normal',
         theme: 'default'
     },
     
     // Physics constants (per second)
     PHYSICS: {
-        GRAVITY: 1200,
-        JUMP_FORCE: -550,
-        MOVE_SPEED: 400,
-        FRICTION_AIR: 0.85,
-        FRICTION_GROUND: 0.90,
-        MAX_FALL_SPEED: 800
+        GRAVITY: 1800,          // Fast fall, snappy jumps
+        JUMP_FORCE: -700,       // High initial jump velocity
+        MOVE_SPEED: 450,
+        MAX_FALL_SPEED: 1000,
+        GROUND_FRICTION: 0.1,   // Very fast stop on ground
+        AIR_FRICTION: 1.0       // No air friction (maintain momentum)
     }
 };

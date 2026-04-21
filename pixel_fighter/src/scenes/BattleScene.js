@@ -98,6 +98,34 @@ export class BattleScene extends Scene {
             this.p1.update(deltaTime, this.game.canvas.width);
             this.p2.update(deltaTime, this.game.canvas.width);
 
+            // ===== COLLISION RESOLUTION =====
+            const p1 = this.p1;
+            const p2 = this.p2;
+            const fighterWidth = 55;
+            const minDistance = fighterWidth; // centre-to-centre distance
+            
+            const dx = p2.x - p1.x;
+            const dist = Math.abs(dx);
+            
+            if (dist < minDistance) {
+                const overlap = minDistance - dist;
+                const pushDir = dx > 0 ? -1 : 1;
+                
+                // Only push if neither is in hitstun (so knockback still works)
+                if (p1.hitTimer <= 0 && p2.hitTimer <= 0) {
+                    p1.x -= pushDir * overlap * 0.5;
+                    p2.x += pushDir * overlap * 0.5;
+                    
+                    // Stop horizontal movement to prevent sliding through
+                    p1.vx = 0;
+                    p2.vx = 0;
+                }
+            }
+            
+            // Re-clamp positions after collision
+            p1.x = Math.max(40, Math.min(this.game.canvas.width - 40, p1.x));
+            p2.x = Math.max(40, Math.min(this.game.canvas.width - 40, p2.x));
+
             this.checkCombat();
 
             if (this.p1.health <= 0) {
@@ -280,6 +308,7 @@ export class BattleScene extends Scene {
     handleInput(event) {
         if (event.type !== 'keydown') return;
 
+        // Debug heal (Ctrl+Space)
         if (event.code === 'Space' && event.ctrlKey) {
             if (this.p1) {
                 this.p1.health = this.p1.maxHealth;
@@ -336,12 +365,14 @@ export class BattleScene extends Scene {
         const p1State = input.getPlayerState('p1');
         const p2State = input.getPlayerState('p2');
 
+        // Handle P1 input (if not AI)
         if (!this.ai1) {
             const jumpPressed = p1State.jump;
             this.p1.handleInput(p1State, jumpPressed, this.p1PrevJump);
             this.p1PrevJump = jumpPressed;
         }
 
+        // Handle P2 input (if not AI)
         if (!this.ai2) {
             const jumpPressed = p2State.jump;
             this.p2.handleInput(p2State, jumpPressed, this.p2PrevJump);
