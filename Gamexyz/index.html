@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Kretos Brawler · Advanced</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Howler.js for audio -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+</head>
+
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas" width="900" height="500"></canvas>
+
+    <!-- HUD (visible during fight) -->
+    <div class="hud-panel" id="hudDisplay" style="display: none;">
+      <div>❤️ <span id="p1HealthLabel">100</span>% &nbsp;| ⚡ <span id="p1ManaLabel">100</span></div>
+      <div class="vs-badge">VS</div>
+      <div>❤️ <span id="p2HealthLabel">100</span>% &nbsp;| ⚡ <span id="p2ManaLabel">100</span></div>
+    </div>
+
+    <!-- Hero Selection Panel -->
+    <div id="selectionPanel" class="hero-selector-area">
+      <div class="selector-row">
+        <div class="hero-card">
+          <div style="font-size: 22px;">👤 PLAYER 1</div>
+          <select id="p1HeroSelect"></select>
+          <div class="stats-preview" id="p1StatsPreview">Select a hero</div>
+          <div>W A S D · F (punch) · G (kick) · H (special) · V (parry)</div>
+        </div>
+        <div class="vs-badge">⚔️</div>
+        <div class="hero-card">
+          <div style="font-size: 22px;">🤖 PLAYER 2 / AI</div>
+          <select id="p2HeroSelect"></select>
+          <div class="stats-preview" id="p2StatsPreview">Select a hero</div>
+          <div>←↑↓→ · , . / (punch/kick/special) · B (parry)</div>
+          <div class="ai-toggle">
+            <label><input type="checkbox" id="aiToggle" checked> 🤖 AI controls Player 2</label>
+          </div>
+        </div>
+      </div>
+      <div class="stage-select-container">
+        <label>🌍 Realm:
+          <select id="stageSelect"></select>
+        </label>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <button id="startFightBtn">⚡ START FIGHT ⚡</button>
+      </div>
+    </div>
+
+    <!-- Post-match controls -->
+    <div id="postMatchPanel" style="display: none; text-align: center; margin-top: 16px;">
+      <div class="winner-message" id="winnerMessage">VICTORY</div>
+      <button id="backToSelectBtn">🔄 SELECT NEW HEROES</button>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
