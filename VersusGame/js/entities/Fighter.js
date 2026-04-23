@@ -10,6 +10,7 @@ export class Fighter {
         this.isAI = isAI;
         this.role = hero.role || 'Brawler';
 
+        // Stats
         this.maxHealth = hero.stats?.health || 1000;
         this.health = this.maxHealth;
         this.displayHealth = this.maxHealth;
@@ -20,6 +21,7 @@ export class Fighter {
         this.attackPower = hero.stats?.physicalAtk || 8;
         this.specialPower = hero.stats?.magicalAtk || 8;
 
+        // Dimensions
         this.width = CONFIG.PLAYER_WIDTH;
         this.height = CONFIG.PLAYER_HEIGHT;
         this.x = side === 'left' ? 150 : CONFIG.CANVAS_WIDTH - 150 - this.width;
@@ -30,6 +32,7 @@ export class Fighter {
         this.grounded = true;
         this.doubleJumpUsed = false;
 
+        // Combat state
         this.state = 'idle';
         this.attackTimer = 0;
         this.attackActive = 0;
@@ -37,23 +40,29 @@ export class Fighter {
         this.hitGiven = false;
         this.invulTimer = 0;
 
+        // Parry
         this.parryActive = false;
         this.parryBlockCount = 0;
         this.maxParryBlocks = 8;
         this.parryCooldown = 0;
 
+        // Throw
         this.throwActive = false;
         this.throwTimer = 0;
         this.throwCooldown = 0;
 
+        // Counter hit
         this.counterHit = false;
 
+        // Visual effects
         this.hitSpark = { active: false, x: 0, y: 0, timer: 0, type: 'hit' };
         this.blockSpark = { active: false, x: 0, y: 0, timer: 0 };
 
+        // AI
         this.aiController = null;
         this.aiDifficulty = 1.0;
 
+        // Sprite
         this.spriteImg = null;
         this.spriteScale = 0.3;
         if (hero.images && hero.images.spriteRight) {
@@ -62,11 +71,15 @@ export class Fighter {
             this.spriteImg = img;
         }
 
+        // UI move display
         this.displayMove = '';
         this.moveDisplayTimer = 0;
+
+        // Projectile cooldown for ranged classes
         this.projectileCooldown = 0;
 
-        this.meleeEffectType = null;
+        // Melee hit effect (for Brawler/Warrior)
+        this.meleeEffectType = null;   // 'brawler', 'warrior'
         this.meleeEffectTimer = 0;
     }
 
@@ -81,7 +94,7 @@ export class Fighter {
 
     update(opponent, dt) {
         const frameMult = 60;
-
+        // Timers
         if (this.attackTimer > 0) this.attackTimer -= dt * frameMult;
         if (this.attackActive > 0) {
             this.attackActive -= dt * frameMult;
@@ -103,11 +116,13 @@ export class Fighter {
         if (this.projectileCooldown > 0) this.projectileCooldown -= dt * frameMult;
         if (this.meleeEffectTimer > 0) this.meleeEffectTimer -= dt * frameMult;
 
+        // Mana regen
         const MANA_REGEN_SPEED_FACTOR = 0.3;
         if (this.mana < this.maxMana) {
             this.mana = Math.min(this.maxMana, this.mana + this.manaReg * MANA_REGEN_SPEED_FACTOR * dt * frameMult);
         }
 
+        // Physics
         this.vy += CONFIG.GRAVITY * dt * frameMult;
         this.y += this.vy * dt * frameMult;
         if (this.y + this.height >= CONFIG.GROUND_Y) {
@@ -119,9 +134,11 @@ export class Fighter {
             this.grounded = false;
         }
 
+        // Horizontal movement
         if (this.state !== 'hurt' || this.invulTimer > 20) this.x += this.vx * dt * frameMult;
         this.x = Math.max(30, Math.min(CONFIG.CANVAS_WIDTH - this.width - 30, this.x));
 
+        // Collision push
         if (opponent && this.grounded && opponent.grounded) {
             const dx = this.x - opponent.x;
             const minDist = (this.width + opponent.width) / 2;
@@ -133,14 +150,17 @@ export class Fighter {
             }
         }
 
+        // Facing
         if (opponent) this.facing = opponent.x > this.x ? 1 : -1;
 
+        // Attack collision (melee)
         if (this.attackActive > 0 && !this.hitGiven && opponent && opponent.invulTimer <= 0) {
             const myBox = this.getAttackBox();
             const oppBox = { x: opponent.x, y: opponent.y, w: opponent.width, h: opponent.height };
             if (this.rectCollide(myBox, oppBox)) this.handleHit(opponent);
         }
 
+        // Throw collision
         if (this.throwActive && !this.hitGiven && opponent && opponent.invulTimer <= 0) {
             const myBox = this.getThrowBox();
             const oppBox = { x: opponent.x, y: opponent.y, w: opponent.width, h: opponent.height };
@@ -154,16 +174,20 @@ export class Fighter {
             }
         }
 
+        // State recovery
         if (this.state === 'hurt' && this.invulTimer <= 0) this.state = 'idle';
         if (this.grounded && (this.state === 'jump' || this.state === 'doubleJump')) this.state = 'idle';
 
+        // AI
         if (this.isAI && opponent) {
             if (!this.aiController) this.aiController = new AIController(this, opponent, 'Normal');
             this.aiController.update(dt);
         }
 
+        // Ground friction
         if (this.grounded) this.vx *= 0.9;
 
+        // Smooth health
         const healthDrainRate = (this.health <= 0) ? 800 : 250;
         if (this.displayHealth > this.health) this.displayHealth = Math.max(this.health, this.displayHealth - healthDrainRate * dt * frameMult);
         else this.displayHealth = this.health;
@@ -213,6 +237,12 @@ export class Fighter {
         if (dmg > 0) {
             opponent.health = Math.max(0, opponent.health - dmg);
             opponent.parryBlockCount = 0;
+        }
+
+        // ---- TRIGGER KICK HIT EFFECT ON THE TARGET ----
+        if (moveType === 'kick' && dmg > 0) {
+            opponent.meleeEffectType = 'kick';
+            opponent.meleeEffectTimer = 12;
         }
 
         let knockbackVX = this.facing * 9;
@@ -377,6 +407,7 @@ export class Fighter {
             this.counterHit = false;
             this.displayMove = this.hero.moves?.basic?.kick || 'KICK';
             this.moveDisplayTimer = 60;
+            // No longer set melee effect here – it's triggered on hit
             return true;
         }
         return false;

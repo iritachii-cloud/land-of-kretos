@@ -223,23 +223,24 @@ export class BattleScene extends Scene {
         if (this.p1) this.p1.render(ctx);
         if (this.p2) this.p2.render(ctx);
 
-        // ------- Melee hit effects (hero-specific colors) -------
+        // ------- Melee hit effects (uniform position & symmetric) -------
         [this.p1, this.p2].forEach(f => {
             if (f && f.meleeEffectTimer > 0 && f.meleeEffectType) {
                 const heroColors = f.hero?.colorPalette || {};
                 const primary = heroColors.primary || ['#ffaa00', '#ff4400', '#aa0000'];
                 const secondary = heroColors.secondary || ['#aaccff', '#88aaff', '#6688dd'];
+                const tertiary = heroColors.tertiary || ['#ffcc00', '#ff8800', '#aa4400'];
 
-                const box = f.getAttackBox();
-                const centerX = box.x + box.w / 2;
-                const centerY = box.y + box.h / 2;
-                ctx.save();
-                ctx.translate(centerX, centerY);
-
+                const centerX = f.x + f.width / 2;
+                const centerY = f.y + f.height / 2;
                 const alpha = f.meleeEffectTimer / 15;
 
+                ctx.save();
+                ctx.translate(centerX, centerY);
+                // Flip canvas horizontally if facing left, so effect looks identical regardless of side
+                if (f.facing === -1) ctx.scale(-1, 1);
+
                 if (f.meleeEffectType === 'brawler') {
-                    // Use primary and secondary as radial gradient
                     const grad = ctx.createRadialGradient(0, 0, 5, 0, 0, 40);
                     grad.addColorStop(0, primary[0]);
                     grad.addColorStop(0.5, primary[1]);
@@ -250,7 +251,6 @@ export class BattleScene extends Scene {
                     ctx.arc(0, 0, 40 * (1 - alpha * 0.3), 0, Math.PI * 2);
                     ctx.fill();
 
-                    // Spikes with secondary color
                     ctx.strokeStyle = secondary[0];
                     ctx.lineWidth = 4 * alpha;
                     for (let i = 0; i < 8; i++) {
@@ -262,21 +262,77 @@ export class BattleScene extends Scene {
                         ctx.lineTo(dx, dy);
                         ctx.stroke();
                     }
-                } else if (f.meleeEffectType === 'warrior') {
-                    // Slash lines with primary and secondary
-                    ctx.globalAlpha = alpha;
-                    ctx.strokeStyle = primary[0];
+                }
+                else if (f.meleeEffectType === 'warrior') {
+                    // Weapon slash – centred at 3 o'clock (straight right)
+                    const sweepAngle = Math.PI * 0.7;           // total arc width ≈126°
+                    const halfSweep = sweepAngle / 2;           // ~63° each side
+
+                    ctx.globalAlpha = alpha * 0.9;
                     ctx.lineWidth = 6;
+                    ctx.lineCap = 'round';
                     ctx.shadowColor = secondary[0];
-                    ctx.shadowBlur = 15;
-                    for (let i = 0; i < 3; i++) {
-                        const offset = i * 8 - 8;
+                    ctx.shadowBlur = 20;
+
+                    // Main arc (from -halfSweep to +halfSweep)
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 90, -halfSweep, halfSweep, false);
+                    ctx.strokeStyle = primary[0];
+                    ctx.stroke();
+
+                    // Inner arc
+                    ctx.lineWidth = 3;
+                    ctx.shadowBlur = 10;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 34, -halfSweep, halfSweep, false);
+                    ctx.strokeStyle = secondary[0];
+                    ctx.stroke();
+
+                    // Speed lines – now spanning the forward edge of the symmetric arc
+                    ctx.lineWidth = 2;
+                    ctx.shadowBlur = 5;
+                    for (let i = 0; i < 4; i++) {
+                        const angle = -halfSweep + 0.15 + (i / 3) * (sweepAngle - 0.3); // evenly across the arc
+                        const dx = Math.cos(angle) * 30;
+                        const dy = Math.sin(angle) * 30;
                         ctx.beginPath();
-                        ctx.moveTo(-20 + offset, -20);
-                        ctx.lineTo(30 + offset, 20);
+                        ctx.moveTo(dx, dy);
+                        ctx.lineTo(dx + Math.cos(angle) * 18, dy + Math.sin(angle) * 18);
+                        ctx.strokeStyle = primary[1];
                         ctx.stroke();
                     }
+
                     ctx.shadowBlur = 0;
+                    ctx.lineCap = 'butt';
+                }
+                else if (f.meleeEffectType === 'kick') {
+                    // Pixel‑style kick impact – appears on hit, not on whiff
+                    const flicker = alpha * 1.2;
+                    ctx.globalAlpha = Math.min(1, flicker);
+
+                    const size = 28 * (1 - alpha * 0.3);
+                    const half = size / 2;
+                    const step = 6;
+
+                    // Sparse pixel grid with tertiary colors
+                    ctx.fillStyle = tertiary[0];
+                    for (let ix = -half; ix <= half; ix += step) {
+                        for (let iy = -half; iy <= half; iy += step) {
+                            if (Math.random() > 0.3) continue;
+                            ctx.fillRect(ix, iy, 4, 4);
+                        }
+                    }
+
+                    // Core flash
+                    ctx.fillStyle = '#ffffff';
+                    ctx.fillRect(-3, -3, 6, 6);
+
+                    // Thin outer ring
+                    ctx.strokeStyle = tertiary[1];
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, size, 0, Math.PI * 2);
+                    ctx.stroke();
                 }
                 ctx.restore();
             }
