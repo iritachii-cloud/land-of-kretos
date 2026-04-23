@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎮 Arcade Nexus: 10 Legendary Joysticks | Wheel = Jump/Crouch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none; /* avoid accidental drag on UI */
+        }
+
+        body {
+            background: radial-gradient(circle at 20% 30%, #0a0f1e, #03060c);
+            font-family: 'Segoe UI', 'Poppins', 'Press Start 2P', 'Courier New', monospace;
+            padding: 2rem 1.5rem;
+            color: #eee;
+            overflow-x: hidden;
+        }
+
+        /* main grid */
+        .joystick-showroom {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.4rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #FFD166, #FF6B6B, #4ECDC4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 8px rgba(0,0,0,0.3);
+            margin-bottom: 0.5rem;
+        }
+
+        .sub {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            opacity: 0.8;
+            font-weight: 300;
+            font-size: 1rem;
+            border-bottom: 1px dashed rgba(255,255,255,0.2);
+            display: inline-block;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+
+        /* universal card style */
+        .joystick-card {
+            background: rgba(12, 20, 30, 0.65);
+            backdrop-filter: blur(2px);
+            border-radius: 2rem;
+            padding: 1.2rem 1rem 1.5rem 1rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .joystick-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 28px 36px -14px black;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .style-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            background: rgba(0,0,0,0.5);
+            padding: 0.2rem 0.9rem;
+            border-radius: 60px;
+            letter-spacing: 1px;
+            backdrop-filter: blur(4px);
+        }
+
+        .badge {
+            font-size: 0.7rem;
+            background: #2c3e4e;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            font-family: monospace;
+        }
+
+        /* joystick canvas area */
+        .joystick-area {
+            display: flex;
+            justify-content: center;
+            margin: 0.5rem 0 1rem 0;
+        }
+
+        canvas.joystick-canvas {
+            width: 150px;
+            height: 150px;
+            border-radius: 999px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            cursor: grab;
+            transition: filter 0.1s;
+        }
+        canvas.joystick-canvas:active {
+            cursor: grabbing;
+        }
+
+        /* character arena */
+        .character-arena {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 60px;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+            padding: 0.6rem 0.8rem;
+            position: relative;
+            overflow: hidden;
+            min-height: 80px;
+            border: 1px solid rgba(255,255,240,0.2);
+        }
+
+        .char-track {
+            position: relative;
+            height: 64px;
+            width: 100%;
+            background: #1e2a32;
+            border-radius: 48px;
+            overflow: visible;
+        }
+
+        .character {
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            width: 52px;
+            height: 52px;
+            background: #F9C74F;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            transition: left 0.08s linear, transform 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            will-change: left, transform;
+            cursor: default;
+        }
+
+        /* jump & crouch animations */
+        .character.jump-active {
+            transform: translateY(-38px) scale(1.05);
+            background: #F9844A;
+            transition: transform 0.2s ease-out;
+        }
+        .character.crouch-active {
+            transform: scaleY(0.6) translateY(12px);
+            background: #577590;
+            transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .instruction {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 12px;
+            opacity: 0.7;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            font-family: monospace;
+        }
+
+        .instruction span {
+            background: #00000066;
+            padding: 4px 8px;
+            border-radius: 20px;
+        }
+
+        hr {
+            margin: 8px 0;
+            border-color: rgba(255,255,255,0.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+        
+        /* wheel-capture hint */
+        .wheel-hint {
+            font-size: 0.65rem;
+            background: #2c3e4e80;
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="joystick-showroom">
+    <h1>⚡ JOYSTICK ARCANUM ⚡</h1>
+    <div style="text-align: center"><span class="sub">🎮 10 unique styles · drag joystick → move left/right · scroll wheel → jump ↑ / crouch ↓ (page never scrolls)</span></div>
+    <div class="grid" id="joystickGrid"></div>
+    <footer>🕹️ each joystick works independently · fully analog · wheel events are trapped inside each card for smooth jump/crouch</footer>
+</div>
+
+<script>
+    (function(){
+        // ----- Helper: Create a fully independent joystick + character controller per card -----
+        class JoystickModule {
+            constructor(cardElement, themeConfig) {
+                this.card = cardElement;
+                this.theme = themeConfig;   // { drawBackground, drawThumb, name, customClass }
+                this.canvas = cardElement.querySelector('.joystick-canvas');
+                this.ctx = this.canvas.getContext('2d');
+                this.charElem = cardElement.querySelector('.character');
+                this.trackElem = cardElement.querySelector('.char-track');
+                
+                // joystick parameters
+                this.size = 150;          // canvas size fixed
+                this.center = 75;
+                this.radius = 62;
+                this.thumbRadius = 22;
+                this.active = false;
+                this.dx = 0;      // -1..1
+                this.dy = 0;
+                this.thumbX = this.center;
+                this.thumbY = this.center;
+                
+                // bind events
+                this.handleStart = this.handleStart.bind(this);
+                this.handleMove = this.handleMove.bind(this);
+                this.handleEnd = this.handleEnd.bind(this);
+                this.onWheel = this.onWheel.bind(this);
+                
+                this.initEvents();
+                this.initWheel();
+                this.draw();      // initial draw
+                
+                // character movement bounds
+                this.maxLeft = 0;
+                this.updateCharBounds();
+                window.addEventListener('resize', () => this.updateCharBounds());
+            }
+            
+            updateCharBounds() {
+                if (!this.trackElem || !this.charElem) return;
+                const trackWidth = this.trackElem.clientWidth;
+                const charWidth = this.charElem.clientWidth;
+                this.maxTravel = Math.max(0, trackWidth - charWidth);
+                this.updateCharacterPosition(); // set from current dx
+            }
+            
+            updateCharacterPosition() {
+                if (!this.charElem) return;
+                // map dx (-1..1) to left position (0 .. maxTravel)
+                let targetX = ((this.dx + 1) / 2) * this.maxTravel;
+                targetX = Math.min(Math.max(0, targetX), this.maxTravel);
+                this.charElem.style.left = `${targetX}px`;
+            }
+            
+            // joystick core logic
+            handleStart(e) {
+                e.preventDefault();
+                this.active = true;
+                const point = this.getCanvasCoords(e);
+                if (point) this.updateJoystickPosition(point.x, point.y);
+                window.addEventListener('mousemove', this.handleMove);
+                window.addEventListener('mouseup', this.handleEnd);
+                window.addEventListener('touchmove', this.handleMove, { passive: false });
+                window.addEventListener('touchend', this.handleEnd);
+            }
+            
+            handleMove(e) {
+                if (!this.active) return;
+                e.preventDefault();
+                const point = this.getCanvasCoords(e);
+                if (point) this.updateJoystickPosition(point.x, point.y);
+            }
+            
+            handleEnd(e) {
+                this.active = false;
+                // reset to center
+                this.dx = 0;
+                this.dy = 0;
+                this.thumbX = this.center;
+                this.thumbY = this.center;
+                this.draw();
+                this.updateCharacterPosition();
+                window.removeEventListener('mousemove', this.handleMove);
+                window.removeEventListener('mouseup', this.handleEnd);
+                window.removeEventListener('touchmove', this.handleMove);
+                window.removeEventListener('touchend', this.handleEnd);
+            }
+            
+            getCanvasCoords(e) {
+                const rect = this.canvas.getBoundingClientRect();
+                const scaleX = this.canvas.width / rect.width;   // 150 / actual
+                const scaleY = this.canvas.height / rect.height;
+                let clientX, clientY;
+                if (e.touches) {
+                    if (e.touches.length === 0) return null;
+                    clientX = e.touches[0].clientX;
+                    clientY = e.touches[0].clientY;
+                } else {
+                    clientX = e.clientX;
+                    clientY = e.clientY;
+                }
+                let canvasX = (clientX - rect.left) * scaleX;
+                let canvasY = (clientY - rect.top) * scaleY;
+                canvasX = Math.min(Math.max(0, canvasX), this.size);
+                canvasY = Math.min(Math.max(0, canvasY), this.size);
+                return { x: canvasX, y: canvasY };
+            }
+            
+            updateJoystickPosition(mouseX, mouseY) {
+                let deltaX = mouseX - this.center;
+                let deltaY = mouseY - this.center;
+                let distance = Math.hypot(deltaX, deltaY);
+                let limitedDist = Math.min(distance, this.radius);
+                if (distance > 0.01) {
+                    deltaX = (deltaX / distance) * limitedDist;
+                    deltaY = (deltaY / distance) * limitedDist;
+                }
+                this.thumbX = this.center + deltaX;
+                this.thumbY = this.center + deltaY;
+                // compute normalized dx, dy (-1..1)
+                this.dx = deltaX / this.radius;
+                this.dy = deltaY / this.radius;
+                // clamp for safe
+                this.dx = Math.min(Math.max(-1, this.dx), 1);
+                this.dy = Math.min(Math.max(-1, this.dy), 1);
+                this.draw();
+                this.updateCharacterPosition();
+            }
+            
+            draw() {
+                if (!this.ctx) return;
+                this.ctx.clearRect(0, 0, this.size, this.size);
+                // draw custom background from theme
+                if (this.theme.drawBackground) {
+                    this.theme.drawBackground(this.ctx, this.size, this.center, this.radius);
+                } else {
+                    // fallback
+                    this.ctx.beginPath();
+                    this.ctx.arc(this.center, this.center, this.radius, 0, Math.PI*2);
+                    this.ctx.fillStyle = "#2c3e50";
+                    this.ctx.fill();
+                    this.ctx.strokeStyle = "#aaa";
+                    this.ctx.stroke();
+                }
+                // draw thumb
+                if (this.theme.drawThumb) {
+                    this.theme.drawThumb(this.ctx, this.thumbX, this.thumbY, this.thumbRadius);
+                } else {
+                    this.ctx.beginPath();
+                    this.ctx.arc(this.thumbX, this.thumbY, this.thumbRadius, 0, Math.PI*2);
+                    this.ctx.fillStyle = "#f0f0f0";
+                    this.ctx.fill();
+                    this.ctx.shadowBlur = 0;
+                }
+                // extra glow reset
+                this.ctx.shadowBlur = 0;
+            }
+            
+            initEvents() {
+                this.canvas.addEventListener('mousedown', this.handleStart);
+                this.canvas.addEventListener('touchstart', this.handleStart, { passive: false });
+                // disable context menu
+                this.canvas.addEventListener('contextmenu', (e) => e.preventDefault());
+            }
+            
+            initWheel() {
+                // CRITICAL FIX: wheel event now triggers jump/crouch WITHOUT scrolling the page.
+                // We use { passive: false } and both preventDefault & stopPropagation to lock scroll.
+                this.card.addEventListener('wheel', this.onWheel, { passive: false });
+            }
+            
+            onWheel(e) {
+                // 100% prevent page scroll and any browser zoom interference
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const delta = e.deltaY;
+                // scroll up = negative deltaY -> jump
+                if (delta < 0) {
+                    this.triggerJump();
+                } 
+                // scroll down = positive deltaY -> crouch
+                else if (delta > 0) {
+                    this.triggerCrouch();
+                }
+            }
+            
+            triggerJump() {
+                if (!this.charElem) return;
+                this.charElem.classList.remove('crouch-active');
+                this.charElem.classList.add('jump-active');
+                setTimeout(() => {
+                    this.charElem.classList.remove('jump-active');
+                }, 280);
+            }
+            
+            triggerCrouch() {
+                if (!this.charElem) return;
+                this.charElem.classList.remove('jump-active');
+                this.charElem.classList.add('crouch-active');
+                setTimeout(() => {
+                    this.charElem.classList.remove('crouch-active');
+                }, 250);
+            }
+            
+            // public update on resize
+            refreshBounds() {
+                this.updateCharBounds();
+            }
+        }
+        
+        // ---------- 10 UNIQUE THEMES (modern + pixel/vintage) ----------
+        const themes = [
+            { // 1. NEON CYBERPULSE
+                name: "⚡ NEON PULSE",
+                class: "style-neon",
+                drawBg: (ctx, size, cx, r) => {
+                    const grad = ctx.createLinearGradient(20,20,size-20,size-20);
+                    grad.addColorStop(0, '#0f0c29');
+                    grad.addColorStop(0.6, '#302b63');
+                    grad.addColorStop(1, '#24243e');
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = grad; ctx.fill();
+                    ctx.shadowBlur = 10; ctx.shadowColor = "#0ff";
+                    ctx.beginPath(); ctx.arc(cx, cx, r-2, 0, Math.PI*2);
+                    ctx.strokeStyle = "#0ff"; ctx.lineWidth = 2.5; ctx.stroke();
+                    ctx.shadowBlur = 0;
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.shadowBlur = 8; ctx.shadowColor = "#f0f";
+                    ctx.beginPath(); ctx.arc(tx, ty, rad, 0, Math.PI*2);
+                    ctx.fillStyle = "#FF007F"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-5, 0, Math.PI*2);
+                    ctx.fillStyle = "#FFD700"; ctx.fill();
+                    ctx.shadowBlur = 0;
+                }
+            },
+            { // 2. PIXEL VINTAGE (8-bit arcade)
+                name: "🕹️ PIXEL RETRO",
+                class: "style-pixel",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.imageSmoothingEnabled = false;
+                    ctx.fillStyle = "#1a2a1f"; ctx.fillRect(0,0,size,size);
+                    ctx.fillStyle = "#4a7023";
+                    for(let i=0; i<12; i++){
+                        ctx.fillRect(cx-r + i*10, cx-r+5, 5, 5);
+                        ctx.fillRect(cx-r + i*9, cx+r-12, 5, 5);
+                    }
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#2b2b1a"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(cx, cx, r-4, 0, Math.PI*2);
+                    ctx.fillStyle = "#5f8746"; ctx.fill();
+                    for(let a=0; a<360; a+=45){
+                        let rad = a * Math.PI/180;
+                        let x1 = cx + (r-8)*Math.cos(rad);
+                        let y1 = cx + (r-8)*Math.sin(rad);
+                        ctx.fillStyle = "#F2C94C"; ctx.fillRect(x1-2, y1-2, 4,4);
+                    }
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.fillStyle = "#ffb347"; ctx.beginPath(); ctx.arc(tx, ty, rad-2, 0, Math.PI*2);
+                    ctx.fill();
+                    ctx.fillStyle = "#aa6f20"; ctx.beginPath(); ctx.arc(tx-2, ty-2, 5, 0, Math.PI*2);
+                    ctx.fill();
+                    ctx.fillStyle = "#ffdd99"; ctx.fillRect(tx-6, ty-6, 4,4);
+                }
+            },
+            { // 3. GLASSMORPHIC FRESCO
+                name: "✨ GLASS AURA",
+                class: "style-glass",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "rgba(255,255,255,0.15)";
+                    ctx.fill();
+                    ctx.shadowBlur = 12; ctx.shadowColor = "rgba(255,255,200,0.5)";
+                    ctx.beginPath(); ctx.arc(cx, cx, r-2, 0, Math.PI*2);
+                    ctx.strokeStyle = "rgba(255,255,245,0.8)"; ctx.lineWidth = 2; ctx.stroke();
+                    for(let i=0;i<8;i++){ let ang = i*Math.PI*2/8; let x = cx + (r-10)*Math.cos(ang); let y = cx + (r-10)*Math.sin(ang); ctx.fillStyle = "#ffffffcc"; ctx.beginPath(); ctx.arc(x,y,3,0,Math.PI*2); ctx.fill(); }
+                    ctx.shadowBlur = 0;
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-2, 0, Math.PI*2);
+                    ctx.fillStyle = "#eef5ffcc"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(tx-3, ty-3, 6, 0, Math.PI*2);
+                    ctx.fillStyle = "#ffffff"; ctx.fill();
+                }
+            },
+            { // 4. VINTAGE WOODEN ARCADE
+                name: "🪵 WOODEN LEGACY",
+                class: "style-wood",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.fillStyle = "#8B5A2B"; ctx.fillRect(0,0,size,size);
+                    for(let i=0;i<80;i++){ ctx.fillStyle = `rgba(70,40,15,${Math.random()*0.4})`; ctx.fillRect(Math.random()*size, Math.random()*size, 2,2); }
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#b87c4f"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(cx, cx, r-5, 0, Math.PI*2);
+                    ctx.fillStyle = "#dba46a"; ctx.fill();
+                    ctx.fillStyle = "#5d3a1a"; for(let i=0;i<20;i++){ let angle = i*Math.PI*2/20; let x1 = cx + (r-12)*Math.cos(angle); let y1 = cx + (r-12)*Math.sin(angle); ctx.fillRect(x1-2,y1-2,4,4);}
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-3, 0, Math.PI*2);
+                    ctx.fillStyle = "#CD7F32"; ctx.fill();
+                    ctx.fillStyle = "#E6B17E"; ctx.beginPath(); ctx.arc(tx-2, ty-2, 6, 0, Math.PI*2); ctx.fill();
+                }
+            },
+            { // 5. CYBERPUNK 2077
+                name: "🔮 CYBER DECK",
+                class: "style-cyber",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.fillStyle = "#010114"; ctx.fillRect(0,0,size,size);
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#0d1f2b"; ctx.fill();
+                    for(let i=0;i<4;i++){ let rad = i*Math.PI/2; let x1 = cx + (r-12)*Math.cos(rad); let y1 = cx + (r-12)*Math.sin(rad); ctx.beginPath(); ctx.moveTo(cx, cx); ctx.lineTo(x1, y1); ctx.strokeStyle="#00ffff"; ctx.lineWidth=1.5; ctx.stroke();}
+                    ctx.beginPath(); ctx.arc(cx, cx, r-12, 0, Math.PI*2); ctx.strokeStyle = "#ff00c1"; ctx.lineWidth=2; ctx.stroke();
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.shadowBlur = 8; ctx.shadowColor = "#0ff";
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-4, 0, Math.PI*2);
+                    ctx.fillStyle = "#f0f"; ctx.fill();
+                    ctx.fillStyle = "#00ffff"; ctx.beginPath(); ctx.arc(tx-2, ty-2, 5, 0, Math.PI*2); ctx.fill();
+                    ctx.shadowBlur = 0;
+                }
+            },
+            { // 6. MINIMAL WHITE FUTURISTIC
+                name: "⚪ MINIMAL FLUX",
+                class: "style-minimal",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.fillStyle = "#f8f9fa"; ctx.fillRect(0,0,size,size);
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#e9ecef"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(cx, cx, r-6, 0, Math.PI*2);
+                    ctx.fillStyle = "#dee2e6"; ctx.fill();
+                    ctx.fillStyle = "#adb5bd"; ctx.font = "bold 14px monospace"; ctx.fillText("◀ ▶", cx-15, cx+5);
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-4, 0, Math.PI*2);
+                    ctx.fillStyle = "#212529"; ctx.fill();
+                    ctx.fillStyle = "#6c757d"; ctx.beginPath(); ctx.arc(tx-2, ty-1, 4, 0, Math.PI*2); ctx.fill();
+                }
+            },
+            { // 7. COMIC POP
+                name: "💥 COMIC BOOM",
+                class: "style-comic",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.fillStyle = "#FEE440"; ctx.fillRect(0,0,size,size);
+                    for(let i=0;i<60;i++){ ctx.fillStyle = `#${Math.floor(Math.random()*16777215).toString(16)}`; ctx.fillRect(Math.random()*size, Math.random()*size, 3,3);}
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#F15BB5"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(cx, cx, r-8, 0, Math.PI*2);
+                    ctx.fillStyle = "#FEE440"; ctx.fill();
+                    ctx.fillStyle = "#000"; ctx.font = "bold 18px 'Comic Neue'"; ctx.fillText("⚡", cx-8, cx+8);
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.beginPath(); ctx.ellipse(tx, ty, rad-4, rad-6, 0, 0, Math.PI*2);
+                    ctx.fillStyle = "#9B5DE5"; ctx.fill();
+                    ctx.fillStyle = "#FEE440"; ctx.beginPath(); ctx.arc(tx-4, ty-3, 6, 0, Math.PI*2); ctx.fill();
+                }
+            },
+            { // 8. DOTTED RETRO (vintage monitor)
+                name: "📟 DOTTED MATRIX",
+                class: "style-dotted",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.fillStyle = "#2E4A62"; ctx.fillRect(0,0,size,size);
+                    for(let i=0;i<200;i++){ ctx.fillStyle = `rgba(200,230,255,0.7)`; ctx.fillRect((i*7)%size, Math.floor(i/15)*5, 2,2); }
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#1F3A4B"; ctx.fill();
+                    ctx.fillStyle = "#7A9EB1"; ctx.font = "10px monospace"; ctx.fillText("· · ·", cx-12, cx+4);
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-4, 0, Math.PI*2);
+                    ctx.fillStyle = "#FFCDB2"; ctx.fill();
+                    for(let d=0;d<12;d++){ ctx.fillStyle = "#B5838D"; ctx.fillRect(tx-5+Math.random()*10, ty-5+Math.random()*10, 2,2);}
+                }
+            },
+            { // 9. CHROME METALLIC
+                name: "🛸 CHROME DRIVE",
+                class: "style-chrome",
+                drawBg: (ctx, size, cx, r) => {
+                    const grad = ctx.createLinearGradient(0,0,size,size);
+                    grad.addColorStop(0,"#a8a8a8"); grad.addColorStop(0.5,"#e0e0e0"); grad.addColorStop(1,"#6e6e6e");
+                    ctx.fillStyle = grad; ctx.fillRect(0,0,size,size);
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#c0c0c0"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(cx, cx, r-6, 0, Math.PI*2);
+                    ctx.fillStyle = "#ffffff88"; ctx.fill();
+                    ctx.shadowBlur = 4; ctx.shadowColor = "silver";
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    const grad = ctx.createRadialGradient(tx-5, ty-5, 5, tx, ty, rad);
+                    grad.addColorStop(0,"#f9f9f9"); grad.addColorStop(1,"#9c9c9c");
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-4, 0, Math.PI*2);
+                    ctx.fillStyle = grad; ctx.fill();
+                }
+            },
+            { // 10. STEAMPUNK VINTAGE
+                name: "⚙️ STEAMPUNK GEAR",
+                class: "style-steam",
+                drawBg: (ctx, size, cx, r) => {
+                    ctx.fillStyle = "#8B5A2B"; ctx.fillRect(0,0,size,size);
+                    ctx.fillStyle = "#CD853F"; for(let i=0;i<30;i++){ ctx.beginPath(); ctx.arc(cx+Math.sin(i)*40, cx+Math.cos(i*1.3)*35, 4,0,Math.PI*2); ctx.fill();}
+                    ctx.beginPath(); ctx.arc(cx, cx, r, 0, Math.PI*2);
+                    ctx.fillStyle = "#B87333"; ctx.fill();
+                    ctx.beginPath(); ctx.arc(cx, cx, r-10, 0, Math.PI*2);
+                    ctx.fillStyle = "#D2A679"; ctx.fill();
+                    for(let a=0;a<12;a++){ let ang = a*30*Math.PI/180; let x2 = cx + (r-14)*Math.cos(ang); let y2 = cx + (r-14)*Math.sin(ang); ctx.fillStyle = "#b5651e"; ctx.fillRect(x2-3,y2-3,6,6);}
+                },
+                drawThumb: (ctx, tx, ty, rad) => {
+                    ctx.beginPath(); ctx.arc(tx, ty, rad-3, 0, Math.PI*2);
+                    ctx.fillStyle = "#D4AF37"; ctx.fill();
+                    ctx.fillStyle = "#8B5A2B"; ctx.beginPath(); ctx.arc(tx-3, ty-2, 5, 0, Math.PI*2); ctx.fill();
+                }
+            }
+        ];
+        
+        // Helper: create card DOM
+        function buildCard(theme, index) {
+            const card = document.createElement('div');
+            card.className = `joystick-card ${theme.class}`;
+            card.setAttribute('data-id', index);
+            // inner structure
+            card.innerHTML = `
+                <div class="card-header">
+                    <div class="style-name">${theme.name}</div>
+                    <div class="badge">drag | scroll</div>
+                </div>
+                <div class="joystick-area">
+                    <canvas class="joystick-canvas" width="150" height="150"></canvas>
+                </div>
+                <div class="character-arena">
+                    <div class="char-track">
+                        <div class="character">🎮</div>
+                    </div>
+                </div>
+                <div class="instruction">
+                    <span>🕹️ ← drag joystick →</span>
+                    <span>⬆️ scroll UP = jump</span>
+                    <span>⬇️ scroll DOWN = crouch</span>
+                </div>
+            `;
+            return card;
+        }
+        
+        const container = document.getElementById('joystickGrid');
+        const modules = [];
+        
+        // create 10 cards
+        themes.forEach((theme, idx) => {
+            const card = buildCard(theme, idx);
+            container.appendChild(card);
+            // Instantiate joystick module after dom insertion
+            const module = new JoystickModule(card, {
+                drawBackground: theme.drawBg,
+                drawThumb: theme.drawThumb,
+                name: theme.name,
+                customClass: theme.class
+            });
+            modules.push(module);
+        });
+        
+        // resize hook for all modules
+        window.addEventListener('resize', () => {
+            modules.forEach(mod => mod.refreshBounds());
+        });
+        
+        // small delay for initial bounds
+        setTimeout(() => {
+            modules.forEach(mod => mod.refreshBounds());
+        }, 100);
+    })();
+</script>
+</body>
+</html>
