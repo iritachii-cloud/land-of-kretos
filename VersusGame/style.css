@@ -16,14 +16,67 @@ body {
     font-family: 'Courier New', 'Press Start 2P', monospace;
 }
 
+.wrapper-game-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding: 2% 5%;
+    justify-items: center;
+    align-content: center;
+}
+
 .game-wrapper {
     position: relative;
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 100%;
     box-shadow: 0 0 40px rgba(255, 17, 17, 0.912);
     border-radius: 12px;
     overflow: hidden;
     border: 2px solid #ffbf00;
+}
+
+@media (max-width: 1199px) {
+    .wrapper-game-wrapper {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 970px) {
+    .wrapper-game-wrapper {
+        padding: 50px;
+    }
+
+    .game-wrapper {
+        width: 720px;
+        height: 480px;
+    }
+}
+
+@media (max-width: 720px) {
+    .wrapper-game-wrapper {
+        padding: 50px;
+    }
+
+    .game-wrapper {
+        width: 480px;
+        height: 360px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .wrapper-game-wrapper {
+        padding: 0;
+    }
+
+    .game-wrapper {
+        position: relative;
+        width: 360px;
+        height: 280px;
+        box-shadow: 0 0 40px rgba(255, 17, 17, 0.912);
+        border-radius: 12px;
+        overflow: hidden;
+        border: 2px solid #ffbf00;
+    }
 }
 
 canvas {
@@ -39,7 +92,7 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
-    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.2) 0px, rgba(255,255,255,0.02) 2px, rgba(0,0,0,0.2) 4px);
+    background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0px, rgba(255, 255, 255, 0.02) 2px, rgba(0, 0, 0, 0.2) 4px);
     pointer-events: none;
     z-index: 10;
     opacity: 0.6;
@@ -47,6 +100,11 @@ canvas {
 
 /* pixelated glow effect */
 @keyframes flicker {
-    0% { opacity: 0.8; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
