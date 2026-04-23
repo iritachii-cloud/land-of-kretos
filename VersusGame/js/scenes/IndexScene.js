@@ -73,18 +73,37 @@ export class IndexScene extends Scene {
         ctx.font = '16px monospace';
         ctx.fillStyle = '#aaa';
         ctx.textAlign = 'center';
-        ctx.fillText('↑↓ scroll · ESC to return', width/2, height - 40);
+        ctx.fillText('↑↓/WASD scroll · U/Enter · I/Esc return', width/2, height - 40);
     }
     
     handleInput(e) {
         if (e.type !== 'keydown') return;
-        if (e.code === 'ArrowUp') {
-            if (this.selectedIndex > 0) this.selectedIndex--;
+        
+        const key = e.code;
+        // Navigation: Arrow keys or WASD
+        if (key === 'ArrowUp' || key === 'KeyW') {
+            if (this.selectedIndex > 0) {
+                this.selectedIndex--;
+                this.game.soundManager?.play('select');
+            }
             if (this.selectedIndex < this.scrollOffset) this.scrollOffset = this.selectedIndex;
-        } else if (e.code === 'ArrowDown') {
-            if (this.selectedIndex < heroes.length - 1) this.selectedIndex++;
+        } else if (key === 'ArrowDown' || key === 'KeyS') {
+            if (this.selectedIndex < heroes.length - 1) {
+                this.selectedIndex++;
+                this.game.soundManager?.play('select');
+            }
             if (this.selectedIndex >= this.scrollOffset + 12) this.scrollOffset = this.selectedIndex - 11;
-        } else if (e.code === 'Escape') {
+        }
+        
+        // Confirm with Punch (U) or Enter
+        if (key === 'KeyU' || key === 'Enter') {
+            this.game.soundManager?.play('confirm');
+            // Could open hero detail later
+        }
+        
+        // Back with Kick (I) or Escape
+        if (key === 'KeyI' || key === 'Escape') {
+            this.game.soundManager?.play('back');
             this.game.sceneManager.switchTo('menu');
         }
     }

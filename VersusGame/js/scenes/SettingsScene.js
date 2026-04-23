@@ -64,30 +64,33 @@ export class SettingsScene extends Scene {
         ctx.font = '16px monospace';
         ctx.fillStyle = '#aaa';
         ctx.textAlign = 'center';
-        ctx.fillText('↑↓ to select · ←→ to change · ENTER to confirm', width / 2, height - 40);
+        ctx.fillText('↑↓/WS · ←→/AD adjust · U/Enter confirm · I/Esc back', width / 2, height - 40);
     }
 
     handleInput(e) {
         if (e.type !== 'keydown') return;
+        const key = e.code;
         const opt = this.options[this.selected];
 
-        if (e.code === 'ArrowUp') {
+        // Navigation
+        if (key === 'ArrowUp' || key === 'KeyW') {
             this.selected = (this.selected - 1 + this.options.length) % this.options.length;
             this.game.soundManager?.play('select');
-        } else if (e.code === 'ArrowDown') {
+        } else if (key === 'ArrowDown' || key === 'KeyS') {
             this.selected = (this.selected + 1) % this.options.length;
             this.game.soundManager?.play('select');
-        } else if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') {
+        } 
+        // Adjustment
+        else if (key === 'ArrowLeft' || key === 'KeyA' || key === 'ArrowRight' || key === 'KeyD') {
+            const delta = (key === 'ArrowRight' || key === 'KeyD') ? 1 : -1;
             if (opt.type === 'slider') {
-                const delta = e.code === 'ArrowRight' ? 5 : -5;
-                let newVal = opt.value + delta;
+                let newVal = opt.value + delta * 5;
                 newVal = Math.max(opt.min, Math.min(opt.max, newVal));
                 opt.value = newVal;
                 this.settings[opt.key] = newVal / 100;
                 this.game.soundManager?.play('select');
             } else if (opt.type === 'select') {
                 let idx = opt.values.indexOf(opt.value);
-                const delta = e.code === 'ArrowRight' ? 1 : -1;
                 idx = (idx + delta + opt.values.length) % opt.values.length;
                 opt.value = opt.values[idx];
                 if (opt.key === 'rounds') this.settings.rounds = parseInt(opt.value);
@@ -95,14 +98,18 @@ export class SettingsScene extends Scene {
                 else if (opt.key === 'difficulty') this.settings.difficulty = opt.value;
                 this.game.soundManager?.play('select');
             }
-        } else if (e.code === 'Enter') {
+        } 
+        // Confirm
+        else if (key === 'Enter' || key === 'KeyU') {
             this.game.soundManager?.play('confirm');
             if (opt.action === 'save') {
                 this.saveSettings();
             } else if (opt.action === 'back') {
                 this.goBack();
             }
-        } else if (e.code === 'Escape') {
+        } 
+        // Back
+        else if (key === 'Escape' || key === 'KeyI') {
             this.game.soundManager?.play('back');
             this.goBack();
         }

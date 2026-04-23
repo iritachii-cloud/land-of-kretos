@@ -46,17 +46,34 @@ export class MenuScene extends Scene {
 
         ctx.font = '16px monospace';
         ctx.fillStyle = '#aaa';
-        ctx.fillText('↑ ↓ · ENTER', width / 2, height - 40);
+        ctx.fillText('↑↓/WASD · U/Enter to confirm · I/Esc back', width / 2, height - 40);
     }
     handleInput(e) {
         if (e.type !== 'keydown') return;
-        if (e.code === 'ArrowUp') this.selected = (this.selected - 1 + this.options.length) % this.options.length;
-        if (e.code === 'ArrowDown') this.selected = (this.selected + 1) % this.options.length;
-        if (e.code === 'Enter') {
+        
+        const key = e.code;
+        // Navigation: Arrow keys or WASD
+        if (key === 'ArrowUp' || key === 'KeyW') {
+            this.selected = (this.selected - 1 + this.options.length) % this.options.length;
+            this.game.soundManager?.play('select');
+        }
+        if (key === 'ArrowDown' || key === 'KeyS') {
+            this.selected = (this.selected + 1) % this.options.length;
+            this.game.soundManager?.play('select');
+        }
+        
+        // Confirm with Punch (U) or Enter
+        if (key === 'KeyU' || key === 'Enter') {
+            this.game.soundManager?.play('confirm');
             const action = this.options[this.selected].action;
             if (action === 'fight') this.game.sceneManager.switchTo('selection');
             else if (action === 'index') this.game.sceneManager.switchTo('index');
             else if (action === 'settings') this.game.sceneManager.switchTo('settings');
+        }
+        
+        // Back with Kick (I) or Escape (no action in main menu)
+        if (key === 'KeyI' || key === 'Escape') {
+            this.game.soundManager?.play('back');
         }
     }
 }

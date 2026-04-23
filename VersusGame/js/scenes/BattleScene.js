@@ -478,13 +478,13 @@ export class BattleScene extends Scene {
             return;
         }
         if (this.paused) {
-            if (e.code === 'ArrowUp') {
+            if (e.code === 'ArrowUp' || e.code === 'KeyW') {
                 this.pauseSelection = (this.pauseSelection - 1 + this.pauseOptions.length) % this.pauseOptions.length;
                 this.game.soundManager?.play('select');
-            } else if (e.code === 'ArrowDown') {
+            } else if (e.code === 'ArrowDown' || e.code === 'KeyS') {
                 this.pauseSelection = (this.pauseSelection + 1) % this.pauseOptions.length;
                 this.game.soundManager?.play('select');
-            } else if (e.code === 'Enter') {
+            } else if (e.code === 'Enter' || e.code === 'KeyU') {
                 const action = this.pauseOptions[this.pauseSelection].action;
                 this.game.soundManager?.play('confirm');
                 this.handlePauseAction(action);
