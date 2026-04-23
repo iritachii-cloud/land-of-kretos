@@ -36,6 +36,9 @@ export class BattleScene extends Scene {
         // UI assets
         this.winnerIconImg = new Image();
         this.winnerIconImg.src = '../assets/images/game/winnericon.png';
+        
+        // Projectiles
+        this.projectiles = [];
     }
 
     enter() {
@@ -64,6 +67,7 @@ export class BattleScene extends Scene {
         this.returnToPause = false;
         this.p1PrevJump = false;
         this.p2PrevJump = false;
+        this.projectiles = [];
 
         this.game.soundManager?.play('roundStart');
         this.resetRound();
@@ -88,6 +92,7 @@ export class BattleScene extends Scene {
         this.p2.invulTimer = 60;
         const settingsTimer = this.game.settings.timer;
         this.roundTimer = (settingsTimer === 0 || settingsTimer === undefined) ? 999 : settingsTimer;
+        this.projectiles = [];
     }
 
     update(dt) {
@@ -115,7 +120,7 @@ export class BattleScene extends Scene {
                 if (p1State.punch) this.p1.punch();
                 if (p1State.kick) this.p1.kick();
                 if (p1State.special) this.p1.performSpecial();
-                this.p1.setParry(p1State.parry);   // continuous parry
+                this.p1.setParry(p1State.parry);
                 if (p1State.throw) this.p1.throwAttempt();
             }
 
@@ -128,12 +133,19 @@ export class BattleScene extends Scene {
                 if (p2State.punch) this.p2.punch();
                 if (p2State.kick) this.p2.kick();
                 if (p2State.special) this.p2.performSpecial();
-                this.p2.setParry(p2State.parry);   // continuous parry
+                this.p2.setParry(p2State.parry);
                 if (p2State.throw) this.p2.throwAttempt();
             }
 
             this.p1.update(this.p2, dt);
             this.p2.update(this.p1, dt);
+
+            // Update projectiles
+            for (let i = this.projectiles.length - 1; i >= 0; i--) {
+                const p = this.projectiles[i];
+                p.update(dt, [this.p1, this.p2]);
+                if (!p.active) this.projectiles.splice(i, 1);
+            }
 
             if (this.p1.health <= 0) this.endRound('p2');
             else if (this.p2.health <= 0) this.endRound('p1');
@@ -182,6 +194,10 @@ export class BattleScene extends Scene {
 
     shake(intensity, duration) { this.screenShake = { intensity, duration }; }
 
+    addProjectile(proj) {
+        this.projectiles.push(proj);
+    }
+
     render(ctx) {
         if (this.screenShake.duration > 0) {
             const dx = (Math.random() - 0.5) * this.screenShake.intensity;
@@ -207,13 +223,70 @@ export class BattleScene extends Scene {
         if (this.p1) this.p1.render(ctx);
         if (this.p2) this.p2.render(ctx);
 
-        // ----- NEW UI: Player 1 (Left) -----
-        this.drawPlayerUI(ctx, this.p1, 30, 20, 400, 70, this.p1RoundsWon, 'left');
+        // ------- Melee hit effects (hero-specific colors) -------
+        [this.p1, this.p2].forEach(f => {
+            if (f && f.meleeEffectTimer > 0 && f.meleeEffectType) {
+                const heroColors = f.hero?.colorPalette || {};
+                const primary = heroColors.primary || ['#ffaa00', '#ff4400', '#aa0000'];
+                const secondary = heroColors.secondary || ['#aaccff', '#88aaff', '#6688dd'];
 
-        // ----- NEW UI: Player 2 (Right) -----
+                const box = f.getAttackBox();
+                const centerX = box.x + box.w / 2;
+                const centerY = box.y + box.h / 2;
+                ctx.save();
+                ctx.translate(centerX, centerY);
+
+                const alpha = f.meleeEffectTimer / 15;
+
+                if (f.meleeEffectType === 'brawler') {
+                    // Use primary and secondary as radial gradient
+                    const grad = ctx.createRadialGradient(0, 0, 5, 0, 0, 40);
+                    grad.addColorStop(0, primary[0]);
+                    grad.addColorStop(0.5, primary[1]);
+                    grad.addColorStop(1, primary[2]);
+                    ctx.globalAlpha = alpha * 0.8;
+                    ctx.fillStyle = grad;
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 40 * (1 - alpha * 0.3), 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // Spikes with secondary color
+                    ctx.strokeStyle = secondary[0];
+                    ctx.lineWidth = 4 * alpha;
+                    for (let i = 0; i < 8; i++) {
+                        const angle = (i * Math.PI / 4) + Date.now() * 0.01;
+                        const dx = Math.cos(angle) * 30;
+                        const dy = Math.sin(angle) * 30;
+                        ctx.beginPath();
+                        ctx.moveTo(dx * 0.3, dy * 0.3);
+                        ctx.lineTo(dx, dy);
+                        ctx.stroke();
+                    }
+                } else if (f.meleeEffectType === 'warrior') {
+                    // Slash lines with primary and secondary
+                    ctx.globalAlpha = alpha;
+                    ctx.strokeStyle = primary[0];
+                    ctx.lineWidth = 6;
+                    ctx.shadowColor = secondary[0];
+                    ctx.shadowBlur = 15;
+                    for (let i = 0; i < 3; i++) {
+                        const offset = i * 8 - 8;
+                        ctx.beginPath();
+                        ctx.moveTo(-20 + offset, -20);
+                        ctx.lineTo(30 + offset, 20);
+                        ctx.stroke();
+                    }
+                    ctx.shadowBlur = 0;
+                }
+                ctx.restore();
+            }
+        });
+
+        this.projectiles.forEach(p => p.render(ctx));
+
+        this.drawPlayerUI(ctx, this.p1, 30, 20, 400, 70, this.p1RoundsWon, 'left');
         this.drawPlayerUI(ctx, this.p2, CONFIG.CANVAS_WIDTH - 430, 20, 400, 70, this.p2RoundsWon, 'right');
 
-        // Round text and timer
         ctx.font = 'bold 20px monospace';
         ctx.fillStyle = '#ffdd66';
         ctx.shadowColor = '#000';
@@ -230,7 +303,6 @@ export class BattleScene extends Scene {
         }
         ctx.shadowBlur = 0;
 
-        // Round over / game over text
         if (this.state === 'roundOver') {
             ctx.font = 'bold 40px "Courier New"';
             ctx.fillStyle = '#ffaa33';
@@ -250,7 +322,6 @@ export class BattleScene extends Scene {
         }
         ctx.shadowBlur = 0;
 
-        // Pause menu (unchanged)
         if (this.paused) {
             ctx.fillStyle = 'rgba(0,0,0,0.7)';
             ctx.fillRect(0, 0, CONFIG.CANVAS_WIDTH, CONFIG.CANVAS_HEIGHT);
@@ -281,7 +352,6 @@ export class BattleScene extends Scene {
             ctx.fillText('↑↓ to select · ENTER to confirm · ESC to resume', CONFIG.CANVAS_WIDTH / 2, CONFIG.CANVAS_HEIGHT - 50);
         }
 
-        // Stage slider (unchanged)
         if (this.showStageSlider) {
             ctx.fillStyle = 'rgba(0,0,0,0.8)';
             ctx.fillRect(0, 0, CONFIG.CANVAS_WIDTH, CONFIG.CANVAS_HEIGHT);
@@ -323,7 +393,6 @@ export class BattleScene extends Scene {
         if (this.screenShake.duration > 0) ctx.setTransform(1, 0, 0, 1, 0, 0);
     }
 
-    // NEW UI drawing method
     drawPlayerUI(ctx, player, x, y, w, h, roundsWon, side) {
         if (!player) return;
         const hero = player.hero;
@@ -331,7 +400,6 @@ export class BattleScene extends Scene {
         const iconX = side === 'left' ? x : x + w - iconSize;
         const iconY = y + (h - iconSize) / 2;
 
-        // Draw circular icon background
         ctx.save();
         ctx.beginPath();
         ctx.arc(iconX + iconSize / 2, iconY + iconSize / 2, iconSize / 2 + 2, 0, Math.PI * 2);
@@ -345,7 +413,6 @@ export class BattleScene extends Scene {
         ctx.arc(iconX + iconSize / 2, iconY + iconSize / 2, iconSize / 2, 0, Math.PI * 2);
         ctx.clip();
 
-        // Draw icon image
         if (hero.images && hero.images.icon) {
             const img = new Image();
             img.src = '../assets/' + hero.images.icon.replace(/^\//, '');
@@ -361,7 +428,6 @@ export class BattleScene extends Scene {
         }
         ctx.restore();
 
-        // Bars area
         const barX = side === 'left' ? iconX + iconSize + 10 : x;
         const barW = side === 'left' ? w - iconSize - 10 : w - iconSize - 10;
         const barY = y + 5;
@@ -369,21 +435,43 @@ export class BattleScene extends Scene {
         const manaBarY = barY + barH + 6;
         const manaBarH = 8;
 
-        // Health bar background
-        ctx.fillStyle = '#1a0a0a';
-        ctx.fillRect(barX, barY, barW, barH);
-        // Health bar fill (using displayHealth)
-        const healthPercent = player.displayHealth / player.maxHealth;
-        const healthGrad = ctx.createLinearGradient(barX, barY, barX + barW * healthPercent, barY);
-        healthGrad.addColorStop(0, side === 'left' ? '#cc3333' : '#3366cc');
-        healthGrad.addColorStop(1, side === 'left' ? '#ff6666' : '#6699ff');
-        ctx.fillStyle = healthGrad;
-        ctx.fillRect(barX, barY, barW * healthPercent, barH);
-        ctx.strokeStyle = '#ffaa00';
-        ctx.lineWidth = 2;
-        ctx.strokeRect(barX, barY, barW, barH);
+        const palette = hero.colorPalette || {
+            primary: ['#cc3333', '#ff6666', '#ff9999'],
+            secondary: ['#3366cc', '#6699ff', '#99ccff'],
+            tertiary: ['#33cc33', '#66ff66', '#99ff99'],
+            quaternary: ['#cc33cc', '#ff66ff', '#ff99ff']
+        };
 
-        // Health text
+        const segCount = 3;
+        const segSpacing = 2;
+        const totalSpacing = (segCount - 1) * segSpacing;
+        const segWidth = (barW - totalSpacing) / segCount;
+        const healthPerSeg = player.maxHealth / segCount;
+        const segmentPalettes = [palette.primary, palette.secondary, palette.tertiary];
+
+        for (let i = 0; i < segCount; i++) {
+            const segX = barX + i * (segWidth + segSpacing);
+            const segHealth = Math.min(healthPerSeg, Math.max(0, player.displayHealth - i * healthPerSeg));
+            const segPercent = segHealth / healthPerSeg;
+            const segColors = segmentPalettes[i] || ['#cc3333', '#ff6666', '#ff9999'];
+
+            ctx.fillStyle = '#1a0a0a';
+            ctx.fillRect(segX, barY, segWidth, barH);
+
+            if (segPercent > 0) {
+                const grad = ctx.createLinearGradient(segX, barY, segX + segWidth * segPercent, barY);
+                grad.addColorStop(0, segColors[0]);
+                grad.addColorStop(0.5, segColors[1]);
+                grad.addColorStop(1, segColors[2]);
+                ctx.fillStyle = grad;
+                ctx.fillRect(segX, barY, segWidth * segPercent, barH);
+            }
+
+            ctx.strokeStyle = '#ffaa00';
+            ctx.lineWidth = 1.5;
+            ctx.strokeRect(segX, barY, segWidth, barH);
+        }
+
         ctx.font = 'bold 12px monospace';
         ctx.fillStyle = '#fff';
         ctx.shadowColor = '#000';
@@ -391,30 +479,31 @@ export class BattleScene extends Scene {
         ctx.textAlign = 'center';
         ctx.fillText(`${Math.ceil(player.health)} / ${player.maxHealth}`, barX + barW / 2, barY + barH - 3);
 
-        // Mana bar
         ctx.fillStyle = '#1a1a2e';
         ctx.fillRect(barX, manaBarY, barW, manaBarH);
         const manaPercent = player.mana / player.maxMana;
-        ctx.fillStyle = '#4a9eff';
+        const quatColors = palette.quaternary || ['#cc33cc', '#ff66ff', '#ff99ff'];
+        const manaGrad = ctx.createLinearGradient(barX, manaBarY, barX + barW * manaPercent, manaBarY);
+        manaGrad.addColorStop(0, quatColors[0]);
+        manaGrad.addColorStop(0.5, quatColors[1]);
+        manaGrad.addColorStop(1, quatColors[2]);
+        ctx.fillStyle = manaGrad;
         ctx.fillRect(barX, manaBarY, barW * manaPercent, manaBarH);
         ctx.strokeStyle = '#88aaff';
         ctx.lineWidth = 1.5;
         ctx.strokeRect(barX, manaBarY, barW, manaBarH);
 
-        // Mana text
         ctx.font = 'bold 10px monospace';
         ctx.fillStyle = '#ccddff';
         ctx.fillText(`${Math.floor(player.mana)} / ${player.maxMana}`, barX + barW / 2, manaBarY + manaBarH - 2);
         ctx.shadowBlur = 0;
 
-        // Hero name
         ctx.font = 'bold 16px "Courier New"';
         ctx.fillStyle = '#ffdd99';
         ctx.textAlign = side === 'left' ? 'left' : 'right';
         const nameX = side === 'left' ? barX : barX + barW;
         ctx.fillText(hero.name, nameX, y + h - 5);
 
-        // Round wins (winner icons)
         const winIconSize = 22;
         const winStartX = side === 'left' ? barX : barX + barW - winIconSize * this.totalRounds;
         const winY = y + h + 5;
@@ -439,6 +528,47 @@ export class BattleScene extends Scene {
                 ctx.stroke();
             }
         }
+
+        if (player.displayMove && player.moveDisplayTimer > 0) {
+            const movePanelW = 160;
+            const movePanelH = 32;
+            const marginBottom = 30;
+            const marginSide = 30;
+            const movePanelX = side === 'left' ? marginSide : CONFIG.CANVAS_WIDTH - movePanelW - marginSide;
+            const movePanelY = CONFIG.CANVAS_HEIGHT - movePanelH - marginBottom;
+
+            ctx.fillStyle = 'rgba(20, 20, 40, 0.85)';
+            ctx.shadowColor = '#000';
+            ctx.shadowBlur = 8;
+            ctx.beginPath();
+            this.roundRect(ctx, movePanelX, movePanelY, movePanelW, movePanelH, 6);
+            ctx.fill();
+            ctx.strokeStyle = side === 'left' ? '#4a90e2' : '#e24a4a';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            ctx.font = 'bold 16px "Courier New", monospace';
+            ctx.fillStyle = '#fff';
+            ctx.shadowBlur = 4;
+            ctx.textAlign = 'center';
+            ctx.fillText(player.displayMove, movePanelX + movePanelW / 2, movePanelY + movePanelH / 2 + 6);
+            ctx.shadowBlur = 0;
+        }
+    }
+
+    roundRect(ctx, x, y, w, h, r) {
+        if (w < 2 * r) r = w / 2;
+        if (h < 2 * r) r = h / 2;
+        ctx.moveTo(x + r, y);
+        ctx.lineTo(x + w - r, y);
+        ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+        ctx.lineTo(x + w, y + h - r);
+        ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+        ctx.lineTo(x + r, y + h);
+        ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+        ctx.lineTo(x, y + r);
+        ctx.quadraticCurveTo(x, y, x + r, y);
+        return this;
     }
 
     handleInput(e) {
@@ -484,7 +614,7 @@ export class BattleScene extends Scene {
             } else if (e.code === 'ArrowDown' || e.code === 'KeyS') {
                 this.pauseSelection = (this.pauseSelection + 1) % this.pauseOptions.length;
                 this.game.soundManager?.play('select');
-            } else if (e.code === 'Enter' || e.code === 'KeyU') {
+            } else if (e.code === 'Enter'|| e.code === 'KeyU') {
                 const action = this.pauseOptions[this.pauseSelection].action;
                 this.game.soundManager?.play('confirm');
                 this.handlePauseAction(action);

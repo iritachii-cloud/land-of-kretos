@@ -3,36 +3,21 @@ export const heroes = [
     {
         "id": 1,
         "name": "VVitch X‑abar",
+        "role": "Warrior",
         "titles": ["The Demon King", "Fallen Prince of the Abyss"],
         "rank": "SSS-Rank",
         "level": 295,
-        "shortDescription": "A terrifying inversion of the holy hunter—a being who traded celestial light for abyssal dominion, his presence a monument to corrupted glory. Once a sworn brother to the hunter Alucard, X‑abar now rules as Demon King, wielding the Soul Reaver and commanding the hellhound Malphas.",
-        "stats": {
-            "power": 100,
-            "strength": 120,
-            "offense": 100,
-            "defense": 100,
-            "stamina": 100,
-            "physicalAtk": 100,
-            "magicalAtk": 100,
-            "physDef": 100,
-            "magDef": 100,
-            "speed": 20,
-            "health": 1550,
-            "mana": 650
-        },
+        "shortDescription": "A terrifying inversion of the holy hunter—a being who traded celestial light for abyssal dominion…",
+        "stats": { "health": 260, "mana": 65, "manaReg": 1.2, "physicalAtk": 9, "magicalAtk": 7, "speed": 7, "physDef": 8 },
         "moves": {
-            "basic": {
-                "punch": "Soul Reaver Slash",
-                "kick": "Abyssal Kick"
-            },
+            "basic": { "punch": "Soul Reaver Slash", "kick": "Abyssal Kick" },
             "special": {
                 "name": "Abyssal Cleave",
                 "description": "Sweeping attack that releases a wave of void energy in a 15‑meter cone, dealing 200% physical damage and applying a slow for 3 seconds."
             },
             "ultimate": {
                 "name": "Cataclysm",
-                "description": "X‑abar channels the full power of the Soul Reaver, causing it to emit a deafening harmonic shriek. After 1.5 seconds, he unleashes a massive explosion of magenta void energy in a 25‑meter radius, dealing 500% physical damage and stunning all enemies for 2 seconds."
+                "description": "X‑abar channels the full power of the Soul Reaver… unleashes a massive explosion of magenta void energy in a 25‑meter radius, dealing 500% physical damage and stunning all enemies for 2 seconds."
             }
         },
         "images": {
@@ -42,36 +27,24 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/vvitch_xabar/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8A2BE2", "#0B0B0B"],
-            "secondary": ["#FF00FF", "#8A8D8F"]
-        }
+            "primary": ["#8A2BE2", "#0B0B0B", "#FF00FF"],
+            "secondary": ["#4B0082", "#2F2F2F", "#9400D3"],
+            "tertiary": ["#FFBF00", "#36454F", "#FF1493"],
+            "quaternary": ["#C0C0C0", "#8B0000", "#1A1A1A"]
+        },
+        "projectile": null
     },
     {
         "id": 2,
         "name": "Selvina E‑korth",
+        "role": "Marksman",
         "titles": ["The Dark‑Core Artillerist", "Cyber‑Ghoul of the Neon Wastes"],
         "rank": "S-Rank",
         "level": 187,
-        "shortDescription": "A fractured echo of innocence rebuilt in the image of cold technology—a girl whose cybernetic grafts have frozen her in perpetual, ghostly youth, wielding twin laser cannons fused to her being as she hunts the organization that stole her humanity and her sister Layla.",
-        "stats": {
-            "power": 8,
-            "strength": 6,
-            "offense": 9,
-            "defense": 5,
-            "stamina": 7,
-            "physicalAtk": 7,
-            "magicalAtk": 9,
-            "physDef": 5,
-            "magDef": 6,
-            "speed": 8,
-            "health": 980,
-            "mana": 720
-        },
+        "shortDescription": "A fractured echo of innocence rebuilt in the image of cold technology…",
+        "stats": { "health": 170, "mana": 70, "manaReg": 1.4, "physicalAtk": 7, "magicalAtk": 9, "speed": 8, "physDef": 5 },
         "moves": {
-            "basic": {
-                "punch": "Laser Slash",
-                "kick": "Neon Kick"
-            },
+            "basic": { "punch": "Laser Slash", "kick": "Neon Kick" },
             "special": {
                 "name": "Gravity Beam",
                 "description": "Fires a beam that bends gravity, pulling all enemies within a 5‑meter radius toward the impact point and dealing 150% magic damage."
@@ -85,16 +58,21 @@ export const heroes = [
             "icon": "../assets/images/heroes/selvina_ekorth/icon.png",
             "selection": "../assets/images/heroes/selvina_ekorth/real.png",
             "loading": "../assets/images/heroes/selvina_ekorth/hero.png",
-            "spriteRight": "../assets/images/heroes/selvina_ekorth/sprite.png"
+            "spriteRight": "../assets/images/heroes/selvina_ekorth/sprite.png",
+            "projectile": "../assets/images/heroes/selvina_ekorth/projectile.png"
         },
         "colorPalette": {
-            "primary": ["#00FF00", "#000000"],
-            "secondary": ["#FF00FF", "#4169E1"]
-        }
+            "primary": ["#00FF00", "#000000", "#FF00FF"],
+            "secondary": ["#4169E1", "#2F2F2F", "#FF1493"],
+            "tertiary": ["#00BFFF", "#4A4A4A", "#FF4500"],
+            "quaternary": ["#FFFFFF", "#C0C0C0", "#008080"]
+        },
+        "projectile": { "speed": 7, "damageScale": 0.7, "image": "../assets/images/heroes/selvina_ekorth/projectile.png" }
     },
     {
         "id": 3,
         "name": "Roisin Pelvet",
+        "role": "Marksman",
         "titles": ["The Eclipse Abyss Huntress", "Fallen Guardian of the Moonlight Kingdom"],
         "rank": "SS-Rank",
         "level": 234,
@@ -110,9 +88,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 7,
             "speed": 9,
-            "health": 1120,
-            "mana": 680
-        },
+            "health": 180,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Moonfang Strike",
@@ -134,13 +114,17 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/roisin_pelveti/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#800020", "#1A1A1A"],
-            "secondary": ["#C0C0C0", "#2F2F2F"]
-        }
+            "primary": ["#800020", "#1A1A1A", "#C0C0C0"],
+            "secondary": ["#2F2F2F", "#8B0000", "#FF0000"],
+            "tertiary": ["#4A0000", "#D3D3D3", "#B22222"],
+            "quaternary": ["#000000", "#A52A2A", "#808080"]
+        },
+        "projectile": { "speed": 7, "damageScale": 1.8, "image": "../assets/images/heroes/roisin_pelveti/projectile.png" }
     },
     {
         "id": 4,
         "name": "Geigei Fuks",
+        "role": "Mage",
         "titles": ["The Storm Mage", "Lightning's Chosen"],
         "rank": "SS-Rank",
         "level": 241,
@@ -156,9 +140,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 8,
             "speed": 7,
-            "health": 1250,
-            "mana": 950
-        },
+            "health": 160,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Static Fist",
@@ -180,13 +166,18 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/geigei_fuks/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#2E5A3E", "#1A1A1A"],
-            "secondary": ["#FF8C00", "#4A4A4A"]
-        }
+            "primary": ["#2E5A3E", "#1A1A1A", "#FF8C00"],
+            "secondary": ["#4A4A4A", "#8B4513", "#FFD700"],
+            "tertiary": ["#006400", "#A0522D", "#FFA500"],
+            "quaternary": ["#000000", "#CD853F", "#ADFF2F"]
+        },
+        "projectile": { "speed": 10, "damageScale": 2.5, "image": "../assets/images/heroes/geigei_fuks/projectile.png" }
+
     },
     {
         "id": 5,
         "name": "Raiken Zu",
+        "role": "Warrior",
         "titles": ["The Cyber‑Ronin", "Ghost in the Machine"],
         "rank": "S-Rank",
         "level": 198,
@@ -202,9 +193,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 7,
             "speed": 10,
-            "health": 1020,
-            "mana": 550
-        },
+            "health": 170,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Digital Slash",
@@ -226,13 +219,16 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/raiken_zu/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#800000", "#4A4A4A"],
-            "secondary": ["#FF00FF", "#2F2F2F"]
+            "primary": ["#800000", "#4A4A4A", "#FF00FF"],
+            "secondary": ["#2F2F2F", "#FF0000", "#00FFFF"],
+            "tertiary": ["#A52A2A", "#C0C0C0", "#8B008B"],
+            "quaternary": ["#000000", "#FF4500", "#1E90FF"]
         }
     },
     {
         "id": 6,
         "name": "Yuken Leo Lung",
+        "role": "Warrior",
         "titles": ["The Chi Master of the White Peaks", "Snow Leopard Sage"],
         "rank": "SSS-Rank",
         "level": 312,
@@ -248,9 +244,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 9,
             "speed": 8,
-            "health": 1850,
-            "mana": 800
-        },
+            "health": 280,
+            "mana": 70,
+            "manaReg": 1.2
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Whirlwind Palm",
@@ -272,13 +270,16 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/yuken_leo_lung/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#808080", "#F5F5DC"],
-            "secondary": ["#BDB76B", "#2F2F2F"]
+            "primary": ["#808080", "#F5F5DC", "#FFD700"],
+            "secondary": ["#2F2F2F", "#BDB76B", "#8B4513"],
+            "tertiary": ["#A9A9A9", "#FFF8DC", "#DAA520"],
+            "quaternary": ["#000000", "#F0E68C", "#CD853F"]
         }
     },
     {
         "id": 7,
         "name": "Faye Juisin",
+        "role": "Mage",
         "titles": ["The Phoenix of the Fallen Legion", "Archangel of Ashes"],
         "rank": "SSS-Rank",
         "level": 278,
@@ -294,9 +295,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 8,
             "speed": 7,
-            "health": 1320,
-            "mana": 880
-        },
+            "health": 170,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Phoenix Claw",
@@ -318,13 +321,16 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/faye_juisin/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#2F2F2F"],
-            "secondary": ["#FF4500", "#4A4A4A"]
+            "primary": ["#8B0000", "#2F2F2F", "#FF4500"],
+            "secondary": ["#4A4A4A", "#FFD700", "#1A1A1A"],
+            "tertiary": ["#B22222", "#DAA520", "#DC143C"],
+            "quaternary": ["#000000", "#FF8C00", "#A0522D"]
         }
     },
     {
         "id": 8,
         "name": "Grymnyr",
+        "role": "Warrior",
         "titles": ["The Abyssal Pirate Warden", "Tyrant of the Drowned"],
         "rank": "SS-Rank",
         "level": 267,
@@ -333,16 +339,18 @@ export const heroes = [
             "power": 8,
             "strength": 10,
             "offense": 7,
-            "defense": 9,
+            "defense": 10,
             "stamina": 10,
             "physicalAtk": 9,
             "magicalAtk": 5,
             "physDef": 9,
             "magDef": 7,
             "speed": 5,
-            "health": 1780,
-            "mana": 620
-        },
+            "health": 300,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Anchor Punch",
@@ -364,13 +372,16 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/grymnyr/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#800000", "#4A3728"],
-            "secondary": ["#8B008B", "#2F4F4F"]
+            "primary": ["#800000", "#4A3728", "#8B008B"],
+            "secondary": ["#2F4F4F", "#FF4500", "#1A1A1A"],
+            "tertiary": ["#A0522D", "#9400D3", "#556B2F"],
+            "quaternary": ["#000000", "#B8860B", "#483D8B"]
         }
     },
     {
         "id": 9,
         "name": "Shenku Fenghou",
+        "role": "Brawler",
         "titles": ["The Jade Tiger of the Streets", "Rhythm Fist"],
         "rank": "A-Rank",
         "level": 142,
@@ -386,9 +397,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 5,
             "speed": 9,
-            "health": 850,
-            "mana": 480
-        },
+            "health": 190,
+            "mana": 50,
+            "manaReg": 0.7
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Tiger Claw Strike",
@@ -410,13 +423,16 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/shenku_fenghou/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#2E8B57"],
-            "secondary": ["#FFFFFF", "#4A4A4A"]
+            "primary": ["#000000", "#2E8B57", "#FFFFFF"],
+            "secondary": ["#4A4A4A", "#00FF7F", "#FFD700"],
+            "tertiary": ["#1A1A1A", "#32CD32", "#FFFF00"],
+            "quaternary": ["#C0C0C0", "#008000", "#FFA500"]
         }
     },
     {
         "id": 10,
         "name": "Nene",
+        "role": "Mage",
         "titles": ["The Spirit Hunter of Twilight Whispers", "Dream Walker"],
         "rank": "S-Rank",
         "level": 168,
@@ -432,9 +448,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 7,
             "speed": 8,
-            "health": 820,
-            "mana": 680
-        },
+            "health": 140,
+            "mana": 65,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Spirit Throw",
@@ -456,8 +474,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/nene/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#4B0082", "#FF69B4"],
-            "secondary": ["#8B008B", "#DDA0DD"]
+            "primary": ["#4B0082", "#FF69B4", "#8B008B"],
+            "secondary": ["#DDA0DD", "#9400D3", "#C71585"],
+            "tertiary": ["#800080", "#FFB6C1", "#DA70D6"],
+            "quaternary": ["#000000", "#EE82EE", "#BA55D3"]
         }
     },
     {
@@ -478,9 +498,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 8,
             "speed": 7,
-            "health": 1150,
-            "mana": 450
-        },
+            "health": 260,
+            "mana": 50,
+            "manaReg": 0.6
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Majin Punch",
@@ -502,8 +524,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/endou_kusanai/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF8C00", "#000000"],
-            "secondary": ["#FFD700", "#4A4A4A"]
+            "primary": ["#FF8C00", "#000000", "#FFD700"],
+            "secondary": ["#4A4A4A", "#FF69B4", "#FF4500"],
+            "tertiary": ["#FFA500", "#C0C0C0", "#FF1493"],
+            "quaternary": ["#FFFFFF", "#FF8C00", "#1A1A1A"]
         }
     },
     {
@@ -524,9 +548,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 8,
-            "health": 960,
-            "mana": 660
-        },
+            "health": 160,
+            "mana": 65,
+            "manaReg": 1.2
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Soul Seeker",
@@ -548,8 +574,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/shiela_fiesta/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#4A3728"],
-            "secondary": ["#C0C0C0", "#2F2F2F"]
+            "primary": ["#FFFFFF", "#4A3728", "#C0C0C0"],
+            "secondary": ["#2F2F2F", "#00008B", "#8B0000"],
+            "tertiary": ["#F5F5DC", "#4169E1", "#A52A2A"],
+            "quaternary": ["#000000", "#87CEEB", "#800000"]
         }
     },
     {
@@ -570,9 +598,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 10,
             "speed": 8,
-            "health": 1900,
-            "mana": 1100
-        },
+            "health": 250,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Gravity Well",
@@ -594,8 +624,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/malit_dalit/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#4B0082"],
-            "secondary": ["#9400D3", "#C0C0C0"]
+            "primary": ["#000000", "#4B0082", "#FFD700"],
+            "secondary": ["#9400D3", "#C0C0C0", "#00FFFF"],
+            "tertiary": ["#1A1A1A", "#8A2BE2", "#FF8C00"],
+            "quaternary": ["#FFFFFF", "#4169E1", "#FF1493"]
         }
     },
     {
@@ -616,9 +648,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 7,
-            "health": 1250,
-            "mana": 800
-        },
+            "health": 160,
+            "mana": 70,
+            "manaReg": 1.1
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Card Throw",
@@ -640,8 +674,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/vixyy_joe/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#8B0000"],
-            "secondary": ["#FFD700", "#2F2F2F"]
+            "primary": ["#000000", "#8B0000", "#FFD700"],
+            "secondary": ["#2F2F2F", "#00FF7F", "#C0C0C0"],
+            "tertiary": ["#1A1A1A", "#B22222", "#32CD32"],
+            "quaternary": ["#FFFFFF", "#FF4500", "#808080"]
         }
     },
     {
@@ -662,9 +698,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 8,
             "speed": 6,
-            "health": 1850,
-            "mana": 650
-        },
+            "health": 290,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Earth Splitter",
@@ -686,8 +724,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/axe_blade/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#2E8B57", "#C0C0C0"],
-            "secondary": ["#1E90FF", "#2F2F2F"]
+            "primary": ["#2E8B57", "#C0C0C0", "#1E90FF"],
+            "secondary": ["#2F2F2F", "#FFD700", "#8B0000"],
+            "tertiary": ["#3CB371", "#B0C4DE", "#FFA500"],
+            "quaternary": ["#000000", "#4682B4", "#A0522D"]
         }
     },
     {
@@ -708,9 +748,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 9,
             "speed": 6,
-            "health": 1950,
-            "mana": 700
-        },
+            "health": 300,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Horn Charge",
@@ -732,8 +774,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/taurus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#C0C0C0", "#FFD700"],
-            "secondary": ["#2E8B57", "#4A4A4A"]
+            "primary": ["#C0C0C0", "#FFD700", "#2E8B57"],
+            "secondary": ["#4A4A4A", "#00FF7F", "#8B0000"],
+            "tertiary": ["#D3D3D3", "#32CD32", "#B8860B"],
+            "quaternary": ["#000000", "#ADFF2F", "#800000"]
         }
     },
     {
@@ -754,9 +798,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 9,
             "speed": 7,
-            "health": 1600,
-            "mana": 950
-        },
+            "health": 180,
+            "mana": 80,
+            "manaReg": 3.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Ray of Purification",
@@ -778,8 +824,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/ecanju_ferosta/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#FFFFFF"],
-            "secondary": ["#FF8C00", "#F5F5DC"]
+            "primary": ["#FFD700", "#FFFFFF", "#FF8C00"],
+            "secondary": ["#F5F5DC", "#FF1493", "#00CED1"],
+            "tertiary": ["#FFFF00", "#FFA500", "#48D1CC"],
+            "quaternary": ["#FFF8DC", "#FF69B4", "#20B2AA"]
         }
     },
     {
@@ -800,9 +848,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 7,
             "speed": 8,
-            "health": 2150,
-            "mana": 850
-        },
+            "health": 280,
+            "mana": 70,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Jade Strike",
@@ -824,8 +874,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/longwei/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#0B0B0B"],
-            "secondary": ["#8B0000", "#2F4F4F"]
+            "primary": ["#FFD700", "#0B0B0B", "#8B0000"],
+            "secondary": ["#2F4F4F", "#006400", "#DAA520"],
+            "tertiary": ["#B8860B", "#008000", "#FF4500"],
+            "quaternary": ["#000000", "#A0522D", "#32CD32"]
         }
     },
     {
@@ -846,9 +898,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 5,
             "speed": 6,
-            "health": 1100,
-            "mana": 620
-        },
+            "health": 240,
+            "mana": 60,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Ground Slam",
@@ -870,8 +924,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/brigeinda/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B4513", "#2F4F2F"],
-            "secondary": ["#B87333", "#4A4A4A"]
+            "primary": ["#8B4513", "#2F4F2F", "#FF4500"],
+            "secondary": ["#B87333", "#4A4A4A", "#DAA520"],
+            "tertiary": ["#A0522D", "#556B2F", "#FF8C00"],
+            "quaternary": ["#000000", "#CD853F", "#B22222"]
         }
     },
     {
@@ -892,9 +948,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 6,
             "speed": 10,
-            "health": 850,
-            "mana": 520
-        },
+            "health": 150,
+            "mana": 55,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Light Slash",
@@ -916,8 +974,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/hattori_hanjou/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#DC143C", "#FFFFFF"],
-            "secondary": ["#FFB6C1", "#808080"]
+            "primary": ["#DC143C", "#FFFFFF", "#FFB6C1"],
+            "secondary": ["#808080", "#FF1493", "#000000"],
+            "tertiary": ["#8B0000", "#FF69B4", "#C0C0C0"],
+            "quaternary": ["#A0522D", "#FFC0CB", "#1A1A1A"]
         }
     },
     {
@@ -938,9 +998,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 8,
             "speed": 7,
-            "health": 1750,
-            "mana": 680
-        },
+            "health": 260,
+            "mana": 65,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Shield Bash",
@@ -962,8 +1024,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/frejyah/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#708090", "#A52A2A"],
-            "secondary": ["#2F4F4F", "#8B0000"]
+            "primary": ["#708090", "#A52A2A", "#2F4F4F"],
+            "secondary": ["#8B0000", "#B22222", "#FFD700"],
+            "tertiary": ["#778899", "#800000", "#DAA520"],
+            "quaternary": ["#000000", "#CD5C5C", "#B8860B"]
         }
     },
     {
@@ -984,9 +1048,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 9,
-            "health": 1080,
-            "mana": 750
-        },
+            "health": 180,
+            "mana": 70,
+            "manaReg": 1.2
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Blade of Dawn",
@@ -1008,8 +1074,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/mara/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#32CD32"],
-            "secondary": ["#FF0000", "#006400"]
+            "primary": ["#FFFFFF", "#32CD32", "#FF0000"],
+            "secondary": ["#006400", "#FFD700", "#00FF7F"],
+            "tertiary": ["#F0FFF0", "#008000", "#FFFF00"],
+            "quaternary": ["#000000", "#ADFF2F", "#FF4500"]
         }
     },
     {
@@ -1030,9 +1098,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 7,
             "speed": 8,
-            "health": 1500,
-            "mana": 1100
-        },
+            "health": 180,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Fireball",
@@ -1054,8 +1124,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/belleri_fumas/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF4500", "#FFD700"],
-            "secondary": ["#8B0000", "#FF8C00"]
+            "primary": ["#FF4500", "#FFD700", "#8B0000"],
+            "secondary": ["#FF8C00", "#FF1493", "#FFA500"],
+            "tertiary": ["#FF6347", "#FFFF00", "#DC143C"],
+            "quaternary": ["#000000", "#FF7F50", "#B22222"]
         }
     },
     {
@@ -1076,9 +1148,11 @@ export const heroes = [
             "physDef": 4,
             "magDef": 7,
             "speed": 8,
-            "health": 980,
-            "mana": 880
-        },
+            "health": 150,
+            "mana": 75,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Shadow Step",
@@ -1100,8 +1174,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/waguri/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#4B0082"],
-            "secondary": ["#8B0000", "#9400D3"]
+            "primary": ["#000000", "#4B0082", "#8B0000"],
+            "secondary": ["#9400D3", "#FF69B4", "#800080"],
+            "tertiary": ["#1A1A1A", "#8A2BE2", "#FFB6C1"],
+            "quaternary": ["#2F2F2F", "#BA55D3", "#A52A2A"]
         }
     },
     {
@@ -1122,9 +1198,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 8,
             "speed": 5,
-            "health": 2100,
-            "mana": 600
-        },
+            "health": 300,
+            "mana": 55,
+            "manaReg": 0.7
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Soul Devour",
@@ -1146,8 +1224,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/maila_toh/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#006400", "#8B0000"],
-            "secondary": ["#2F4F2F", "#B22222"]
+            "primary": ["#006400", "#8B0000", "#FFD700"],
+            "secondary": ["#2F4F2F", "#B22222", "#000000"],
+            "tertiary": ["#228B22", "#DC143C", "#B8860B"],
+            "quaternary": ["#1A1A1A", "#8B4513", "#FF8C00"]
         }
     },
     {
@@ -1168,9 +1248,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 8,
             "speed": 5,
-            "health": 2200,
-            "mana": 680
-        },
+            "health": 300,
+            "mana": 60,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Ice Cleave",
@@ -1192,8 +1274,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/teinukza_sherpa/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0000CD", "#8B4513"],
-            "secondary": ["#4682B4", "#A0522D"]
+            "primary": ["#0000CD", "#8B4513", "#4682B4"],
+            "secondary": ["#A0522D", "#00CED1", "#FFD700"],
+            "tertiary": ["#1E90FF", "#B8860B", "#008080"],
+            "quaternary": ["#000000", "#5F9EA0", "#D2691E"]
         }
     },
     {
@@ -1214,9 +1298,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 7,
-            "health": 1350,
-            "mana": 800
-        },
+            "health": 190,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Scorching Throw",
@@ -1238,8 +1324,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/seki_meite/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#F4A460"],
-            "secondary": ["#8B4513", "#1A1A1A"]
+            "primary": ["#FFD700", "#F4A460", "#8B4513"],
+            "secondary": ["#1A1A1A", "#FF4500", "#4B0082"],
+            "tertiary": ["#DAA520", "#FF8C00", "#800080"],
+            "quaternary": ["#000000", "#FFA500", "#2E8B57"]
         }
     },
     {
@@ -1260,9 +1348,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 7,
             "speed": 7,
-            "health": 1550,
-            "mana": 700
-        },
+            "health": 220,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Laser Beam",
@@ -1284,8 +1374,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/transformei/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#DC143C", "#0B0B0B"],
-            "secondary": ["#FF4500", "#4A4A4A"]
+            "primary": ["#DC143C", "#0B0B0B", "#FF4500"],
+            "secondary": ["#4A4A4A", "#FFD700", "#00FFFF"],
+            "tertiary": ["#8B0000", "#C0C0C0", "#1E90FF"],
+            "quaternary": ["#000000", "#FF8C00", "#00CED1"]
         }
     },
     {
@@ -1306,9 +1398,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 10,
             "speed": 6,
-            "health": 1450,
-            "mana": 1050
-        },
+            "health": 200,
+            "mana": 80,
+            "manaReg": 5.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Laser Gaze",
@@ -1330,8 +1424,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/oculus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#C0C0C0"],
-            "secondary": ["#4B0082", "#00008B"]
+            "primary": ["#FFFFFF", "#C0C0C0", "#4B0082"],
+            "secondary": ["#00008B", "#FFD700", "#00FFFF"],
+            "tertiary": ["#F5F5F5", "#4169E1", "#FFA500"],
+            "quaternary": ["#1A1A1A", "#87CEEB", "#FF1493"]
         }
     },
     {
@@ -1352,9 +1448,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 7,
-            "health": 1150,
-            "mana": 680
-        },
+            "health": 190,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Poison Sweep",
@@ -1376,8 +1474,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/olive_rein/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#2F4F2F"],
-            "secondary": ["#556B2F", "#4A4A4A"]
+            "primary": ["#000000", "#2F4F2F", "#C0C0C0"],
+            "secondary": ["#556B2F", "#4A4A4A", "#8B0000"],
+            "tertiary": ["#1A1A1A", "#6B8E23", "#A52A2A"],
+            "quaternary": ["#2F2F2F", "#9ACD32", "#800000"]
         }
     },
     {
@@ -1398,9 +1498,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 7,
             "speed": 9,
-            "health": 1750,
-            "mana": 750
-        },
+            "health": 250,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Staff Extension",
@@ -1422,8 +1524,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/wukong/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#FF4500"],
-            "secondary": ["#8B0000", "#1A1A1A"]
+            "primary": ["#FFD700", "#FF4500", "#8B0000"],
+            "secondary": ["#1A1A1A", "#FF0000", "#00FFFF"],
+            "tertiary": ["#FFA500", "#DC143C", "#00BFFF"],
+            "quaternary": ["#000000", "#FF8C00", "#1E90FF"]
         }
     },
     {
@@ -1444,9 +1548,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 7,
-            "health": 1380,
-            "mana": 820
-        },
+            "health": 180,
+            "mana": 70,
+            "manaReg": 1.2
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Bone Shard Volley",
@@ -1468,8 +1574,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/kei_kai/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#F5F5DC", "#FF4500"],
-            "secondary": ["#8B4513", "#2F2F2F"]
+            "primary": ["#F5F5DC", "#FF4500", "#8B4513"],
+            "secondary": ["#2F2F2F", "#FFD700", "#4A4A4A"],
+            "tertiary": ["#FFF8DC", "#FF8C00", "#A0522D"],
+            "quaternary": ["#000000", "#FFA500", "#D2691E"]
         }
     },
     {
@@ -1490,9 +1598,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 9,
             "speed": 7,
-            "health": 1480,
-            "mana": 850
-        },
+            "health": 200,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Righteous Strike",
@@ -1514,8 +1624,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/seraphine/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#FFD700"],
-            "secondary": ["#87CEEB", "#C0C0C0"]
+            "primary": ["#FFFFFF", "#FFD700", "#87CEEB"],
+            "secondary": ["#C0C0C0", "#4169E1", "#FF69B4"],
+            "tertiary": ["#F0F8FF", "#1E90FF", "#FFB6C1"],
+            "quaternary": ["#000000", "#00BFFF", "#FF1493"]
         }
     },
     {
@@ -1536,9 +1648,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 7,
             "speed": 8,
-            "health": 920,
-            "mana": 550
-        },
+            "health": 150,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Scope Shot",
@@ -1560,8 +1674,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/viper/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#C0C0C0"],
-            "secondary": ["#4A4A4A", "#2F2F2F"]
+            "primary": ["#FFFFFF", "#C0C0C0", "#000000"],
+            "secondary": ["#4A4A4A", "#4169E1", "#2F2F2F"],
+            "tertiary": ["#F5F5F5", "#1E90FF", "#800000"],
+            "quaternary": ["#D3D3D3", "#87CEEB", "#A52A2A"]
         }
     },
     {
@@ -1582,9 +1698,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 9,
             "speed": 7,
-            "health": 1600,
-            "mana": 950
-        },
+            "health": 240,
+            "mana": 80,
+            "manaReg": 1.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Devourer Beam",
@@ -1606,8 +1724,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/keingzyu/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0B0B0B", "#8B8B00"],
-            "secondary": ["#00FF00", "#4A4A4A"]
+            "primary": ["#0B0B0B", "#8B8B00", "#00FF00"],
+            "secondary": ["#4A4A4A", "#FF0000", "#FFFF00"],
+            "tertiary": ["#1A1A1A", "#556B2F", "#FF4500"],
+            "quaternary": ["#2F2F2F", "#9ACD32", "#FFD700"]
         }
     },
     {
@@ -1628,9 +1748,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 9,
             "speed": 6,
-            "health": 1400,
-            "mana": 900
-        },
+            "health": 200,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Solar Flare",
@@ -1652,8 +1774,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/lamia/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#FF8C00"],
-            "secondary": ["#FFA500", "#F5DEB3"]
+            "primary": ["#FFD700", "#FF8C00", "#F5DEB3"],
+            "secondary": ["#FFA500", "#FF4500", "#FFFF00"],
+            "tertiary": ["#FFB347", "#FF6347", "#FFF8DC"],
+            "quaternary": ["#000000", "#FF7F50", "#DAA520"]
         }
     },
     {
@@ -1674,9 +1798,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 9,
             "speed": 7,
-            "health": 1700,
-            "mana": 920
-        },
+            "health": 260,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Tidal Wave",
@@ -1698,8 +1824,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/tiamat/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000080", "#2F4F4F"],
-            "secondary": ["#C0C0C0", "#1A1A1A"]
+            "primary": ["#000080", "#2F4F4F", "#C0C0C0"],
+            "secondary": ["#1A1A1A", "#8B0000", "#00FFFF"],
+            "tertiary": ["#00008B", "#008080", "#FFD700"],
+            "quaternary": ["#2F2F2F", "#00CED1", "#800000"]
         }
     },
     {
@@ -1720,9 +1848,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 10,
             "speed": 6,
-            "health": 1550,
-            "mana": 1000
-        },
+            "health": 220,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Moonbeam",
@@ -1744,8 +1874,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/lunara/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#C0C0C0"],
-            "secondary": ["#87CEEB", "#2F2F2F"]
+            "primary": ["#FFFFFF", "#C0C0C0", "#87CEEB"],
+            "secondary": ["#2F2F2F", "#4169E1", "#FFD700"],
+            "tertiary": ["#F5F5F5", "#1E90FF", "#FFA500"],
+            "quaternary": ["#D3D3D3", "#00BFFF", "#FF1493"]
         }
     },
     {
@@ -1766,9 +1898,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 6,
             "speed": 10,
-            "health": 1050,
-            "mana": 580
-        },
+            "health": 170,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Grappling Strike",
@@ -1790,8 +1924,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/mika_sah/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B4513", "#FFD700"],
-            "secondary": ["#8B0000", "#4A4A4A"]
+            "primary": ["#8B4513", "#FFD700", "#8B0000"],
+            "secondary": ["#4A4A4A", "#FFD700", "#00FFFF"],
+            "tertiary": ["#A0522D", "#FFA500", "#1E90FF"],
+            "quaternary": ["#000000", "#FF8C00", "#008080"]
         }
     },
     {
@@ -1812,9 +1948,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 6,
             "speed": 8,
-            "health": 1300,
-            "mana": 620
-        },
+            "health": 210,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Treacherous Thrust",
@@ -1836,8 +1974,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/mordred/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0B0B0B", "#8B0000"],
-            "secondary": ["#4A4A4A", "#2F2F2F"]
+            "primary": ["#0B0B0B", "#8B0000", "#FF0000"],
+            "secondary": ["#4A4A4A", "#C0C0C0", "#2F2F2F"],
+            "tertiary": ["#1A1A1A", "#DC143C", "#A9A9A9"],
+            "quaternary": ["#000000", "#B22222", "#808080"]
         }
     },
     {
@@ -1858,9 +1998,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 8,
-            "health": 850,
-            "mana": 750
-        },
+            "health": 150,
+            "mana": 70,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Shadow Tendrils",
@@ -1882,8 +2024,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/grimalkin/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0B0B0B", "#4A4A4A"],
-            "secondary": ["#800080", "#2F2F2F"]
+            "primary": ["#0B0B0B", "#4A4A4A", "#800080"],
+            "secondary": ["#2F2F2F", "#00FF00", "#9400D3"],
+            "tertiary": ["#1A1A1A", "#32CD32", "#8A2BE2"],
+            "quaternary": ["#000000", "#ADFF2F", "#4B0082"]
         }
     },
     {
@@ -1904,9 +2048,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 10,
             "speed": 8,
-            "health": 2500,
-            "mana": 1500
-        },
+            "health": 300,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Life Surge",
@@ -1928,8 +2074,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/devi_ashuram/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#F5DEB3"],
-            "secondary": ["#8B4513", "#2E8B57"]
+            "primary": ["#FFD700", "#F5DEB3", "#8B4513"],
+            "secondary": ["#2E8B57", "#FF0000", "#00FF00"],
+            "tertiary": ["#DAA520", "#0000FF", "#32CD32"],
+            "quaternary": ["#000000", "#FFD700", "#DC143C"]
         }
     },
     {
@@ -1950,9 +2098,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 7,
             "speed": 8,
-            "health": 950,
-            "mana": 680
-        },
+            "health": 150,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Memory Cut",
@@ -1974,8 +2124,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/valkot/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#2F2F2F", "#1A1A1A"],
-            "secondary": ["#4A4A4A", "#C0C0C0"]
+            "primary": ["#2F2F2F", "#1A1A1A", "#C0C0C0"],
+            "secondary": ["#4A4A4A", "#FFFFFF", "#000000"],
+            "tertiary": ["#808080", "#F5F5F5", "#2F2F2F"],
+            "quaternary": ["#D3D3D3", "#A9A9A9", "#1A1A1A"]
         }
     },
     {
@@ -1996,9 +2148,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 6,
             "speed": 8,
-            "health": 880,
-            "mana": 720
-        },
+            "health": 140,
+            "mana": 70,
+            "manaReg": 1.4
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Chain Lightning",
@@ -2020,8 +2174,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/volti_quin/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF69B4", "#000000"],
-            "secondary": ["#FFFF00", "#C0C0C0"]
+            "primary": ["#FF69B4", "#000000", "#FFFF00"],
+            "secondary": ["#C0C0C0", "#00FFFF", "#FF4500"],
+            "tertiary": ["#FF1493", "#1E90FF", "#FF8C00"],
+            "quaternary": ["#FFFFFF", "#FFD700", "#DC143C"]
         }
     },
     {
@@ -2042,9 +2198,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 10,
             "speed": 7,
-            "health": 2100,
-            "mana": 1300
-        },
+            "health": 280,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "White Orb: Creation",
@@ -2066,8 +2224,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/umbra/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#FFFFFF"],
-            "secondary": ["#4B0082", "#FF69B4"]
+            "primary": ["#000000", "#FFFFFF", "#4B0082"],
+            "secondary": ["#FF69B4", "#00FFFF", "#FFD700"],
+            "tertiary": ["#1A1A1A", "#FFB6C1", "#00CED1"],
+            "quaternary": ["#2F2F2F", "#DDA0DD", "#FFA500"]
         }
     },
     {
@@ -2088,9 +2248,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 8,
             "speed": 5,
-            "health": 1950,
-            "mana": 680
-        },
+            "health": 290,
+            "mana": 60,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Frost Cleave",
@@ -2112,8 +2274,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/furtrin/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#00BFFF", "#0B0B0B"],
-            "secondary": ["#87CEEB", "#2F2F2F"]
+            "primary": ["#00BFFF", "#0B0B0B", "#FFFFFF"],
+            "secondary": ["#87CEEB", "#2F2F2F", "#FFD700"],
+            "tertiary": ["#1E90FF", "#4682B4", "#FF8C00"],
+            "quaternary": ["#000000", "#ADD8E6", "#FF4500"]
         }
     },
     {
@@ -2134,9 +2298,11 @@ export const heroes = [
             "physDef": 10,
             "magDef": 9,
             "speed": 6,
-            "health": 1850,
-            "mana": 780
-        },
+            "health": 280,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Righteous Strike",
@@ -2158,8 +2324,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/caius/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#C0C0C0"],
-            "secondary": ["#8B4513", "#FFD700"]
+            "primary": ["#FFFFFF", "#C0C0C0", "#FFD700"],
+            "secondary": ["#8B4513", "#000000", "#A0522D"],
+            "tertiary": ["#F5F5DC", "#DAA520", "#800000"],
+            "quaternary": ["#D3D3D3", "#B8860B", "#2F2F2F"]
         }
     },
     {
@@ -2180,9 +2348,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 8,
-            "health": 980,
-            "mana": 880
-        },
+            "health": 160,
+            "mana": 75,
+            "manaReg": 1.6
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Code Tendril",
@@ -2204,8 +2374,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/eris/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#000000"],
-            "secondary": ["#FF00FF", "#4A4A4A"]
+            "primary": ["#8B0000", "#000000", "#FF00FF"],
+            "secondary": ["#4A4A4A", "#00FFFF", "#FF4500"],
+            "tertiary": ["#A52A2A", "#FF1493", "#1E90FF"],
+            "quaternary": ["#2F2F2F", "#FF69B4", "#00CED1"]
         }
     },
     {
@@ -2226,9 +2398,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 7,
             "speed": 6,
-            "health": 1450,
-            "mana": 620
-        },
+            "health": 240,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Soul Devour",
@@ -2250,8 +2424,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/halal/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#000000"],
-            "secondary": ["#FFD700", "#2F2F2F"]
+            "primary": ["#8B0000", "#000000", "#FFD700"],
+            "secondary": ["#2F2F2F", "#FF4500", "#4A4A4A"],
+            "tertiary": ["#A52A2A", "#FF8C00", "#B22222"],
+            "quaternary": ["#1A1A1A", "#FF6347", "#DAA520"]
         }
     },
     {
@@ -2272,9 +2448,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 9,
             "speed": 6,
-            "health": 1620,
-            "mana": 920
-        },
+            "health": 250,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Ankh of Life",
@@ -2296,8 +2474,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/ferhren_kah/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#2E8B57"],
-            "secondary": ["#F5DEB3", "#4A4A4A"]
+            "primary": ["#FFD700", "#2E8B57", "#F5DEB3"],
+            "secondary": ["#4A4A4A", "#00FF7F", "#8B4513"],
+            "tertiary": ["#DAA520", "#3CB371", "#FFA500"],
+            "quaternary": ["#000000", "#9ACD32", "#B8860B"]
         }
     },
     {
@@ -2318,9 +2498,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 7,
-            "health": 1020,
-            "mana": 850
-        },
+            "health": 170,
+            "mana": 75,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Healing Note",
@@ -2342,8 +2524,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/grengar/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#000000"],
-            "secondary": ["#FFD700", "#4A4A4A"]
+            "primary": ["#8B0000", "#000000", "#FFD700"],
+            "secondary": ["#4A4A4A", "#FF4500", "#00FFFF"],
+            "tertiary": ["#A52A2A", "#FF8C00", "#1E90FF"],
+            "quaternary": ["#2F2F2F", "#FF6347", "#00CED1"]
         }
     },
     {
@@ -2364,9 +2548,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 7,
             "speed": 6,
-            "health": 1450,
-            "mana": 620
-        },
+            "health": 330,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Freeze Ray",
@@ -2388,8 +2574,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/rust/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B4513", "#4A4A4A"],
-            "secondary": ["#B8860B", "#2F2F2F"]
+            "primary": ["#8B4513", "#4A4A4A", "#B8860B"],
+            "secondary": ["#2F2F2F", "#FFD700", "#00FFFF"],
+            "tertiary": ["#A0522D", "#FFA500", "#1E90FF"],
+            "quaternary": ["#000000", "#CD853F", "#008080"]
         }
     },
     {
@@ -2410,9 +2598,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 9,
-            "health": 1280,
-            "mana": 820
-        },
+            "health": 180,
+            "mana": 70,
+            "manaReg": 1.4
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Lightning Dash",
@@ -2434,8 +2624,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/feng_xiang/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#4A4A4A", "#2F2F2F"],
-            "secondary": ["#87CEEB", "#FFFFFF"]
+            "primary": ["#4A4A4A", "#2F2F2F", "#87CEEB"],
+            "secondary": ["#FFFFFF", "#FFD700", "#00BFFF"],
+            "tertiary": ["#808080", "#FFA500", "#1E90FF"],
+            "quaternary": ["#000000", "#ADD8E6", "#00CED1"]
         }
     },
     {
@@ -2456,9 +2648,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 9,
             "speed": 7,
-            "health": 1480,
-            "mana": 1100
-        },
+            "health": 190,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Elemental Blast",
@@ -2480,8 +2674,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/mayine/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFB6C1", "#FFFFFF"],
-            "secondary": ["#9370DB", "#C0C0C0"]
+            "primary": ["#FFB6C1", "#FFFFFF", "#9370DB"],
+            "secondary": ["#C0C0C0", "#FF69B4", "#4B0082"],
+            "tertiary": ["#FFC0CB", "#DDA0DD", "#8A2BE2"],
+            "quaternary": ["#F5F5F5", "#FF1493", "#800080"]
         }
     },
     {
@@ -2502,9 +2698,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 8,
             "speed": 7,
-            "health": 1650,
-            "mana": 650
-        },
+            "health": 260,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Healing Touch",
@@ -2526,8 +2724,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/pahilos/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#C0C0C0", "#FF8C00"],
-            "secondary": ["#8B0000", "#4A4A4A"]
+            "primary": ["#C0C0C0", "#FF8C00", "#8B0000"],
+            "secondary": ["#4A4A4A", "#FFD700", "#FFFFFF"],
+            "tertiary": ["#D3D3D3", "#FFA500", "#A52A2A"],
+            "quaternary": ["#000000", "#FF6347", "#F5F5F5"]
         }
     },
     {
@@ -2548,9 +2748,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 6,
             "speed": 8,
-            "health": 1050,
-            "mana": 620
-        },
+            "health": 200,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Whip Crack",
@@ -2572,8 +2774,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/rexingu_raide/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#CD7F32", "#8B4513"],
-            "secondary": ["#4682B4", "#2F2F2F"]
+            "primary": ["#CD7F32", "#8B4513", "#4682B4"],
+            "secondary": ["#2F2F2F", "#FF4500", "#00FFFF"],
+            "tertiary": ["#B87333", "#FF8C00", "#1E90FF"],
+            "quaternary": ["#000000", "#FFA500", "#00CED1"]
         }
     },
     {
@@ -2594,9 +2798,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 8,
             "speed": 8,
-            "health": 1520,
-            "mana": 880
-        },
+            "health": 220,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Prophecy Strike",
@@ -2618,8 +2824,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/morrigan/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#191970"],
-            "secondary": ["#4A4A4A", "#2F2F2F"]
+            "primary": ["#000000", "#191970", "#4A4A4A"],
+            "secondary": ["#2F2F2F", "#C0C0C0", "#8B0000"],
+            "tertiary": ["#1A1A1A", "#4169E1", "#A52A2A"],
+            "quaternary": ["#000000", "#87CEEB", "#800000"]
         }
     },
     {
@@ -2640,9 +2848,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 7,
             "speed": 8,
-            "health": 1100,
-            "mana": 700
-        },
+            "health": 190,
+            "mana": 60,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Lightning Bolt",
@@ -2664,8 +2874,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/kael/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#4A4A4A", "#2F2F2F"],
-            "secondary": ["#8B4513", "#1A1A1A"]
+            "primary": ["#4A4A4A", "#2F2F2F", "#9400D3"],
+            "secondary": ["#8B4513", "#1A1A1A", "#FFD700"],
+            "tertiary": ["#808080", "#4B0082", "#FFA500"],
+            "quaternary": ["#000000", "#8A2BE2", "#FF4500"]
         }
     },
     {
@@ -2686,9 +2898,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 10,
             "speed": 7,
-            "health": 1950,
-            "mana": 1200
-        },
+            "health": 270,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Shadow Tendrils",
@@ -2710,8 +2924,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/nyx/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#4A4A4A"],
-            "secondary": ["#C0C0C0", "#191970"]
+            "primary": ["#000000", "#4A4A4A", "#C0C0C0"],
+            "secondary": ["#191970", "#9400D3", "#FFD700"],
+            "tertiary": ["#1A1A1A", "#8A2BE2", "#FFFF00"],
+            "quaternary": ["#2F2F2F", "#4169E1", "#FF1493"]
         }
     },
     {
@@ -2732,9 +2948,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 7,
             "speed": 8,
-            "health": 1250,
-            "mana": 480
-        },
+            "health": 210,
+            "mana": 50,
+            "manaReg": 0.7
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Jab",
@@ -2756,8 +2974,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/marquez/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#00008B"],
-            "secondary": ["#2E8B57", "#C0C0C0"]
+            "primary": ["#FFFFFF", "#00008B", "#2E8B57"],
+            "secondary": ["#C0C0C0", "#FFD700", "#8B0000"],
+            "tertiary": ["#F5F5F5", "#00FF7F", "#A52A2A"],
+            "quaternary": ["#D3D3D3", "#9ACD32", "#800000"]
         }
     },
     {
@@ -2778,9 +2998,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 8,
             "speed": 8,
-            "health": 1180,
-            "mana": 720
-        },
+            "health": 200,
+            "mana": 65,
+            "manaReg": 1.1
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Purifying Thrust",
@@ -2802,8 +3024,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/victtoria/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#C0C0C0"],
-            "secondary": ["#8B0000", "#000000"]
+            "primary": ["#FFFFFF", "#C0C0C0", "#8B0000"],
+            "secondary": ["#000000", "#FFD700", "#4169E1"],
+            "tertiary": ["#F5F5DC", "#DC143C", "#1E90FF"],
+            "quaternary": ["#D3D3D3", "#B22222", "#87CEEB"]
         }
     },
     {
@@ -2824,9 +3048,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 10,
             "speed": 7,
-            "health": 1580,
-            "mana": 950
-        },
+            "health": 240,
+            "mana": 80,
+            "manaReg": 1.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Judgment",
@@ -2848,8 +3074,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/xian_ju/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#FFD700"],
-            "secondary": ["#4169E1", "#2E8B57"]
+            "primary": ["#FFFFFF", "#FFD700", "#4169E1"],
+            "secondary": ["#2E8B57", "#00FFFF", "#8B4513"],
+            "tertiary": ["#F0F8FF", "#1E90FF", "#32CD32"],
+            "quaternary": ["#000000", "#87CEEB", "#D2691E"]
         }
     },
     {
@@ -2870,9 +3098,11 @@ export const heroes = [
             "physDef": 4,
             "magDef": 5,
             "speed": 7,
-            "health": 1350,
-            "mana": 800
-        },
+            "health": 160,
+            "mana": 65,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Coil of Oblivion",
@@ -2894,8 +3124,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/apepitoski/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0B0B0B", "#FFD700"],
-            "secondary": ["#D4AF37", "#8B0000"]
+            "primary": ["#0B0B0B", "#FFD700", "#D4AF37"],
+            "secondary": ["#8B0000", "#FFBF00", "#556B2F"],
+            "tertiary": ["#1A1A1A", "#FFD700", "#9ACD32"],
+            "quaternary": ["#2F2F2F", "#FF4500", "#B8860B"]
         }
     },
     {
@@ -2916,9 +3148,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 8,
             "speed": 6,
-            "health": 2100,
-            "mana": 850
-        },
+            "health": 300,
+            "mana": 70,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Looping Strike",
@@ -2940,8 +3174,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/feroski/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#FFFFFF"],
-            "secondary": ["#000080", "#A52A2A"]
+            "primary": ["#8B0000", "#FFFFFF", "#000080"],
+            "secondary": ["#A52A2A", "#F5F5DC", "#191970"],
+            "tertiary": ["#800000", "#FFD700", "#C0C0C0"],
+            "quaternary": ["#2F2F2F", "#FF6347", "#4169E1"]
         }
     },
     {
@@ -2962,9 +3198,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 6,
             "speed": 6,
-            "health": 1750,
-            "mana": 700
-        },
+            "health": 250,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Forge Shock",
@@ -2986,8 +3224,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/aulicu/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#228B22"],
-            "secondary": ["#CD7F32", "#FF4500"]
+            "primary": ["#8B0000", "#228B22", "#CD7F32"],
+            "secondary": ["#FF4500", "#556B2F", "#B87333"],
+            "tertiary": ["#A52A2A", "#32CD32", "#FFD700"],
+            "quaternary": ["#000000", "#00FF00", "#B8860B"]
         }
     },
     {
@@ -3008,9 +3248,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 8,
-            "health": 1650,
-            "mana": 800
-        },
+            "health": 230,
+            "mana": 65,
+            "manaReg": 1.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Severance Thrust",
@@ -3032,8 +3274,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/omega/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0B0B0B", "#8B0000"],
-            "secondary": ["#C0C0C0", "#1A1A1A"]
+            "primary": ["#0B0B0B", "#8B0000", "#C0C0C0"],
+            "secondary": ["#1A1A1A", "#FF4500", "#A9A9A9"],
+            "tertiary": ["#2F2F2F", "#FF0000", "#FFFFFF"],
+            "quaternary": ["#000000", "#DC143C", "#808080"]
         }
     },
     {
@@ -3054,9 +3298,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 9,
             "speed": 8,
-            "health": 2000,
-            "mana": 1200
-        },
+            "health": 240,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Cosmic Rebuke",
@@ -3078,8 +3324,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/keirnoor/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#FFFFFF"],
-            "secondary": ["#FF8C00", "#FFFACD"]
+            "primary": ["#FFD700", "#FFFFFF", "#FF8C00"],
+            "secondary": ["#FFFACD", "#FFA500", "#FFF0F5"],
+            "tertiary": ["#FFDAB9", "#F0E68C", "#FFB347"],
+            "quaternary": ["#000000", "#FFFFE0", "#FF6347"]
         }
     },
     {
@@ -3100,9 +3348,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 4,
             "speed": 7,
-            "health": 1020,
-            "mana": 580
-        },
+            "health": 160,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Suppressing Fire",
@@ -3124,8 +3374,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/rezee_kei/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF8C00", "#2F2F2F"],
-            "secondary": ["#808080", "#8B4513"]
+            "primary": ["#FF8C00", "#2F2F2F", "#808080"],
+            "secondary": ["#FFA500", "#1A1A1A", "#A9A9A9"],
+            "tertiary": ["#FFD700", "#00FFFF", "#FF0000"],
+            "quaternary": ["#000000", "#00FF00", "#800080"]
         }
     },
     {
@@ -3146,9 +3398,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 9,
             "speed": 6,
-            "health": 1600,
-            "mana": 1050
-        },
+            "health": 220,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Construct Wall",
@@ -3170,8 +3424,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/icaris_mezong/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#FFD700"],
-            "secondary": ["#1E90FF", "#F5F5F5"]
+            "primary": ["#FFFFFF", "#FFD700", "#1E90FF"],
+            "secondary": ["#F5F5F5", "#DAA520", "#4169E1"],
+            "tertiary": ["#FFF8DC", "#B8860B", "#87CEEB"],
+            "quaternary": ["#D3D3D3", "#FFD700", "#00BFFF"]
         }
     },
     {
@@ -3192,9 +3448,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 8,
             "speed": 7,
-            "health": 1400,
-            "mana": 950
-        },
+            "health": 170,
+            "mana": 80,
+            "manaReg": 1.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Glacial Spike",
@@ -3216,8 +3474,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/yorana_perguise/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#00008B"],
-            "secondary": ["#2F2F2F", "#E0FFFF"]
+            "primary": ["#FFFFFF", "#00008B", "#2F2F2F"],
+            "secondary": ["#E0FFFF", "#1E90FF", "#696969"],
+            "tertiary": ["#00BFFF", "#D3D3D3", "#191970"],
+            "quaternary": ["#000000", "#87CEEB", "#808080"]
         }
     },
     {
@@ -3238,9 +3498,11 @@ export const heroes = [
             "physDef": 4,
             "magDef": 6,
             "speed": 8,
-            "health": 1300,
-            "mana": 950
-        },
+            "health": 150,
+            "mana": 75,
+            "manaReg": 1.6
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Shard Swarm",
@@ -3262,8 +3524,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/saselubee/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#000000", "#FF69B4"],
-            "secondary": ["#FFB6C1", "#2F2F2F"]
+            "primary": ["#000000", "#FF69B4", "#FFB6C1"],
+            "secondary": ["#2F2F2F", "#FF1493", "#FFC0CB"],
+            "tertiary": ["#1A1A1A", "#FFD700", "#FFE4E1"],
+            "quaternary": ["#4A4A4A", "#DC143C", "#FFDAB9"]
         }
     },
     {
@@ -3284,9 +3548,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 7,
             "speed": 9,
-            "health": 1100,
-            "mana": 650
-        },
+            "health": 160,
+            "mana": 55,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Truth Arc",
@@ -3308,8 +3574,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/luciani_buwalkot/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#36454F", "#5C4033"],
-            "secondary": ["#8B4513", "#A0522D"]
+            "primary": ["#36454F", "#5C4033", "#8B4513"],
+            "secondary": ["#A0522D", "#DAA520", "#2F2F2F"],
+            "tertiary": ["#4A4A4A", "#FFD700", "#C0C0C0"],
+            "quaternary": ["#1A1A1A", "#B8860B", "#808080"]
         }
     },
     {
@@ -3330,9 +3598,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 8,
             "speed": 7,
-            "health": 1550,
-            "mana": 720
-        },
+            "health": 250,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Extended Strike",
@@ -3354,8 +3624,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/hana_beehee/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#800080"],
-            "secondary": ["#FF0000", "#F5F5F5"]
+            "primary": ["#FFFFFF", "#800080", "#FF0000"],
+            "secondary": ["#F5F5F5", "#4B0082", "#8B0000"],
+            "tertiary": ["#FFD700", "#C0C0C0", "#DC143C"],
+            "quaternary": ["#000000", "#DA70D6", "#B22222"]
         }
     },
     {
@@ -3376,9 +3648,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 8,
             "speed": 7,
-            "health": 1080,
-            "mana": 880
-        },
+            "health": 160,
+            "mana": 75,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Recycling Beam",
@@ -3400,8 +3674,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/nyitti_bemzong/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0000FF", "#FFD700"],
-            "secondary": ["#1E90FF", "#DAA520"]
+            "primary": ["#0000FF", "#FFD700", "#1E90FF"],
+            "secondary": ["#DAA520", "#FF69B4", "#C0C0C0"],
+            "tertiary": ["#00BFFF", "#FF1493", "#00CED1"],
+            "quaternary": ["#000000", "#FFA500", "#FF00FF"]
         }
     },
     {
@@ -3422,9 +3698,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 9,
             "speed": 6,
-            "health": 1300,
-            "mana": 950
-        },
+            "health": 180,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Rewind Wound",
@@ -3446,8 +3724,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/bellaha_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF4500", "#FF8C00"],
-            "secondary": ["#FFD700", "#0B0B0B"]
+            "primary": ["#FF4500", "#FF8C00", "#FFD700"],
+            "secondary": ["#DC143C", "#FFA500", "#FFFF00"],
+            "tertiary": ["#8B0000", "#DAA520", "#00FFFF"],
+            "quaternary": ["#1A1A1A", "#FF6347", "#00BFFF"]
         }
     },
     {
@@ -3468,9 +3748,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 7,
             "speed": 6,
-            "health": 1550,
-            "mana": 650
-        },
+            "health": 260,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Humility's Edge",
@@ -3492,8 +3774,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/reigna_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFD700", "#8B4513"],
-            "secondary": ["#DC143C", "#FFFF00"]
+            "primary": ["#FFD700", "#8B4513", "#DC143C"],
+            "secondary": ["#DAA520", "#A0522D", "#8B0000"],
+            "tertiary": ["#B8860B", "#CD853F", "#FF6347"],
+            "quaternary": ["#000000", "#FFA500", "#B22222"]
         }
     },
     {
@@ -3514,9 +3798,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 8,
             "speed": 5,
-            "health": 1850,
-            "mana": 750
-        },
+            "health": 290,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Jade Cleave",
@@ -3538,8 +3824,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/alionzar_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#00FF7F", "#FFFFFF"],
-            "secondary": ["#808080", "#98FB98"]
+            "primary": ["#00FF7F", "#FFFFFF", "#808080"],
+            "secondary": ["#98FB98", "#F5F5F5", "#A9A9A9"],
+            "tertiary": ["#32CD32", "#D3D3D3", "#2E8B57"],
+            "quaternary": ["#000000", "#ADFF2F", "#228B22"]
         }
     },
     {
@@ -3560,9 +3848,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 8,
             "speed": 5,
-            "health": 1750,
-            "mana": 700
-        },
+            "health": 280,
+            "mana": 60,
+            "manaReg": 0.9
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Crane's Mercy",
@@ -3584,8 +3874,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/nialzu_d_foryangrwa/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#800080", "#FFFFFF"],
-            "secondary": ["#9370DB", "#F5F5F5"]
+            "primary": ["#800080", "#FFFFFF", "#C0C0C0"],
+            "secondary": ["#9370DB", "#F5F5F5", "#A9A9A9"],
+            "tertiary": ["#DDA0DD", "#E6E6FA", "#4B0082"],
+            "quaternary": ["#000000", "#BA55D3", "#8A2BE2"]
         }
     },
     {
@@ -3606,9 +3898,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 9,
             "speed": 7,
-            "health": 1350,
-            "mana": 880
-        },
+            "health": 190,
+            "mana": 75,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Healing Embrace",
@@ -3630,8 +3924,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/dedeinju_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0000FF", "#0B0B0B"],
-            "secondary": ["#FFFFFF", "#1E90FF"]
+            "primary": ["#0000FF", "#0B0B0B", "#FFFFFF"],
+            "secondary": ["#1E90FF", "#2F2F2F", "#F5F5F5"],
+            "tertiary": ["#00BFFF", "#A9A9A9", "#E0FFFF"],
+            "quaternary": ["#000000", "#87CEEB", "#00CED1"]
         }
     },
     {
@@ -3652,9 +3948,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 8,
-            "health": 1180,
-            "mana": 720
-        },
+            "health": 180,
+            "mana": 65,
+            "manaReg": 1.1
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Sworn Strike",
@@ -3676,8 +3974,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/mei_forsta/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFACD", "#98FB98"],
-            "secondary": ["#FFFFFF", "#F0E68C"]
+            "primary": ["#FFFACD", "#98FB98", "#FFFFFF"],
+            "secondary": ["#F0E68C", "#ADFF2F", "#F5F5F5"],
+            "tertiary": ["#FFD700", "#32CD32", "#E0FFFF"],
+            "quaternary": ["#000000", "#9ACD32", "#00FF7F"]
         }
     },
     {
@@ -3698,9 +3998,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 7,
             "speed": 7,
-            "health": 1250,
-            "mana": 580
-        },
+            "health": 180,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Wrath Shell",
@@ -3722,8 +4024,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/zene_zene_sumala/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFFFF", "#FF69B4"],
-            "secondary": ["#FF8C00", "#F5F5F5"]
+            "primary": ["#FFFFFF", "#FF69B4", "#FF8C00"],
+            "secondary": ["#F5F5F5", "#FF1493", "#FFA500"],
+            "tertiary": ["#FFB6C1", "#FFD700", "#FF4500"],
+            "quaternary": ["#000000", "#DC143C", "#FF6347"]
         }
     },
     {
@@ -3744,9 +4048,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 9,
             "speed": 6,
-            "health": 1520,
-            "mana": 900
-        },
+            "health": 250,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Edict of Healing",
@@ -3768,8 +4074,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/caramia_d_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFF00", "#FFFFFF"],
-            "secondary": ["#C19A6B", "#FFD700"]
+            "primary": ["#FFFF00", "#FFFFFF", "#C19A6B"],
+            "secondary": ["#FFD700", "#F5F5F5", "#D2B48C"],
+            "tertiary": ["#FFA500", "#E6E6FA", "#B8860B"],
+            "quaternary": ["#000000", "#FFD700", "#DAA520"]
         }
     },
     {
@@ -3790,9 +4098,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 9,
             "speed": 8,
-            "health": 1400,
-            "mana": 1050
-        },
+            "health": 160,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Forbidden Strike",
@@ -3814,8 +4124,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/aishala_fwehue/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#E6E6FA", "#DDA0DD"],
-            "secondary": ["#FFFFFF", "#C8A2C8"]
+            "primary": ["#E6E6FA", "#DDA0DD", "#FFFFFF"],
+            "secondary": ["#C8A2C8", "#F5F5F5", "#E0B0FF"],
+            "tertiary": ["#FF69B4", "#DC143C", "#FFD700"],
+            "quaternary": ["#4B0082", "#FF1493", "#DAA520"]
         }
     },
     {
@@ -3836,9 +4148,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 9,
             "speed": 7,
-            "health": 1280,
-            "mana": 850
-        },
+            "health": 190,
+            "mana": 75,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Renewing Light",
@@ -3860,8 +4174,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/feifeing_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF8C00", "#FFD700"],
-            "secondary": ["#FFA500", "#F5DEB3"]
+            "primary": ["#FF8C00", "#FFD700", "#F5DEB3"],
+            "secondary": ["#FFA500", "#F5DEB3", "#32CD32"],
+            "tertiary": ["#FFD700", "#00CED1", "#FFDAB9"],
+            "quaternary": ["#000000", "#FF6347", "#00FFFF"]
         }
     },
     {
@@ -3882,9 +4198,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 8,
             "speed": 6,
-            "health": 1450,
-            "mana": 880
-        },
+            "health": 220,
+            "mana": 70,
+            "manaReg": 1.2
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Crushing Verdict",
@@ -3906,8 +4224,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/xarvi_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#0F52BA", "#FFFFFF"],
-            "secondary": ["#556B2F", "#1E90FF"]
+            "primary": ["#0F52BA", "#FFFFFF", "#556B2F"],
+            "secondary": ["#1E90FF", "#F5F5F5", "#6B8E23"],
+            "tertiary": ["#00BFFF", "#FFD700", "#32CD32"],
+            "quaternary": ["#000000", "#87CEEB", "#9ACD32"]
         }
     },
     {
@@ -3928,9 +4248,11 @@ export const heroes = [
             "physDef": 6,
             "magDef": 8,
             "speed": 9,
-            "health": 1320,
-            "mana": 950
-        },
+            "health": 180,
+            "mana": 75,
+            "manaReg": 1.4
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Time Punch",
@@ -3952,8 +4274,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/elvee_zenforg/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FF8C00", "#32CD32"],
-            "secondary": ["#1E90FF", "#FFA500"]
+            "primary": ["#FF8C00", "#32CD32", "#1E90FF"],
+            "secondary": ["#FFA500", "#00FF7F", "#00BFFF"],
+            "tertiary": ["#FF4500", "#7CFC00", "#00008B"],
+            "quaternary": ["#000000", "#FFD700", "#FF1493"]
         }
     },
     {
@@ -3966,7 +4290,7 @@ export const heroes = [
         "stats": {
             "power": 6,
             "strength": 5,
-            "offense": 4,
+            "offense": 5,
             "defense": 9,
             "stamina": 8,
             "physicalAtk": 5,
@@ -3974,9 +4298,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 9,
             "speed": 5,
-            "health": 1480,
-            "mana": 880
-        },
+            "health": 260,
+            "mana": 75,
+            "manaReg": 1.3
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Unwoven Strike",
@@ -3998,8 +4324,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/peitri_meimorguse/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B4513", "#0B0B0B"],
-            "secondary": ["#F5F5F5", "#C2B280"]
+            "primary": ["#8B4513", "#0B0B0B", "#F5F5F5"],
+            "secondary": ["#A0522D", "#2F2F2F", "#E8E8E8"],
+            "tertiary": ["#D2691E", "#696969", "#FFF8DC"],
+            "quaternary": ["#C0C0C0", "#800000", "#DAA520"]
         }
     },
     {
@@ -4020,9 +4348,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 9,
             "speed": 7,
-            "health": 1350,
-            "mana": 1000
-        },
+            "health": 170,
+            "mana": 80,
+            "manaReg": 1.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Cinder Blast",
@@ -4044,8 +4374,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/siteh_mah/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#2F2F2F"],
-            "secondary": ["#DAA520", "#A52A2A"]
+            "primary": ["#8B0000", "#2F2F2F", "#DAA520"],
+            "secondary": ["#A52A2A", "#1A1A1A", "#B8860B"],
+            "tertiary": ["#FF4500", "#696969", "#FFD700"],
+            "quaternary": ["#000000", "#DC143C", "#FFA500"]
         }
     },
     {
@@ -4066,9 +4398,11 @@ export const heroes = [
             "physDef": 8,
             "magDef": 6,
             "speed": 6,
-            "health": 1680,
-            "mana": 620
-        },
+            "health": 240,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Starfall Strike",
@@ -4090,8 +4424,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/huihuwalong_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#008080", "#696969"],
-            "secondary": ["#8B0000", "#20B2AA"]
+            "primary": ["#008080", "#696969", "#8B0000"],
+            "secondary": ["#20B2AA", "#A9A9A9", "#A52A2A"],
+            "tertiary": ["#FFD700", "#FF8C00", "#C0C0C0"],
+            "quaternary": ["#000000", "#FFA500", "#800000"]
         }
     },
     {
@@ -4112,9 +4448,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 9,
             "speed": 7,
-            "health": 1250,
-            "mana": 1000
-        },
+            "health": 160,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Snapshot",
@@ -4136,8 +4474,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/riririyi_fuefue_nexurfogus/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#50C878", "#FFFFFF"],
-            "secondary": ["#FFD700", "#3CB371"]
+            "primary": ["#50C878", "#FFFFFF", "#FFD700"],
+            "secondary": ["#3CB371", "#F5F5F5", "#DAA520"],
+            "tertiary": ["#00FF7F", "#E0E0E0", "#B8860B"],
+            "quaternary": ["#000000", "#9ACD32", "#FFA500"]
         }
     },
     {
@@ -4148,19 +4488,21 @@ export const heroes = [
         "level": 300,
         "shortDescription": "Born of vampire blood but baptized in holy light, Alucard walks the razor’s edge between two worlds. The sworn brother of VVitch X‑abar, he watched the heavens betray his kin and now hunts the darkness that once claimed him.",
         "stats": {
-            "power": 9,
-            "strength": 8,
-            "offense": 10,
-            "defense": 7,
-            "stamina": 8,
-            "physicalAtk": 9,
-            "magicalAtk": 8,
-            "physDef": 7,
+            "power": 8,
+            "strength": 4,
+            "offense": 8,
+            "defense": 5,
+            "stamina": 7,
+            "physicalAtk": 4,
+            "magicalAtk": 10,
+            "physDef": 5,
             "magDef": 9,
-            "speed": 8,
-            "health": 1580,
-            "mana": 800
-        },
+            "speed": 7,
+            "health": 160,
+            "mana": 80,
+            "manaReg": 2.0
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Judgment Slash",
@@ -4182,8 +4524,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/alucard/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#8B0000", "#FFFFFF"],
-            "secondary": ["#FFD700", "#DC143C"]
+            "primary": ["#8B0000", "#FFFFFF", "#FFD700"],
+            "secondary": ["#DC143C", "#C0C0C0", "#A52A2A"],
+            "tertiary": ["#800000", "#FFA500", "#D3D3D3"],
+            "quaternary": ["#000000", "#FF6347", "#F5F5DC"]
         }
     },
     {
@@ -4204,9 +4548,11 @@ export const heroes = [
             "physDef": 5,
             "magDef": 7,
             "speed": 7,
-            "health": 1050,
-            "mana": 750
-        },
+            "health": 160,
+            "mana": 75,
+            "manaReg": 1.5
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Malefic Beam",
@@ -4228,8 +4574,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/layla_ekorth/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#87CEEB", "#FF8C00"],
-            "secondary": ["#FFFFFF", "#DC143C"]
+            "primary": ["#87CEEB", "#FF8C00", "#FFFFFF"],
+            "secondary": ["#DC143C", "#FF0000", "#00008B"],
+            "tertiary": ["#1E90FF", "#FF4500", "#008080"],
+            "quaternary": ["#000000", "#FFD700", "#FF1493"]
         }
     },
     {
@@ -4250,9 +4598,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 8,
             "speed": 8,
-            "health": 1450,
-            "mana": 850
-        },
+            "health": 200,
+            "mana": 75,
+            "manaReg": 1.4
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Piercing Moonbeam",
@@ -4274,8 +4624,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/miya_elvensworth/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#98FB98", "#C0C0C0"],
-            "secondary": ["#2E8B57", "#006400"]
+            "primary": ["#98FB98", "#C0C0C0", "#2E8B57"],
+            "secondary": ["#006400", "#ADFF2F", "#F0FFF0"],
+            "tertiary": ["#3CB371", "#D3D3D3", "#00FF00"],
+            "quaternary": ["#000000", "#9ACD32", "#008000"]
         }
     },
     {
@@ -4296,9 +4648,11 @@ export const heroes = [
             "physDef": 7,
             "magDef": 6,
             "speed": 9,
-            "health": 1150,
-            "mana": 550
-        },
+            "health": 190,
+            "mana": 55,
+            "manaReg": 0.8
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Quick Draw",
@@ -4320,8 +4674,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/saber/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#FFFF00", "#0B0B0B"],
-            "secondary": ["#ADFF2F", "#808080"]
+            "primary": ["#FFFF00", "#0B0B0B", "#ADFF2F"],
+            "secondary": ["#808080", "#FFFFFF", "#C0C0C0"],
+            "tertiary": ["#FFD700", "#1A1A1A", "#00FF00"],
+            "quaternary": ["#000000", "#FF8C00", "#008000"]
         }
     },
     {
@@ -4342,9 +4698,11 @@ export const heroes = [
             "physDef": 9,
             "magDef": 7,
             "speed": 6,
-            "health": 1550,
-            "mana": 600
-        },
+            "health": 270,
+            "mana": 55,
+            "manaReg": 0.7
+        }
+        ,
         "moves": {
             "basic": {
                 "punch": "Bamboo Sweep",
@@ -4366,8 +4724,10 @@ export const heroes = [
             "spriteRight": "../assets/images/heroes/akai_the_panda/sprite.png"
         },
         "colorPalette": {
-            "primary": ["#800080", "#000000"],
-            "secondary": ["#4B0082", "#2F2F2F"]
+            "primary": ["#800080", "#000000", "#FF0000"],
+            "secondary": ["#4B0082", "#2F2F2F", "#00FFFF"],
+            "tertiary": ["#8A2BE2", "#1A1A1A", "#FF4500"],
+            "quaternary": ["#000000", "#DA70D6", "#32CD32"]
         }
     }
 ];
