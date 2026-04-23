@@ -151,15 +151,15 @@ export class InputHandler {
             console.log(`Joystick: dx=${dx.toFixed(1)} dy=${dy.toFixed(1)} left=${left} right=${right} up=${up} down=${down}`);
 
             // Update virtual keys for WASD (Player 1 movement)
-            this.setDirectionKey('KeyA', left);
-            this.setDirectionKey('KeyD', right);
-            this.setDirectionKey('KeyW', up);
-            this.setDirectionKey('KeyS', down);
+            setDirectionKey('KeyA', left);
+            setDirectionKey('KeyD', right);
+            setDirectionKey('KeyW', up);
+            setDirectionKey('KeyS', down);
             // Update virtual keys for Arrow keys (menu navigation)
-            this.setDirectionKey('ArrowLeft', left);
-            this.setDirectionKey('ArrowRight', right);
-            this.setDirectionKey('ArrowUp', up);
-            this.setDirectionKey('ArrowDown', down);
+            setDirectionKey('ArrowLeft', left);
+            setDirectionKey('ArrowRight', right);
+            setDirectionKey('ArrowUp', up);
+            setDirectionKey('ArrowDown', down);
         };
 
         const setDirectionKey = (code, pressed) => {
