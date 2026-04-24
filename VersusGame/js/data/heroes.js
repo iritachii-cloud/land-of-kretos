@@ -103,7 +103,7 @@ export const heroes = [
     },
     "projectile": {
       "speed": 7,
-      "damageScale": 0.7,
+      "damageScale": 1.8,
       "image": "../assets/images/heroes/selvina_ekorth/projectile.png"
     }
   },
@@ -158,7 +158,7 @@ export const heroes = [
     },
     "projectile": {
       "speed": 7,
-      "damageScale": 1.8,
+      "damageScale": 1.2,
       "image": "../assets/images/heroes/roisin_pelveti/projectile.png"
     }
   },

@@ -30,21 +30,35 @@ export class SelectionScene extends Scene {
             this.game.selectionSceneResume = null;
             this.mode = resume.mode;
             this.selectedStage = resume.stage || this.game.stages[0];
+
+            // ----- Coming from battle pause (Change Hero) -----
             if (resume.skipToHero) {
+                // Completely reset hero selection so both players can pick again
                 this.state = 'hero';
+                this.p1Hero = null;
+                this.p2Hero = null;
+                this.p1Confirmed = false;
+                this.p2Confirmed = false;
+                this.activePlayer = 1;
+            }
+            // ----- Coming from battle pause (Change Stage) -----
+            else if (resume.skipToStage) {
+                this.state = 'stage';
+                // Keep heroes as they were (unchanged)
                 this.p1Hero = this.game.battleConfig?.p1 || null;
                 this.p2Hero = this.game.battleConfig?.p2 || null;
                 this.p1Confirmed = !!this.p1Hero;
                 this.p2Confirmed = !!this.p2Hero;
                 this.activePlayer = this.p1Confirmed ? 2 : 1;
-            } else if (resume.skipToStage) {
-                this.state = 'stage';
             } else {
                 this.state = 'hero';
-                this.p1Hero = null; this.p2Hero = null;
-                this.p1Confirmed = false; this.p2Confirmed = false;
+                this.p1Hero = null;
+                this.p2Hero = null;
+                this.p1Confirmed = false;
+                this.p2Confirmed = false;
                 this.activePlayer = 1;
             }
+
             this.gridSelector = new GridSelector(this.game.heroes, 6, 36, (hero) => this.iconImages.get(hero));
             this.gridSelector.reset();
             this.modal.visible = false;
@@ -52,6 +66,7 @@ export class SelectionScene extends Scene {
             return;
         }
 
+        // Normal entry from menu
         this.state = 'mode';
         this.p1Hero = null;
         this.p2Hero = null;

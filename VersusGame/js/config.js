@@ -22,6 +22,8 @@ export const CONFIG = {
     SPECIAL_COST: 30,
     COMBO_WINDOW: 550,
     LOADING_MIN_DURATION: 2000,
+    TELEPORT_COOLDOWN: 0,       // 0 seconds (free teleports)
+    TELEPORT_MANA_COST: 5,        // mana for charge-teleport
     TIPS: [
         "Tip: Punch + Kick can break guards!",
         "Tip: Parry at the last moment to stun your enemy.",
