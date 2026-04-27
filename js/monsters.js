@@ -151,6 +151,7 @@ class monstersPage {
                     <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="heroes.html" class="nav-link">Heroes</a></li>
                     <li><a href="monsters.html" class="nav-link active">Monsters</a></li>
+                    <li><a href="VersusGame/index.html" class="nav-link">Versus Game</a></li>
                     <li><a href="novel.html" class="nav-link">Novel</a></li>
                 </ul>
                 <div class="nav-actions">

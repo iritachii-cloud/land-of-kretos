@@ -20,6 +20,7 @@ class Navbar {
                         <li><a href="index.html" class="nav-link" data-page="home">Home</a></li>
                         <li><a href="heroes.html" class="nav-link" data-page="heroes">Heroes</a></li>
                         <li><a href="monsters.html" class="nav-link" data-page="monsters">Monsters</a></li>
+                        <li><a href="VersusGame/index.html" class="nav-link" data-page="versus">Versus Game</a></li>
                         <li><a href="novel.html" class="nav-link" data-page="novel">Novel</a></li>
                     </ul>
                     <div class="nav-actions">
